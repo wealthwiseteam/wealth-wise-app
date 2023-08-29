@@ -40,7 +40,10 @@ class MessageLookup extends MessageLookupByLibrary {
             "----------- congrats-----------"),
         "_comment_": MessageLookupByLibrary.simpleMessage(
             "--------------------- Auth ---------------------"),
-        "congrats": MessageLookupByLibrary.simpleMessage("congrats!"),
+        "congrats": MessageLookupByLibrary.simpleMessage("Congrats!"),
+        "congratsSubtitle": MessageLookupByLibrary.simpleMessage(
+            "Your account is successfully created"),
+        "continueWord": MessageLookupByLibrary.simpleMessage("Continue"),
         "dontReceiveCode":
             MessageLookupByLibrary.simpleMessage("Don’t receive a code?"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
