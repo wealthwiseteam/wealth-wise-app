@@ -1,26 +1,30 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'package:flutter/material.dart';
 
 class PublicText extends StatelessWidget {
   final String txt;
   final String? ff;
   final bool? under;
   final Color color;
-  final double? size;
+  final double size;
   final int? max;
   final FontWeight? fw;
   final TextAlign? align;
+  final int? maxLines;
+    final TextOverflow ?  overflow;
+    final bool? softWrap;
 
   const PublicText({
     super.key,
     required this.txt,
     this.color = Colors.black,
-    this.size,
+    required this.size,
     this.under,
     this.align,
     this.max,
     this.fw,
-    this.ff,
+    this.ff,  this.maxLines,  this.overflow, this.softWrap,
   });
 
   @override
@@ -28,12 +32,13 @@ class PublicText extends StatelessWidget {
     return Text(
       txt,
       textAlign: align ?? TextAlign.start,
-      maxLines: max ?? 2,
+      maxLines: max ?? 4,
       style: TextStyle(
+        
         color: color,
         fontSize: size ?? 16.sp,
         height: 1.32,
-        fontFamily: ff,
+        fontFamily: "Inter",
         fontWeight: fw ?? FontWeight.normal,
         decoration:
             under == true ? TextDecoration.underline : TextDecoration.none,

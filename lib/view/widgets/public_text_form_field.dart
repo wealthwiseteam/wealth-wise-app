@@ -1,8 +1,10 @@
-// import 'dart:developer';
-import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import 'package:flutter/material.dart';
+
+
 import '../../resources/styles/app_colors.dart';
+
 
 class PublicTextFormField extends StatefulWidget {
   final String hint;
@@ -41,7 +43,7 @@ class PublicTextFormField extends StatefulWidget {
     this.borderRadius = 12,
     this.contentPadding,
     this.onChanged,
-    this.onSubmitted
+    this.onSubmitted, required InputDecoration decoration
   }) : super(key: key);
 
   @override
@@ -55,7 +57,7 @@ class _PublicTextFormFieldState extends State<PublicTextFormField> {
   Widget build(BuildContext context) {
     return TextFormField(
       textCapitalization: TextCapitalization.none,
-      maxLines: 1,
+      maxLines: 2,
       maxLength: widget.maxlenght,
       obscureText: widget.isPassword ? showPassword : false,
       keyboardType: widget.keyboardtype,
@@ -64,17 +66,11 @@ class _PublicTextFormFieldState extends State<PublicTextFormField> {
       validator: widget.validator,
       decoration: InputDecoration(
         fillColor: AppColors.white,
-        iconColor: AppColors.lightBlue,
+        iconColor: AppColors.mintGreen,
         filled: true,
         hintText: widget.hint,
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(widget.borderRadius),
-          borderSide: const BorderSide(color: AppColors.lightBlue, width: 0.5),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(widget.borderRadius),
-          borderSide: const BorderSide(color: AppColors.lightBlue, width: 0.5),
-        ),
+        
+       
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(widget.borderRadius),
           borderSide: const BorderSide(color: Colors.red, width: 0.5),
@@ -84,12 +80,12 @@ class _PublicTextFormFieldState extends State<PublicTextFormField> {
           borderSide: const BorderSide(color: Colors.red, width: 0.5),
         ),
         contentPadding: widget.contentPadding ??
-            EdgeInsets.symmetric(horizontal: 15.w, vertical: 10.h),
+            EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
         prefixIcon: widget.showprefixIcon
             ? Icon(
                 widget.prefixIcon,
                 size: 22,
-                color: AppColors.lightBlue,
+                color: AppColors.mintGreen,
               )
             : null,
         suffixIcon: getSuffixIcon(),
@@ -105,7 +101,7 @@ class _PublicTextFormFieldState extends State<PublicTextFormField> {
         return Icon(
           widget.suffixIcon,
           size: 22,
-          color: AppColors.lightBlue,
+          color: AppColors.mintGreen,
         );
       }
       return InkWell(

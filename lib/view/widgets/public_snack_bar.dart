@@ -1,6 +1,7 @@
 import 'package:another_flushbar/flushbar.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'package:flutter/material.dart';
 
 import 'public_text.dart';
 
@@ -24,6 +25,9 @@ class MySnackBar extends Flushbar {
           txt: message,
           color: Colors.white,
           size: 12.sp,
+           maxLines: 3,
+  overflow: TextOverflow.ellipsis,
+   softWrap: true, 
         ),
       ),
       margin: const EdgeInsets.symmetric(
