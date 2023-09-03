@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       builder: (context, _) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          title: 'ITI Final Project',
+          title: 'Wealth Wise',
           locale: const Locale("en", "US"),
           localizationsDelegates: const [
             S.delegate,
