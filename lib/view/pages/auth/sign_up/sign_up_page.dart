@@ -83,17 +83,17 @@ class _SignUpPageState extends State<SignUpPage > {
                           }
                           return null;
                         },
-                        decoration: const InputDecoration(
-                          labelText: 'User name',
-                          labelStyle: TextStyle(
-                            color: AppColors.grey,
-                          ),
-                          fillColor: AppColors.mintGreen,
-                          prefixIcon: Icon(
-                            Icons.email,
-                            color: AppColors.mintGreen,
-                          ),
-                        ),
+                        // decoration: const InputDecoration(
+                        //   labelText: 'User name',
+                        //   labelStyle: TextStyle(
+                        //     color: AppColors.grey,
+                        //   ),
+                        //   fillColor: AppColors.mintGreen,
+                        //   prefixIcon: Icon(
+                        //     Icons.email,
+                        //     color: AppColors.mintGreen,
+                        //   ),
+                        // ),
                       ),
                        SizedBox(
                         height: 10.h,
@@ -112,17 +112,17 @@ class _SignUpPageState extends State<SignUpPage > {
                           }
                           return null;
                         },
-                        decoration: const InputDecoration(
-                          labelText: 'Email',
-                          labelStyle: TextStyle(
-                            color: AppColors.grey,
-                          ),
-                          fillColor: AppColors.mintGreen,
-                          prefixIcon: Icon(
-                            Icons.email,
-                            color: AppColors.mintGreen,
-                          ),
-                        ),
+                        // decoration: const InputDecoration(
+                        //   labelText: 'Email',
+                        //   labelStyle: TextStyle(
+                        //     color: AppColors.grey,
+                        //   ),
+                        //   fillColor: AppColors.mintGreen,
+                        //   prefixIcon: Icon(
+                        //     Icons.email,
+                        //     color: AppColors.mintGreen,
+                        //   ),
+                        // ),
                       ),
                        SizedBox(
                         height: 10.h,
@@ -141,17 +141,17 @@ class _SignUpPageState extends State<SignUpPage > {
                           }
                           return null;
                         },
-                        decoration: const InputDecoration(
-                          labelText: 'Password',
-                          labelStyle: TextStyle(
-                            color: AppColors.grey,
-                          ),
-                          fillColor: AppColors.mintGreen,
-                          prefixIcon: Icon(
-                            Icons.password,
-                            color: AppColors.mintGreen,
-                          ),
-                        ),
+                        // decoration: const InputDecoration(
+                        //   labelText: 'Password',
+                        //   labelStyle: TextStyle(
+                        //     color: AppColors.grey,
+                        //   ),
+                        //   fillColor: AppColors.mintGreen,
+                        //   prefixIcon: Icon(
+                        //     Icons.password,
+                        //     color: AppColors.mintGreen,
+                        //   ),
+                        // ),
                       ),
                        SizedBox(
                         height: 30.h,

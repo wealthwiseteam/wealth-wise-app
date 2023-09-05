@@ -76,17 +76,17 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
                         }
                         return null;
                       },
-                      decoration: const InputDecoration(
-                        labelText: 'Email',
-                        labelStyle: TextStyle(
-                          color: AppColors.grey,
-                        ),
-                        fillColor: AppColors.mintGreen,
-                        prefixIcon: Icon(
-                          Icons.email,
-                          color: AppColors.mintGreen,
-                        ),
-                      ),
+                      // decoration: const InputDecoration(
+                      //   labelText: 'Email',
+                      //   labelStyle: TextStyle(
+                      //     color: AppColors.grey,
+                      //   ),
+                      //   fillColor: AppColors.mintGreen,
+                      //   prefixIcon: Icon(
+                      //     Icons.email,
+                      //     color: AppColors.mintGreen,
+                      //   ),
+                      // ),
                     ),
                   
                     Padding(

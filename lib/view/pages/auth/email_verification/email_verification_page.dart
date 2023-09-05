@@ -86,17 +86,17 @@ class _EmailVerificationPageState extends State<EmailVerificationPage> {
                         }
                         return null;
                       },
-                      decoration: const InputDecoration(
+                      // decoration: const InputDecoration(
                      
-                        labelStyle: TextStyle(
-                          color: AppColors.grey,
-                        ),
-                        fillColor: AppColors.mintGreen,
-                        prefixIcon: Icon(
-                          Icons.password,
-                          color: AppColors.mintGreen,
-                        ),
-                      ),
+                      //   labelStyle: TextStyle(
+                      //     color: AppColors.grey,
+                      //   ),
+                      //   fillColor: AppColors.mintGreen,
+                      //   prefixIcon: Icon(
+                      //     Icons.password,
+                      //     color: AppColors.mintGreen,
+                      //   ),
+                      // ),
                     ),
                    
                     

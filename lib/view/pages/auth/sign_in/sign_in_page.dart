@@ -77,17 +77,17 @@ class _SignInPageState extends State<SignInPage> {
                           }
                           return null;
                         },
-                        decoration: const InputDecoration(
-                          labelText: 'User name',
-                          labelStyle: TextStyle(
-                            color: AppColors.grey,
-                          ),
-                          fillColor: AppColors.mintGreen,
-                          prefixIcon: Icon(
-                            Icons.email,
-                            color: AppColors.mintGreen,
-                          ),
-                        ),
+                        // decoration: const InputDecoration(
+                        //   labelText: 'User name',
+                        //   labelStyle: TextStyle(
+                        //     color: AppColors.grey,
+                        //   ),
+                        //   fillColor: AppColors.mintGreen,
+                        //   prefixIcon: Icon(
+                        //     Icons.email,
+                        //     color: AppColors.mintGreen,
+                        //   ),
+                        // ),
                       ),
                        SizedBox(
                         height: 20.0.h,
@@ -106,17 +106,17 @@ class _SignInPageState extends State<SignInPage> {
                           }
                           return null;
                         },
-                        decoration: const InputDecoration(
-                          labelText: 'Password',
-                          labelStyle: TextStyle(
-                            color: AppColors.grey,
-                          ),
-                          fillColor: AppColors.mintGreen,
-                          prefixIcon: Icon(
-                            Icons.password,
-                            color: AppColors.mintGreen,
-                          ),
-                        ),
+                        // decoration: const InputDecoration(
+                        //   labelText: 'Password',
+                        //   labelStyle: TextStyle(
+                        //     color: AppColors.grey,
+                        //   ),
+                        //   fillColor: AppColors.mintGreen,
+                        //   prefixIcon: Icon(
+                        //     Icons.password,
+                        //     color: AppColors.mintGreen,
+                        //   ),
+                        // ),
                       ),
                        SizedBox(
                         height: 5.0.h,

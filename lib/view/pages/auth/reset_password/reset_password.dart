@@ -90,17 +90,17 @@ class _ResetPasswordState extends State<ResetPassword> {
                         }
                         return null;
                       },
-                      decoration: const InputDecoration(
-                        labelText: 'Password',
-                        labelStyle: TextStyle(
-                          color: AppColors.grey,
-                        ),
-                        fillColor: AppColors.mintGreen,
-                        prefixIcon: Icon(
-                          Icons.password,
-                          color: AppColors.mintGreen,
-                        ),
-                      ),
+                      // decoration: const InputDecoration(
+                      //   labelText: 'Password',
+                      //   labelStyle: TextStyle(
+                      //     color: AppColors.grey,
+                      //   ),
+                      //   fillColor: AppColors.mintGreen,
+                      //   prefixIcon: Icon(
+                      //     Icons.password,
+                      //     color: AppColors.mintGreen,
+                      //   ),
+                      // ),
                     ),
                     const SizedBox(
                       height: 20.0,
@@ -119,17 +119,17 @@ class _ResetPasswordState extends State<ResetPassword> {
                         }
                         return null;
                       },
-                      decoration: const InputDecoration(
-                        labelText: 'Password',
-                        labelStyle: TextStyle(
-                          color: AppColors.grey,
-                        ),
-                        fillColor: AppColors.mintGreen,
-                        prefixIcon: Icon(
-                          Icons.password,
-                          color: AppColors.mintGreen,
-                        ),
-                      ),
+                      // decoration: const InputDecoration(
+                      //   labelText: 'Password',
+                      //   labelStyle: TextStyle(
+                      //     color: AppColors.grey,
+                      //   ),
+                      //   fillColor: AppColors.mintGreen,
+                      //   prefixIcon: Icon(
+                      //     Icons.password,
+                      //     color: AppColors.mintGreen,
+                      //   ),
+                      // ),
                     ),
                     const SizedBox(
                       height: 20.0,
@@ -139,7 +139,7 @@ class _ResetPasswordState extends State<ResetPassword> {
                       backgroundColor: AppColors.mintGreen,
                       titleColor: AppColors.white,
                       width: 300,
-                      height: 50,
+                      // height: 50,
                       borderRadius: 12,
                       titleSize: 16,
                       onPressed: () {

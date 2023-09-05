@@ -16,15 +16,15 @@ class CongratsPage extends StatelessWidget {
       child: Scaffold(
         body: Center(
           child: Padding(
-            padding: EdgeInsets.only(top: 250.h),
+            padding: EdgeInsets.only(top: 250.h,bottom: 20.h),
             child: Column(
               children: [
-                 Icon(
+                Icon(
                   Icons.check_circle,
                   color: AppColors.mintGreen,
                   size: 100.w,
                 ),
-                 PublicText(
+                PublicText(
                   txt: 'congrats!',
                   align: TextAlign.center,
                   size: 20.w,
@@ -33,29 +33,19 @@ class CongratsPage extends StatelessWidget {
                 SizedBox(
                   height: 10.h,
                 ),
-                 PublicText(
+                PublicText(
                   txt: 'Your account is successfully \n created',
                   align: TextAlign.center,
                   fw: FontWeight.w400,
                   size: 16.sp,
                   color: Colors.black38,
                 ),
-                200.ph,
+                const Spacer(),
                 PublicButton(
                   title: "Continue",
-                  backgroundColor: AppColors.mintGreen,
-                  titleColor: AppColors.white,
                   width: 327.w,
-                  borderRadius: 12,
                   titleSize: 16,
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const SignInPage(),
-                      ),
-                    );
-                  },
+                  onPressed: () {},
                 ),
               ],
             ),
