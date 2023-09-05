@@ -17,6 +17,7 @@ dependencies:
     sdk: flutter
   flutter_screenutil: ^5.8.4
   internet_connection_checker: ^1.0.0+1
+  intl: ^0.18.0
 
 dev_dependencies:
   flutter_lints: ^2.0.0
@@ -26,11 +27,9 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-      - assets/images/
-
+    - assets/images/
 
 flutter_intl:
   enabled: true
   output_dir: lib/resources/localization/generated
   arb_dir: lib/resources/localization/l10n
-
