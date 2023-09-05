@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
-
+import 'package:wealth_wise/view/pages/settings/about/about_page.dart';
+import 'package:wealth_wise/view/pages/settings/categories/categories_page.dart';
+import 'package:wealth_wise/view/pages/settings/notifications/notifications_apge.dart';
+import 'package:wealth_wise/view/pages/settings/privacy/privacy_page.dart';
+import 'package:wealth_wise/view/pages/settings/profile/profile_page.dart';
+import 'package:wealth_wise/view/pages/settings/security/security_page.dart';
 
 class AppRoutes {
   AppRoutes._private();
@@ -12,6 +17,14 @@ class AppRoutes {
   static const String welcome = "welcome";
   static const String login = "login";
   static const String signUp = "signUp";
+
+  /// Settings
+  static const String about = "about";
+  static const String categories = "categories";
+  static const String notifications = "notifications";
+  static const String privacy = "privacy";
+  static const String profile = "profile";
+  static const String security = "security";
 }
 
 class RouteGenerate {
@@ -21,6 +34,32 @@ class RouteGenerate {
       case AppRoutes.splash:
         return MaterialPageRoute(
           builder: (_) => const Scaffold(),
+        );
+
+      /// Settings
+      case AppRoutes.about:
+        return MaterialPageRoute(
+          builder: (_) => const AboutPage(),
+        );
+      case AppRoutes.categories:
+        return MaterialPageRoute(
+          builder: (_) => const CategoriesPage(),
+        );
+      case AppRoutes.notifications:
+        return MaterialPageRoute(
+          builder: (_) => const NotificationPage(),
+        );
+      case AppRoutes.privacy:
+        return MaterialPageRoute(
+          builder: (_) => const PrivacyPage(),
+        );
+      case AppRoutes.profile:
+        return MaterialPageRoute(
+          builder: (_) => const ProfilePage(),
+        );
+      case AppRoutes.security:
+        return MaterialPageRoute(
+          builder: (_) => const SecurityPage(),
         );
       default:
         return MaterialPageRoute(

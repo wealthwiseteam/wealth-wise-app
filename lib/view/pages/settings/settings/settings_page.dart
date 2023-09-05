@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:wealth_wise/resources/router/app_router.dart';
 import 'package:wealth_wise/resources/styles/app_colors.dart';
 import 'package:wealth_wise/view/widgets/public_divider.dart';
 import 'package:wealth_wise/view/widgets/public_text.dart';
@@ -29,49 +30,49 @@ class SettingsPage extends StatelessWidget {
           child: Column(
             children: [
               PublicListTile(
-                onTap: (){},
+                onTap: () => Navigator.pushNamed(context, AppRoutes.profile),
                 title: S.of(context).profile,
                 icon: AppAssets.iconUser,
               ),
               const PublicDivider(),
               PublicListTile(
-                onTap: (){},
+                onTap: () {},
                 title: S.of(context).accounts,
                 icon: AppAssets.iconWallet,
               ),
               const PublicDivider(),
               PublicListTile(
-                onTap: (){},
+                onTap: () => Navigator.pushNamed(context, AppRoutes.privacy),
                 title: S.of(context).personalDataPrivacy,
                 icon: AppAssets.iconShieldTick,
               ),
               const PublicDivider(),
               PublicListTile(
-                onTap: (){},
+               onTap: () => Navigator.pushNamed(context, AppRoutes.security),
                 title: S.of(context).security,
                 icon: AppAssets.iconLock,
               ),
               const PublicDivider(),
               PublicListTile(
-                onTap: (){},
+                onTap: () => Navigator.pushNamed(context, AppRoutes.notifications),
                 title: S.of(context).notifications,
                 icon: AppAssets.iconNotification,
               ),
               const PublicDivider(),
               PublicListTile(
-                onTap: (){},
+                onTap: () => Navigator.pushNamed(context, AppRoutes.categories),
                 title: S.of(context).categories,
                 icon: AppAssets.iconBubble,
               ),
               const PublicDivider(),
               PublicListTile(
-                onTap: (){},
+                onTap: () => Navigator.pushNamed(context, AppRoutes.about),
                 title: S.of(context).about,
                 icon: AppAssets.iconInfoCircle,
               ),
               const PublicDivider(),
               PublicListTile(
-                onTap: (){},
+                onTap: () {},
                 title: S.of(context).logout,
                 icon: AppAssets.iconLogout,
               ),
