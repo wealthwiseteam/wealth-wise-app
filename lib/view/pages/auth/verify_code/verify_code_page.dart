@@ -5,10 +5,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/resources/constants/app_assets.dart';
 import 'package:wealth_wise/resources/styles/app_colors.dart';
 
-import '../../widgets/public_button.dart';
-import '../../widgets/public_text.dart';
-import '../../widgets/verify_code.dart';
-import 'emailVerification_page.dart';
+import '../../../widgets/public_button.dart';
+import '../../../widgets/public_text.dart';
+import 'components/verify_code.dart';
+import '../email_verification/email_verification_page.dart';
 
 class VerifyCodePage extends StatefulWidget {
   const VerifyCodePage({super.key});

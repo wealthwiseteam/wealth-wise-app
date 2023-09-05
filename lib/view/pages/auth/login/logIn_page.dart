@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
-import '../../../resources/constants/app_assets.dart';
-import '../../../resources/styles/app_colors.dart';
-import '../../widgets/public_button.dart';
-import 'signIn_page.dart';
+import '../../../../resources/constants/app_assets.dart';
+import '../../../../resources/styles/app_colors.dart';
+import '../../../widgets/public_button.dart';
+import '../sign_in/sign_in_page.dart';
 
 
 

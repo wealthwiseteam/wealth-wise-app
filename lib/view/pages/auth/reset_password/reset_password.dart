@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import '../../../resources/constants/app_assets.dart';
-import '../../../resources/styles/app_colors.dart';
-import '../../widgets/public_button.dart';
-import '../../widgets/public_text.dart';
-import '../../widgets/public_text_form_field.dart';
-import 'forgetPassword_page.dart';
+import '../../../../resources/constants/app_assets.dart';
+import '../../../../resources/styles/app_colors.dart';
+import '../../../widgets/public_button.dart';
+import '../../../widgets/public_text.dart';
+import '../../../widgets/public_text_form_field.dart';
+import '../forget_password/forget_password_page.dart';
 
 class ResetPassword extends StatefulWidget {
   const ResetPassword({super.key});

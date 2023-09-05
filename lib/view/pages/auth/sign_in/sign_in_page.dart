@@ -1,85 +1,79 @@
-// ignore_for_file: file_names
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:wealth_wise/view/pages/auth/signIn_page.dart';
 
+import '../../../../resources/constants/app_assets.dart';
+import '../../../../resources/styles/app_colors.dart';
+import '../../../widgets/public_button.dart';
+import '../../../widgets/public_divider.dart';
+import '../../../widgets/public_text.dart';
+import '../../../widgets/public_text_form_field.dart';
+import '../sign_up/sign_up_page.dart';
 
-import '../../../resources/constants/app_assets.dart';
-import '../../../resources/styles/app_colors.dart';
-import '../../widgets/public_button.dart';
-import '../../widgets/public_text.dart';
-import '../../widgets/public_text_form_field.dart';
-import 'forgetPassword_page.dart';
-
-
-class SignUpPage extends StatefulWidget {
-  const SignUpPage ({super.key});
+class SignInPage extends StatefulWidget {
+  const SignInPage({super.key});
 
   @override
-  State<SignUpPage > createState() => _SignUpPageState();
+  State< SignInPage> createState() => _SignInPageState();
 }
 
-class _SignUpPageState extends State<SignUpPage > {
+class _SignInPageState extends State<SignInPage> {
   var emailController = TextEditingController();
 
-  var usernameController = TextEditingController();
-
+ 
   var passwordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(fit: StackFit.expand, children: [
+      body: Stack(children: [
         Container(
-          height: MediaQuery.of(context).size.height / 0.8.h,
+          height: MediaQuery.of(context).size.height / 0.5.h,
+          width:MediaQuery.of(context).size.width.w ,
           color: AppColors.lightGrey,
           child: Padding(
-            padding: EdgeInsets.symmetric(vertical: 140.w),
+            padding:  EdgeInsets.symmetric(vertical: 140.w),
             child: Image.asset(
-              AppAssets.signUp,
+              AppAssets.signIn,
               alignment: Alignment.topCenter,
             ),
           ),
         ),
-        Column(children: [
-          Padding(
-            padding: EdgeInsets.symmetric(vertical: 180.w),
-          ),
-          Expanded(
-            child: Container(
+        SingleChildScrollView(
+          child: Column(children: [
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 180.w),
+            ),
+            Container(
               height: MediaQuery.of(context).size.height / 1.5.h,
-              width: MediaQuery.of(context).size.width.w,
+              width: MediaQuery.of(context).size.width,
               decoration: const BoxDecoration(
                 color: AppColors.white,
                 borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(32),
-                    topRight: Radius.circular(32)),
+                    topLeft: Radius.circular(32), topRight: Radius.circular(32)),
               ),
               child: Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: SingleChildScrollView(
                   child: Column(
-                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       const PublicText(
-                        txt: 'Create new account',
+                        txt: 'Welcome back Engy',
                         align: TextAlign.center,
                         size: 20,
                       ),
                        SizedBox(
-                        height: 10.h,
+                        height: 20.h,
                       ),
                       PublicTextFormField(
                         contentPadding:  EdgeInsets.symmetric(
                             horizontal: 10.h, vertical: 10.w),
-                        hint: 'User name',
-                        keyboardtype: TextInputType.name,
+                        hint: 'Email',
+                        keyboardtype: TextInputType.emailAddress,
                         prefixIcon: Icons.person,
                         showprefixIcon: true,
-                        controller: usernameController,
-                        validator: (username) {
-                          if (username!.isEmpty) {
-                            return 'Please enter your username';
+                        controller: emailController,
+                        validator: (email) {
+                          if (email!.isEmpty) {
+                            return 'Please enter your email';
                           }
                           return null;
                         },
@@ -96,39 +90,10 @@ class _SignUpPageState extends State<SignUpPage > {
                         ),
                       ),
                        SizedBox(
-                        height: 10.h,
+                        height: 20.0.h,
                       ),
                       PublicTextFormField(
-                        contentPadding:  EdgeInsets.symmetric(
-                            horizontal: 10.h, vertical: 10.w),
-                        hint: ' Email',
-                        keyboardtype: TextInputType.emailAddress,
-                        prefixIcon: Icons.email,
-                        showprefixIcon: true,
-                        controller: emailController,
-                        validator: (email) {
-                          if (email!.isEmpty) {
-                            return 'Please enter your username';
-                          }
-                          return null;
-                        },
-                        decoration: const InputDecoration(
-                          labelText: 'Email',
-                          labelStyle: TextStyle(
-                            color: AppColors.grey,
-                          ),
-                          fillColor: AppColors.mintGreen,
-                          prefixIcon: Icon(
-                            Icons.email,
-                            color: AppColors.mintGreen,
-                          ),
-                        ),
-                      ),
-                       SizedBox(
-                        height: 10.h,
-                      ),
-                      PublicTextFormField(
-                        contentPadding:  EdgeInsets.symmetric(
+                        contentPadding: EdgeInsets.symmetric(
                             horizontal: 10.h, vertical: 10.w),
                         hint: 'Password',
                         keyboardtype: TextInputType.text,
@@ -154,10 +119,26 @@ class _SignUpPageState extends State<SignUpPage > {
                         ),
                       ),
                        SizedBox(
-                        height: 30.h,
+                        height: 5.0.h,
+                      ),
+                      Row(
+                        children: [
+                          const Spacer(),
+                          TextButton(
+                              onPressed: () {},
+                              child: const PublicText(
+                                txt: 'Forget password?',
+                                size: 12,
+                                color: AppColors.mintGreen,
+                                fw: FontWeight.w400,
+                              )),
+                        ],
+                      ),
+                       SizedBox(
+                        height: 5.0.h,
                       ),
                       PublicButton(
-                        title: "Sign up",
+                        title: "Sign in",
                         backgroundColor: AppColors.mintGreen,
                         titleColor: AppColors.white,
                         width: 300.w,
@@ -167,41 +148,62 @@ class _SignUpPageState extends State<SignUpPage > {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const ForgetPasswordPage()),
+                                builder: (context) => const SignUpPage()),
                           );
                         },
                       ),
                        SizedBox(
-                        height: 10.h,
+                        height: 20.0.h,
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                      const Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          const Text('Have an account?',
-                              style: TextStyle(fontSize: 15.0)),
-                          TextButton(
-                              onPressed: () {
-                                Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const SignInPage()),
-                          );
-                              },
-                              child: const Text(
-                                'Sign in',
-                                style: TextStyle(
-                                    fontSize: 15.0,
-                                    color: AppColors.mintGreen),
-                              ))
+                          PublicDivider(),
+                          PublicText(
+                            txt: 'Or sign in with',
+                            size: 14,
+                            ff: "Inter",
+                            fw: FontWeight.w300,
+                            color: AppColors.grey,
+                          ),
+                          PublicDivider(),
                         ],
                       ),
+                       SizedBox(
+                        height: 10.0.h,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            'assets/images/google.png',
+                            fit: BoxFit.fill,
+                            width: 20.w,
+                            height: 20.h,
+                          ),
+                          Image.asset(
+                            'assets/images/facebook.png',
+                            fit: BoxFit.fill,
+                          width: 20.w,
+                            height: 20.h,
+                          ),
+                          Image.asset(
+                            'assets/images/twitter.png',
+                            fit: BoxFit.fill,
+                           width: 20.w,
+                            height: 20.h,
+                          ),
+                        ],
+                      )
                     ],
                   ),
                 ),
               ),
             ),
-          ),
-        ])
+          ]),
+        )
       ]),
     );
   }

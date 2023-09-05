@@ -4,12 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
-import '../../../resources/constants/app_assets.dart';
-import '../../../resources/styles/app_colors.dart';
-import '../../widgets/public_button.dart';
-import '../../widgets/public_text.dart';
-import '../../widgets/public_text_form_field.dart';
-import 'emailVerification_page.dart';
+import '../../../../resources/constants/app_assets.dart';
+import '../../../../resources/styles/app_colors.dart';
+import '../../../widgets/public_button.dart';
+import '../../../widgets/public_text.dart';
+import '../../../widgets/public_text_form_field.dart';
+import '../email_verification/email_verification_page.dart';
 
 class CreateNewPasswordPage extends StatefulWidget {
   const CreateNewPasswordPage({super.key});

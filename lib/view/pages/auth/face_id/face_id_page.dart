@@ -3,9 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/resources/constants/app_assets.dart';
 import 'package:wealth_wise/resources/styles/app_colors.dart';
 
-import '../../widgets/public_button.dart';
-import '../../widgets/public_text.dart';
-import 'signIn_page.dart';
+import '../../../widgets/public_button.dart';
+import '../../../widgets/public_text.dart';
+import '../sign_in/sign_in_page.dart';
 
 class FaceIdPage extends StatefulWidget {
   const FaceIdPage({super.key});

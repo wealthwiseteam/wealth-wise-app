@@ -3,9 +3,9 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/resources/localization/generated/l10n.dart';
 import 'package:wealth_wise/resources/styles/app_colors.dart';
-import 'package:wealth_wise/view/pages/auth/congrats_page.dart';
+import 'package:wealth_wise/view/pages/auth/congrats/congrats_page.dart';
 
-import 'view/widgets/verify_code.dart';
+import 'view/pages/auth/verify_code/components/verify_code.dart';
 
 void main() {
   runApp(const MyApp());
