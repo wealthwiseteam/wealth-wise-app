@@ -32,5 +32,18 @@
     "_comment8_": "----------- congrats-----------",
     "congrats" : "Congrats!",
     "congratsSubtitle": "Your account is successfully created",
-    "continueWord": "Continue"
+    "continueWord": "Continue",
+    "_comment9_": "--------------------- Settings ------------------------",
+    "settings":"Settings",
+    "profile":"Profile",
+    "accounts": "Accounts",
+    "security":"Security",
+    "logout":"Logout",
+    "personalDataPrivacy":"Personal Data & Privacy",
+    "notifications":"Notifications",
+    "categories":"categories",
+    "about":"About",
+    "_comment10_": "--------------------- profile ------------------------"
+
+
 }

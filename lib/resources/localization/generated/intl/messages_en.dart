@@ -22,6 +22,8 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "_comment10_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- profile ------------------------"),
         "_comment1_": MessageLookupByLibrary.simpleMessage(
             "----------- Welcome -----------"),
         "_comment2_": MessageLookupByLibrary.simpleMessage(
@@ -38,8 +40,13 @@ class MessageLookup extends MessageLookupByLibrary {
             "----------- Face Id -----------"),
         "_comment8_": MessageLookupByLibrary.simpleMessage(
             "----------- congrats-----------"),
+        "_comment9_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- Settings ------------------------"),
         "_comment_": MessageLookupByLibrary.simpleMessage(
             "--------------------- Auth ---------------------"),
+        "about": MessageLookupByLibrary.simpleMessage("About"),
+        "accounts": MessageLookupByLibrary.simpleMessage("Accounts"),
+        "categories": MessageLookupByLibrary.simpleMessage("categories"),
         "congrats": MessageLookupByLibrary.simpleMessage("Congrats!"),
         "congratsSubtitle": MessageLookupByLibrary.simpleMessage(
             "Your account is successfully created"),
@@ -57,13 +64,20 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("Forgot Password"),
         "haveAccount": MessageLookupByLibrary.simpleMessage("Have an account?"),
+        "logout": MessageLookupByLibrary.simpleMessage("Logout"),
         "maybeLater": MessageLookupByLibrary.simpleMessage("Maybe Later"),
+        "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "orSignInWith": MessageLookupByLibrary.simpleMessage("Or Sign in with"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "personalDataPrivacy":
+            MessageLookupByLibrary.simpleMessage("Personal Data & Privacy"),
         "phoneNumber": MessageLookupByLibrary.simpleMessage("Phone Number"),
+        "profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "register": MessageLookupByLibrary.simpleMessage("Register"),
         "resendAgain": MessageLookupByLibrary.simpleMessage("resendAgain"),
+        "security": MessageLookupByLibrary.simpleMessage("Security"),
         "send": MessageLookupByLibrary.simpleMessage("send"),
+        "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign in"),
         "signInTitle": MessageLookupByLibrary.simpleMessage("Hi, Welcome Back"),
         "signUpTitle":

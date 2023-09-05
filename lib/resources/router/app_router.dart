@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../main.dart';
 
 class AppRoutes {
   AppRoutes._private();
@@ -21,7 +20,7 @@ class RouteGenerate {
       ///Intro
       case AppRoutes.splash:
         return MaterialPageRoute(
-          builder: (_) => const MyHomePage(title: ""),
+          builder: (_) => const Scaffold(),
         );
       default:
         return MaterialPageRoute(

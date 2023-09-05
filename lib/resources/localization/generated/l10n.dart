@@ -389,6 +389,116 @@ class S {
       args: [],
     );
   }
+
+  /// `--------------------- Settings ------------------------`
+  String get _comment9_ {
+    return Intl.message(
+      '--------------------- Settings ------------------------',
+      name: '_comment9_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Settings`
+  String get settings {
+    return Intl.message(
+      'Settings',
+      name: 'settings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Profile`
+  String get profile {
+    return Intl.message(
+      'Profile',
+      name: 'profile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Accounts`
+  String get accounts {
+    return Intl.message(
+      'Accounts',
+      name: 'accounts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Security`
+  String get security {
+    return Intl.message(
+      'Security',
+      name: 'security',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Logout`
+  String get logout {
+    return Intl.message(
+      'Logout',
+      name: 'logout',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Personal Data & Privacy`
+  String get personalDataPrivacy {
+    return Intl.message(
+      'Personal Data & Privacy',
+      name: 'personalDataPrivacy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Notifications`
+  String get notifications {
+    return Intl.message(
+      'Notifications',
+      name: 'notifications',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `categories`
+  String get categories {
+    return Intl.message(
+      'categories',
+      name: 'categories',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `About`
+  String get about {
+    return Intl.message(
+      'About',
+      name: 'about',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `--------------------- profile ------------------------`
+  String get _comment10_ {
+    return Intl.message(
+      '--------------------- profile ------------------------',
+      name: '_comment10_',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
