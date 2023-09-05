@@ -25,9 +25,9 @@ class MySnackBar extends Flushbar {
           txt: message,
           color: Colors.white,
           size: 12.sp,
-           maxLines: 3,
-  overflow: TextOverflow.ellipsis,
-   softWrap: true, 
+          maxLines: 3,
+          overflow: TextOverflow.ellipsis,
+          softWrap: true,
         ),
       ),
       margin: const EdgeInsets.symmetric(

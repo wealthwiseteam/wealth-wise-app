@@ -16,6 +16,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   flutter_screenutil: ^5.8.4
+  google_fonts: ^5.1.0
   internet_connection_checker: ^1.0.0+1
   intl: ^0.18.0
 
