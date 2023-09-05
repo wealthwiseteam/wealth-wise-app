@@ -43,7 +43,15 @@
     "notifications":"Notifications",
     "categories":"categories",
     "about":"About",
-    "_comment10_": "--------------------- profile ------------------------"
+    "_comment10_": "--------------------- profile ------------------------",
+    "firstName":"First Name",
+    "lastName":"Last Name",
+    "save":"Save",
+    "enterFirstName":"Please, enter your first name",
+    "enterLastName":"Please, enter your first name",
+    "enterEmail":"Please, enter your first name",
+    "enterPhoneNumber":"Please, enter your first name"
+
 
 
 }

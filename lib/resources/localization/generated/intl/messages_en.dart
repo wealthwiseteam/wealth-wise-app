@@ -58,12 +58,22 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Email Verification"),
         "emailVerificationSubtitle": MessageLookupByLibrary.simpleMessage(
             "You will receive a 4 digit code to verify next"),
+        "enterEmail": MessageLookupByLibrary.simpleMessage(
+            "Please, enter your first name"),
+        "enterFirstName": MessageLookupByLibrary.simpleMessage(
+            "Please, enter your first name"),
+        "enterLastName": MessageLookupByLibrary.simpleMessage(
+            "Please, enter your first name"),
+        "enterPhoneNumber": MessageLookupByLibrary.simpleMessage(
+            "Please, enter your first name"),
         "faceId": MessageLookupByLibrary.simpleMessage("Face ID"),
         "faceIdSubtitle": MessageLookupByLibrary.simpleMessage(
             "Use face ID to sign in quickly and securely"),
+        "firstName": MessageLookupByLibrary.simpleMessage("First Name"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("Forgot Password"),
         "haveAccount": MessageLookupByLibrary.simpleMessage("Have an account?"),
+        "lastName": MessageLookupByLibrary.simpleMessage("Last Name"),
         "logout": MessageLookupByLibrary.simpleMessage("Logout"),
         "maybeLater": MessageLookupByLibrary.simpleMessage("Maybe Later"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
@@ -75,6 +85,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "register": MessageLookupByLibrary.simpleMessage("Register"),
         "resendAgain": MessageLookupByLibrary.simpleMessage("resendAgain"),
+        "save": MessageLookupByLibrary.simpleMessage("Save"),
         "security": MessageLookupByLibrary.simpleMessage("Security"),
         "send": MessageLookupByLibrary.simpleMessage("send"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),

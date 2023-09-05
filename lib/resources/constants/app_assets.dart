@@ -1,7 +1,8 @@
 class AppAssets{
   AppAssets._();
 
-  static String image = "assets/images/af.png";
+  /// Images
+  static String imageProfile = "assets/images/profile.png";
 
 
 

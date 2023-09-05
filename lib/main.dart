@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:wealth_wise/resources/styles/app_colors.dart';
+import 'package:wealth_wise/resources/styles/app_theme.dart';
 
 import 'resources/localization/generated/l10n.dart';
+import 'resources/router/app_router.dart';
 import 'view/pages/settings/settings/settings_page.dart';
 
 void main() {
@@ -30,12 +33,11 @@ class MyApp extends StatelessWidget {
             GlobalCupertinoLocalizations.delegate,
           ],
           supportedLocales: S.delegate.supportedLocales,
-          theme: ThemeData(
-            useMaterial3: true,
-          ),
+          theme: AppTheme.light,
           scrollBehavior: ScrollConfiguration.of(context).copyWith(
             physics: const BouncingScrollPhysics(),
           ),
+          onGenerateRoute: RouteGenerate.getRoute,
           home: const SettingsPage(),
         );
       },

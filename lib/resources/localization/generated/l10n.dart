@@ -499,6 +499,76 @@ class S {
       args: [],
     );
   }
+
+  /// `First Name`
+  String get firstName {
+    return Intl.message(
+      'First Name',
+      name: 'firstName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Last Name`
+  String get lastName {
+    return Intl.message(
+      'Last Name',
+      name: 'lastName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Save`
+  String get save {
+    return Intl.message(
+      'Save',
+      name: 'save',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please, enter your first name`
+  String get enterFirstName {
+    return Intl.message(
+      'Please, enter your first name',
+      name: 'enterFirstName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please, enter your first name`
+  String get enterLastName {
+    return Intl.message(
+      'Please, enter your first name',
+      name: 'enterLastName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please, enter your first name`
+  String get enterEmail {
+    return Intl.message(
+      'Please, enter your first name',
+      name: 'enterEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please, enter your first name`
+  String get enterPhoneNumber {
+    return Intl.message(
+      'Please, enter your first name',
+      name: 'enterPhoneNumber',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
