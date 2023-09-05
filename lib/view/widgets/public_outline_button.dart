@@ -43,10 +43,10 @@ class PublicOutlineButton extends StatelessWidget {
           ),
         ),
         child: Padding(
-          padding: EdgeInsets.symmetric(vertical: verticalpadding ?? 16.h),
+          padding: EdgeInsets.symmetric(vertical: verticalpadding ?? 15.h),
           child: PublicText(
             txt: title,
-            size: titleSize ?? 22.sp,
+            size: titleSize ?? 16.sp,
             color: titleColor,
             fw: FontWeight.w600, // semi bold
           ),
