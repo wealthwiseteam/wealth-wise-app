@@ -33,8 +33,10 @@ class MyApp extends StatelessWidget {
           ],
           supportedLocales: S.delegate.supportedLocales,
           theme: ThemeData(
-            colorScheme:
-                ColorScheme.fromSeed(seedColor: const Color(0xFF105161)),
+            fontFamily: "Inter",
+            colorScheme: ColorScheme.fromSeed(
+              seedColor: AppColors.mintGreen,
+            ),
             useMaterial3: true,
           ),
           scrollBehavior: ScrollConfiguration.of(context).copyWith(
