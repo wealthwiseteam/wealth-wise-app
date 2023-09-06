@@ -125,8 +125,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Create New Account"),
         "sports": MessageLookupByLibrary.simpleMessage("Sports"),
         "targetAmount": MessageLookupByLibrary.simpleMessage("Target amount"),
-        "thingsSaveFor":
-            MessageLookupByLibrary.simpleMessage("Some things people save for"),
+        "thingsSaveFor": MessageLookupByLibrary.simpleMessage(
+            "Some things people save for:"),
         "travelling": MessageLookupByLibrary.simpleMessage("Travelling"),
         "useFaceId": MessageLookupByLibrary.simpleMessage("Use Face ID"),
         "userName": MessageLookupByLibrary.simpleMessage("User Name"),

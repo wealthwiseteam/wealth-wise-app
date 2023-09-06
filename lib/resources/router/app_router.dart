@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wealth_wise/data/models/settings/category_info_model.dart';
+import 'package:wealth_wise/view/pages/goals/create_goal/create_goal_page.dart';
 import 'package:wealth_wise/view/pages/settings/about/about_page.dart';
 import 'package:wealth_wise/view/pages/settings/categories/categories_page.dart';
 import 'package:wealth_wise/view/pages/settings/category_settings/category_settings_page.dart';
@@ -28,6 +29,10 @@ class AppRoutes {
   static const String profile = "profile";
   static const String security = "security";
   static const String categorySettings = "category settings";
+
+  /// Goals
+  static const String createGoal = "create goal";
+  
 }
 
 class RouteGenerate {
@@ -70,6 +75,13 @@ class RouteGenerate {
             categoryInfo: routeSettings.arguments as CategoryInfo,
           ),
         );
+
+      /// create Goals
+      case AppRoutes.createGoal:
+        return MaterialPageRoute(
+          builder: (_) => const CreateGoalPage(),
+        );
+      
       default:
         return MaterialPageRoute(
             builder: (_) => _undfinedPage(route: routeSettings.name));

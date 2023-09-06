@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:wealth_wise/data/models/goals/goal_model.dart';
 import 'package:wealth_wise/resources/extensions/extensions.dart';
+import 'package:wealth_wise/resources/router/app_router.dart';
 
 import '../../../../resources/constants/app_assets.dart';
 import '../../../../resources/localization/generated/l10n.dart';
@@ -58,7 +59,8 @@ class MyGoalsPage extends StatelessWidget {
                 const PublicDivider(),
                 32.ph,
                 InkWell(
-                  onTap: () {},
+                  onTap: () =>
+                      Navigator.pushNamed(context, AppRoutes.createGoal),
                   child: PublicText(
                     txt: S.of(context).createGoal,
                     color: AppColors.mintGreen,

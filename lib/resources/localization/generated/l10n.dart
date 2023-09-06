@@ -790,10 +790,10 @@ class S {
     );
   }
 
-  /// `Some things people save for`
+  /// `Some things people save for:`
   String get thingsSaveFor {
     return Intl.message(
-      'Some things people save for',
+      'Some things people save for:',
       name: 'thingsSaveFor',
       desc: '',
       args: [],
