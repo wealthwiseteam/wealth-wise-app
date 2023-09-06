@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wealth_wise/data/models/settings/category_info_model.dart';
 import 'package:wealth_wise/view/pages/settings/about/about_page.dart';
 import 'package:wealth_wise/view/pages/settings/categories/categories_page.dart';
 import 'package:wealth_wise/view/pages/settings/category_settings/category_settings_page.dart';
@@ -65,7 +66,9 @@ class RouteGenerate {
         );
       case AppRoutes.categorySettings:
         return MaterialPageRoute(
-          builder: (_) => const CategorySettingsPage(),
+          builder: (_) => CategorySettingsPage(
+            categoryInfo: routeSettings.arguments as CategoryInfo,
+          ),
         );
       default:
         return MaterialPageRoute(

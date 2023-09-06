@@ -769,6 +769,36 @@ class S {
       args: [],
     );
   }
+
+  /// `Edit Category`
+  String get editCategory {
+    return Intl.message(
+      'Edit Category',
+      name: 'editCategory',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name`
+  String get name {
+    return Intl.message(
+      'Name',
+      name: 'name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Show`
+  String get show {
+    return Intl.message(
+      'Show',
+      name: 'show',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

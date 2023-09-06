@@ -15,14 +15,16 @@ class PublicTextFormField extends StatefulWidget {
   final bool isPassword;
   final bool showprefixIcon;
   final bool showSuffixIcon;
+  final Color? suffixIconColor;
   final int? maxlenght;
+  final double borderRadius;
+  final EdgeInsetsGeometry? contentPadding;
   final Function()? ontap;
   final Function()? ontapPrefixIcon;
   final Function()? ontapSuffixIcon;
-  final double borderRadius;
-  final EdgeInsetsGeometry? contentPadding;
   final void Function(String)? onChanged;
   final void Function(String)? onSubmitted;
+  final InputBorder? border;
 
   const PublicTextFormField(
       {Key? key,
@@ -44,7 +46,8 @@ class PublicTextFormField extends StatefulWidget {
       this.contentPadding,
       this.onChanged,
       this.onSubmitted,
-      d})
+      this.border,
+      this.suffixIconColor})
       : super(key: key);
 
   @override
@@ -58,7 +61,7 @@ class _PublicTextFormFieldState extends State<PublicTextFormField> {
   Widget build(BuildContext context) {
     return TextFormField(
       textCapitalization: TextCapitalization.none,
-      maxLines: 2,
+      maxLines: 1,
       maxLength: widget.maxlenght,
       obscureText: widget.isPassword ? showPassword : false,
       keyboardType: widget.keyboardtype,
@@ -72,16 +75,18 @@ class _PublicTextFormFieldState extends State<PublicTextFormField> {
         hintText: widget.hint,
         hintStyle: const TextStyle(color: AppColors.grey),
         labelText: widget.label,
-        enabledBorder: const UnderlineInputBorder(
-          borderSide: BorderSide(
-            color: AppColors.mintGreen,
-          ),
-        ),
-        focusedBorder: const UnderlineInputBorder(
-          borderSide: BorderSide(
-            color: AppColors.mintGreen,
-          ),
-        ),
+        enabledBorder: widget.border ??
+            const UnderlineInputBorder(
+              borderSide: BorderSide(
+                color: AppColors.mintGreen,
+              ),
+            ),
+        focusedBorder: widget.border ??
+            const UnderlineInputBorder(
+              borderSide: BorderSide(
+                color: AppColors.mintGreen,
+              ),
+            ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(widget.borderRadius),
           borderSide: const BorderSide(color: Colors.red, width: 0.5),
@@ -112,7 +117,7 @@ class _PublicTextFormFieldState extends State<PublicTextFormField> {
         return Icon(
           widget.suffixIcon,
           size: 22,
-          color: AppColors.mintGreen,
+          color: widget.suffixIconColor ?? AppColors.mintGreen,
         );
       }
       return InkWell(

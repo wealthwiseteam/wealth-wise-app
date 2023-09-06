@@ -66,6 +66,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "continueWord": MessageLookupByLibrary.simpleMessage("Continue"),
         "dontReceiveCode":
             MessageLookupByLibrary.simpleMessage("Don’t receive a code?"),
+        "editCategory": MessageLookupByLibrary.simpleMessage("Edit Category"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "emailVerification":
             MessageLookupByLibrary.simpleMessage("Email Verification"),
@@ -94,6 +95,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "logoutWarning": MessageLookupByLibrary.simpleMessage(
             "Are you sure you want to logout?"),
         "maybeLater": MessageLookupByLibrary.simpleMessage("Maybe Later"),
+        "name": MessageLookupByLibrary.simpleMessage("Name"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "orSignInWith": MessageLookupByLibrary.simpleMessage("Or Sign in with"),
         "others": MessageLookupByLibrary.simpleMessage("Others"),
@@ -113,6 +115,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "send": MessageLookupByLibrary.simpleMessage("send"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "shopping": MessageLookupByLibrary.simpleMessage("Shopping"),
+        "show": MessageLookupByLibrary.simpleMessage("Show"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign in"),
         "signInTitle": MessageLookupByLibrary.simpleMessage("Hi, Welcome Back"),
         "signUpTitle":
