@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:wealth_wise/resources/extensions/extensions.dart';
 import 'package:wealth_wise/resources/router/app_router.dart';
 import 'package:wealth_wise/resources/styles/app_colors.dart';
 import 'package:wealth_wise/view/widgets/public_divider.dart';
@@ -8,6 +8,11 @@ import 'package:wealth_wise/view/widgets/public_text.dart';
 
 import '../../../../resources/constants/app_assets.dart';
 import '../../../../resources/localization/generated/l10n.dart';
+import '../../../widgets/public_button.dart';
+import '../../../widgets/public_list_tile.dart';
+import '../../../widgets/public_outline_button.dart';
+
+part 'components/logout_bottom_sheet.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});
@@ -48,13 +53,14 @@ class SettingsPage extends StatelessWidget {
               ),
               const PublicDivider(),
               PublicListTile(
-               onTap: () => Navigator.pushNamed(context, AppRoutes.security),
+                onTap: () => Navigator.pushNamed(context, AppRoutes.security),
                 title: S.of(context).security,
                 icon: AppAssets.iconLock,
               ),
               const PublicDivider(),
               PublicListTile(
-                onTap: () => Navigator.pushNamed(context, AppRoutes.notifications),
+                onTap: () =>
+                    Navigator.pushNamed(context, AppRoutes.notifications),
                 title: S.of(context).notifications,
                 icon: AppAssets.iconNotification,
               ),
@@ -72,7 +78,15 @@ class SettingsPage extends StatelessWidget {
               ),
               const PublicDivider(),
               PublicListTile(
-                onTap: () {},
+                onTap: () {
+                  showModalBottomSheet(
+                    context: context,
+                    backgroundColor: Colors.transparent,
+                    builder: (context) {
+                      return const LogoutBottomSheet();
+                    },
+                  );
+                },
                 title: S.of(context).logout,
                 icon: AppAssets.iconLogout,
               ),
@@ -84,35 +98,4 @@ class SettingsPage extends StatelessWidget {
   }
 }
 
-class PublicListTile extends StatelessWidget {
-  final String title;
-  final String icon;
-  final void Function()? onTap;
-  const PublicListTile({
-    super.key,
-    required this.title,
-    required this.icon,
-    this.onTap,
-  });
 
-  @override
-  Widget build(BuildContext context) {
-    return ListTile(
-      contentPadding: EdgeInsets.zero,
-      onTap: onTap,
-      leading: SvgPicture.asset(
-        icon,
-        width: 22.w,
-        height: 22.w,
-      ),
-      title: PublicText(
-        txt: title,
-      ),
-      trailing: Icon(
-        Icons.arrow_forward_ios_outlined,
-        color: AppColors.mintGreen,
-        size: 22.w,
-      ),
-    );
-  }
-}

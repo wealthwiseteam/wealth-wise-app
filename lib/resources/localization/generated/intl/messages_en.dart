@@ -56,6 +56,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "accounts": MessageLookupByLibrary.simpleMessage("Accounts"),
         "appUpdates": MessageLookupByLibrary.simpleMessage("App Updates"),
         "budgets": MessageLookupByLibrary.simpleMessage("Budgets"),
+        "cancel": MessageLookupByLibrary.simpleMessage("cancel"),
         "categories": MessageLookupByLibrary.simpleMessage("categories"),
         "congrats": MessageLookupByLibrary.simpleMessage("Congrats!"),
         "congratsSubtitle": MessageLookupByLibrary.simpleMessage(
@@ -85,6 +86,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "haveAccount": MessageLookupByLibrary.simpleMessage("Have an account?"),
         "lastName": MessageLookupByLibrary.simpleMessage("Last Name"),
         "logout": MessageLookupByLibrary.simpleMessage("Logout"),
+        "logoutWarning": MessageLookupByLibrary.simpleMessage(
+            "Are you sure you want to logout?"),
         "maybeLater": MessageLookupByLibrary.simpleMessage("Maybe Later"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "orSignInWith": MessageLookupByLibrary.simpleMessage("Or Sign in with"),
@@ -111,6 +114,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "userName": MessageLookupByLibrary.simpleMessage("User Name"),
         "verfiyCode": MessageLookupByLibrary.simpleMessage("verfiy Code"),
         "verfiyCodeSubtitle": MessageLookupByLibrary.simpleMessage(
-            "Please enter the code we emailed you")
+            "Please enter the code we emailed you"),
+        "yesLogout": MessageLookupByLibrary.simpleMessage("Yes, logout")
       };
 }

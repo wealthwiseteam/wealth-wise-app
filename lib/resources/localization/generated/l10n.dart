@@ -450,6 +450,36 @@ class S {
     );
   }
 
+  /// `Are you sure you want to logout?`
+  String get logoutWarning {
+    return Intl.message(
+      'Are you sure you want to logout?',
+      name: 'logoutWarning',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `cancel`
+  String get cancel {
+    return Intl.message(
+      'cancel',
+      name: 'cancel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Yes, logout`
+  String get yesLogout {
+    return Intl.message(
+      'Yes, logout',
+      name: 'yesLogout',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Personal Data & Privacy`
   String get personalDataPrivacy {
     return Intl.message(
