@@ -8,13 +8,14 @@ import '../../resources/styles/app_colors.dart';
 class PublicListTile extends StatelessWidget {
   final String title;
   final String icon;
+  final double? iconSize;
   final void Function()? onTap;
-  const PublicListTile({
-    super.key,
-    required this.title,
-    required this.icon,
-    this.onTap,
-  });
+  const PublicListTile(
+      {super.key,
+      required this.title,
+      required this.icon,
+      this.onTap,
+      this.iconSize});
 
   @override
   Widget build(BuildContext context) {
@@ -23,8 +24,8 @@ class PublicListTile extends StatelessWidget {
       onTap: onTap,
       leading: SvgPicture.asset(
         icon,
-        width: 22.w,
-        height: 22.w,
+        width: iconSize ?? 22.w,
+        height: iconSize ?? 22.w,
       ),
       title: PublicText(
         txt: title,

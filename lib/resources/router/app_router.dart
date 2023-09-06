@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wealth_wise/view/pages/settings/about/about_page.dart';
 import 'package:wealth_wise/view/pages/settings/categories/categories_page.dart';
+import 'package:wealth_wise/view/pages/settings/category_settings/category_settings_page.dart';
 import 'package:wealth_wise/view/pages/settings/notifications/notifications_apge.dart';
 import 'package:wealth_wise/view/pages/settings/privacy/privacy_page.dart';
 import 'package:wealth_wise/view/pages/settings/profile/profile_page.dart';
@@ -25,6 +26,7 @@ class AppRoutes {
   static const String privacy = "privacy";
   static const String profile = "profile";
   static const String security = "security";
+  static const String categorySettings = "category settings";
 }
 
 class RouteGenerate {
@@ -60,6 +62,10 @@ class RouteGenerate {
       case AppRoutes.security:
         return MaterialPageRoute(
           builder: (_) => const SecurityPage(),
+        );
+      case AppRoutes.categorySettings:
+        return MaterialPageRoute(
+          builder: (_) => const CategorySettingsPage(),
         );
       default:
         return MaterialPageRoute(
