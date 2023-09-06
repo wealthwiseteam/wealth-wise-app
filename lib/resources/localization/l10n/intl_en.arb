@@ -32,5 +32,40 @@
     "_comment8_": "----------- congrats-----------",
     "congrats" : "Congrats!",
     "congratsSubtitle": "Your account is successfully created",
-    "continueWord": "Continue"
+    "continueWord": "Continue",
+    "_comment9_": "--------------------- Settings ------------------------",
+    "settings":"Settings",
+    "profile":"Profile",
+    "accounts": "Accounts",
+    "security":"Security",
+    "logout":"Logout",
+    "logoutWarning":"Are you sure you want to logout?",
+    "cancel":"cancel",
+    "yesLogout": "Yes, logout",
+    "personalDataPrivacy":"Personal Data & Privacy",
+    "privacy":"Privacy",
+    "notifications":"Notifications",
+    "categories":"categories",
+    "about":"About",
+    "_comment10_": "--------------------- profile ------------------------",
+    "firstName":"First Name",
+    "lastName":"Last Name",
+    "save":"Save",
+    "enterFirstName":"Please, enter your first name",
+    "enterLastName":"Please, enter your first name",
+    "enterEmail":"Please, enter your first name",
+    "enterPhoneNumber":"Please, enter your first name",
+    "_comment11_": "--------------------- Notificaitons ------------------------",
+    "budgets":"Budgets",
+    "reachingGoals": "Reaching Goals",
+    "securityAlerts": "Security Alerts",
+    "appUpdates": "App Updates",
+    "_comment12_": "--------------------- About ------------------------",
+    "aboutTitle": "Your finance in one place.",
+    "aboutSubtitle": "Flexibly budget and track your spending, so you stay in control and achieve your goals."
+
+
+
+
+
 }

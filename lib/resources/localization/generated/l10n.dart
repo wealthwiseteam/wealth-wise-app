@@ -389,6 +389,306 @@ class S {
       args: [],
     );
   }
+
+  /// `--------------------- Settings ------------------------`
+  String get _comment9_ {
+    return Intl.message(
+      '--------------------- Settings ------------------------',
+      name: '_comment9_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Settings`
+  String get settings {
+    return Intl.message(
+      'Settings',
+      name: 'settings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Profile`
+  String get profile {
+    return Intl.message(
+      'Profile',
+      name: 'profile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Accounts`
+  String get accounts {
+    return Intl.message(
+      'Accounts',
+      name: 'accounts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Security`
+  String get security {
+    return Intl.message(
+      'Security',
+      name: 'security',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Logout`
+  String get logout {
+    return Intl.message(
+      'Logout',
+      name: 'logout',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Are you sure you want to logout?`
+  String get logoutWarning {
+    return Intl.message(
+      'Are you sure you want to logout?',
+      name: 'logoutWarning',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `cancel`
+  String get cancel {
+    return Intl.message(
+      'cancel',
+      name: 'cancel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Yes, logout`
+  String get yesLogout {
+    return Intl.message(
+      'Yes, logout',
+      name: 'yesLogout',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Personal Data & Privacy`
+  String get personalDataPrivacy {
+    return Intl.message(
+      'Personal Data & Privacy',
+      name: 'personalDataPrivacy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Privacy`
+  String get privacy {
+    return Intl.message(
+      'Privacy',
+      name: 'privacy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Notifications`
+  String get notifications {
+    return Intl.message(
+      'Notifications',
+      name: 'notifications',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `categories`
+  String get categories {
+    return Intl.message(
+      'categories',
+      name: 'categories',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `About`
+  String get about {
+    return Intl.message(
+      'About',
+      name: 'about',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `--------------------- profile ------------------------`
+  String get _comment10_ {
+    return Intl.message(
+      '--------------------- profile ------------------------',
+      name: '_comment10_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `First Name`
+  String get firstName {
+    return Intl.message(
+      'First Name',
+      name: 'firstName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Last Name`
+  String get lastName {
+    return Intl.message(
+      'Last Name',
+      name: 'lastName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Save`
+  String get save {
+    return Intl.message(
+      'Save',
+      name: 'save',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please, enter your first name`
+  String get enterFirstName {
+    return Intl.message(
+      'Please, enter your first name',
+      name: 'enterFirstName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please, enter your first name`
+  String get enterLastName {
+    return Intl.message(
+      'Please, enter your first name',
+      name: 'enterLastName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please, enter your first name`
+  String get enterEmail {
+    return Intl.message(
+      'Please, enter your first name',
+      name: 'enterEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please, enter your first name`
+  String get enterPhoneNumber {
+    return Intl.message(
+      'Please, enter your first name',
+      name: 'enterPhoneNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `--------------------- Notificaitons ------------------------`
+  String get _comment11_ {
+    return Intl.message(
+      '--------------------- Notificaitons ------------------------',
+      name: '_comment11_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Budgets`
+  String get budgets {
+    return Intl.message(
+      'Budgets',
+      name: 'budgets',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reaching Goals`
+  String get reachingGoals {
+    return Intl.message(
+      'Reaching Goals',
+      name: 'reachingGoals',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Security Alerts`
+  String get securityAlerts {
+    return Intl.message(
+      'Security Alerts',
+      name: 'securityAlerts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `App Updates`
+  String get appUpdates {
+    return Intl.message(
+      'App Updates',
+      name: 'appUpdates',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `--------------------- About ------------------------`
+  String get _comment12_ {
+    return Intl.message(
+      '--------------------- About ------------------------',
+      name: '_comment12_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your finance in one place.`
+  String get aboutTitle {
+    return Intl.message(
+      'Your finance in one place.',
+      name: 'aboutTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Flexibly budget and track your spending, so you stay in control and achieve your goals.`
+  String get aboutSubtitle {
+    return Intl.message(
+      'Flexibly budget and track your spending, so you stay in control and achieve your goals.',
+      name: 'aboutSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

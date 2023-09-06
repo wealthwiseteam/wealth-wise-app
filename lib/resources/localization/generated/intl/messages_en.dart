@@ -22,6 +22,12 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "_comment10_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- profile ------------------------"),
+        "_comment11_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- Notificaitons ------------------------"),
+        "_comment12_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- About ------------------------"),
         "_comment1_": MessageLookupByLibrary.simpleMessage(
             "----------- Welcome -----------"),
         "_comment2_": MessageLookupByLibrary.simpleMessage(
@@ -38,8 +44,20 @@ class MessageLookup extends MessageLookupByLibrary {
             "----------- Face Id -----------"),
         "_comment8_": MessageLookupByLibrary.simpleMessage(
             "----------- congrats-----------"),
+        "_comment9_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- Settings ------------------------"),
         "_comment_": MessageLookupByLibrary.simpleMessage(
             "--------------------- Auth ---------------------"),
+        "about": MessageLookupByLibrary.simpleMessage("About"),
+        "aboutSubtitle": MessageLookupByLibrary.simpleMessage(
+            "Flexibly budget and track your spending, so you stay in control and achieve your goals."),
+        "aboutTitle":
+            MessageLookupByLibrary.simpleMessage("Your finance in one place."),
+        "accounts": MessageLookupByLibrary.simpleMessage("Accounts"),
+        "appUpdates": MessageLookupByLibrary.simpleMessage("App Updates"),
+        "budgets": MessageLookupByLibrary.simpleMessage("Budgets"),
+        "cancel": MessageLookupByLibrary.simpleMessage("cancel"),
+        "categories": MessageLookupByLibrary.simpleMessage("categories"),
         "congrats": MessageLookupByLibrary.simpleMessage("Congrats!"),
         "congratsSubtitle": MessageLookupByLibrary.simpleMessage(
             "Your account is successfully created"),
@@ -51,19 +69,43 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Email Verification"),
         "emailVerificationSubtitle": MessageLookupByLibrary.simpleMessage(
             "You will receive a 4 digit code to verify next"),
+        "enterEmail": MessageLookupByLibrary.simpleMessage(
+            "Please, enter your first name"),
+        "enterFirstName": MessageLookupByLibrary.simpleMessage(
+            "Please, enter your first name"),
+        "enterLastName": MessageLookupByLibrary.simpleMessage(
+            "Please, enter your first name"),
+        "enterPhoneNumber": MessageLookupByLibrary.simpleMessage(
+            "Please, enter your first name"),
         "faceId": MessageLookupByLibrary.simpleMessage("Face ID"),
         "faceIdSubtitle": MessageLookupByLibrary.simpleMessage(
             "Use face ID to sign in quickly and securely"),
+        "firstName": MessageLookupByLibrary.simpleMessage("First Name"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("Forgot Password"),
         "haveAccount": MessageLookupByLibrary.simpleMessage("Have an account?"),
+        "lastName": MessageLookupByLibrary.simpleMessage("Last Name"),
+        "logout": MessageLookupByLibrary.simpleMessage("Logout"),
+        "logoutWarning": MessageLookupByLibrary.simpleMessage(
+            "Are you sure you want to logout?"),
         "maybeLater": MessageLookupByLibrary.simpleMessage("Maybe Later"),
+        "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "orSignInWith": MessageLookupByLibrary.simpleMessage("Or Sign in with"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "personalDataPrivacy":
+            MessageLookupByLibrary.simpleMessage("Personal Data & Privacy"),
         "phoneNumber": MessageLookupByLibrary.simpleMessage("Phone Number"),
+        "privacy": MessageLookupByLibrary.simpleMessage("Privacy"),
+        "profile": MessageLookupByLibrary.simpleMessage("Profile"),
+        "reachingGoals": MessageLookupByLibrary.simpleMessage("Reaching Goals"),
         "register": MessageLookupByLibrary.simpleMessage("Register"),
         "resendAgain": MessageLookupByLibrary.simpleMessage("resendAgain"),
+        "save": MessageLookupByLibrary.simpleMessage("Save"),
+        "security": MessageLookupByLibrary.simpleMessage("Security"),
+        "securityAlerts":
+            MessageLookupByLibrary.simpleMessage("Security Alerts"),
         "send": MessageLookupByLibrary.simpleMessage("send"),
+        "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign in"),
         "signInTitle": MessageLookupByLibrary.simpleMessage("Hi, Welcome Back"),
         "signUpTitle":
@@ -72,6 +114,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "userName": MessageLookupByLibrary.simpleMessage("User Name"),
         "verfiyCode": MessageLookupByLibrary.simpleMessage("verfiy Code"),
         "verfiyCodeSubtitle": MessageLookupByLibrary.simpleMessage(
-            "Please enter the code we emailed you")
+            "Please enter the code we emailed you"),
+        "yesLogout": MessageLookupByLibrary.simpleMessage("Yes, logout")
       };
 }
