@@ -629,6 +629,36 @@ class S {
       args: [],
     );
   }
+
+  /// `--------------------- About ------------------------`
+  String get _comment12_ {
+    return Intl.message(
+      '--------------------- About ------------------------',
+      name: '_comment12_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your finance in one place.`
+  String get aboutTitle {
+    return Intl.message(
+      'Your finance in one place.',
+      name: 'aboutTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Flexibly budget and track your spending, so you stay in control and achieve your goals.`
+  String get aboutSubtitle {
+    return Intl.message(
+      'Flexibly budget and track your spending, so you stay in control and achieve your goals.',
+      name: 'aboutSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

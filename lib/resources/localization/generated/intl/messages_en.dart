@@ -26,6 +26,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "--------------------- profile ------------------------"),
         "_comment11_": MessageLookupByLibrary.simpleMessage(
             "--------------------- Notificaitons ------------------------"),
+        "_comment12_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- About ------------------------"),
         "_comment1_": MessageLookupByLibrary.simpleMessage(
             "----------- Welcome -----------"),
         "_comment2_": MessageLookupByLibrary.simpleMessage(
@@ -47,6 +49,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "_comment_": MessageLookupByLibrary.simpleMessage(
             "--------------------- Auth ---------------------"),
         "about": MessageLookupByLibrary.simpleMessage("About"),
+        "aboutSubtitle": MessageLookupByLibrary.simpleMessage(
+            "Flexibly budget and track your spending, so you stay in control and achieve your goals."),
+        "aboutTitle":
+            MessageLookupByLibrary.simpleMessage("Your finance in one place."),
         "accounts": MessageLookupByLibrary.simpleMessage("Accounts"),
         "appUpdates": MessageLookupByLibrary.simpleMessage("App Updates"),
         "budgets": MessageLookupByLibrary.simpleMessage("Budgets"),

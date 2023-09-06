@@ -47,7 +47,7 @@ class RouteGenerate {
         );
       case AppRoutes.notifications:
         return MaterialPageRoute(
-          builder: (_) => const NotificationPage(),
+          builder: (_) => const NotificationsPage(),
         );
       case AppRoutes.privacy:
         return MaterialPageRoute(

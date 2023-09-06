@@ -56,7 +56,12 @@
     "budgets":"Budgets",
     "reachingGoals": "Reaching Goals",
     "securityAlerts": "Security Alerts",
-    "appUpdates": "App Updates"
+    "appUpdates": "App Updates",
+    "_comment12_": "--------------------- About ------------------------",
+    "aboutTitle": "Your finance in one place.",
+    "aboutSubtitle": "Flexibly budget and track your spending, so you stay in control and achieve your goals."
+
+
 
 
 
