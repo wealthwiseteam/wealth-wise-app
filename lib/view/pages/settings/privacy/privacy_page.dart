@@ -35,6 +35,7 @@ class PrivacyPage extends StatelessWidget {
                 // when you use real data use "toPieces" methods in extension file
                 PublicText(
                   txt: DummayData.privacyContent,
+                  max: 100,
                 ),
               ],
             ),

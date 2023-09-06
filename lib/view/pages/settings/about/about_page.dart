@@ -31,6 +31,7 @@ class AboutPage extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: 32.w, vertical: 40.h),
           child: SingleChildScrollView(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 PublicText(
                   txt: S.of(context).aboutTitle,
