@@ -30,24 +30,10 @@ class MessageLookup extends MessageLookupByLibrary {
             "--------------------- About ------------------------"),
         "_comment13_": MessageLookupByLibrary.simpleMessage(
             "--------------------- categories ------------------------"),
-        "_comment1_": MessageLookupByLibrary.simpleMessage(
-            "----------- Welcome -----------"),
-        "_comment2_": MessageLookupByLibrary.simpleMessage(
-            "----------- Sign in -----------"),
-        "_comment3_": MessageLookupByLibrary.simpleMessage(
-            "----------- Sign Up -----------"),
-        "_comment4_": MessageLookupByLibrary.simpleMessage(
-            "----------- Forgot Password -----------"),
-        "_comment5_": MessageLookupByLibrary.simpleMessage(
-            "----------- Email verification -----------"),
-        "_comment6_": MessageLookupByLibrary.simpleMessage(
-            "----------- verify code -----------"),
-        "_comment7_": MessageLookupByLibrary.simpleMessage(
-            "----------- Face Id -----------"),
-        "_comment8_": MessageLookupByLibrary.simpleMessage(
-            "----------- congrats-----------"),
+        "_comment14_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- Goals ------------------------"),
         "_comment9_": MessageLookupByLibrary.simpleMessage(
-            "--------------------- Settings ------------------------"),
+            "------------------------------ Settings ----------------------------------"),
         "_comment_": MessageLookupByLibrary.simpleMessage(
             "--------------------- Auth ---------------------"),
         "about": MessageLookupByLibrary.simpleMessage("About"),
@@ -56,17 +42,24 @@ class MessageLookup extends MessageLookupByLibrary {
         "aboutTitle":
             MessageLookupByLibrary.simpleMessage("Your finance in one place."),
         "accounts": MessageLookupByLibrary.simpleMessage("Accounts"),
+        "addGoal": MessageLookupByLibrary.simpleMessage("Add Goal"),
         "appUpdates": MessageLookupByLibrary.simpleMessage("App Updates"),
         "budgets": MessageLookupByLibrary.simpleMessage("Budgets"),
         "cancel": MessageLookupByLibrary.simpleMessage("cancel"),
         "categories": MessageLookupByLibrary.simpleMessage("categories"),
+        "chooseIcon": MessageLookupByLibrary.simpleMessage("Choose icon"),
         "congrats": MessageLookupByLibrary.simpleMessage("Congrats!"),
         "congratsSubtitle": MessageLookupByLibrary.simpleMessage(
             "Your account is successfully created"),
         "continueWord": MessageLookupByLibrary.simpleMessage("Continue"),
+        "createGoal": MessageLookupByLibrary.simpleMessage("Create Goal"),
+        "desiredDate": MessageLookupByLibrary.simpleMessage("Desired date"),
+        "donations": MessageLookupByLibrary.simpleMessage("Donations"),
         "dontReceiveCode":
             MessageLookupByLibrary.simpleMessage("Don’t receive a code?"),
         "editCategory": MessageLookupByLibrary.simpleMessage("Edit Category"),
+        "educaiton": MessageLookupByLibrary.simpleMessage("Education"),
+        "egp": MessageLookupByLibrary.simpleMessage("EGP"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "emailVerification":
             MessageLookupByLibrary.simpleMessage("Email Verification"),
@@ -87,15 +80,24 @@ class MessageLookup extends MessageLookupByLibrary {
         "foodDrinks": MessageLookupByLibrary.simpleMessage("Food & Drinks"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("Forgot Password"),
+        "goalColor": MessageLookupByLibrary.simpleMessage("Goal Color"),
+        "goals": MessageLookupByLibrary.simpleMessage("Goals"),
         "haveAccount": MessageLookupByLibrary.simpleMessage("Have an account?"),
         "health": MessageLookupByLibrary.simpleMessage("Health"),
+        "healthCare": MessageLookupByLibrary.simpleMessage("Health care"),
         "housingRent": MessageLookupByLibrary.simpleMessage("Housing & Rent"),
+        "howMuchSaved":
+            MessageLookupByLibrary.simpleMessage("How much I already saved?"),
         "lastName": MessageLookupByLibrary.simpleMessage("Last Name"),
         "logout": MessageLookupByLibrary.simpleMessage("Logout"),
         "logoutWarning": MessageLookupByLibrary.simpleMessage(
             "Are you sure you want to logout?"),
         "maybeLater": MessageLookupByLibrary.simpleMessage("Maybe Later"),
+        "myGoals": MessageLookupByLibrary.simpleMessage("My Goals"),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
+        "newHome": MessageLookupByLibrary.simpleMessage("New home"),
+        "newVehicle": MessageLookupByLibrary.simpleMessage("New vehicle"),
+        "notes": MessageLookupByLibrary.simpleMessage("Notes"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "orSignInWith": MessageLookupByLibrary.simpleMessage("Or Sign in with"),
         "others": MessageLookupByLibrary.simpleMessage("Others"),
@@ -109,6 +111,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "register": MessageLookupByLibrary.simpleMessage("Register"),
         "resendAgain": MessageLookupByLibrary.simpleMessage("resendAgain"),
         "save": MessageLookupByLibrary.simpleMessage("Save"),
+        "savedAlready": MessageLookupByLibrary.simpleMessage("Saved already"),
         "security": MessageLookupByLibrary.simpleMessage("Security"),
         "securityAlerts":
             MessageLookupByLibrary.simpleMessage("Security Alerts"),
@@ -121,12 +124,19 @@ class MessageLookup extends MessageLookupByLibrary {
         "signUpTitle":
             MessageLookupByLibrary.simpleMessage("Create New Account"),
         "sports": MessageLookupByLibrary.simpleMessage("Sports"),
+        "targetAmount": MessageLookupByLibrary.simpleMessage("Target amount"),
+        "thingsSaveFor":
+            MessageLookupByLibrary.simpleMessage("Some things people save for"),
+        "travelling": MessageLookupByLibrary.simpleMessage("Travelling"),
         "useFaceId": MessageLookupByLibrary.simpleMessage("Use Face ID"),
         "userName": MessageLookupByLibrary.simpleMessage("User Name"),
         "vehicle": MessageLookupByLibrary.simpleMessage("Vehicle"),
         "verfiyCode": MessageLookupByLibrary.simpleMessage("verfiy Code"),
         "verfiyCodeSubtitle": MessageLookupByLibrary.simpleMessage(
             "Please enter the code we emailed you"),
-        "yesLogout": MessageLookupByLibrary.simpleMessage("Yes, logout")
+        "whatSavingFor":
+            MessageLookupByLibrary.simpleMessage("What are you saving for?"),
+        "yesLogout": MessageLookupByLibrary.simpleMessage("Yes, logout"),
+        "yourGoalName": MessageLookupByLibrary.simpleMessage("Your goal’s name")
       };
 }
