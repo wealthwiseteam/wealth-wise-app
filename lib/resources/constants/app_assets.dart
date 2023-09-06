@@ -20,4 +20,8 @@ class AppAssets {
   static String iconShopping = "assets/icons/shopping.svg";
   static String iconSports = "assets/icons/Sports.svg";
   static String iconVehicle = "assets/icons/vehicle.svg";
+  static String iconDonaiton = "assets/icons/donaiton.svg";
+  static String iconEducation = "assets/icons/education.svg";
+  static String iconHealthCare = "assets/icons/healthCare.svg";
+  static String iconTravelling = "assets/icons/travilling.svg";
 }
