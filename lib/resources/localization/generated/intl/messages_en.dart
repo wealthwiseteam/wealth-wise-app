@@ -24,6 +24,8 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "_comment10_": MessageLookupByLibrary.simpleMessage(
             "--------------------- profile ------------------------"),
+        "_comment11_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- Notificaitons ------------------------"),
         "_comment1_": MessageLookupByLibrary.simpleMessage(
             "----------- Welcome -----------"),
         "_comment2_": MessageLookupByLibrary.simpleMessage(
@@ -46,6 +48,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "--------------------- Auth ---------------------"),
         "about": MessageLookupByLibrary.simpleMessage("About"),
         "accounts": MessageLookupByLibrary.simpleMessage("Accounts"),
+        "appUpdates": MessageLookupByLibrary.simpleMessage("App Updates"),
+        "budgets": MessageLookupByLibrary.simpleMessage("Budgets"),
         "categories": MessageLookupByLibrary.simpleMessage("categories"),
         "congrats": MessageLookupByLibrary.simpleMessage("Congrats!"),
         "congratsSubtitle": MessageLookupByLibrary.simpleMessage(
@@ -84,10 +88,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "phoneNumber": MessageLookupByLibrary.simpleMessage("Phone Number"),
         "privacy": MessageLookupByLibrary.simpleMessage("Privacy"),
         "profile": MessageLookupByLibrary.simpleMessage("Profile"),
+        "reachingGoals": MessageLookupByLibrary.simpleMessage("Reaching Goals"),
         "register": MessageLookupByLibrary.simpleMessage("Register"),
         "resendAgain": MessageLookupByLibrary.simpleMessage("resendAgain"),
         "save": MessageLookupByLibrary.simpleMessage("Save"),
         "security": MessageLookupByLibrary.simpleMessage("Security"),
+        "securityAlerts":
+            MessageLookupByLibrary.simpleMessage("Security Alerts"),
         "send": MessageLookupByLibrary.simpleMessage("send"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign in"),

@@ -9,7 +9,10 @@ enum Switchers {
   darkMode,
   faceId,
   rememberMe,
-  touchId,
+  budgets,
+  goals,
+  updates,
+  securityAlerts
 }
 
 class PublicSwitchListTile extends StatefulWidget {
