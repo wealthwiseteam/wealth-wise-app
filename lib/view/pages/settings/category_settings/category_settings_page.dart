@@ -62,10 +62,13 @@ class _CategorySettingsPageState extends State<CategorySettingsPage> {
             padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 56.h),
             child: Column(
               children: [
-                SvgPicture.asset(
-                  widget.categoryInfo.icon,
-                  width: 80.w,
-                  height: 80.w,
+                Hero(
+                  tag: widget.categoryInfo.name,
+                  child: SvgPicture.asset(
+                    widget.categoryInfo.icon,
+                    width: 80.w,
+                    height: 80.w,
+                  ),
                 ),
                 24.ph,
                 Align(

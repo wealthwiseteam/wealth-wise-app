@@ -10,22 +10,26 @@ class PublicListTile extends StatelessWidget {
   final String icon;
   final double? iconSize;
   final void Function()? onTap;
-  const PublicListTile(
-      {super.key,
-      required this.title,
-      required this.icon,
-      this.onTap,
-      this.iconSize});
+  const PublicListTile({
+    super.key,
+    required this.title,
+    required this.icon,
+    this.onTap,
+    this.iconSize,
+  });
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
       contentPadding: EdgeInsets.zero,
       onTap: onTap,
-      leading: SvgPicture.asset(
-        icon,
-        width: iconSize ?? 22.w,
-        height: iconSize ?? 22.w,
+      leading: Hero(
+        tag: title,
+        child: SvgPicture.asset(
+          icon,
+          width: iconSize ?? 22.w,
+          height: iconSize ?? 22.w,
+        ),
       ),
       title: PublicText(
         txt: title,
