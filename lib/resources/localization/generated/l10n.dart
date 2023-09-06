@@ -689,6 +689,116 @@ class S {
       args: [],
     );
   }
+
+  /// `--------------------- categories ------------------------`
+  String get _comment13_ {
+    return Intl.message(
+      '--------------------- categories ------------------------',
+      name: '_comment13_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Food & Drinks`
+  String get foodDrinks {
+    return Intl.message(
+      'Food & Drinks',
+      name: 'foodDrinks',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Health`
+  String get health {
+    return Intl.message(
+      'Health',
+      name: 'health',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Vehicle`
+  String get vehicle {
+    return Intl.message(
+      'Vehicle',
+      name: 'vehicle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Housing & Rent`
+  String get housingRent {
+    return Intl.message(
+      'Housing & Rent',
+      name: 'housingRent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sports`
+  String get sports {
+    return Intl.message(
+      'Sports',
+      name: 'sports',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Others`
+  String get others {
+    return Intl.message(
+      'Others',
+      name: 'others',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Shopping`
+  String get shopping {
+    return Intl.message(
+      'Shopping',
+      name: 'shopping',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Edit Category`
+  String get editCategory {
+    return Intl.message(
+      'Edit Category',
+      name: 'editCategory',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name`
+  String get name {
+    return Intl.message(
+      'Name',
+      name: 'name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Show`
+  String get show {
+    return Intl.message(
+      'Show',
+      name: 'show',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

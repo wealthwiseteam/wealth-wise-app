@@ -28,6 +28,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "--------------------- Notificaitons ------------------------"),
         "_comment12_": MessageLookupByLibrary.simpleMessage(
             "--------------------- About ------------------------"),
+        "_comment13_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- categories ------------------------"),
         "_comment1_": MessageLookupByLibrary.simpleMessage(
             "----------- Welcome -----------"),
         "_comment2_": MessageLookupByLibrary.simpleMessage(
@@ -64,6 +66,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "continueWord": MessageLookupByLibrary.simpleMessage("Continue"),
         "dontReceiveCode":
             MessageLookupByLibrary.simpleMessage("Don’t receive a code?"),
+        "editCategory": MessageLookupByLibrary.simpleMessage("Edit Category"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "emailVerification":
             MessageLookupByLibrary.simpleMessage("Email Verification"),
@@ -81,16 +84,21 @@ class MessageLookup extends MessageLookupByLibrary {
         "faceIdSubtitle": MessageLookupByLibrary.simpleMessage(
             "Use face ID to sign in quickly and securely"),
         "firstName": MessageLookupByLibrary.simpleMessage("First Name"),
+        "foodDrinks": MessageLookupByLibrary.simpleMessage("Food & Drinks"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("Forgot Password"),
         "haveAccount": MessageLookupByLibrary.simpleMessage("Have an account?"),
+        "health": MessageLookupByLibrary.simpleMessage("Health"),
+        "housingRent": MessageLookupByLibrary.simpleMessage("Housing & Rent"),
         "lastName": MessageLookupByLibrary.simpleMessage("Last Name"),
         "logout": MessageLookupByLibrary.simpleMessage("Logout"),
         "logoutWarning": MessageLookupByLibrary.simpleMessage(
             "Are you sure you want to logout?"),
         "maybeLater": MessageLookupByLibrary.simpleMessage("Maybe Later"),
+        "name": MessageLookupByLibrary.simpleMessage("Name"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "orSignInWith": MessageLookupByLibrary.simpleMessage("Or Sign in with"),
+        "others": MessageLookupByLibrary.simpleMessage("Others"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "personalDataPrivacy":
             MessageLookupByLibrary.simpleMessage("Personal Data & Privacy"),
@@ -106,12 +114,16 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Security Alerts"),
         "send": MessageLookupByLibrary.simpleMessage("send"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
+        "shopping": MessageLookupByLibrary.simpleMessage("Shopping"),
+        "show": MessageLookupByLibrary.simpleMessage("Show"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign in"),
         "signInTitle": MessageLookupByLibrary.simpleMessage("Hi, Welcome Back"),
         "signUpTitle":
             MessageLookupByLibrary.simpleMessage("Create New Account"),
+        "sports": MessageLookupByLibrary.simpleMessage("Sports"),
         "useFaceId": MessageLookupByLibrary.simpleMessage("Use Face ID"),
         "userName": MessageLookupByLibrary.simpleMessage("User Name"),
+        "vehicle": MessageLookupByLibrary.simpleMessage("Vehicle"),
         "verfiyCode": MessageLookupByLibrary.simpleMessage("verfiy Code"),
         "verfiyCodeSubtitle": MessageLookupByLibrary.simpleMessage(
             "Please enter the code we emailed you"),

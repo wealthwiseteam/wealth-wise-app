@@ -12,7 +12,8 @@ enum Switchers {
   budgets,
   goals,
   updates,
-  securityAlerts
+  securityAlerts,
+  show,
 }
 
 class PublicSwitchListTile extends StatefulWidget {
