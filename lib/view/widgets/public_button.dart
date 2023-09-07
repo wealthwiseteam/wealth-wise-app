@@ -42,7 +42,7 @@ class PublicButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: width,
+      width: width ?? 200.w,
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
@@ -53,7 +53,7 @@ class PublicButton extends StatelessWidget {
           ),
         ),
         child: Padding(
-          padding: EdgeInsets.symmetric(vertical: verticalpadding ?? 10.h),
+          padding: EdgeInsets.symmetric(vertical: verticalpadding ?? 15.h),
           child: PublicText(
             txt: title,
           
