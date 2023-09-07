@@ -32,6 +32,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "--------------------- categories ------------------------"),
         "_comment14_": MessageLookupByLibrary.simpleMessage(
             "--------------------- Goals ------------------------"),
+        "_comment15_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- Colors ------------------------"),
         "_comment9_": MessageLookupByLibrary.simpleMessage(
             "------------------------------ Settings ----------------------------------"),
         "_comment_": MessageLookupByLibrary.simpleMessage(
@@ -44,6 +46,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "accounts": MessageLookupByLibrary.simpleMessage("Accounts"),
         "addGoal": MessageLookupByLibrary.simpleMessage("Add Goal"),
         "appUpdates": MessageLookupByLibrary.simpleMessage("App Updates"),
+        "blue": MessageLookupByLibrary.simpleMessage("Blue"),
         "budgets": MessageLookupByLibrary.simpleMessage("Budgets"),
         "cancel": MessageLookupByLibrary.simpleMessage("cancel"),
         "categories": MessageLookupByLibrary.simpleMessage("categories"),
@@ -53,6 +56,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Your account is successfully created"),
         "continueWord": MessageLookupByLibrary.simpleMessage("Continue"),
         "createGoal": MessageLookupByLibrary.simpleMessage("Create Goal"),
+        "dateHint":
+            MessageLookupByLibrary.simpleMessage("Example: Aug 12, 2024"),
         "desiredDate": MessageLookupByLibrary.simpleMessage("Desired date"),
         "donations": MessageLookupByLibrary.simpleMessage("Donations"),
         "dontReceiveCode":
@@ -82,6 +87,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Forgot Password"),
         "goalColor": MessageLookupByLibrary.simpleMessage("Goal Color"),
         "goals": MessageLookupByLibrary.simpleMessage("Goals"),
+        "green": MessageLookupByLibrary.simpleMessage("Grenn"),
+        "grey": MessageLookupByLibrary.simpleMessage("Grey"),
         "haveAccount": MessageLookupByLibrary.simpleMessage("Have an account?"),
         "health": MessageLookupByLibrary.simpleMessage("Health"),
         "healthCare": MessageLookupByLibrary.simpleMessage("Health care"),
@@ -97,20 +104,26 @@ class MessageLookup extends MessageLookupByLibrary {
         "name": MessageLookupByLibrary.simpleMessage("Name"),
         "newHome": MessageLookupByLibrary.simpleMessage("New home"),
         "newVehicle": MessageLookupByLibrary.simpleMessage("New vehicle"),
+        "noteHint": MessageLookupByLibrary.simpleMessage("Note..."),
         "notes": MessageLookupByLibrary.simpleMessage("Notes"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "orSignInWith": MessageLookupByLibrary.simpleMessage("Or Sign in with"),
+        "orange": MessageLookupByLibrary.simpleMessage("Orange"),
         "others": MessageLookupByLibrary.simpleMessage("Others"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "personalDataPrivacy":
             MessageLookupByLibrary.simpleMessage("Personal Data & Privacy"),
         "phoneNumber": MessageLookupByLibrary.simpleMessage("Phone Number"),
+        "pink": MessageLookupByLibrary.simpleMessage("Pink"),
         "privacy": MessageLookupByLibrary.simpleMessage("Privacy"),
         "profile": MessageLookupByLibrary.simpleMessage("Profile"),
+        "purple": MessageLookupByLibrary.simpleMessage("Purple"),
         "reachingGoals": MessageLookupByLibrary.simpleMessage("Reaching Goals"),
+        "red": MessageLookupByLibrary.simpleMessage("Red"),
         "register": MessageLookupByLibrary.simpleMessage("Register"),
         "resendAgain": MessageLookupByLibrary.simpleMessage("resendAgain"),
         "save": MessageLookupByLibrary.simpleMessage("Save"),
+        "saveHint": MessageLookupByLibrary.simpleMessage("Example: 50"),
         "savedAlready": MessageLookupByLibrary.simpleMessage("Saved already"),
         "security": MessageLookupByLibrary.simpleMessage("Security"),
         "securityAlerts":
@@ -125,6 +138,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Create New Account"),
         "sports": MessageLookupByLibrary.simpleMessage("Sports"),
         "targetAmount": MessageLookupByLibrary.simpleMessage("Target amount"),
+        "targetHint": MessageLookupByLibrary.simpleMessage("Exampl3: 250"),
         "thingsSaveFor": MessageLookupByLibrary.simpleMessage(
             "Some things people save for:"),
         "travelling": MessageLookupByLibrary.simpleMessage("Travelling"),
@@ -136,6 +150,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Please enter the code we emailed you"),
         "whatSavingFor":
             MessageLookupByLibrary.simpleMessage("What are you saving for?"),
+        "yellow": MessageLookupByLibrary.simpleMessage("yellow"),
         "yesLogout": MessageLookupByLibrary.simpleMessage("Yes, logout"),
         "yourGoalName": MessageLookupByLibrary.simpleMessage("Your goal’s name")
       };

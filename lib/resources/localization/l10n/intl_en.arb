@@ -87,5 +87,19 @@
     "goalColor":"Goal Color",
     "savedAlready":"Saved already",
     "targetAmount":"Target amount",
-    "desiredDate":"Desired date"
+    "desiredDate":"Desired date",
+    "dateHint": "Example: Aug 12, 2024",
+    "targetHint": "Exampl3: 250",
+    "saveHint": "Example: 50",
+    "noteHint": "Note...",
+    "_comment15_": "--------------------- Colors ------------------------",
+    "blue": "Blue",
+    "red": "Red",
+    "yellow": "yellow",
+    "green": "Grenn",
+    "purple": "Purple",
+    "pink": "Pink",
+    "grey": "Grey",
+    "orange": "Orange"
+
 }

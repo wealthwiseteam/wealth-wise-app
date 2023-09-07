@@ -939,6 +939,136 @@ class S {
       args: [],
     );
   }
+
+  /// `Example: Aug 12, 2024`
+  String get dateHint {
+    return Intl.message(
+      'Example: Aug 12, 2024',
+      name: 'dateHint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Exampl3: 250`
+  String get targetHint {
+    return Intl.message(
+      'Exampl3: 250',
+      name: 'targetHint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Example: 50`
+  String get saveHint {
+    return Intl.message(
+      'Example: 50',
+      name: 'saveHint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Note...`
+  String get noteHint {
+    return Intl.message(
+      'Note...',
+      name: 'noteHint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `--------------------- Colors ------------------------`
+  String get _comment15_ {
+    return Intl.message(
+      '--------------------- Colors ------------------------',
+      name: '_comment15_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Blue`
+  String get blue {
+    return Intl.message(
+      'Blue',
+      name: 'blue',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Red`
+  String get red {
+    return Intl.message(
+      'Red',
+      name: 'red',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `yellow`
+  String get yellow {
+    return Intl.message(
+      'yellow',
+      name: 'yellow',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Grenn`
+  String get green {
+    return Intl.message(
+      'Grenn',
+      name: 'green',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Purple`
+  String get purple {
+    return Intl.message(
+      'Purple',
+      name: 'purple',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pink`
+  String get pink {
+    return Intl.message(
+      'Pink',
+      name: 'pink',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Grey`
+  String get grey {
+    return Intl.message(
+      'Grey',
+      name: 'grey',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Orange`
+  String get orange {
+    return Intl.message(
+      'Orange',
+      name: 'orange',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

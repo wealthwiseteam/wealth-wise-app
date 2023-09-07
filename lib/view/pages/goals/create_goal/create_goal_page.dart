@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:wealth_wise/data/models/goals/goal_model.dart';
 import 'package:wealth_wise/resources/extensions/extensions.dart';
+import 'package:wealth_wise/resources/router/app_router.dart';
 import 'package:wealth_wise/view/widgets/public_button.dart';
 
 import '../../../../data/models/settings/category_info_model.dart';
@@ -93,7 +94,8 @@ class _CreateGoalPageState extends State<CreateGoalPage> {
               24.ph,
               PublicButton(
                 title: S.of(context).createGoal,
-                onPressed: () {},
+                onPressed: () =>
+                    Navigator.pushNamed(context, AppRoutes.addGoal),
                 width: double.infinity,
               ),
               40.ph,
@@ -116,7 +118,8 @@ class _CreateGoalPageState extends State<CreateGoalPage> {
                 ),
                 itemBuilder: (_, index) {
                   return InkWell(
-                    onTap: () {},
+                    onTap: () =>
+                        Navigator.pushNamed(context, AppRoutes.addGoal),
                     child: CategoryCard(
                       category: AppConstants.categories[index],
                     ),

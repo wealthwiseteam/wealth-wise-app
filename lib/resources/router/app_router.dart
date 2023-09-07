@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wealth_wise/data/models/settings/category_info_model.dart';
+import 'package:wealth_wise/view/pages/goals/add_goal/add_goal_page.dart';
 import 'package:wealth_wise/view/pages/goals/create_goal/create_goal_page.dart';
 import 'package:wealth_wise/view/pages/settings/about/about_page.dart';
 import 'package:wealth_wise/view/pages/settings/categories/categories_page.dart';
@@ -32,6 +33,7 @@ class AppRoutes {
 
   /// Goals
   static const String createGoal = "create goal";
+  static const String addGoal = "add goal";
   
 }
 
@@ -80,6 +82,10 @@ class RouteGenerate {
       case AppRoutes.createGoal:
         return MaterialPageRoute(
           builder: (_) => const CreateGoalPage(),
+        );
+      case AppRoutes.addGoal:
+        return MaterialPageRoute(
+          builder: (_) => const AddGoalPage(),
         );
       
       default:
