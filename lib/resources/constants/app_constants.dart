@@ -29,11 +29,19 @@ class AppConstants {
     CategoryColor(name: S.current.pink, color: Colors.pink),
   ];
 
-  static List<CategoryIcon> iconsCollection = [
+  static const List<CategoryIcon> iconsCollection = [
     CategoryIcon(name: "Education", icon: Icons.cast_for_education),
     CategoryIcon(name: "Sports", icon: Icons.sports),
     CategoryIcon(name: "Housing", icon: Icons.house),
     CategoryIcon(name: "Vehicle", icon: Icons.car_rental_outlined),
     CategoryIcon(name: "Shopping", icon: Icons.cast_outlined),
+  ];
+
+  static List<String> periodColleciton = [
+    S.current.all,
+    S.current.today,
+    S.current.thisWeek,
+    S.current.thisMonth,
+    S.current.thisYear,
   ];
 }

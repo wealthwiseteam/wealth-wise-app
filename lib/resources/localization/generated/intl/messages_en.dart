@@ -34,6 +34,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "--------------------- Goals ------------------------"),
         "_comment15_": MessageLookupByLibrary.simpleMessage(
             "--------------------- Colors ------------------------"),
+        "_comment16_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- Statistics ------------------------"),
         "_comment9_": MessageLookupByLibrary.simpleMessage(
             "------------------------------ Settings ----------------------------------"),
         "_comment_": MessageLookupByLibrary.simpleMessage(
@@ -45,6 +47,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Your finance in one place."),
         "accounts": MessageLookupByLibrary.simpleMessage("Accounts"),
         "addGoal": MessageLookupByLibrary.simpleMessage("Add Goal"),
+        "all": MessageLookupByLibrary.simpleMessage("All"),
         "appUpdates": MessageLookupByLibrary.simpleMessage("App Updates"),
         "blue": MessageLookupByLibrary.simpleMessage("Blue"),
         "budgets": MessageLookupByLibrary.simpleMessage("Budgets"),
@@ -132,15 +135,22 @@ class MessageLookup extends MessageLookupByLibrary {
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "shopping": MessageLookupByLibrary.simpleMessage("Shopping"),
         "show": MessageLookupByLibrary.simpleMessage("Show"),
+        "showChartIn": MessageLookupByLibrary.simpleMessage("Show Chart in"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign in"),
         "signInTitle": MessageLookupByLibrary.simpleMessage("Hi, Welcome Back"),
         "signUpTitle":
             MessageLookupByLibrary.simpleMessage("Create New Account"),
+        "spentCategory": MessageLookupByLibrary.simpleMessage("Spent Category"),
         "sports": MessageLookupByLibrary.simpleMessage("Sports"),
+        "statistics": MessageLookupByLibrary.simpleMessage("Statistics"),
         "targetAmount": MessageLookupByLibrary.simpleMessage("Target amount"),
         "targetHint": MessageLookupByLibrary.simpleMessage("Exampl3: 250"),
         "thingsSaveFor": MessageLookupByLibrary.simpleMessage(
             "Some things people save for:"),
+        "thisMonth": MessageLookupByLibrary.simpleMessage("This Month"),
+        "thisWeek": MessageLookupByLibrary.simpleMessage("This Week"),
+        "thisYear": MessageLookupByLibrary.simpleMessage("This Year"),
+        "today": MessageLookupByLibrary.simpleMessage("Today"),
         "travelling": MessageLookupByLibrary.simpleMessage("Travelling"),
         "useFaceId": MessageLookupByLibrary.simpleMessage("Use Face ID"),
         "userName": MessageLookupByLibrary.simpleMessage("User Name"),
