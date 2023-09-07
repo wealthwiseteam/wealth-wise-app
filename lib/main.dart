@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:wealth_wise/resources/localization/generated/l10n.dart';
 
-import 'resources/localization/generated/l10n.dart';
+
+
+import 'view/pages/first entring/Entering income/entering_income_page.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +24,7 @@ class MyApp extends StatelessWidget {
       builder: (context, _) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          title: 'ITI Final Project',
+          title: 'Wealth Wise Project',
           locale: const Locale("en", "US"),
           localizationsDelegates: const [
             S.delegate,
@@ -30,13 +34,14 @@ class MyApp extends StatelessWidget {
           ],
           supportedLocales: S.delegate.supportedLocales,
           theme: ThemeData(
-            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+            colorScheme:
+                ColorScheme.fromSeed(seedColor: const Color(0xFF105161)),
             useMaterial3: true,
           ),
           scrollBehavior: ScrollConfiguration.of(context).copyWith(
             physics: const BouncingScrollPhysics(),
           ),
-          home: const MyHomePage(title: 'Flutter Demo Home Page'),
+          home: const EnteringIncomePage(),
         );
       },
     );

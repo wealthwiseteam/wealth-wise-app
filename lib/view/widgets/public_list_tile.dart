@@ -9,17 +9,19 @@ class PublicListTile extends StatelessWidget {
   final String title;
   final String icon;
   final double? iconSize;
+   final double? txtSize;
   final void Function()? onTap;
   const PublicListTile({
     super.key,
     required this.title,
     required this.icon,
     this.onTap,
-    this.iconSize,
+    this.iconSize, this.txtSize,
   });
 
   @override
   Widget build(BuildContext context) {
+ 
     return ListTile(
       contentPadding: EdgeInsets.zero,
       onTap: onTap,
@@ -32,7 +34,7 @@ class PublicListTile extends StatelessWidget {
         ),
       ),
       title: PublicText(
-        txt: title,
+        txt: title, size: txtSize ?? 16.sp,
       ),
       trailing: Icon(
         Icons.arrow_forward_ios_outlined,
