@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:wealth_wise/view/pages/home_screen.dart';
+import 'package:wealth_wise/view/widgets/home_card.dart';
 
 import 'resources/localization/generated/l10n.dart';
 
@@ -36,7 +38,7 @@ class MyApp extends StatelessWidget {
           scrollBehavior: ScrollConfiguration.of(context).copyWith(
             physics: const BouncingScrollPhysics(),
           ),
-          home: const MyHomePage(title: 'Flutter Demo Home Page'),
+          home: Home(userName: 'ahmed',)
         );
       },
     );
