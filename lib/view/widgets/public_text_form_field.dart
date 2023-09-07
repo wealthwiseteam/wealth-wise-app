@@ -73,7 +73,7 @@ class _PublicTextFormFieldState extends State<PublicTextFormField> {
         iconColor: AppColors.mintGreen,
         filled: true,
         hintText: widget.hint,
-        hintStyle: const TextStyle(color: AppColors.grey),
+        hintStyle: TextStyle(color: AppColors.grey, fontSize: 16.sp),
         labelText: widget.label,
         enabledBorder: widget.border ??
             const UnderlineInputBorder(

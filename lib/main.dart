@@ -6,6 +6,7 @@ import 'package:wealth_wise/resources/styles/app_theme.dart';
 
 import 'resources/localization/generated/l10n.dart';
 import 'resources/router/app_router.dart';
+import 'view/pages/goals/my_goals/my_goals_page.dart';
 import 'view/pages/settings/settings/settings_page.dart';
 
 void main() {
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
             physics: const BouncingScrollPhysics(),
           ),
           onGenerateRoute: RouteGenerate.getRoute,
-          home: const SettingsPage(),
+          home: const MyGoalsPage(),
         );
       },
     );
