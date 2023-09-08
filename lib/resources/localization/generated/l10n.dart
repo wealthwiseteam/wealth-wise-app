@@ -1069,6 +1069,216 @@ class S {
       args: [],
     );
   }
+
+  /// `--------------------- first inter ------------------------`
+  String get _comment16_ {
+    return Intl.message(
+      '--------------------- first inter ------------------------',
+      name: '_comment16_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` Hi,\n Please enter your income`
+  String get enterIncom {
+    return Intl.message(
+      ' Hi,\n Please enter your income',
+      name: 'enterIncom',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Continue`
+  String get Continue {
+    return Intl.message(
+      'Continue',
+      name: 'Continue',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add account`
+  String get addAcont {
+    return Intl.message(
+      'Add account',
+      name: 'addAcont',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add card`
+  String get addCard {
+    return Intl.message(
+      'Add card',
+      name: 'addCard',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Card holder name`
+  String get cardHolderName {
+    return Intl.message(
+      'Card holder name',
+      name: 'cardHolderName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Card number`
+  String get cardNumber {
+    return Intl.message(
+      'Card number',
+      name: 'cardNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Expiration date`
+  String get expirationDate {
+    return Intl.message(
+      'Expiration date',
+      name: 'expirationDate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add cardCCV - 3 digit`
+  String get cardCCV {
+    return Intl.message(
+      'Add cardCCV - 3 digit',
+      name: 'cardCCV',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create Card`
+  String get createCard {
+    return Intl.message(
+      'Create Card',
+      name: 'createCard',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Cash`
+  String get addCash {
+    return Intl.message(
+      'Add Cash',
+      name: 'addCash',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create Cash`
+  String get createCash {
+    return Intl.message(
+      'Create Cash',
+      name: 'createCash',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `current balance`
+  String get currentBalance {
+    return Intl.message(
+      'current balance',
+      name: 'currentBalance',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `--------------------- budget------------------------`
+  String get _comment17_ {
+    return Intl.message(
+      '--------------------- budget------------------------',
+      name: '_comment17_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create Budget`
+  String get createBudget {
+    return Intl.message(
+      'Create Budget',
+      name: 'createBudget',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` Expenses`
+  String get expenses {
+    return Intl.message(
+      ' Expenses',
+      name: 'expenses',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose Category`
+  String get chooseCategory {
+    return Intl.message(
+      'Choose Category',
+      name: 'chooseCategory',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter amount`
+  String get enterAmount {
+    return Intl.message(
+      'Enter amount',
+      name: 'enterAmount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `All Categories`
+  String get allCategories {
+    return Intl.message(
+      'All Categories',
+      name: 'allCategories',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter period`
+  String get enterPeriod {
+    return Intl.message(
+      'Enter period',
+      name: 'enterPeriod',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose account`
+  String get chooseAccount {
+    return Intl.message(
+      'Choose account',
+      name: 'chooseAccount',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

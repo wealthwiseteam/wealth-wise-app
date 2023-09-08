@@ -3,10 +3,8 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/resources/localization/generated/l10n.dart';
 
-
-
-import 'view/pages/first entring/Entering income/entering_income_page.dart';
-
+import 'view/pages/add_cash/add_cash.dart';
+import 'view/pages/budget/create_budget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -41,7 +39,7 @@ class MyApp extends StatelessWidget {
           scrollBehavior: ScrollConfiguration.of(context).copyWith(
             physics: const BouncingScrollPhysics(),
           ),
-          home: const EnteringIncomePage(),
+          home: AddBudgetPage(),
         );
       },
     );

@@ -100,6 +100,29 @@
     "purple": "Purple",
     "pink": "Pink",
     "grey": "Grey",
-    "orange": "Orange"
-
-}
+    "orange": "Orange",
+    "_comment16_": "--------------------- first inter ------------------------",
+    "enterIncom": " Hi,\n Please enter your income",
+    "Continue": "Continue",
+    "addAcont": "Add account",
+    "addCard": "Add card",
+    "cardHolderName": "Card holder name",
+    "cardNumber": "Card number",
+    "expirationDate": "Expiration date",
+    "cardCCV": "Add cardCCV - 3 digit",
+    "createCard": "Create Card",
+    "addCash":"Add Cash",
+    "createCash": "Create Cash",
+    "currentBalance": "current balance",
+    "_comment17_": "--------------------- budget------------------------",
+   
+    "createBudget": "Create Budget",
+    "expenses": " Expenses",
+    "chooseCategory": "Choose Category",
+    "enterAmount": "Enter amount",
+    "allCategories": "All Categories",
+    "enterPeriod": "Enter period",
+    "chooseAccount": "Choose account"
+   
+   
+    }

@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "Continue": MessageLookupByLibrary.simpleMessage("Continue"),
         "_comment10_": MessageLookupByLibrary.simpleMessage(
             "--------------------- profile ------------------------"),
         "_comment11_": MessageLookupByLibrary.simpleMessage(
@@ -34,6 +35,10 @@ class MessageLookup extends MessageLookupByLibrary {
             "--------------------- Goals ------------------------"),
         "_comment15_": MessageLookupByLibrary.simpleMessage(
             "--------------------- Colors ------------------------"),
+        "_comment16_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- first inter ------------------------"),
+        "_comment17_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- budget------------------------"),
         "_comment9_": MessageLookupByLibrary.simpleMessage(
             "------------------------------ Settings ----------------------------------"),
         "_comment_": MessageLookupByLibrary.simpleMessage(
@@ -44,18 +49,35 @@ class MessageLookup extends MessageLookupByLibrary {
         "aboutTitle":
             MessageLookupByLibrary.simpleMessage("Your finance in one place."),
         "accounts": MessageLookupByLibrary.simpleMessage("Accounts"),
+        "addAcont": MessageLookupByLibrary.simpleMessage("Add account"),
+        "addCard": MessageLookupByLibrary.simpleMessage("Add card"),
+        "addCash": MessageLookupByLibrary.simpleMessage("Add Cash"),
         "addGoal": MessageLookupByLibrary.simpleMessage("Add Goal"),
+        "allCategories": MessageLookupByLibrary.simpleMessage("All Categories"),
         "appUpdates": MessageLookupByLibrary.simpleMessage("App Updates"),
         "blue": MessageLookupByLibrary.simpleMessage("Blue"),
         "budgets": MessageLookupByLibrary.simpleMessage("Budgets"),
         "cancel": MessageLookupByLibrary.simpleMessage("cancel"),
+        "cardCCV":
+            MessageLookupByLibrary.simpleMessage("Add cardCCV - 3 digit"),
+        "cardHolderName":
+            MessageLookupByLibrary.simpleMessage("Card holder name"),
+        "cardNumber": MessageLookupByLibrary.simpleMessage("Card number"),
         "categories": MessageLookupByLibrary.simpleMessage("categories"),
+        "chooseAccount": MessageLookupByLibrary.simpleMessage("Choose account"),
+        "chooseCategory":
+            MessageLookupByLibrary.simpleMessage("Choose Category"),
         "chooseIcon": MessageLookupByLibrary.simpleMessage("Choose icon"),
         "congrats": MessageLookupByLibrary.simpleMessage("Congrats!"),
         "congratsSubtitle": MessageLookupByLibrary.simpleMessage(
             "Your account is successfully created"),
         "continueWord": MessageLookupByLibrary.simpleMessage("Continue"),
+        "createBudget": MessageLookupByLibrary.simpleMessage("Create Budget"),
+        "createCard": MessageLookupByLibrary.simpleMessage("Create Card"),
+        "createCash": MessageLookupByLibrary.simpleMessage("Create Cash"),
         "createGoal": MessageLookupByLibrary.simpleMessage("Create Goal"),
+        "currentBalance":
+            MessageLookupByLibrary.simpleMessage("current balance"),
         "dateHint":
             MessageLookupByLibrary.simpleMessage("Example: Aug 12, 2024"),
         "desiredDate": MessageLookupByLibrary.simpleMessage("Desired date"),
@@ -70,14 +92,21 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Email Verification"),
         "emailVerificationSubtitle": MessageLookupByLibrary.simpleMessage(
             "You will receive a 4 digit code to verify next"),
+        "enterAmount": MessageLookupByLibrary.simpleMessage("Enter amount"),
         "enterEmail": MessageLookupByLibrary.simpleMessage(
             "Please, enter your first name"),
         "enterFirstName": MessageLookupByLibrary.simpleMessage(
             "Please, enter your first name"),
+        "enterIncom": MessageLookupByLibrary.simpleMessage(
+            " Hi,\n Please enter your income"),
         "enterLastName": MessageLookupByLibrary.simpleMessage(
             "Please, enter your first name"),
+        "enterPeriod": MessageLookupByLibrary.simpleMessage("Enter period"),
         "enterPhoneNumber": MessageLookupByLibrary.simpleMessage(
             "Please, enter your first name"),
+        "expenses": MessageLookupByLibrary.simpleMessage(" Expenses"),
+        "expirationDate":
+            MessageLookupByLibrary.simpleMessage("Expiration date"),
         "faceId": MessageLookupByLibrary.simpleMessage("Face ID"),
         "faceIdSubtitle": MessageLookupByLibrary.simpleMessage(
             "Use face ID to sign in quickly and securely"),
