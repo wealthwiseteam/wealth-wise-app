@@ -25,8 +25,7 @@ class PublicTextFormField extends StatefulWidget {
   final void Function(String)? onChanged;
   final void Function(String)? onSubmitted;
   final InputBorder? border;
-  
-  final InputDecoration? decoration;
+ 
 
   const PublicTextFormField(
       {Key? key,
@@ -49,7 +48,8 @@ class PublicTextFormField extends StatefulWidget {
       this.onChanged,
       this.onSubmitted,
       this.border,
-      this.suffixIconColor, this.decoration})
+   
+      this.suffixIconColor})
       : super(key: key);
 
   @override

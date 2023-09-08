@@ -82,7 +82,7 @@ class _AddCashPageState extends State<AddCashPage> {
                           color: AppColors.mintGreen,
                           width: 2.0.w,
                         ),
-                        borderRadius: BorderRadius.circular(5.0)),
+                        borderRadius: BorderRadius.circular(5.0)), hint: '',
                   ),
                   20.ph,
 
