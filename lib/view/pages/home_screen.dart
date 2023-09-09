@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hexcolor/hexcolor.dart';
+import 'package:wealth_wise/resources/constants/app_constants.dart';
 import 'package:wealth_wise/view/widgets/home_card.dart';
 import 'package:wealth_wise/view/widgets/public_text.dart';
+
+import '../../resources/constants/app_assets.dart';
 
 class Home extends StatelessWidget {
   String userName;
@@ -12,11 +14,11 @@ class Home extends StatelessWidget {
    
    List<Widget> cards = 
    [
-     HomeCard(imageUrl: 'images/pana.png', text: 'Transactions'),
-     HomeCard(imageUrl: 'images/rafiki2.png', text: 'Goals'),
-     HomeCard(imageUrl: 'images/rafiki.png', text: 'Bills'),
-     HomeCard(imageUrl: 'images/rafiki1.png', text: 'Budgets'),
-     HomeCard(imageUrl: 'images/pana2.png', text: 'Financial tips'),
+     HomeCard(imageUrl: AppAssets.transaction, text: 'Transactions'),
+     HomeCard(imageUrl: AppAssets.goals, text: 'Goals'),
+     HomeCard(imageUrl: AppAssets.bills, text: 'Bills'),
+     HomeCard(imageUrl: AppAssets.budgets, text: 'Budgets'),
+     HomeCard(imageUrl: AppAssets.financialTips, text: 'Financial tips'),
    ];
   @override
   Widget build(BuildContext context) {
@@ -39,7 +41,7 @@ class Home extends StatelessWidget {
                   const Spacer(),
                   IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.notifications_none,color: HexColor('#105161'),size: 30 ,),
+                      icon: const Icon(Icons.notifications_none,color:Colors.grey,size: 30 ,),
                   ),
                 ],
               ),
@@ -53,7 +55,7 @@ class Home extends StatelessWidget {
                     children: [
                       SizedBox(
                           width: double.infinity,
-                          child: Image.asset('images/Mask Group.png',fit: BoxFit.fill,)),
+                          child: Image.asset(AppAssets.maskGroup,fit: BoxFit.fill,)),
                       Row(
                         children: [
                           Padding(
@@ -78,7 +80,7 @@ class Home extends StatelessWidget {
                             padding: const EdgeInsets.all(20.0),
                             child: Column(
                               children: [
-                                Image.asset('images/Group 75.png'),
+                                Image.asset(AppAssets.group),
                                 const Spacer(),
                                 const PublicText(txt: '21/23',color: Colors.white60,)
                               ],

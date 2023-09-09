@@ -60,16 +60,6 @@ class S {
     );
   }
 
-  /// `----------- Welcome -----------`
-  String get _comment1_ {
-    return Intl.message(
-      '----------- Welcome -----------',
-      name: '_comment1_',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Sign in`
   String get signIn {
     return Intl.message(
@@ -85,16 +75,6 @@ class S {
     return Intl.message(
       'Register',
       name: 'register',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `----------- Sign in -----------`
-  String get _comment2_ {
-    return Intl.message(
-      '----------- Sign in -----------',
-      name: '_comment2_',
       desc: '',
       args: [],
     );
@@ -160,16 +140,6 @@ class S {
     );
   }
 
-  /// `----------- Sign Up -----------`
-  String get _comment3_ {
-    return Intl.message(
-      '----------- Sign Up -----------',
-      name: '_comment3_',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `User Name`
   String get userName {
     return Intl.message(
@@ -200,31 +170,11 @@ class S {
     );
   }
 
-  /// `----------- Forgot Password -----------`
-  String get _comment4_ {
-    return Intl.message(
-      '----------- Forgot Password -----------',
-      name: '_comment4_',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `send`
   String get send {
     return Intl.message(
       'send',
       name: 'send',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `----------- Email verification -----------`
-  String get _comment5_ {
-    return Intl.message(
-      '----------- Email verification -----------',
-      name: '_comment5_',
       desc: '',
       args: [],
     );
@@ -245,16 +195,6 @@ class S {
     return Intl.message(
       'You will receive a 4 digit code to verify next',
       name: 'emailVerificationSubtitle',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `----------- verify code -----------`
-  String get _comment6_ {
-    return Intl.message(
-      '----------- verify code -----------',
-      name: '_comment6_',
       desc: '',
       args: [],
     );
@@ -300,16 +240,6 @@ class S {
     );
   }
 
-  /// `----------- Face Id -----------`
-  String get _comment7_ {
-    return Intl.message(
-      '----------- Face Id -----------',
-      name: '_comment7_',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Face ID`
   String get faceId {
     return Intl.message(
@@ -350,16 +280,6 @@ class S {
     );
   }
 
-  /// `----------- congrats-----------`
-  String get _comment8_ {
-    return Intl.message(
-      '----------- congrats-----------',
-      name: '_comment8_',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Congrats!`
   String get congrats {
     return Intl.message(
@@ -385,6 +305,766 @@ class S {
     return Intl.message(
       'Continue',
       name: 'continueWord',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `------------------------------ Settings ----------------------------------`
+  String get _comment9_ {
+    return Intl.message(
+      '------------------------------ Settings ----------------------------------',
+      name: '_comment9_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Settings`
+  String get settings {
+    return Intl.message(
+      'Settings',
+      name: 'settings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Profile`
+  String get profile {
+    return Intl.message(
+      'Profile',
+      name: 'profile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Accounts`
+  String get accounts {
+    return Intl.message(
+      'Accounts',
+      name: 'accounts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Security`
+  String get security {
+    return Intl.message(
+      'Security',
+      name: 'security',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Logout`
+  String get logout {
+    return Intl.message(
+      'Logout',
+      name: 'logout',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Are you sure you want to logout?`
+  String get logoutWarning {
+    return Intl.message(
+      'Are you sure you want to logout?',
+      name: 'logoutWarning',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `cancel`
+  String get cancel {
+    return Intl.message(
+      'cancel',
+      name: 'cancel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Yes, logout`
+  String get yesLogout {
+    return Intl.message(
+      'Yes, logout',
+      name: 'yesLogout',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Personal Data & Privacy`
+  String get personalDataPrivacy {
+    return Intl.message(
+      'Personal Data & Privacy',
+      name: 'personalDataPrivacy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Privacy`
+  String get privacy {
+    return Intl.message(
+      'Privacy',
+      name: 'privacy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Notifications`
+  String get notifications {
+    return Intl.message(
+      'Notifications',
+      name: 'notifications',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `categories`
+  String get categories {
+    return Intl.message(
+      'categories',
+      name: 'categories',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `About`
+  String get about {
+    return Intl.message(
+      'About',
+      name: 'about',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `--------------------- profile ------------------------`
+  String get _comment10_ {
+    return Intl.message(
+      '--------------------- profile ------------------------',
+      name: '_comment10_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `First Name`
+  String get firstName {
+    return Intl.message(
+      'First Name',
+      name: 'firstName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Last Name`
+  String get lastName {
+    return Intl.message(
+      'Last Name',
+      name: 'lastName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Save`
+  String get save {
+    return Intl.message(
+      'Save',
+      name: 'save',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please, enter your first name`
+  String get enterFirstName {
+    return Intl.message(
+      'Please, enter your first name',
+      name: 'enterFirstName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please, enter your first name`
+  String get enterLastName {
+    return Intl.message(
+      'Please, enter your first name',
+      name: 'enterLastName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please, enter your first name`
+  String get enterEmail {
+    return Intl.message(
+      'Please, enter your first name',
+      name: 'enterEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please, enter your first name`
+  String get enterPhoneNumber {
+    return Intl.message(
+      'Please, enter your first name',
+      name: 'enterPhoneNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `--------------------- Notificaitons ------------------------`
+  String get _comment11_ {
+    return Intl.message(
+      '--------------------- Notificaitons ------------------------',
+      name: '_comment11_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Budgets`
+  String get budgets {
+    return Intl.message(
+      'Budgets',
+      name: 'budgets',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reaching Goals`
+  String get reachingGoals {
+    return Intl.message(
+      'Reaching Goals',
+      name: 'reachingGoals',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Security Alerts`
+  String get securityAlerts {
+    return Intl.message(
+      'Security Alerts',
+      name: 'securityAlerts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `App Updates`
+  String get appUpdates {
+    return Intl.message(
+      'App Updates',
+      name: 'appUpdates',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `--------------------- About ------------------------`
+  String get _comment12_ {
+    return Intl.message(
+      '--------------------- About ------------------------',
+      name: '_comment12_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your finance in one place.`
+  String get aboutTitle {
+    return Intl.message(
+      'Your finance in one place.',
+      name: 'aboutTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Flexibly budget and track your spending, so you stay in control and achieve your goals.`
+  String get aboutSubtitle {
+    return Intl.message(
+      'Flexibly budget and track your spending, so you stay in control and achieve your goals.',
+      name: 'aboutSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `--------------------- categories ------------------------`
+  String get _comment13_ {
+    return Intl.message(
+      '--------------------- categories ------------------------',
+      name: '_comment13_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Food & Drinks`
+  String get foodDrinks {
+    return Intl.message(
+      'Food & Drinks',
+      name: 'foodDrinks',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Health`
+  String get health {
+    return Intl.message(
+      'Health',
+      name: 'health',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Vehicle`
+  String get vehicle {
+    return Intl.message(
+      'Vehicle',
+      name: 'vehicle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Housing & Rent`
+  String get housingRent {
+    return Intl.message(
+      'Housing & Rent',
+      name: 'housingRent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sports`
+  String get sports {
+    return Intl.message(
+      'Sports',
+      name: 'sports',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Others`
+  String get others {
+    return Intl.message(
+      'Others',
+      name: 'others',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Shopping`
+  String get shopping {
+    return Intl.message(
+      'Shopping',
+      name: 'shopping',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Edit Category`
+  String get editCategory {
+    return Intl.message(
+      'Edit Category',
+      name: 'editCategory',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name`
+  String get name {
+    return Intl.message(
+      'Name',
+      name: 'name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Show`
+  String get show {
+    return Intl.message(
+      'Show',
+      name: 'show',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `--------------------- Goals ------------------------`
+  String get _comment14_ {
+    return Intl.message(
+      '--------------------- Goals ------------------------',
+      name: '_comment14_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Goals`
+  String get goals {
+    return Intl.message(
+      'Goals',
+      name: 'goals',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `My Goals`
+  String get myGoals {
+    return Intl.message(
+      'My Goals',
+      name: 'myGoals',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create Goal`
+  String get createGoal {
+    return Intl.message(
+      'Create Goal',
+      name: 'createGoal',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `How much I already saved?`
+  String get howMuchSaved {
+    return Intl.message(
+      'How much I already saved?',
+      name: 'howMuchSaved',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `EGP`
+  String get egp {
+    return Intl.message(
+      'EGP',
+      name: 'egp',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `What are you saving for?`
+  String get whatSavingFor {
+    return Intl.message(
+      'What are you saving for?',
+      name: 'whatSavingFor',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Some things people save for:`
+  String get thingsSaveFor {
+    return Intl.message(
+      'Some things people save for:',
+      name: 'thingsSaveFor',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your goal’s name`
+  String get yourGoalName {
+    return Intl.message(
+      'Your goal’s name',
+      name: 'yourGoalName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Donations`
+  String get donations {
+    return Intl.message(
+      'Donations',
+      name: 'donations',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Travelling`
+  String get travelling {
+    return Intl.message(
+      'Travelling',
+      name: 'travelling',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Health care`
+  String get healthCare {
+    return Intl.message(
+      'Health care',
+      name: 'healthCare',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Education`
+  String get educaiton {
+    return Intl.message(
+      'Education',
+      name: 'educaiton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `New home`
+  String get newHome {
+    return Intl.message(
+      'New home',
+      name: 'newHome',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `New vehicle`
+  String get newVehicle {
+    return Intl.message(
+      'New vehicle',
+      name: 'newVehicle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Goal`
+  String get addGoal {
+    return Intl.message(
+      'Add Goal',
+      name: 'addGoal',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Notes`
+  String get notes {
+    return Intl.message(
+      'Notes',
+      name: 'notes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose icon`
+  String get chooseIcon {
+    return Intl.message(
+      'Choose icon',
+      name: 'chooseIcon',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Goal Color`
+  String get goalColor {
+    return Intl.message(
+      'Goal Color',
+      name: 'goalColor',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Saved already`
+  String get savedAlready {
+    return Intl.message(
+      'Saved already',
+      name: 'savedAlready',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Target amount`
+  String get targetAmount {
+    return Intl.message(
+      'Target amount',
+      name: 'targetAmount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Desired date`
+  String get desiredDate {
+    return Intl.message(
+      'Desired date',
+      name: 'desiredDate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Example: Aug 12, 2024`
+  String get dateHint {
+    return Intl.message(
+      'Example: Aug 12, 2024',
+      name: 'dateHint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Exampl3: 250`
+  String get targetHint {
+    return Intl.message(
+      'Exampl3: 250',
+      name: 'targetHint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Example: 50`
+  String get saveHint {
+    return Intl.message(
+      'Example: 50',
+      name: 'saveHint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Note...`
+  String get noteHint {
+    return Intl.message(
+      'Note...',
+      name: 'noteHint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `--------------------- Colors ------------------------`
+  String get _comment15_ {
+    return Intl.message(
+      '--------------------- Colors ------------------------',
+      name: '_comment15_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Blue`
+  String get blue {
+    return Intl.message(
+      'Blue',
+      name: 'blue',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Red`
+  String get red {
+    return Intl.message(
+      'Red',
+      name: 'red',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `yellow`
+  String get yellow {
+    return Intl.message(
+      'yellow',
+      name: 'yellow',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Grenn`
+  String get green {
+    return Intl.message(
+      'Grenn',
+      name: 'green',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Purple`
+  String get purple {
+    return Intl.message(
+      'Purple',
+      name: 'purple',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pink`
+  String get pink {
+    return Intl.message(
+      'Pink',
+      name: 'pink',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Grey`
+  String get grey {
+    return Intl.message(
+      'Grey',
+      name: 'grey',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Orange`
+  String get orange {
+    return Intl.message(
+      'Orange',
+      name: 'orange',
       desc: '',
       args: [],
     );
