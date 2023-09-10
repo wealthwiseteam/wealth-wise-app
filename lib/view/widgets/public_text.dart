@@ -10,6 +10,7 @@ class PublicText extends StatelessWidget {
   final int? max;
   final FontWeight? fw;
   final TextAlign? align;
+  final TextOverflow? overflow;
 
   const PublicText({
     super.key,
@@ -21,6 +22,7 @@ class PublicText extends StatelessWidget {
     this.max,
     this.fw,
     this.ff,
+    this.overflow
   });
 
   @override
@@ -37,7 +39,7 @@ class PublicText extends StatelessWidget {
         fontWeight: fw ?? FontWeight.normal,
         decoration:
             under == true ? TextDecoration.underline : TextDecoration.none,
-        overflow: TextOverflow.ellipsis,
+        overflow: overflow ?? TextOverflow.ellipsis,
       ),
     );
   }

@@ -5,7 +5,7 @@ import 'package:wealth_wise/view/pages/goals/create_goal/create_goal_page.dart';
 import 'package:wealth_wise/view/pages/settings/about/about_page.dart';
 import 'package:wealth_wise/view/pages/settings/categories/categories_page.dart';
 import 'package:wealth_wise/view/pages/settings/category_settings/category_settings_page.dart';
-import 'package:wealth_wise/view/pages/settings/notifications/notifications_apge.dart';
+import 'package:wealth_wise/view/pages/settings/notifications/notifications_settings_page.dart';
 import 'package:wealth_wise/view/pages/settings/privacy/privacy_page.dart';
 import 'package:wealth_wise/view/pages/settings/profile/profile_page.dart';
 import 'package:wealth_wise/view/pages/settings/security/security_page.dart';
@@ -57,7 +57,7 @@ class RouteGenerate {
         );
       case AppRoutes.notifications:
         return MaterialPageRoute(
-          builder: (_) => const NotificationsPage(),
+          builder: (_) => const NotificationsSettingsPage(),
         );
       case AppRoutes.privacy:
         return MaterialPageRoute(

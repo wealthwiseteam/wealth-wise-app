@@ -36,6 +36,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "--------------------- Colors ------------------------"),
         "_comment16_": MessageLookupByLibrary.simpleMessage(
             "--------------------- Layouts ------------------------"),
+        "_comment17_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- Layouts ------------------------"),
         "_comment9_": MessageLookupByLibrary.simpleMessage(
             "------------------------------ Settings ----------------------------------"),
         "_comment_": MessageLookupByLibrary.simpleMessage(
@@ -109,6 +111,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "newVehicle": MessageLookupByLibrary.simpleMessage("New vehicle"),
         "noteHint": MessageLookupByLibrary.simpleMessage("Note..."),
         "notes": MessageLookupByLibrary.simpleMessage("Notes"),
+        "notificaitons": MessageLookupByLibrary.simpleMessage("Notificaitons"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "orSignInWith": MessageLookupByLibrary.simpleMessage("Or Sign in with"),
         "orange": MessageLookupByLibrary.simpleMessage("Orange"),

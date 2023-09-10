@@ -1099,6 +1099,26 @@ class S {
       args: [],
     );
   }
+
+  /// `--------------------- Layouts ------------------------`
+  String get _comment17_ {
+    return Intl.message(
+      '--------------------- Layouts ------------------------',
+      name: '_comment17_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Notificaitons`
+  String get notificaitons {
+    return Intl.message(
+      'Notificaitons',
+      name: 'notificaitons',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

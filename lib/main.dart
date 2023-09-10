@@ -5,6 +5,8 @@ import 'package:wealth_wise/resources/styles/app_colors.dart';
 import 'package:wealth_wise/resources/styles/app_theme.dart';
 import 'package:wealth_wise/view/pages/home/home_screen.dart';
 import 'package:wealth_wise/view/pages/layouts/layouts_page.dart';
+import 'package:wealth_wise/view/pages/notifications/notifications_page.dart';
+import 'package:wealth_wise/view/pages/settings/notifications/notifications_settings_page.dart';
 
 import 'resources/localization/generated/l10n.dart';
 import 'resources/router/app_router.dart';
@@ -41,7 +43,7 @@ class MyApp extends StatelessWidget {
             physics: const BouncingScrollPhysics(),
           ),
           onGenerateRoute: RouteGenerate.getRoute,
-          home: const LayoutsPage()
+          home: const NotificationsPage()
         );
       },
     );
