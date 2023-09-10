@@ -23,7 +23,7 @@ class NotificationCard extends StatelessWidget {
               color: AppColors.grey.withOpacity(0.5),
               spreadRadius: 0.6,
               blurRadius: 4,
-            )
+            ),
           ],
         ),
         child: Row(

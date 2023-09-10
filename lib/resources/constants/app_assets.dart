@@ -38,4 +38,5 @@ class AppAssets {
   static const String bills = "assets/images/rafiki.png";
   static const String budgets = "assets/images/rafiki1.png";
   static const String goals = "assets/images/rafiki2.png";
+  static const String imageTips = "assets/images/tips.png";
 }

@@ -1119,6 +1119,46 @@ class S {
       args: [],
     );
   }
+
+  /// `--------------------- Tips ------------------------`
+  String get _comment18_ {
+    return Intl.message(
+      '--------------------- Tips ------------------------',
+      name: '_comment18_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Financial Tips`
+  String get financialTips {
+    return Intl.message(
+      'Financial Tips',
+      name: 'financialTips',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `When you have your finances under control, your financial health improves and you can increase the likelihood of achieving your dreams and goals. `
+  String get tipsTitle {
+    return Intl.message(
+      'When you have your finances under control, your financial health improves and you can increase the likelihood of achieving your dreams and goals. ',
+      name: 'tipsTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Here are some tips you can start with today.`
+  String get tipsSubtitle {
+    return Intl.message(
+      'Here are some tips you can start with today.',
+      name: 'tipsSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

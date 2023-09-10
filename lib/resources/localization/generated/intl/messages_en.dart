@@ -38,6 +38,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "--------------------- Layouts ------------------------"),
         "_comment17_": MessageLookupByLibrary.simpleMessage(
             "--------------------- Layouts ------------------------"),
+        "_comment18_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- Tips ------------------------"),
         "_comment9_": MessageLookupByLibrary.simpleMessage(
             "------------------------------ Settings ----------------------------------"),
         "_comment_": MessageLookupByLibrary.simpleMessage(
@@ -85,6 +87,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "faceId": MessageLookupByLibrary.simpleMessage("Face ID"),
         "faceIdSubtitle": MessageLookupByLibrary.simpleMessage(
             "Use face ID to sign in quickly and securely"),
+        "financialTips": MessageLookupByLibrary.simpleMessage("Financial Tips"),
         "firstName": MessageLookupByLibrary.simpleMessage("First Name"),
         "foodDrinks": MessageLookupByLibrary.simpleMessage("Food & Drinks"),
         "forgotPassword":
@@ -148,6 +151,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "targetHint": MessageLookupByLibrary.simpleMessage("Exampl3: 250"),
         "thingsSaveFor": MessageLookupByLibrary.simpleMessage(
             "Some things people save for:"),
+        "tipsSubtitle": MessageLookupByLibrary.simpleMessage(
+            "Here are some tips you can start with today."),
+        "tipsTitle": MessageLookupByLibrary.simpleMessage(
+            "When you have your finances under control, your financial health improves and you can increase the likelihood of achieving your dreams and goals. "),
         "travelling": MessageLookupByLibrary.simpleMessage("Travelling"),
         "useFaceId": MessageLookupByLibrary.simpleMessage("Use Face ID"),
         "userName": MessageLookupByLibrary.simpleMessage("User Name"),

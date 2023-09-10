@@ -39,4 +39,13 @@ class DummayData {
       content: "your Expenses are more than your income, check it out",
     ),
   ];
+
+  static const List<String> tipsTitle = [
+    "Saving for retirement is easier if you start earlier.",
+    "You do not need to have a lot of money to start investing.",
+    "Set savings goals and budget to achieve them.",
+    "Saving for retirement is easier if you start earlier.",
+    "You do not need to have a lot of money to start investing.",
+    "Set savings goals and budget to achieve them.",
+  ];
 }
