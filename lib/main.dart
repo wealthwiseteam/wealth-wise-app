@@ -3,7 +3,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/resources/styles/app_colors.dart';
 import 'package:wealth_wise/resources/styles/app_theme.dart';
-import 'package:wealth_wise/view/pages/home_screen.dart';
+import 'package:wealth_wise/view/pages/home/home_screen.dart';
 
 import 'resources/localization/generated/l10n.dart';
 import 'resources/router/app_router.dart';
@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
             physics: const BouncingScrollPhysics(),
           ),
           onGenerateRoute: RouteGenerate.getRoute,
-          home: Home(userName: 'ahmed'),
+          home: const HomePage(userName: 'ahmed'),
         );
       },
     );
