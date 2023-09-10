@@ -1069,6 +1069,36 @@ class S {
       args: [],
     );
   }
+
+  /// `--------------------- Layouts ------------------------`
+  String get _comment16_ {
+    return Intl.message(
+      '--------------------- Layouts ------------------------',
+      name: '_comment16_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Home`
+  String get home {
+    return Intl.message(
+      'Home',
+      name: 'home',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Statistics`
+  String get statistics {
+    return Intl.message(
+      'Statistics',
+      name: 'statistics',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
