@@ -24,4 +24,13 @@ class AppAssets {
   static const String iconEducation = "assets/icons/education.svg";
   static const String iconHealthCare = "assets/icons/healthCare.svg";
   static const String iconTravelling = "assets/icons/travilling.svg";
+
+  //images
+  static const String group = "assets/images/Group 75.png";
+  static const String maskGroup = "assets/images/Mask Group.png";
+  static const String transaction = "assets/images/pana.png";
+  static const String financialTips = "assets/images/pana2.png";
+  static const String bills = "assets/images/rafiki.png";
+  static const String budgets = "assets/images/rafiki1.png";
+  static const String goals = "assets/images/rafiki2.png";
 }
