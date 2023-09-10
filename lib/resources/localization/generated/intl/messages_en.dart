@@ -36,6 +36,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "--------------------- Colors ------------------------"),
         "_comment16_": MessageLookupByLibrary.simpleMessage(
             "--------------------- Layouts ------------------------"),
+        "_comment17_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- Budgets ------------------------"),
         "_comment9_": MessageLookupByLibrary.simpleMessage(
             "------------------------------ Settings ----------------------------------"),
         "_comment_": MessageLookupByLibrary.simpleMessage(
@@ -80,6 +82,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Please, enter your first name"),
         "enterPhoneNumber": MessageLookupByLibrary.simpleMessage(
             "Please, enter your first name"),
+        "expenses": MessageLookupByLibrary.simpleMessage("Expenses"),
         "faceId": MessageLookupByLibrary.simpleMessage("Face ID"),
         "faceIdSubtitle": MessageLookupByLibrary.simpleMessage(
             "Use face ID to sign in quickly and securely"),
@@ -98,6 +101,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "housingRent": MessageLookupByLibrary.simpleMessage("Housing & Rent"),
         "howMuchSaved":
             MessageLookupByLibrary.simpleMessage("How much I already saved?"),
+        "incomes": MessageLookupByLibrary.simpleMessage("Incomes"),
         "lastName": MessageLookupByLibrary.simpleMessage("Last Name"),
         "logout": MessageLookupByLibrary.simpleMessage("Logout"),
         "logoutWarning": MessageLookupByLibrary.simpleMessage(

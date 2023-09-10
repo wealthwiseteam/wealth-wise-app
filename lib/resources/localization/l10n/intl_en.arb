@@ -103,6 +103,9 @@
     "orange": "Orange",
     "_comment16_": "--------------------- Layouts ------------------------",
     "home": "Home",
-    "statistics": "Statistics"
+    "statistics": "Statistics",
+    "_comment17_": "--------------------- Budgets ------------------------",
+    "incomes": "Incomes",
+    "expenses": "Expenses"
 
 }

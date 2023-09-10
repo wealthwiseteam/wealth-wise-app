@@ -1099,6 +1099,36 @@ class S {
       args: [],
     );
   }
+
+  /// `--------------------- Budgets ------------------------`
+  String get _comment17_ {
+    return Intl.message(
+      '--------------------- Budgets ------------------------',
+      name: '_comment17_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Incomes`
+  String get incomes {
+    return Intl.message(
+      'Incomes',
+      name: 'incomes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Expenses`
+  String get expenses {
+    return Intl.message(
+      'Expenses',
+      name: 'expenses',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
