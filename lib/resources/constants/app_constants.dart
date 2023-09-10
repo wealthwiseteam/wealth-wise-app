@@ -4,6 +4,7 @@ import 'package:wealth_wise/data/models/settings/category_info_model.dart';
 import 'package:wealth_wise/resources/constants/app_assets.dart';
 import 'package:wealth_wise/resources/localization/generated/l10n.dart';
 
+import '../../data/models/budget/categories_mode.dart.dart';
 import '../../data/models/goals/category_icon_model.dart';
 
 class AppConstants {
@@ -35,5 +36,25 @@ class AppConstants {
     CategoryIcon(name: "Housing", icon: Icons.house),
     CategoryIcon(name: "Vehicle", icon: Icons.car_rental_outlined),
     CategoryIcon(name: "Shopping", icon: Icons.cast_outlined),
+  ];
+  static List<Category>categoryCollection = [
+   Category(name: "All Categories"),
+   Category(name: S.current.housingRent),
+    Category(name: S.current.educaiton),
+    Category(name: S.current.foodDrinks),
+    Category(name: S.current.health),
+    Category(name: S.current.donations),
+  ];
+   static List<CategoryPeriod> periodCollection = [
+    CategoryPeriod(name: "Weakly"),
+    CategoryPeriod(name: "Monthly"),
+    CategoryPeriod(name: "Yearly"),
+  
+  ];
+  static List<CategoryAccount> accountCollection = [
+    CategoryAccount(name: "Card"),
+    CategoryAccount(name: "Cash"),
+   
+  
   ];
 }

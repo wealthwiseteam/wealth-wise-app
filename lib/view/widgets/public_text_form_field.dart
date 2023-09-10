@@ -71,7 +71,7 @@ class _PublicTextFormFieldState extends State<PublicTextFormField> {
       autovalidateMode: AutovalidateMode.disabled,
       validator: widget.validator,
       decoration: InputDecoration(
-        fillColor: AppColors.white,
+        fillColor: const Color.fromRGBO(255, 255, 255, 1),
         iconColor: AppColors.mintGreen,
         filled: true,
         hintText: widget.hint,

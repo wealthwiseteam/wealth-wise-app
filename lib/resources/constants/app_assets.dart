@@ -14,8 +14,7 @@ class AppAssets {
   static String login = "assets/images/login.png";
   static String resetPassword = "assets/images/resetpassword.png";
   static String facescan = "assets/images/facescan.png";
-    static String enterIncome = "assets/images/enter income.png";
-  
+  static String enterIncome = "assets/images/enter income.png";
 
   /// Icons
   static const String iconUser = "assets/icons/user.svg";
@@ -37,4 +36,8 @@ class AppAssets {
   static const String iconEducation = "assets/icons/education.svg";
   static const String iconHealthCare = "assets/icons/healthCare.svg";
   static const String iconTravelling = "assets/icons/travilling.svg";
+  static const String iconCreditCard = "assets/icons/credit-card.svg";
+  
+    
+      
 }

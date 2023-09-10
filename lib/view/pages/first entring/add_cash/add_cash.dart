@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/resources/extensions/extensions.dart';
 
-import '../../../resources/localization/generated/l10n.dart';
-import '../../../resources/styles/app_colors.dart';
-import '../../widgets/public_button.dart';
-import '../../widgets/public_text.dart';
-import '../../widgets/public_text_form_field.dart';
+import '../../../../resources/localization/generated/l10n.dart';
+import '../../../../resources/styles/app_colors.dart';
+import '../../../widgets/public_button.dart';
+import '../../../widgets/public_text.dart';
+import '../../../widgets/public_text_form_field.dart';
 
 class AddCashPage extends StatefulWidget {
   const AddCashPage({super.key});
