@@ -1,6 +1,8 @@
 {
     "_comment_": "--------------------- Auth ---------------------",
     "signIn": "Sign in",
+    "signUp": "Sign up",
+
     "register": "Register",
     "signInTitle": "Hi, Welcome Back",
     "email": "Email",

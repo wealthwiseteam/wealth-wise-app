@@ -180,6 +180,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "show": MessageLookupByLibrary.simpleMessage("Show"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign in"),
         "signInTitle": MessageLookupByLibrary.simpleMessage("Hi, Welcome Back"),
+        "signUp": MessageLookupByLibrary.simpleMessage("Sign up"),
         "signUpTitle":
             MessageLookupByLibrary.simpleMessage("Create New Account"),
         "sports": MessageLookupByLibrary.simpleMessage("Sports"),

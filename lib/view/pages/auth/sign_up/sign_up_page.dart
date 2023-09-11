@@ -2,36 +2,54 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:wealth_wise/resources/extensions/extensions.dart';
 import 'package:wealth_wise/view/pages/auth/sign_in/sign_in_page.dart';
 
-
 import '../../../../resources/constants/app_assets.dart';
+import '../../../../resources/localization/generated/l10n.dart';
 import '../../../../resources/styles/app_colors.dart';
 import '../../../widgets/public_button.dart';
 import '../../../widgets/public_text.dart';
 import '../../../widgets/public_text_form_field.dart';
 import '../forget_password/forget_password_page.dart';
 
-
 class SignUpPage extends StatefulWidget {
-  const SignUpPage ({super.key});
+  const SignUpPage({super.key});
 
   @override
-  State<SignUpPage > createState() => _SignUpPageState();
+  State<SignUpPage> createState() => _SignUpPageState();
 }
 
-class _SignUpPageState extends State<SignUpPage > {
-  var emailController = TextEditingController();
+class _SignUpPageState extends State<SignUpPage> {
+  late final TextEditingController usernameController;
 
-  var usernameController = TextEditingController();
+  late final TextEditingController emailController;
 
-  var passwordController = TextEditingController();
+  late final TextEditingController passwordController;
+
+  @override
+  void initState() {
+    super.initState();
+    usernameController = TextEditingController();
+    emailController = TextEditingController();
+    passwordController = TextEditingController();
+  }
+
+  @override
+  void dispose() {
+    passwordController.dispose();
+    usernameController.dispose();
+    emailController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
+    final phoneSize = MediaQuery.sizeOf(context);
     return Scaffold(
       body: Stack(fit: StackFit.expand, children: [
         Container(
-          height: MediaQuery.of(context).size.height / 0.8.h,
+          height: phoneSize.height / 0.5.h,
           color: AppColors.lightGrey,
           child: Padding(
             padding: EdgeInsets.symmetric(vertical: 140.w),
@@ -41,14 +59,15 @@ class _SignUpPageState extends State<SignUpPage > {
             ),
           ),
         ),
-        Column(children: [
-          Padding(
-            padding: EdgeInsets.symmetric(vertical: 180.w),
-          ),
-          Expanded(
-            child: Container(
-              height: MediaQuery.of(context).size.height / 1.5.h,
-              width: MediaQuery.of(context).size.width.w,
+        SingleChildScrollView(
+          physics: const ClampingScrollPhysics(),
+          child: Column(children: [
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 180.w),
+            ),
+            Container(
+              height: phoneSize.height / 1.5.h,
+              width: phoneSize.width,
               decoration: const BoxDecoration(
                 color: AppColors.white,
                 borderRadius: BorderRadius.only(
@@ -56,23 +75,19 @@ class _SignUpPageState extends State<SignUpPage > {
                     topRight: Radius.circular(32)),
               ),
               child: Padding(
-                padding: const EdgeInsets.all(10.0),
+                padding: EdgeInsets.symmetric(horizontal: 30.w, vertical: 20.h),
                 child: SingleChildScrollView(
                   child: Column(
-                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      const PublicText(
-                        txt: 'Create new account',
+                      PublicText(
+                        txt: S.of(context).signUpTitle,
                         align: TextAlign.center,
-                        size: 20,
+                        size: 20.sp,
                       ),
-                       SizedBox(
-                        height: 10.h,
-                      ),
+                      20.ph,
                       PublicTextFormField(
-                        contentPadding:  EdgeInsets.symmetric(
-                            horizontal: 10.h, vertical: 10.w),
-                        hint: 'User name',
+                        hint: S.of(context).userName,
                         keyboardtype: TextInputType.name,
                         prefixIcon: Icons.person,
                         showprefixIcon: true,
@@ -83,115 +98,71 @@ class _SignUpPageState extends State<SignUpPage > {
                           }
                           return null;
                         },
-                        // decoration: const InputDecoration(
-                        //   labelText: 'User name',
-                        //   labelStyle: TextStyle(
-                        //     color: AppColors.grey,
-                        //   ),
-                        //   fillColor: AppColors.mintGreen,
-                        //   prefixIcon: Icon(
-                        //     Icons.email,
-                        //     color: AppColors.mintGreen,
-                        //   ),
-                        // ),
                       ),
-                       SizedBox(
-                        height: 10.h,
-                      ),
+                      20.ph,
                       PublicTextFormField(
-                        contentPadding:  EdgeInsets.symmetric(
-                            horizontal: 10.h, vertical: 10.w),
-                        hint: ' Email',
+                        hint: S.of(context).email,
                         keyboardtype: TextInputType.emailAddress,
                         prefixIcon: Icons.email,
                         showprefixIcon: true,
                         controller: emailController,
                         validator: (email) {
                           if (email!.isEmpty) {
-                            return 'Please enter your username';
+                            return 'Please enter your email';
                           }
                           return null;
                         },
-                        // decoration: const InputDecoration(
-                        //   labelText: 'Email',
-                        //   labelStyle: TextStyle(
-                        //     color: AppColors.grey,
-                        //   ),
-                        //   fillColor: AppColors.mintGreen,
-                        //   prefixIcon: Icon(
-                        //     Icons.email,
-                        //     color: AppColors.mintGreen,
-                        //   ),
-                        // ),
                       ),
-                       SizedBox(
-                        height: 10.h,
-                      ),
+                      20.ph,
                       PublicTextFormField(
-                        contentPadding:  EdgeInsets.symmetric(
-                            horizontal: 10.h, vertical: 10.w),
-                        hint: 'Password',
+                        hint: S.of(context).password,
                         keyboardtype: TextInputType.text,
                         prefixIcon: Icons.lock,
                         showprefixIcon: true,
                         controller: passwordController,
                         validator: (password) {
                           if (password!.isEmpty) {
-                            return 'Please enter your username';
+                            return 'Please enter your password';
                           }
                           return null;
                         },
-                        // decoration: const InputDecoration(
-                        //   labelText: 'Password',
-                        //   labelStyle: TextStyle(
-                        //     color: AppColors.grey,
-                        //   ),
-                        //   fillColor: AppColors.mintGreen,
-                        //   prefixIcon: Icon(
-                        //     Icons.password,
-                        //     color: AppColors.mintGreen,
-                        //   ),
-                        // ),
                       ),
-                       SizedBox(
-                        height: 30.h,
-                      ),
+                      40.ph,
                       PublicButton(
-                        title: "Sign up",
-                        backgroundColor: AppColors.mintGreen,
-                        titleColor: AppColors.white,
+                        title: S.of(context).signUp,
                         width: 300.w,
-                        borderRadius: 12,
-                        titleSize: 16,
                         onPressed: () {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const ForgetPasswordPage()),
+                                builder: (context) =>
+                                    const ForgetPasswordPage()),
                           );
                         },
                       ),
-                       SizedBox(
-                        height: 10.h,
-                      ),
+                      10.ph,
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          const Text('Have an account?',
-                              style: TextStyle(fontSize: 15.0)),
+                          PublicText(
+                            txt: S.of(context).haveAccount,
+                            color: AppColors.grey,
+                          ),
                           TextButton(
                               onPressed: () {
                                 Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const SignInPage()),
-                          );
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const SignInPage()),
+                                );
                               },
-                              child: const Text(
-                                'Sign in',
+                              child: Text(
+                                S.of(context).signIn,
                                 style: TextStyle(
-                                    fontSize: 15.0,
-                                    color: AppColors.mintGreen),
+                                    fontSize: 12.0.sp,
+                                    color: AppColors.mintGreen,
+                                    fontWeight: FontWeight.w600,
+                                    fontFamily: "Inter"),
                               ))
                         ],
                       ),
@@ -200,8 +171,8 @@ class _SignUpPageState extends State<SignUpPage > {
                 ),
               ),
             ),
-          ),
-        ])
+          ]),
+        )
       ]),
     );
   }
