@@ -3,6 +3,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/resources/styles/app_colors.dart';
 import 'package:wealth_wise/resources/styles/app_theme.dart';
+import 'package:wealth_wise/view/pages/statistics/statistics_page.dart';
 import 'package:wealth_wise/view/pages/home/home_screen.dart';
 import 'package:wealth_wise/view/pages/layouts/layouts_page.dart';
 

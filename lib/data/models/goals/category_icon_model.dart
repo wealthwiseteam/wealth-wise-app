@@ -4,7 +4,7 @@ class CategoryIcon {
   final String name;
   final IconData icon;
 
-  CategoryIcon({
+  const CategoryIcon({
     required this.name,
     required this.icon,
   });
