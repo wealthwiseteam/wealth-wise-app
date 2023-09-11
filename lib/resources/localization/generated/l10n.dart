@@ -180,6 +180,66 @@ class S {
     );
   }
 
+  /// `Create`
+  String get create {
+    return Intl.message(
+      'Create',
+      name: 'create',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create new password`
+  String get CreateNewPassword {
+    return Intl.message(
+      'Create new password',
+      name: 'CreateNewPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create new password again`
+  String get enterNewPasswordAgain {
+    return Intl.message(
+      'Create new password again',
+      name: 'enterNewPasswordAgain',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your new password must be different \n from previously used passwords `
+  String get CreateNewPasswordSubtitle {
+    return Intl.message(
+      'Your new password must be different \n from previously used passwords ',
+      name: 'CreateNewPasswordSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter new password`
+  String get enterNewPassword {
+    return Intl.message(
+      'Enter new password',
+      name: 'enterNewPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Your Email`
+  String get enterYourEmail {
+    return Intl.message(
+      'Enter Your Email',
+      name: 'enterYourEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Email Verification`
   String get emailVerification {
     return Intl.message(
@@ -190,10 +250,10 @@ class S {
     );
   }
 
-  /// `You will receive a 4 digit code to verify next`
+  /// `You will receive a 4 digit code \n to verify next`
   String get emailVerificationSubtitle {
     return Intl.message(
-      'You will receive a 4 digit code to verify next',
+      'You will receive a 4 digit code \n to verify next',
       name: 'emailVerificationSubtitle',
       desc: '',
       args: [],
@@ -250,10 +310,10 @@ class S {
     );
   }
 
-  /// `Use face ID to sign in quickly and securely`
+  /// `Use face ID to sign in quickly  \n  and securely`
   String get faceIdSubtitle {
     return Intl.message(
-      'Use face ID to sign in quickly and securely',
+      'Use face ID to sign in quickly  \n  and securely',
       name: 'faceIdSubtitle',
       desc: '',
       args: [],

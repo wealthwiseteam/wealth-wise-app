@@ -24,12 +24,12 @@ class _FaceIdPageState extends State<FaceIdPage> {
             Column(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
       Padding(
             padding: EdgeInsets.symmetric(horizontal: 20.h),
-            child: const PublicText(
+            child:  PublicText(
               txt: 'Use face ID to sign in quickly \n and securely',
               align: TextAlign.center,
               fw: FontWeight.w400,
               ff: "Inter",
-              size: 20,
+              size: 20.sp,
               color: Colors.black38,
             ),
           ),

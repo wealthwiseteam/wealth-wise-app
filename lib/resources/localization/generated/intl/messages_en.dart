@@ -23,6 +23,10 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "Continue": MessageLookupByLibrary.simpleMessage("Continue"),
+        "CreateNewPassword":
+            MessageLookupByLibrary.simpleMessage("Create new password"),
+        "CreateNewPasswordSubtitle": MessageLookupByLibrary.simpleMessage(
+            "Your new password must be different \n from previously used passwords "),
         "ListOfAccounts":
             MessageLookupByLibrary.simpleMessage("List of accounts"),
         "_comment10_": MessageLookupByLibrary.simpleMessage(
@@ -74,6 +78,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "congratsSubtitle": MessageLookupByLibrary.simpleMessage(
             "Your account is successfully created"),
         "continueWord": MessageLookupByLibrary.simpleMessage("Continue"),
+        "create": MessageLookupByLibrary.simpleMessage("Create"),
         "createBudget": MessageLookupByLibrary.simpleMessage("Create Budget"),
         "createCard": MessageLookupByLibrary.simpleMessage("Create Card"),
         "createCash": MessageLookupByLibrary.simpleMessage("Create Cash"),
@@ -93,7 +98,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "emailVerification":
             MessageLookupByLibrary.simpleMessage("Email Verification"),
         "emailVerificationSubtitle": MessageLookupByLibrary.simpleMessage(
-            "You will receive a 4 digit code to verify next"),
+            "You will receive a 4 digit code \n to verify next"),
         "enterAmount": MessageLookupByLibrary.simpleMessage("Enter amount"),
         "enterEmail": MessageLookupByLibrary.simpleMessage(
             "Please, enter your first name"),
@@ -103,15 +108,21 @@ class MessageLookup extends MessageLookupByLibrary {
             " Hi,\n Please enter your income"),
         "enterLastName": MessageLookupByLibrary.simpleMessage(
             "Please, enter your first name"),
+        "enterNewPassword":
+            MessageLookupByLibrary.simpleMessage("Enter new password"),
+        "enterNewPasswordAgain":
+            MessageLookupByLibrary.simpleMessage("Create new password again"),
         "enterPeriod": MessageLookupByLibrary.simpleMessage("Enter period"),
         "enterPhoneNumber": MessageLookupByLibrary.simpleMessage(
             "Please, enter your first name"),
+        "enterYourEmail":
+            MessageLookupByLibrary.simpleMessage("Enter Your Email"),
         "expenses": MessageLookupByLibrary.simpleMessage(" Expenses"),
         "expirationDate":
             MessageLookupByLibrary.simpleMessage("Expiration date"),
         "faceId": MessageLookupByLibrary.simpleMessage("Face ID"),
         "faceIdSubtitle": MessageLookupByLibrary.simpleMessage(
-            "Use face ID to sign in quickly and securely"),
+            "Use face ID to sign in quickly  \n  and securely"),
         "firstName": MessageLookupByLibrary.simpleMessage("First Name"),
         "foodDrinks": MessageLookupByLibrary.simpleMessage("Food & Drinks"),
         "forgotPassword":

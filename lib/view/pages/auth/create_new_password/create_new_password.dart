@@ -5,11 +5,12 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/resources/extensions/extensions.dart';
 
 import '../../../../resources/constants/app_assets.dart';
+import '../../../../resources/localization/generated/l10n.dart';
 import '../../../../resources/styles/app_colors.dart';
 import '../../../widgets/public_button.dart';
 import '../../../widgets/public_text.dart';
 import '../../../widgets/public_text_form_field.dart';
-import '../email_verification/email_verification_page.dart';
+
 
 class CreateNewPasswordPage extends StatefulWidget {
   const CreateNewPasswordPage({super.key});
@@ -74,31 +75,34 @@ class _CreateNewPasswordPageState extends State<CreateNewPasswordPage> {
                     child: Column(
                       children: [
                         PublicText(
-                          txt: 'Create new password',
+                          txt: S.of(context).CreateNewPassword,
                           align: TextAlign.center,
                           size: 20.sp,
+                          fw: FontWeight.w400,
+                          ff: "Inter",
                         ),
                         SizedBox(
                           height: 24.h,
                         ),
                         PublicText(
                           txt:
-                              'Your new password must be different \n from previously used passwords ',
-                          color: Colors.black38,
+                              S.of(context).CreateNewPasswordSubtitle,
+                          color: Colors.black45,
                           align: TextAlign.center,
-                          fw: FontWeight.w400,
+                          fw: FontWeight.w300,
                           size: 16.sp,
+                          ff: "Inter",
                         ),
                         54.ph,
                         PublicTextFormField(
-                          hint: 'Enter new password',
+                          hint:S.of(context).enterNewPassword,
                           keyboardtype: TextInputType.text,
                           prefixIcon: Icons.lock,
                           showprefixIcon: true,
                           controller: passwordController,
                           validator: (password) {
                             if (password!.isEmpty) {
-                              return 'Please enter your username';
+                              return S.of(context).enterYourEmail;
                             }
                             return null;
                           },
@@ -107,7 +111,7 @@ class _CreateNewPasswordPageState extends State<CreateNewPasswordPage> {
                           height: 10.h,
                         ),
                         PublicTextFormField(
-                          hint: 'Enter new password again',
+                          hint: S.of(context).enterNewPasswordAgain,
                           keyboardtype: TextInputType.text,
                           prefixIcon: Icons.lock,
                           showprefixIcon: true,
@@ -121,7 +125,7 @@ class _CreateNewPasswordPageState extends State<CreateNewPasswordPage> {
                         ),
                         100.ph,
                         PublicButton(
-                          title: "Create",
+                          title: S.of(context).create,
                           width: 300.w,
                           onPressed: () {},
                         ),

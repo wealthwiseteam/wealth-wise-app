@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:wealth_wise/resources/extensions/extensions.dart';
+
 import 'package:wealth_wise/resources/styles/app_colors.dart';
-import 'package:wealth_wise/view/pages/auth/sign_in/sign_in_page.dart';
+
 import 'package:wealth_wise/view/widgets/public_button.dart';
 
 import '../../../widgets/public_text.dart';
@@ -16,7 +16,7 @@ class CongratsPage extends StatelessWidget {
       child: Scaffold(
         body: Center(
           child: Padding(
-            padding: EdgeInsets.only(top: 250.h,bottom: 20.h),
+            padding: EdgeInsets.only(top: 250.h, bottom: 40.h),
             child: Column(
               children: [
                 Icon(

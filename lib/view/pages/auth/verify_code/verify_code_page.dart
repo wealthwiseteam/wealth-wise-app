@@ -8,7 +8,7 @@ import 'package:wealth_wise/resources/styles/app_colors.dart';
 import '../../../widgets/public_button.dart';
 import '../../../widgets/public_text.dart';
 import 'components/verify_code.dart';
-import '../email_verification/email_verification_page.dart';
+
 
 class VerifyCodePage extends StatefulWidget {
   const VerifyCodePage({super.key});
@@ -102,12 +102,7 @@ class _VerifyCodePageState extends State<VerifyCodePage> {
                       borderRadius: 12,
                       titleSize: 16,
                       onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) =>
-                                  const EmailVerificationPage()),
-                        );
+                       
                       },
                     ),
                     SizedBox(

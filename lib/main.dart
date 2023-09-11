@@ -3,13 +3,11 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:wealth_wise/resources/styles/app_theme.dart';
-import 'package:wealth_wise/view/pages/first%20entring/budget/create_budget.dart';
 
 import 'resources/localization/generated/l10n.dart';
 import 'resources/router/app_router.dart';
-import 'view/pages/first entring/accounts/add_acounts_page.dart';
-import 'view/pages/goals/my_goals/my_goals_page.dart';
-
+import 'view/pages/auth/create_new_password/create_new_password.dart';
+import 'view/pages/auth/face_id/face_id_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -41,7 +39,7 @@ class MyApp extends StatelessWidget {
             physics: const BouncingScrollPhysics(),
           ),
           onGenerateRoute: RouteGenerate.getRoute,
-          home:  AddAcountsPage(),
+          home: CreateNewPasswordPage(),
         );
       },
     );
