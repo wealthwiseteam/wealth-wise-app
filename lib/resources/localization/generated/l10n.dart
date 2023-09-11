@@ -290,11 +290,21 @@ class S {
     );
   }
 
-  /// `verfiy Code`
+  /// `Verify code`
   String get verfiyCode {
     return Intl.message(
-      'verfiy Code',
+      'Verify code',
       name: 'verfiyCode',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Verify`
+  String get verfiy {
+    return Intl.message(
+      'Verify',
+      name: 'verfiy',
       desc: '',
       args: [],
     );
@@ -320,10 +330,10 @@ class S {
     );
   }
 
-  /// `resendAgain`
+  /// `Resend again`
   String get resendAgain {
     return Intl.message(
-      'resendAgain',
+      'Resend again',
       name: 'resendAgain',
       desc: '',
       args: [],

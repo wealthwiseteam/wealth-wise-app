@@ -167,7 +167,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "reachingGoals": MessageLookupByLibrary.simpleMessage("Reaching Goals"),
         "red": MessageLookupByLibrary.simpleMessage("Red"),
         "register": MessageLookupByLibrary.simpleMessage("Register"),
-        "resendAgain": MessageLookupByLibrary.simpleMessage("resendAgain"),
+        "resendAgain": MessageLookupByLibrary.simpleMessage("Resend again"),
         "save": MessageLookupByLibrary.simpleMessage("Save"),
         "saveHint": MessageLookupByLibrary.simpleMessage("Example: 50"),
         "savedAlready": MessageLookupByLibrary.simpleMessage("Saved already"),
@@ -192,7 +192,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "useFaceId": MessageLookupByLibrary.simpleMessage("Use Face ID"),
         "userName": MessageLookupByLibrary.simpleMessage("User Name"),
         "vehicle": MessageLookupByLibrary.simpleMessage("Vehicle"),
-        "verfiyCode": MessageLookupByLibrary.simpleMessage("verfiy Code"),
+        "verfiy": MessageLookupByLibrary.simpleMessage("Verify"),
+        "verfiyCode": MessageLookupByLibrary.simpleMessage("Verify code"),
         "verfiyCodeSubtitle": MessageLookupByLibrary.simpleMessage(
             "Please enter the code we emailed you"),
         "whatSavingFor":

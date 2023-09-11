@@ -25,10 +25,11 @@
     "enterYourPassword": "Enter Your Password",
    
     "emailVerificationSubtitle": "You will receive a 4 digit code \n to verify next",
-    "verfiyCode": "verfiy Code",
+    "verfiyCode": "Verify code",
+    "verfiy": "Verify",
     "verfiyCodeSubtitle": "Please enter the code we emailed you",
     "dontReceiveCode": "Don’t receive a code?",
-    "resendAgain": "resendAgain",
+    "resendAgain": "Resend again",
     "faceId": "Face ID",
     "faceIdSubtitle": "Use face ID to sign in quickly  \n  and securely",
     "maybeLater": "Maybe Later",

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/resources/styles/app_colors.dart';
 
 class Verify extends StatelessWidget {
@@ -10,12 +11,12 @@ class Verify extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Container(
-          width: 70,
-          height: 80,
+          width: 70.w,
+          height: 80.h,
           decoration: BoxDecoration(
               color: AppColors.lightGrey2, borderRadius: BorderRadius.circular(15)),
         ),
-        const SizedBox(width: 15,)
+       
       ],
     );
   }

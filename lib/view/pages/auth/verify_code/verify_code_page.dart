@@ -3,12 +3,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/resources/constants/app_assets.dart';
+import 'package:wealth_wise/resources/extensions/extensions.dart';
 import 'package:wealth_wise/resources/styles/app_colors.dart';
 
+import '../../../../resources/localization/generated/l10n.dart';
 import '../../../widgets/public_button.dart';
 import '../../../widgets/public_text.dart';
 import 'components/verify_code.dart';
-
 
 class VerifyCodePage extends StatefulWidget {
   const VerifyCodePage({super.key});
@@ -20,10 +21,11 @@ class VerifyCodePage extends StatefulWidget {
 class _VerifyCodePageState extends State<VerifyCodePage> {
   @override
   Widget build(BuildContext context) {
+    final phoneSize = MediaQuery.sizeOf(context);
     return Scaffold(
       body: Stack(fit: StackFit.expand, children: [
         Container(
-          height: MediaQuery.of(context).size.height / 0.8.h,
+          height: phoneSize.height / 0.5.h,
           color: AppColors.lightGrey,
           child: Padding(
             padding: EdgeInsets.symmetric(vertical: 140.w),
@@ -34,13 +36,14 @@ class _VerifyCodePageState extends State<VerifyCodePage> {
           ),
         ),
         SingleChildScrollView(
+          physics: const ClampingScrollPhysics(),
           child: Column(children: [
             Padding(
               padding: EdgeInsets.symmetric(vertical: 180.w),
             ),
             Container(
-              height: MediaQuery.of(context).size.height / 1.6.h,
-              width: MediaQuery.of(context).size.width,
+              height: phoneSize.height / 1.5.h,
+              width: phoneSize.width,
               decoration: const BoxDecoration(
                 color: AppColors.white,
                 borderRadius: BorderRadius.only(
@@ -48,86 +51,80 @@ class _VerifyCodePageState extends State<VerifyCodePage> {
                     topRight: Radius.circular(32)),
               ),
               child: Padding(
-                padding: const EdgeInsets.all(20.0),
+                padding: EdgeInsets.symmetric(horizontal: 30.w, vertical: 20.h),
                 child: Column(
                   children: [
-                    const PublicText(
-                      txt: 'Verify code',
+                    PublicText(
+                      txt: S.of(context).verfiyCode,
                       align: TextAlign.center,
-                      size: 20,
+                      size: 20.sp,
+                      fw: FontWeight.w400,
+                      ff: "Inter",
                     ),
-                    const SizedBox(
-                      height: 10,
+                    10.ph,
+                    Column(
+                      children: [
+                        PublicText(
+                          txt: S.of(context).verfiyCodeSubtitle,
+                          color: Colors.black38,
+                          fw: FontWeight.w300,
+                          align: TextAlign.center,
+                          size: 16.sp,
+                          ff: "Inter",
+                        ),
+                        PublicText(
+                          txt: ' engyyjhdj@gmail.com',
+                          color: AppColors.mintGreen,
+                          fw: FontWeight.w500,
+                          align: TextAlign.center,
+                          size: 16.sp,
+                        ),
+                      ],
                     ),
-                    const SingleChildScrollView(
+                    40.ph,
+                    SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
-                      child: Column(
+                      physics: const ClampingScrollPhysics(),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisSize: MainAxisSize.max,
                         children: [
-                          PublicText(
-                            txt: 'Please enter the code we emailed you. ',
-                            color: Colors.black38,
-                            align: TextAlign.center,
-                            size: 20,
-                          ),
-                          PublicText(
-                            txt: ' engyyjhdj@gmail.com',
-                            color: AppColors.mintGreen,
-                            fw: FontWeight.bold,
-                            align: TextAlign.center,
-                            size: 20,
-                          ),
+                          const Verify(),
+                          15.pw,
+                          const Verify(),
+                          15.pw,
+                          const Verify(),
+                          15.pw,
+                          const Verify(),
                         ],
                       ),
                     ),
-                    SizedBox(
-                      height: 40.h,
-                    ),
-                    const Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Verify(),
-                        Verify(),
-                        Verify(),
-                        Verify(),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 40.h,
-                    ),
+                    40.ph,
                     PublicButton(
-                      title: "Create",
-                      backgroundColor: AppColors.mintGreen,
-                      titleColor: AppColors.white,
+                      title: S.of(context).verfiy,
                       width: 300.w,
-                      borderRadius: 12,
-                      titleSize: 16,
-                      onPressed: () {
-                       
-                      },
+                      onPressed: () {},
                     ),
-                    SizedBox(
-                      height: 40.h,
-                    ),
+                    40.ph,
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const PublicText(
-                          txt: 'Don’t receive a code?',
+                        PublicText(
+                          txt: S.of(context).dontReceiveCode,
                           color: Colors.black54,
-                          fw: FontWeight.w300,
+                          fw: FontWeight.w400,
                           ff: "Inter",
                           align: TextAlign.center,
-                          size: 20,
+                          size: 16.sp,
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: const PublicText(
-                            txt: 'Resend again',
+                          child: PublicText(
+                            txt: S.of(context).resendAgain,
                             color: AppColors.mintGreen,
-                            fw: FontWeight.w700,
-                            ff: "Inter",
                             align: TextAlign.center,
-                            size: 16,
+                            size: 16.sp,
+                            fw: FontWeight.w700,
                           ),
                         )
                       ],

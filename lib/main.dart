@@ -13,6 +13,7 @@ import 'view/pages/auth/face_id/face_id_page.dart';
 import 'view/pages/auth/forget_password/forget_password_page.dart';
 import 'view/pages/auth/sign_in/sign_in_page.dart';
 import 'view/pages/auth/sign_up/sign_up_page.dart';
+import 'view/pages/auth/verify_code/verify_code_page.dart';
 
 
 void main() {
@@ -45,7 +46,7 @@ class MyApp extends StatelessWidget {
             physics: const BouncingScrollPhysics(),
           ),
           onGenerateRoute: RouteGenerate.getRoute,
-          home:SignUpPage(),
+          home:VerifyCodePage(),
         );
       },
     );
