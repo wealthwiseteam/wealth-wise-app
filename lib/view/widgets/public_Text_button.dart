@@ -8,7 +8,7 @@ class PublicTextButton extends StatelessWidget {
   final String title;
   final void Function()? onPressed;
   final double? width;
-  final double borderRadius;
+  
   final double? titleSize;
   final Color titleColor;
   final Color backgroundColor;
@@ -20,7 +20,7 @@ class PublicTextButton extends StatelessWidget {
     this.titleSize,
     this.title = "",
     this.width,
-    this.borderRadius = 12,
+   
     this.titleColor = AppColors.mintGreen,
     this.backgroundColor = AppColors.white,
     this.verticalpadding,

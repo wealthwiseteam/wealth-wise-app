@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/resources/constants/app_assets.dart';
+import 'package:wealth_wise/resources/extensions/extensions.dart';
 import 'package:wealth_wise/resources/styles/app_colors.dart';
 
+import '../../../../resources/localization/generated/l10n.dart';
 import '../../../widgets/public_button.dart';
 import '../../../widgets/public_text.dart';
-import '../sign_in/sign_in_page.dart';
 
 class FaceIdPage extends StatefulWidget {
   const FaceIdPage({super.key});
@@ -22,15 +23,15 @@ class _FaceIdPageState extends State<FaceIdPage> {
         backgroundColor: AppColors.white,
         body:
             Column(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-      Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20.h),
-            child:  PublicText(
-              txt: 'Use face ID to sign in quickly \n and securely',
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: PublicText(
+              txt: S.of(context).faceIdSubtitle,
               align: TextAlign.center,
               fw: FontWeight.w400,
               ff: "Inter",
-              size: 20.sp,
-              color: Colors.black38,
+              size: 16.sp,
+              color: Colors.black45,
             ),
           ),
           Center(
@@ -40,34 +41,19 @@ class _FaceIdPageState extends State<FaceIdPage> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(vertical: 10.w),
+            padding: EdgeInsets.symmetric(vertical: 10.h),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 PublicButton(
-                  title: "Use Face ID",
-                  backgroundColor: AppColors.mintGreen,
-                  titleColor: AppColors.white,
-                  width: 327,
-                  borderRadius: 12,
-                  titleSize: 16,
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const SignInPage()),
-                    );
-                  },
+                  title: S.of(context).useFaceId,
+                  onPressed: () {},
                 ),
-                const SizedBox(
-                  height: 5,
-                ),
+                5.ph,
                 TextButton(
                     onPressed: () {},
-                    child: const Text(
-                      'Maybe later',
-                      style:
-                          TextStyle(fontSize: 15.0, color: AppColors.mintGreen),
+                    child: Text(
+                      S.of(context).maybeLater,
                     ))
               ],
             ),

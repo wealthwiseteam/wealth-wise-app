@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
             physics: const BouncingScrollPhysics(),
           ),
           onGenerateRoute: RouteGenerate.getRoute,
-          home:  CongratsPage(),
+          home: FaceIdPage(),
         );
       },
     );
