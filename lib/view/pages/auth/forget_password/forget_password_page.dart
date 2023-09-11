@@ -8,7 +8,7 @@ import '../../../../resources/styles/app_colors.dart';
 import '../../../widgets/public_button.dart';
 import '../../../widgets/public_text.dart';
 import '../../../widgets/public_text_form_field.dart';
-import '../reset_password/reset_password.dart';
+
 
 class ForgetPasswordPage extends StatefulWidget {
   const ForgetPasswordPage({super.key});
@@ -74,7 +74,7 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
                       fw: FontWeight.w400,
                       ff: "Inter",
                     ),
-                    40.ph,
+                    20.ph,
                     PublicTextFormField(
                       hint: S.of(context).email,
                       keyboardtype: TextInputType.emailAddress,

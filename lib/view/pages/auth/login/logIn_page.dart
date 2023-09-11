@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../resources/constants/app_assets.dart';
+import '../../../../resources/localization/generated/l10n.dart';
 import '../../../../resources/styles/app_colors.dart';
 import '../../../widgets/public_button.dart';
 import '../../../widgets/public_outline_button.dart';
@@ -33,7 +34,7 @@ class _LoginPageState extends State<LoginPage> {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     PublicButton(
-                      title: "Sign in ",
+                      title: S.of(context).signIn,
                       width: 300.w,
                       onPressed: () {
                         Navigator.push(
@@ -43,11 +44,11 @@ class _LoginPageState extends State<LoginPage> {
                         );
                       },
                     ),
-                    const SizedBox(
-                      height: 20,
+                    SizedBox(
+                      height: 20.h,
                     ),
                     PublicOutlineButton(
-                      title: "Register ",
+                      title: S.of(context).register,
                       width: 300.w,
                       onPressed: () {
                         Navigator.push(
