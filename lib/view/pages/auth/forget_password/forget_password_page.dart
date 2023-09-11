@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+import 'package:wealth_wise/resources/extensions/extensions.dart';
 
 import '../../../../resources/constants/app_assets.dart';
+import '../../../../resources/localization/generated/l10n.dart';
 import '../../../../resources/styles/app_colors.dart';
 import '../../../widgets/public_button.dart';
 import '../../../widgets/public_text.dart';
@@ -17,18 +18,30 @@ class ForgetPasswordPage extends StatefulWidget {
 }
 
 class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
-  var emailController = TextEditingController();
+  late final TextEditingController forgetPasswordController;
+
+  @override
+  void initState() {
+    super.initState();
+    forgetPasswordController = TextEditingController();
+  }
+
+  @override
+  void dispose() {
+    forgetPasswordController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
+    final phoneSize = MediaQuery.sizeOf(context);
     return Scaffold(
       body: Stack(fit: StackFit.expand, children: [
         Container(
-          height: MediaQuery.of(context).size.height / 0.7.h,
-          width: MediaQuery.of(context).size.width.w,
+          height: phoneSize.height / 0.5.h,
           color: AppColors.lightGrey,
           child: Padding(
-            padding:EdgeInsets.symmetric(vertical: 140.w),
+            padding: EdgeInsets.symmetric(vertical: 140.w),
             child: Image.asset(
               AppAssets.resetPassword,
               alignment: Alignment.topCenter,
@@ -36,14 +49,14 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
           ),
         ),
         SingleChildScrollView(
-          child: Column(
-            children: [
-             Padding(
+          physics: const ClampingScrollPhysics(),
+          child: Column(children: [
+            Padding(
               padding: EdgeInsets.symmetric(vertical: 180.w),
             ),
             Container(
-              height: MediaQuery.of(context).size.height / 1.5.h,
-              width: MediaQuery.of(context).size.width.w,
+              height: phoneSize.height / 1.5.h,
+              width: phoneSize.width,
               decoration: const BoxDecoration(
                 color: AppColors.white,
                 borderRadius: BorderRadius.only(
@@ -51,60 +64,36 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
                     topRight: Radius.circular(32)),
               ),
               child: Padding(
-                padding: const EdgeInsets.all(25.0),
+                padding: EdgeInsets.symmetric(horizontal: 30.w, vertical: 20.h),
                 child: Column(
                   children: [
-                    const PublicText(
-                      txt: 'Forget password?',
+                    PublicText(
+                      txt: S.of(context).forgetPassword,
                       align: TextAlign.center,
-                      size: 20,
+                      size: 20.sp,
+                      fw: FontWeight.w400,
+                      ff: "Inter",
                     ),
-                   SizedBox(
-                      height: 20.h,
-                    ),
+                    40.ph,
                     PublicTextFormField(
-                      contentPadding: EdgeInsets.symmetric(
-                          horizontal: 20.h, vertical: 20.w),
-                      hint: ' Email',
+                      hint: S.of(context).email,
                       keyboardtype: TextInputType.emailAddress,
                       prefixIcon: Icons.email,
                       showprefixIcon: true,
-                      controller: emailController,
+                      controller: forgetPasswordController,
                       validator: (email) {
                         if (email!.isEmpty) {
-                          return 'Please enter your email';
+                          return S.of(context).enterYourEmail;
                         }
                         return null;
                       },
-                      // decoration: const InputDecoration(
-                      //   labelText: 'Email',
-                      //   labelStyle: TextStyle(
-                      //     color: AppColors.grey,
-                      //   ),
-                      //   fillColor: AppColors.mintGreen,
-                      //   prefixIcon: Icon(
-                      //     Icons.email,
-                      //     color: AppColors.mintGreen,
-                      //   ),
-                      // ),
                     ),
-                  
                     Padding(
                       padding: EdgeInsets.symmetric(vertical: 200.w),
                       child: PublicButton(
-                        title: "Send",
-                        backgroundColor: AppColors.mintGreen,
-                        titleColor: AppColors.white,
+                        title: S.of(context).send,
                         width: 300.w,
-                        borderRadius: 12,
-                        titleSize: 16,
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const ResetPassword()),
-                          );
-                        },
+                        onPressed: () {},
                       ),
                     ),
                   ],

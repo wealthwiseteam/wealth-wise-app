@@ -9,6 +9,7 @@ import 'resources/router/app_router.dart';
 import 'view/pages/auth/congrats/congrats_page.dart';
 import 'view/pages/auth/create_new_password/create_new_password.dart';
 import 'view/pages/auth/face_id/face_id_page.dart';
+import 'view/pages/auth/forget_password/forget_password_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
             physics: const BouncingScrollPhysics(),
           ),
           onGenerateRoute: RouteGenerate.getRoute,
-          home: FaceIdPage(),
+          home:ForgetPasswordPage(),
         );
       },
     );

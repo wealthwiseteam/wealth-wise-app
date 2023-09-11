@@ -125,6 +125,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Use face ID to sign in quickly  \n  and securely"),
         "firstName": MessageLookupByLibrary.simpleMessage("First Name"),
         "foodDrinks": MessageLookupByLibrary.simpleMessage("Food & Drinks"),
+        "forgetPassword":
+            MessageLookupByLibrary.simpleMessage("Forget Password?"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("Forgot Password"),
         "goalColor": MessageLookupByLibrary.simpleMessage("Goal Color"),
