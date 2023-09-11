@@ -109,5 +109,8 @@
     "today":"Today",
     "thisWeek":"This Week",
     "thisMonth":"This Month",
-    "thisYear":"This Year"
+    "thisYear":"This Year",
+    "_comment17_": "--------------------- Layouts ------------------------",
+    "home": "Home"
+
 }

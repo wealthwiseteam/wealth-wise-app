@@ -36,6 +36,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "--------------------- Colors ------------------------"),
         "_comment16_": MessageLookupByLibrary.simpleMessage(
             "--------------------- Statistics ------------------------"),
+        "_comment17_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- Layouts ------------------------"),
         "_comment9_": MessageLookupByLibrary.simpleMessage(
             "------------------------------ Settings ----------------------------------"),
         "_comment_": MessageLookupByLibrary.simpleMessage(
@@ -95,6 +97,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "haveAccount": MessageLookupByLibrary.simpleMessage("Have an account?"),
         "health": MessageLookupByLibrary.simpleMessage("Health"),
         "healthCare": MessageLookupByLibrary.simpleMessage("Health care"),
+        "home": MessageLookupByLibrary.simpleMessage("Home"),
         "housingRent": MessageLookupByLibrary.simpleMessage("Housing & Rent"),
         "howMuchSaved":
             MessageLookupByLibrary.simpleMessage("How much I already saved?"),
