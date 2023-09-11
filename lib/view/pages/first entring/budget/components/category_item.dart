@@ -3,7 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../../data/models/budget/categories_mode.dart.dart';
+
+import '../../../../../data/models/budget/category_period copy.dart';
 import '../../../../widgets/public_text.dart';
 
 class CategoryItem extends StatelessWidget {

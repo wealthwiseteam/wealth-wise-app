@@ -1101,10 +1101,20 @@ class S {
   }
 
   /// `Add account`
-  String get addAcont {
+  String get addAccount {
     return Intl.message(
       'Add account',
-      name: 'addAcont',
+      name: 'addAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `List of accounts`
+  String get ListOfAccounts {
+    return Intl.message(
+      'List of accounts',
+      name: 'ListOfAccounts',
       desc: '',
       args: [],
     );

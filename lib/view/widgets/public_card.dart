@@ -1,54 +1,41 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:wealth_wise/resources/extensions/extensions.dart';
+import 'package:wealth_wise/resources/styles/app_colors.dart';
+import 'package:wealth_wise/view/widgets/public_text.dart';
 
-import '../../resources/styles/app_colors.dart';
-import 'public_text.dart';
-
+// ignore: must_be_immutable
 class PublicCard extends StatelessWidget {
-  final String title;
-  final void Function()? onPressed;
-  final double? width;
-  final double borderRadius;
-  final double? titleSize;
-  final Color titleColor;
-  final Color ?borderColor;
-  final Color backgroundColor;
-  final double? verticalpadding;
-   
-final String? image;
-  const PublicCard({
-    Key? key,
-    required this.onPressed,
-    this.titleSize,
- this.borderColor,
-    this.title = "",
-    this.image,
-    this.width,
-    this.borderRadius = 12,
-    this.titleColor = AppColors.mintGreen,
-    this.backgroundColor = AppColors.white,
-    this.verticalpadding,
-  }) : super(key: key);
+  String imageUrl;
+  String text;
+  PublicCard({
+    super.key,
+    required this.imageUrl,
+    required this.text,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: width ?? 200.w,
-      child: Container(
-        width: 151.w,
-        height: 114.h,
+    return Padding(
+      padding: const EdgeInsets.all(10.0),
+      child: Card(
+        color: AppColors.white,
+        elevation: 1,
         child: Padding(
-          padding: EdgeInsets.symmetric(vertical: verticalpadding ?? 15.h),
+          padding: EdgeInsets.symmetric(
+            horizontal: 15.0.w,
+          ),
           child: Column(
+            mainAxisSize: MainAxisSize.max,
             children: [
+              Image.asset(imageUrl),
+              15.ph,
               PublicText(
-                txt: title,
-                size: titleSize ?? 16.sp,
-                color: titleColor,
-                fw: FontWeight.bold,
-                softWrap: true,
+                txt: text,
+                size: 16.0,
+                fw: FontWeight.w400,
+                ff: "Inter",
               ),
-              Image.asset('image'),
             ],
           ),
         ),

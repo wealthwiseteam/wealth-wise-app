@@ -5,13 +5,11 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:wealth_wise/data/models/goals/goal_model.dart';
 import 'package:wealth_wise/resources/extensions/extensions.dart';
 import 'package:wealth_wise/resources/router/app_router.dart';
-
 import '../../../../resources/constants/app_assets.dart';
 import '../../../../resources/localization/generated/l10n.dart';
 import '../../../../resources/styles/app_colors.dart';
 import '../../../widgets/public_divider.dart';
 import '../../../widgets/public_text.dart';
-
 part 'components/goal_list_tile.dart';
 
 class MyGoalsPage extends StatelessWidget {

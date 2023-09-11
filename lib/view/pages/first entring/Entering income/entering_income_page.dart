@@ -91,7 +91,7 @@ class _EnteringIncomePageState extends State<EnteringIncomePage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const AddAcountsPage()),
+                          builder: (context) =>  AddAcountsPage()),
                     );
                   },
                 ),
@@ -106,7 +106,7 @@ class _EnteringIncomePageState extends State<EnteringIncomePage> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const AddAcountsPage()),
+                        builder: (context) => AddAcountsPage()),
                   );
                 },
               )

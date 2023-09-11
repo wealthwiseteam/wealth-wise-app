@@ -65,7 +65,7 @@ class _AddBudgetPagestate extends State<AddBudgetPage> {
         body: Padding(
           padding: EdgeInsets.symmetric(horizontal: 32.w, vertical: 20.h),
           child: Builder(builder: (context) {
-            String selectedValue = "All Categories";
+            String? selectedValue = "All Categories";
 
             return SingleChildScrollView(
               child: Column(
