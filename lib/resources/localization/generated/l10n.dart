@@ -260,6 +260,16 @@ class S {
     );
   }
 
+  /// `Enter Your Password`
+  String get enterYourPassword {
+    return Intl.message(
+      'Enter Your Password',
+      name: 'enterYourPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `You will receive a 4 digit code \n to verify next`
   String get emailVerificationSubtitle {
     return Intl.message(

@@ -117,6 +117,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Please, enter your first name"),
         "enterYourEmail":
             MessageLookupByLibrary.simpleMessage("Enter Your Email"),
+        "enterYourPassword":
+            MessageLookupByLibrary.simpleMessage("Enter Your Password"),
         "expenses": MessageLookupByLibrary.simpleMessage(" Expenses"),
         "expirationDate":
             MessageLookupByLibrary.simpleMessage("Expiration date"),

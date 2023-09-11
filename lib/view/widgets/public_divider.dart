@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class PublicDivider extends StatelessWidget {
   final double? width;
@@ -11,10 +12,11 @@ class PublicDivider extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     return Container(
       color: color ??  Colors.grey.withOpacity(0.3),
       height: 0.8,
-      width: double.infinity,
+        width: 110.w,
     );
   }
 }

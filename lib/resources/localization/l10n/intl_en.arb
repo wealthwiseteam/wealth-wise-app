@@ -20,7 +20,8 @@
     "enterNewPassword": "Enter new password",
     "enterYourEmail": "Enter Your Email",
     "emailVerification": "Email Verification",
-    
+    "enterYourPassword": "Enter Your Password",
+   
     "emailVerificationSubtitle": "You will receive a 4 digit code \n to verify next",
     "verfiyCode": "verfiy Code",
     "verfiyCodeSubtitle": "Please enter the code we emailed you",
