@@ -76,7 +76,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "chooseIcon": MessageLookupByLibrary.simpleMessage("Choose icon"),
         "congrats": MessageLookupByLibrary.simpleMessage("Congrats!"),
         "congratsSubtitle": MessageLookupByLibrary.simpleMessage(
-            "Your account is successfully created"),
+            "Your account is successfully  \n created"),
         "continueWord": MessageLookupByLibrary.simpleMessage("Continue"),
         "create": MessageLookupByLibrary.simpleMessage("Create"),
         "createBudget": MessageLookupByLibrary.simpleMessage("Create Budget"),

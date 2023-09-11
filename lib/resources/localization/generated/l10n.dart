@@ -350,10 +350,10 @@ class S {
     );
   }
 
-  /// `Your account is successfully created`
+  /// `Your account is successfully  \n created`
   String get congratsSubtitle {
     return Intl.message(
-      'Your account is successfully created',
+      'Your account is successfully  \n created',
       name: 'congratsSubtitle',
       desc: '',
       args: [],
