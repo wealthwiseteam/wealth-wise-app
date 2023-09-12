@@ -138,5 +138,14 @@
     "chooseAccount": "Choose account",
     "_comment18_": "--------------------- accounts------------------------",
     "myEwallet": "My E- wallet",
-    "addEwallet": "Add E- Wallet"
+    "addEwallet": "Add E- Wallet",
+    "general" : "General",
+    "ewalletNumber" : "E-wallet number",
+    "actions" : "Actions",
+    "deleteAccount" : "Delete account",
+    "sureDeleteAccount" : "Are you sure to delete this?",
+    "sureDeleteAccountSubTitle" : "Once deleted, you cannot recover it",
+    "delete" : "Delete"
+
+  
     }

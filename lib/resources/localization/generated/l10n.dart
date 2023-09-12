@@ -1419,6 +1419,76 @@ class S {
       args: [],
     );
   }
+
+  /// `General`
+  String get general {
+    return Intl.message(
+      'General',
+      name: 'general',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `E-wallet number`
+  String get ewalletNumber {
+    return Intl.message(
+      'E-wallet number',
+      name: 'ewalletNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Actions`
+  String get actions {
+    return Intl.message(
+      'Actions',
+      name: 'actions',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delete account`
+  String get deleteAccount {
+    return Intl.message(
+      'Delete account',
+      name: 'deleteAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Are you sure to delete this?`
+  String get sureDeleteAccount {
+    return Intl.message(
+      'Are you sure to delete this?',
+      name: 'sureDeleteAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Once deleted, you cannot recover it`
+  String get sureDeleteAccountSubTitle {
+    return Intl.message(
+      'Once deleted, you cannot recover it',
+      name: 'sureDeleteAccountSubTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delete`
+  String get delete {
+    return Intl.message(
+      'Delete',
+      name: 'delete',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

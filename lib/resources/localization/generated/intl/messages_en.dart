@@ -57,6 +57,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "aboutTitle":
             MessageLookupByLibrary.simpleMessage("Your finance in one place."),
         "accounts": MessageLookupByLibrary.simpleMessage("Accounts"),
+        "actions": MessageLookupByLibrary.simpleMessage("Actions"),
         "addAccount": MessageLookupByLibrary.simpleMessage("Add account"),
         "addCard": MessageLookupByLibrary.simpleMessage("Add card"),
         "addCash": MessageLookupByLibrary.simpleMessage("Add Cash"),
@@ -90,6 +91,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("current balance"),
         "dateHint":
             MessageLookupByLibrary.simpleMessage("Example: Aug 12, 2024"),
+        "delete": MessageLookupByLibrary.simpleMessage("Delete"),
+        "deleteAccount": MessageLookupByLibrary.simpleMessage("Delete account"),
         "desiredDate": MessageLookupByLibrary.simpleMessage("Desired date"),
         "donations": MessageLookupByLibrary.simpleMessage("Donations"),
         "dontReceiveCode":
@@ -122,6 +125,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Enter Your Email"),
         "enterYourPassword":
             MessageLookupByLibrary.simpleMessage("Enter Your Password"),
+        "ewalletNumber":
+            MessageLookupByLibrary.simpleMessage("E-wallet number"),
         "expenses": MessageLookupByLibrary.simpleMessage(" Expenses"),
         "expirationDate":
             MessageLookupByLibrary.simpleMessage("Expiration date"),
@@ -134,6 +139,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Forget Password?"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("Forgot Password"),
+        "general": MessageLookupByLibrary.simpleMessage("General"),
         "goalColor": MessageLookupByLibrary.simpleMessage("Goal Color"),
         "goals": MessageLookupByLibrary.simpleMessage("Goals"),
         "green": MessageLookupByLibrary.simpleMessage("Grenn"),
@@ -188,6 +194,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "signUpTitle":
             MessageLookupByLibrary.simpleMessage("Create New Account"),
         "sports": MessageLookupByLibrary.simpleMessage("Sports"),
+        "sureDeleteAccount": MessageLookupByLibrary.simpleMessage(
+            "Are you sure to delete this?"),
+        "sureDeleteAccountSubTitle": MessageLookupByLibrary.simpleMessage(
+            "Once deleted, you cannot recover it"),
         "targetAmount": MessageLookupByLibrary.simpleMessage("Target amount"),
         "targetHint": MessageLookupByLibrary.simpleMessage("Exampl3: 250"),
         "thingsSaveFor": MessageLookupByLibrary.simpleMessage(
