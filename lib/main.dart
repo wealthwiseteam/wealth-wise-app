@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/resources/localization/generated/l10n.dart';
+import 'package:wealth_wise/resources/router/app_router.dart';
 import 'package:wealth_wise/resources/styles/app_colors.dart';
 import 'package:wealth_wise/resources/styles/app_theme.dart';
 import 'package:wealth_wise/view/pages/biils_screen.dart';
-import 'package:wealth_wise/view/widgets/bills_card.dart';
-import 'resources/router/app_router.dart';
-import 'view/pages/goals/my_goals/my_goals_page.dart';
-import 'view/pages/settings/settings/settings_page.dart';
+import 'package:wealth_wise/view/pages/transaction_screen.dart';
+import 'package:wealth_wise/view/widgets/bills_transaction_card.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
             physics: const BouncingScrollPhysics(),
           ),
           onGenerateRoute: RouteGenerate.getRoute,
-          home: Bills(),
+          home: Transaction(),
         );
       },
     );

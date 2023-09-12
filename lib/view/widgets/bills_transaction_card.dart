@@ -19,7 +19,7 @@ class BillsCard extends StatelessWidget {
   Widget build(BuildContext context) {
       return Card(
         color: Colors.white,
-        elevation: 3,
+        elevation: 4,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Row(

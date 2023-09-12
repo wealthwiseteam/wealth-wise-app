@@ -25,8 +25,7 @@ class ApiService {
     Headers.accept: Headers.applicationJson,
   };
 
-  ApiService()
-      : _dio = Dio(
+  ApiService() : _dio = Dio(
           BaseOptions(
             baseUrl: baseUrl,
             headers: headers,

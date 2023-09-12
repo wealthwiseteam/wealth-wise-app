@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/view/widgets/public_text.dart';
 
-import '../widgets/bills_card.dart';
+import '../widgets/bills_transaction_card.dart';
 
 class Bills extends StatelessWidget {
    Bills({super.key});
