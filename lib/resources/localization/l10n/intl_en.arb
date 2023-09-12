@@ -147,7 +147,8 @@
     "sureDeleteAccountSubTitle" : "Once deleted, you cannot recover it",
     "delete" : "Delete",
     "myCards": "My Cards",
+    "myCard": "My Card",
     "paymentCard": "Payment Card",
-    "numberCard": "2298 1268 3398 9874 "
-  
+    "numberCard": "2298 1268 3398 9874 ",
+    "deleteAccountCash" : "Are you sure to delete this?"
     }

@@ -5,40 +5,37 @@ import 'package:wealth_wise/resources/extensions/extensions.dart';
 import 'package:wealth_wise/resources/styles/app_colors.dart';
 import 'package:wealth_wise/view/widgets/public_button.dart';
 
-import '../../../../../../resources/constants/app_assets.dart';
-
 import '../../../../../../resources/localization/generated/l10n.dart';
 
-import '../../../../../resources/constants/app_constants.dart';
 import '../../../../widgets/public_Text_button.dart';
-import '../../../../widgets/public_card.dart';
+
 import '../../../../widgets/public_text.dart';
 import '../../../../widgets/public_text_form_field.dart';
 
-class AddEWalletPage extends StatefulWidget {
-  const AddEWalletPage({super.key});
+class MyCardPage extends StatefulWidget {
+  const MyCardPage({super.key});
 
   @override
-  State<AddEWalletPage> createState() => _AddEWalletPageState();
+  State<MyCardPage> createState() => _MyCardPageState();
 }
 
-class _AddEWalletPageState extends State<AddEWalletPage> {
-  late final TextEditingController nameController;
-  late final TextEditingController ewalletNumberController;
+class _MyCardPageState extends State<MyCardPage> {
+  late final TextEditingController cardHoldernameController;
+  late final TextEditingController cardNumberController;
   late final TextEditingController currentBalanceController;
 
   @override
   void initState() {
     super.initState();
-    nameController = TextEditingController();
-    ewalletNumberController = TextEditingController();
+    cardHoldernameController = TextEditingController();
+     cardNumberController = TextEditingController();
     currentBalanceController = TextEditingController();
   }
 
   @override
   void dispose() {
-    nameController.dispose();
-    ewalletNumberController.dispose();
+    cardHoldernameController.dispose();
+    cardNumberController.dispose();
     currentBalanceController.dispose();
 
     super.dispose();
@@ -59,7 +56,7 @@ class _AddEWalletPageState extends State<AddEWalletPage> {
                 Navigator.pop(context);
               }),
           title: PublicText(
-              txt: S.of(context).myEwallet, size: 20.sp, fw: FontWeight.w700),
+              txt: S.of(context).myCard, size: 20.sp, fw: FontWeight.w700),
           centerTitle: true,
         ),
         body: Padding(
@@ -70,24 +67,16 @@ class _AddEWalletPageState extends State<AddEWalletPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                
+                  //Card holder name
                   PublicText(
-                    txt: S.of(context).general,
-                    color: AppColors.black,
-                    fw: FontWeight.w400,
-                    size: 20.0.sp,
-                    ff: 'Inter',
-                  ),
-                  20.ph,
-
-                  //Name
-                  PublicText(
-                    txt: S.of(context).name,
+                    txt: S.of(context).cardHolderName,
                     color: AppColors.subtitleGrey,
                   ),
                   10.ph,
                   PublicTextFormField(
-                    hint: "E-Wallet",
-                    controller: nameController,
+                    hint: "Engy",
+                    controller: cardHoldernameController,
                     keyboardtype: TextInputType.number,
                     validator: (number) {
                       return null;
@@ -102,14 +91,14 @@ class _AddEWalletPageState extends State<AddEWalletPage> {
                   20.ph,
                   //E-wallet number
                   PublicText(
-                    txt: S.of(context).ewalletNumber,
+                    txt: S.of(context).cardNumber,
                     color: AppColors.subtitleGrey,
                   ),
                   10.ph,
 
                   PublicTextFormField(
-                    hint: "213233",
-                    controller: nameController,
+                    hint: "1233 4522",
+                    controller: cardNumberController,
                     keyboardtype: TextInputType.number,
                     validator: (number) {
                       return null;
@@ -132,7 +121,7 @@ class _AddEWalletPageState extends State<AddEWalletPage> {
                     width: (screenSize.width - 32.w * 2) / 2,
                     child: PublicTextFormField(
                       hint: "0.00",
-                      controller: nameController,
+                      controller: currentBalanceController,
                       keyboardtype: TextInputType.number,
                       validator: (number) {
                         return null;
@@ -147,7 +136,7 @@ class _AddEWalletPageState extends State<AddEWalletPage> {
                   ),
                   20.ph,
                   Divider(
-                    color: AppColors.mintGreen,
+                    color: AppColors.grey,
                     height: 1.h,
                   ),
                   20.ph,
@@ -177,7 +166,7 @@ class _AddEWalletPageState extends State<AddEWalletPage> {
                                     title: Column(
                                       children: [
                                         PublicText(
-                                          txt: S.of(context).deleteAccount,
+                                          txt: S.of(context).deleteAccountCash,
                                           color: AppColors.black,
                                           fw: FontWeight.w400,
                                           size: 16.0.sp,
@@ -229,11 +218,3 @@ class _AddEWalletPageState extends State<AddEWalletPage> {
     );
   }
 }
-/*    PublicTextButton(
-                          title:S.of(context).deleteAccount ,
-                    titleColor:AppColors.red ,
-                    titleSize: 20,
-                    
-                    
-                    onPressed: () {  },
-                  ),*/

@@ -93,6 +93,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Example: Aug 12, 2024"),
         "delete": MessageLookupByLibrary.simpleMessage("Delete"),
         "deleteAccount": MessageLookupByLibrary.simpleMessage("Delete account"),
+        "deleteAccountCash": MessageLookupByLibrary.simpleMessage(
+            "Are you sure to delete this?"),
         "desiredDate": MessageLookupByLibrary.simpleMessage("Desired date"),
         "donations": MessageLookupByLibrary.simpleMessage("Donations"),
         "dontReceiveCode":
@@ -155,6 +157,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "logoutWarning": MessageLookupByLibrary.simpleMessage(
             "Are you sure you want to logout?"),
         "maybeLater": MessageLookupByLibrary.simpleMessage("Maybe Later"),
+        "myCard": MessageLookupByLibrary.simpleMessage("My Card"),
         "myCards": MessageLookupByLibrary.simpleMessage("My Cards"),
         "myEwallet": MessageLookupByLibrary.simpleMessage("My E- wallet"),
         "myGoals": MessageLookupByLibrary.simpleMessage("My Goals"),

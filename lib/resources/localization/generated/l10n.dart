@@ -1500,6 +1500,16 @@ class S {
     );
   }
 
+  /// `My Card`
+  String get myCard {
+    return Intl.message(
+      'My Card',
+      name: 'myCard',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Payment Card`
   String get paymentCard {
     return Intl.message(
@@ -1515,6 +1525,16 @@ class S {
     return Intl.message(
       '2298 1268 3398 9874 ',
       name: 'numberCard',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Are you sure to delete this?`
+  String get deleteAccountCash {
+    return Intl.message(
+      'Are you sure to delete this?',
+      name: 'deleteAccountCash',
       desc: '',
       args: [],
     );
