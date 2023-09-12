@@ -1,7 +1,7 @@
 
 import '../error_handler/custom_expection.dart';
-import '../models/auth_request_model.dart';
-import '../models/auth_response_model.dart';
+import '../models/auth/auth_request_model.dart';
+import '../models/auth/auth_response_model.dart';
 import '../network/network_info.dart';
 import '../source/remote/api_service.dart';
 
@@ -11,6 +11,7 @@ abstract class AuthRepository {
   Future<bool> forgotPassword(String email);
   Future<bool> verifyEmail(VerifyEmailRequest request);
   Future<bool> resetPassword(ResetPasswordRequest request);
+  Future<bool> logout();
 }
 
 class AuthRepositoryImpl extends AuthRepository {
@@ -50,7 +51,7 @@ class AuthRepositoryImpl extends AuthRepository {
             "username": request.name,
             "email": request.email,
             "password": request.password,
-            "phone": request.phone,
+            "password_confirmation": request.confirmPassword
           },
         );
         var responseModel = AuthResponse.fromJson(response.data);
@@ -115,6 +116,26 @@ class AuthRepositoryImpl extends AuthRepository {
             "password": request.password,
             "token": request.token,
           },
+        );
+        var responseModel = AuthResponse.fromJson(response.data);
+        return responseModel.success;
+      } catch (e) {
+        throw CustomException(e.toString());
+      }
+    } else {
+      throw CustomException("Check your network connection");
+    }
+  }
+  
+  @override
+  Future<bool> logout() async{
+    if (await _networkInfo.isConnected) {
+      try {
+        var response = await _apiService.postData(
+          endPoint: EndPoints.login,
+          body: {},
+          // it will be taken form shared prefs
+          token: "",
         );
         var responseModel = AuthResponse.fromJson(response.data);
         return responseModel.success;
