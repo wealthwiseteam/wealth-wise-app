@@ -6,7 +6,7 @@ import 'package:wealth_wise/resources/router/app_router.dart';
 import 'package:wealth_wise/resources/styles/app_colors.dart';
 import 'package:wealth_wise/resources/styles/app_theme.dart';
 import 'package:wealth_wise/view/pages/biils_screen.dart';
-import 'package:wealth_wise/view/pages/transaction_screen.dart';
+import 'package:wealth_wise/view/pages/transaction/transaction_screen.dart';
 import 'package:wealth_wise/view/widgets/bills_transaction_card.dart';
 
 

@@ -13,7 +13,7 @@ class PublicDivider extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: color ??  Colors.grey.withOpacity(0.3),
-      height: 0.8,
+      height: 1.5,
       width: double.infinity,
     );
   }
