@@ -5,15 +5,15 @@ import 'package:wealth_wise/resources/extensions/extensions.dart';
 import 'package:wealth_wise/resources/styles/app_colors.dart';
 import 'package:wealth_wise/view/widgets/public_button.dart';
 
-import '../../../../../resources/constants/app_assets.dart';
+import '../../../../../../resources/constants/app_assets.dart';
 
-import '../../../../../resources/localization/generated/l10n.dart';
+import '../../../../../../resources/localization/generated/l10n.dart';
 
-import '../../../../resources/constants/app_constants.dart';
-import '../../../widgets/public_Text_button.dart';
-import '../../../widgets/public_card.dart';
-import '../../../widgets/public_text.dart';
-import '../../../widgets/public_text_form_field.dart';
+import '../../../../../resources/constants/app_constants.dart';
+import '../../../../widgets/public_Text_button.dart';
+import '../../../../widgets/public_card.dart';
+import '../../../../widgets/public_text.dart';
+import '../../../../widgets/public_text_form_field.dart';
 
 class AddEWalletPage extends StatefulWidget {
   const AddEWalletPage({super.key});

@@ -1489,6 +1489,36 @@ class S {
       args: [],
     );
   }
+
+  /// `My Cards`
+  String get myCards {
+    return Intl.message(
+      'My Cards',
+      name: 'myCards',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Payment Card`
+  String get paymentCard {
+    return Intl.message(
+      'Payment Card',
+      name: 'paymentCard',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `2298 1268 3398 9874 `
+  String get numberCard {
+    return Intl.message(
+      '2298 1268 3398 9874 ',
+      name: 'numberCard',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

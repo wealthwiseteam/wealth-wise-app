@@ -155,6 +155,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "logoutWarning": MessageLookupByLibrary.simpleMessage(
             "Are you sure you want to logout?"),
         "maybeLater": MessageLookupByLibrary.simpleMessage("Maybe Later"),
+        "myCards": MessageLookupByLibrary.simpleMessage("My Cards"),
         "myEwallet": MessageLookupByLibrary.simpleMessage("My E- wallet"),
         "myGoals": MessageLookupByLibrary.simpleMessage("My Goals"),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
@@ -163,10 +164,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "noteHint": MessageLookupByLibrary.simpleMessage("Note..."),
         "notes": MessageLookupByLibrary.simpleMessage("Notes"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
+        "numberCard":
+            MessageLookupByLibrary.simpleMessage("2298 1268 3398 9874 "),
         "orSignInWith": MessageLookupByLibrary.simpleMessage("Or Sign in with"),
         "orange": MessageLookupByLibrary.simpleMessage("Orange"),
         "others": MessageLookupByLibrary.simpleMessage("Others"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "paymentCard": MessageLookupByLibrary.simpleMessage("Payment Card"),
         "personalDataPrivacy":
             MessageLookupByLibrary.simpleMessage("Personal Data & Privacy"),
         "phoneNumber": MessageLookupByLibrary.simpleMessage("Phone Number"),
