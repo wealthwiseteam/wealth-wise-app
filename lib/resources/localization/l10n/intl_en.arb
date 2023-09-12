@@ -135,8 +135,8 @@
     "enterAmount": "Enter amount",
     "allCategories": "All Categories",
     "enterPeriod": "Enter period",
-    "chooseAccount": "Choose account"
- 
-   
-   
+    "chooseAccount": "Choose account",
+    "_comment18_": "--------------------- accounts------------------------",
+    "myEwallet": "My E- wallet",
+    "addEwallet": "Add E- Wallet"
     }

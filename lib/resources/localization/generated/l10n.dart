@@ -1389,6 +1389,36 @@ class S {
       args: [],
     );
   }
+
+  /// `--------------------- accounts------------------------`
+  String get _comment18_ {
+    return Intl.message(
+      '--------------------- accounts------------------------',
+      name: '_comment18_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `My E- wallet`
+  String get myEwallet {
+    return Intl.message(
+      'My E- wallet',
+      name: 'myEwallet',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add E- Wallet`
+  String get addEwallet {
+    return Intl.message(
+      'Add E- Wallet',
+      name: 'addEwallet',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

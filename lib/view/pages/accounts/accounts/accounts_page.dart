@@ -3,12 +3,12 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/resources/extensions/extensions.dart';
 import 'package:wealth_wise/resources/styles/app_colors.dart';
 
-import '../../../../resources/constants/app_assets.dart';
+import '../../../../../resources/constants/app_assets.dart';
 
-import '../../../../resources/localization/generated/l10n.dart';
+import '../../../../../resources/localization/generated/l10n.dart';
 
-import '../../widgets/public_card.dart';
-import '../../widgets/public_text.dart';
+import '../../../widgets/public_card.dart';
+import '../../../widgets/public_text.dart';
 
 class AcountsPage extends StatefulWidget {
   const AcountsPage({super.key});

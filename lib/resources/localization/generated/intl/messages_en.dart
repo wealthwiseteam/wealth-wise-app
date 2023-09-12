@@ -45,6 +45,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "--------------------- first inter ------------------------"),
         "_comment17_": MessageLookupByLibrary.simpleMessage(
             "--------------------- budget------------------------"),
+        "_comment18_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- accounts------------------------"),
         "_comment9_": MessageLookupByLibrary.simpleMessage(
             "------------------------------ Settings ----------------------------------"),
         "_comment_": MessageLookupByLibrary.simpleMessage(
@@ -58,6 +60,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "addAccount": MessageLookupByLibrary.simpleMessage("Add account"),
         "addCard": MessageLookupByLibrary.simpleMessage("Add card"),
         "addCash": MessageLookupByLibrary.simpleMessage("Add Cash"),
+        "addEwallet": MessageLookupByLibrary.simpleMessage("Add E- Wallet"),
         "addGoal": MessageLookupByLibrary.simpleMessage("Add Goal"),
         "allCategories": MessageLookupByLibrary.simpleMessage("All Categories"),
         "appUpdates": MessageLookupByLibrary.simpleMessage("App Updates"),
@@ -146,6 +149,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "logoutWarning": MessageLookupByLibrary.simpleMessage(
             "Are you sure you want to logout?"),
         "maybeLater": MessageLookupByLibrary.simpleMessage("Maybe Later"),
+        "myEwallet": MessageLookupByLibrary.simpleMessage("My E- wallet"),
         "myGoals": MessageLookupByLibrary.simpleMessage("My Goals"),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
         "newHome": MessageLookupByLibrary.simpleMessage("New home"),
