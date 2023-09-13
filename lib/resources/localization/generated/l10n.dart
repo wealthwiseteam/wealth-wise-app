@@ -1070,11 +1070,111 @@ class S {
     );
   }
 
-  /// `--------------------- Statistics ------------------------`
+  /// `--------------------- Layouts ------------------------`
   String get _comment16_ {
     return Intl.message(
-      '--------------------- Statistics ------------------------',
+      '--------------------- Layouts ------------------------',
       name: '_comment16_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Home`
+  String get home {
+    return Intl.message(
+      'Home',
+      name: 'home',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `--------------------- Layouts ------------------------`
+  String get _comment17_ {
+    return Intl.message(
+      '--------------------- Layouts ------------------------',
+      name: '_comment17_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Notificaitons`
+  String get notificaitons {
+    return Intl.message(
+      'Notificaitons',
+      name: 'notificaitons',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `--------------------- Tips ------------------------`
+  String get _comment18_ {
+    return Intl.message(
+      '--------------------- Tips ------------------------',
+      name: '_comment18_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Financial Tips`
+  String get financialTips {
+    return Intl.message(
+      'Financial Tips',
+      name: 'financialTips',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `When you have your finances under control, your financial health improves and you can increase the likelihood of achieving your dreams and goals. `
+  String get tipsTitle {
+    return Intl.message(
+      'When you have your finances under control, your financial health improves and you can increase the likelihood of achieving your dreams and goals. ',
+      name: 'tipsTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Here are some tips you can start with today.`
+  String get tipsSubtitle {
+    return Intl.message(
+      'Here are some tips you can start with today.',
+      name: 'tipsSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tip's Article`
+  String get tipArticle {
+    return Intl.message(
+      'Tip\'s Article',
+      name: 'tipArticle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Read More`
+  String get readMore {
+    return Intl.message(
+      'Read More',
+      name: 'readMore',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `--------------------- Statistics ------------------------`
+  String get _comment19_ {
+    return Intl.message(
+      '--------------------- Statistics ------------------------',
+      name: '_comment19_',
       desc: '',
       args: [],
     );
@@ -1155,26 +1255,6 @@ class S {
     return Intl.message(
       'This Year',
       name: 'thisYear',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `--------------------- Layouts ------------------------`
-  String get _comment17_ {
-    return Intl.message(
-      '--------------------- Layouts ------------------------',
-      name: '_comment17_',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Home`
-  String get home {
-    return Intl.message(
-      'Home',
-      name: 'home',
       desc: '',
       args: [],
     );

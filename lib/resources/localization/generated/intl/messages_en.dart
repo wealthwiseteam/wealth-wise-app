@@ -35,9 +35,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "_comment15_": MessageLookupByLibrary.simpleMessage(
             "--------------------- Colors ------------------------"),
         "_comment16_": MessageLookupByLibrary.simpleMessage(
-            "--------------------- Statistics ------------------------"),
+            "--------------------- Layouts ------------------------"),
         "_comment17_": MessageLookupByLibrary.simpleMessage(
             "--------------------- Layouts ------------------------"),
+        "_comment18_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- Tips ------------------------"),
+        "_comment19_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- Statistics ------------------------"),
         "_comment9_": MessageLookupByLibrary.simpleMessage(
             "------------------------------ Settings ----------------------------------"),
         "_comment_": MessageLookupByLibrary.simpleMessage(
@@ -86,6 +90,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "faceId": MessageLookupByLibrary.simpleMessage("Face ID"),
         "faceIdSubtitle": MessageLookupByLibrary.simpleMessage(
             "Use face ID to sign in quickly and securely"),
+        "financialTips": MessageLookupByLibrary.simpleMessage("Financial Tips"),
         "firstName": MessageLookupByLibrary.simpleMessage("First Name"),
         "foodDrinks": MessageLookupByLibrary.simpleMessage("Food & Drinks"),
         "forgotPassword":
@@ -112,6 +117,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "newVehicle": MessageLookupByLibrary.simpleMessage("New vehicle"),
         "noteHint": MessageLookupByLibrary.simpleMessage("Note..."),
         "notes": MessageLookupByLibrary.simpleMessage("Notes"),
+        "notificaitons": MessageLookupByLibrary.simpleMessage("Notificaitons"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "orSignInWith": MessageLookupByLibrary.simpleMessage("Or Sign in with"),
         "orange": MessageLookupByLibrary.simpleMessage("Orange"),
@@ -125,6 +131,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "purple": MessageLookupByLibrary.simpleMessage("Purple"),
         "reachingGoals": MessageLookupByLibrary.simpleMessage("Reaching Goals"),
+        "readMore": MessageLookupByLibrary.simpleMessage("Read More"),
         "red": MessageLookupByLibrary.simpleMessage("Red"),
         "register": MessageLookupByLibrary.simpleMessage("Register"),
         "resendAgain": MessageLookupByLibrary.simpleMessage("resendAgain"),
@@ -153,6 +160,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "thisMonth": MessageLookupByLibrary.simpleMessage("This Month"),
         "thisWeek": MessageLookupByLibrary.simpleMessage("This Week"),
         "thisYear": MessageLookupByLibrary.simpleMessage("This Year"),
+        "tipArticle": MessageLookupByLibrary.simpleMessage("Tip\'s Article"),
+        "tipsSubtitle": MessageLookupByLibrary.simpleMessage(
+            "Here are some tips you can start with today."),
+        "tipsTitle": MessageLookupByLibrary.simpleMessage(
+            "When you have your finances under control, your financial health improves and you can increase the likelihood of achieving your dreams and goals. "),
         "today": MessageLookupByLibrary.simpleMessage("Today"),
         "travelling": MessageLookupByLibrary.simpleMessage("Travelling"),
         "useFaceId": MessageLookupByLibrary.simpleMessage("Use Face ID"),

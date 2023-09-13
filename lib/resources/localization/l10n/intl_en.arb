@@ -101,7 +101,17 @@
     "pink": "Pink",
     "grey": "Grey",
     "orange": "Orange",
-    "_comment16_": "--------------------- Statistics ------------------------",
+    "_comment16_": "--------------------- Layouts ------------------------",
+    "home": "Home",
+    "_comment17_": "--------------------- Layouts ------------------------",
+    "notificaitons": "Notificaitons",
+    "_comment18_": "--------------------- Tips ------------------------",
+    "financialTips": "Financial Tips",
+    "tipsTitle": "When you have your finances under control, your financial health improves and you can increase the likelihood of achieving your dreams and goals. ",
+    "tipsSubtitle": "Here are some tips you can start with today.",
+    "tipArticle": "Tip's Article",
+    "readMore": "Read More",
+    "_comment19_": "--------------------- Statistics ------------------------",
     "statistics": "Statistics",
     "showChartIn": "Show Chart in",
     "spentCategory": "Spent Category",
@@ -109,8 +119,7 @@
     "today":"Today",
     "thisWeek":"This Week",
     "thisMonth":"This Month",
-    "thisYear":"This Year",
-    "_comment17_": "--------------------- Layouts ------------------------",
-    "home": "Home"
+    "thisYear":"This Year"
+
 
 }
