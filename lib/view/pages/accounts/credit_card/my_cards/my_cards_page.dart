@@ -59,7 +59,7 @@ class _MyCardsPageState extends State<MyCardsPage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                          Spacer(
+                              Spacer(
                                 flex: 1.bitLength,
                               ),
                               PublicText(
@@ -80,7 +80,7 @@ class _MyCardsPageState extends State<MyCardsPage> {
                                 fw: FontWeight.w500,
                                 ff: "Poppins",
                               ),
-                            Spacer(
+                              Spacer(
                                 flex: 3.bitLength,
                               ),
                               // دة مش هيبقي const
@@ -118,7 +118,7 @@ class _MyCardsPageState extends State<MyCardsPage> {
                   ],
                 ),
               ),
-             35.ph,
+              35.ph,
               SizedBox(
                 height: phoneSize.height / 4.h,
                 width: phoneSize.width,
@@ -138,7 +138,7 @@ class _MyCardsPageState extends State<MyCardsPage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                             Spacer(
+                              Spacer(
                                 flex: 1.bitLength,
                               ),
                               PublicText(
@@ -159,7 +159,7 @@ class _MyCardsPageState extends State<MyCardsPage> {
                                 fw: FontWeight.w500,
                                 ff: "Poppins",
                               ),
- Spacer(
+                              Spacer(
                                 flex: 3.bitLength,
                               ),
                               // دة مش هيبقي const
@@ -202,7 +202,7 @@ class _MyCardsPageState extends State<MyCardsPage> {
                 radius: const Radius.circular(10),
                 color: AppColors.mintGreen,
                 strokeWidth: 2.w,
-                dashPattern:  [
+                dashPattern: [
                   5.h,
                   5.h,
                 ],

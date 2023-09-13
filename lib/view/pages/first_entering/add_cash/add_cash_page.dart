@@ -8,32 +8,32 @@ import '../../../widgets/public_button.dart';
 import '../../../widgets/public_text.dart';
 import '../../../widgets/public_text_form_field.dart';
 
-class AddCardPage extends StatefulWidget {
-  const AddCardPage({super.key});
+class AddCashPage extends StatefulWidget {
+  const AddCashPage({super.key});
 
   @override
-  State<AddCardPage> createState() => _AddCardPageState();
+  State<AddCashPage> createState() => _AddCashPageState();
 }
 
-class _AddCardPageState extends State<AddCardPage> {
-  late final TextEditingController cardNameController;
-  late final TextEditingController cardNumberController;
-  late final TextEditingController expirationDateController;
-  late final TextEditingController ccvController;
+class _AddCashPageState extends State<AddCashPage> {
+  late final TextEditingController nameController;
+  late final TextEditingController numberController;
+  late final TextEditingController currentBalanceController;
+
+  @override
   void initState() {
     super.initState();
-    cardNameController = TextEditingController();
-    cardNumberController = TextEditingController();
-    expirationDateController = TextEditingController();
-    ccvController = TextEditingController();
+    nameController = TextEditingController();
+    currentBalanceController = TextEditingController();
+    numberController = TextEditingController();
   }
 
   @override
   void dispose() {
-    cardNameController.dispose();
-    cardNumberController.dispose();
-    expirationDateController.dispose();
-    ccvController.dispose();
+    nameController.dispose();
+    currentBalanceController.dispose();
+    numberController.dispose();
+
     super.dispose();
   }
 
@@ -46,19 +46,20 @@ class _AddCardPageState extends State<AddCardPage> {
           centerTitle: true,
           toolbarHeight: 80.h,
           title: PublicText(
-            txt: S.of(context).addCard,
+            txt: S.of(context).addCash,
             fw: FontWeight.bold,
             size: 22.sp,
           ),
           leading: IconButton(
-              icon: const Icon(Icons.arrow_back_outlined),
-              onPressed: () async {
-                // for closing keyboard before pop the page to avoid errors
-                FocusScope.of(context).unfocus();
-                await Future.delayed(const Duration(milliseconds: 10));
-                if (!mounted) return;
-                Navigator.pop(context);
-              }),
+            icon: const Icon(Icons.arrow_back_outlined),
+            onPressed: () async {
+              // for closing keyboard before pop the page to avoid errors
+              FocusScope.of(context).unfocus();
+              await Future.delayed(const Duration(milliseconds: 10));
+              if (!mounted) return;
+              Navigator.pop(context);
+            },
+          ),
         ),
         body: Padding(
           padding: EdgeInsets.symmetric(horizontal: 32.w, vertical: 20.h),
@@ -69,7 +70,7 @@ class _AddCardPageState extends State<AddCardPage> {
                 children: [
                   /// Card holder name
                   PublicText(
-                    txt: S.of(context).cardHolderName,
+                    txt: S.of(context).name,
                     size: 16,
                     ff: "Inter",
                     fw: FontWeight.w400,
@@ -77,22 +78,24 @@ class _AddCardPageState extends State<AddCardPage> {
                   ),
                   10.ph,
                   PublicTextFormField(
-                    controller: cardNameController,
-                    validator: (cardNameControlle) {
+                    controller: nameController,
+                    validator: (nameController) {
                       return null;
                     },
                     border: OutlineInputBorder(
-                        borderSide: const BorderSide(
-                          color: AppColors.mintGreen,
-                          width: 2.0,
-                        ),
-                        borderRadius: BorderRadius.circular(5.0)),
+                      borderSide: BorderSide(
+                        color: AppColors.mintGreen,
+                        width: 2.0.w,
+                      ),
+                      borderRadius: BorderRadius.circular(5.0),
+                    ),
+                    hint: '',
                   ),
                   20.ph,
 
                   /// Card number
                   PublicText(
-                    txt: S.of(context).cardNumber,
+                    txt: S.of(context).walletNumber,
                     size: 16,
                     ff: "Inter",
                     fw: FontWeight.w400,
@@ -100,7 +103,7 @@ class _AddCardPageState extends State<AddCardPage> {
                   ),
                   10.ph,
                   PublicTextFormField(
-                    controller: cardNumberController,
+                    controller: numberController,
                     validator: (cardNumberController) {
                       return null;
                     },
@@ -113,9 +116,9 @@ class _AddCardPageState extends State<AddCardPage> {
                   ),
                   20.ph,
 
-                  /// Expiration date
+                  /// current balance
                   PublicText(
-                    txt: S.of(context).expirationDate,
+                    txt: S.of(context).currentBalance,
                     size: 16,
                     ff: "Inter",
                     fw: FontWeight.w400,
@@ -125,34 +128,9 @@ class _AddCardPageState extends State<AddCardPage> {
                   SizedBox(
                     width: (screenSize.width - 32.w * 2) / 2,
                     child: PublicTextFormField(
-                      controller: expirationDateController,
-                      validator: (expirationDateController) {
-                        return null;
-                      },
-                      border: OutlineInputBorder(
-                          borderSide: BorderSide(
-                            color: AppColors.mintGreen,
-                            width: 2.0.w,
-                          ),
-                          borderRadius: BorderRadius.circular(5.0)),
-                    ),
-                  ),
-                  20.ph,
-
-                  /// CCV - 3 digit
-                  PublicText(
-                    txt: S.of(context).cardCCV,
-                    size: 16,
-                    ff: "Inter",
-                    fw: FontWeight.w400,
-                    color: AppColors.subtitleGrey,
-                  ),
-                  10.ph,
-                  SizedBox(
-                    width: (screenSize.width - 32.w * 2) / 2,
-                    child: PublicTextFormField(
-                      controller: ccvController,
-                      validator: (ccvController) {
+                      hint: "0.00",
+                      controller: currentBalanceController,
+                      validator: (cardNameControlle) {
                         return null;
                       },
                       border: OutlineInputBorder(
@@ -164,8 +142,9 @@ class _AddCardPageState extends State<AddCardPage> {
                     ),
                   ),
                   60.ph,
+
                   PublicButton(
-                    title: S.of(context).createCard,
+                    title: S.of(context).createCash,
                     width: double.infinity,
                     onPressed: () {},
                   )

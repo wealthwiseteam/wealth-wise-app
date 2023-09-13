@@ -10,14 +10,14 @@ import '../../../../../resources/localization/generated/l10n.dart';
 import '../../../widgets/public_card.dart';
 import '../../../widgets/public_text.dart';
 
-class AcountsPage extends StatefulWidget {
-  const AcountsPage({super.key});
+class AccountsPage extends StatefulWidget {
+  const AccountsPage({super.key});
 
   @override
-  State<AcountsPage> createState() => _AcountsPageState();
+  State<AccountsPage> createState() => _AccountsPageState();
 }
 
-class _AcountsPageState extends State<AcountsPage> {
+class _AccountsPageState extends State<AccountsPage> {
   List<Widget> cards = [
     PublicCard(imageUrl: AppAssets.creditCard, text: 'Credit card'),
     PublicCard(imageUrl: AppAssets.eWallet, text: 'E- wallet'),
@@ -58,14 +58,15 @@ class _AcountsPageState extends State<AcountsPage> {
                   crossAxisSpacing: 30,
                   mainAxisSpacing: 15,
                   children: List.generate(
-                      cards.length,
-                      (index) => InkWell(
-                            onTap: () {},
-                            child: SizedBox(
-                              width: MediaQuery.of(context).size.width / 3,
-                              child: cards[index],
-                            ),
-                          )),
+                    cards.length,
+                    (index) => InkWell(
+                      onTap: () {},
+                      child: SizedBox(
+                        width: MediaQuery.of(context).size.width / 3,
+                        child: cards[index],
+                      ),
+                    ),
+                  ),
                 ),
               ),
             ],

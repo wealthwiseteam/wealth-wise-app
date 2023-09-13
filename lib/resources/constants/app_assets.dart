@@ -22,9 +22,9 @@ class AppAssets {
   static const String bills = "assets/images/rafiki.png";
   static const String budgets = "assets/images/rafiki1.png";
   static const String goals = "assets/images/rafiki2.png";
-    static const String creditCard  = "assets/images/credit-card.png";
-        static const String eWallet = "assets/images/e-wallet.png";
-
+  static const String creditCard = "assets/images/credit-card.png";
+  static const String eWallet = "assets/images/e-wallet.png";
+  static const String imageTips = "assets/images/tips.png";
 
   /// Icons
   static const String iconUser = "assets/icons/user.svg";
@@ -48,5 +48,9 @@ class AppAssets {
   static const String iconTravelling = "assets/icons/travilling.svg";
   static const String iconCreditCard = "assets/icons/credit-card.svg";
   static const String iconCash = "assets/icons/cash.svg";
-  
+  static const String iconNotificationCircle =
+      "assets/icons/notification-circle.svg";
+  static const String iconHome = "assets/icons/home.svg";
+  static const String iconCharts = "assets/icons/charts.svg";
+  static const String iconSettings = "assets/icons/settings.svg";
 }

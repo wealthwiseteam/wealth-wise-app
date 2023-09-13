@@ -8,9 +8,16 @@ class AppTheme {
   static ThemeData light = ThemeData(
     useMaterial3: true,
     scaffoldBackgroundColor: AppColors.white,
+    fontFamily: "Inter",
+
+    /// App Bar Theme
     appBarTheme: const AppBarTheme(backgroundColor: AppColors.white),
     colorScheme: const ColorScheme.light(
       primary: AppColors.mintGreen,
+      
     ),
+
+    /// Card Theme
+    cardTheme: const CardTheme(color: AppColors.white),
   );
 }
