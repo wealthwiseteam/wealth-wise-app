@@ -37,7 +37,7 @@ class TipArticlePage extends StatelessWidget {
                 PublicText(
                   txt: DummayData.tip.title,
                   size: 20.sp,
-                  max: 2,
+                  maxLines: 2,
                 ),
                 24.ph,
                 Align(
@@ -45,7 +45,7 @@ class TipArticlePage extends StatelessWidget {
                   child: PublicText(
                     txt: DummayData.tip.content.toPieces(),
                     color: AppColors.subtitleGrey,
-                    max: 100,
+                    maxLines: 100,
                   ),
                 ),
               ],

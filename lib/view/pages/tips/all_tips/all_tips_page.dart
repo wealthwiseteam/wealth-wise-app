@@ -41,7 +41,7 @@ class AllTipsPage extends StatelessWidget {
               15.ph,
               PublicText(
                 txt: S.of(context).tipsTitle,
-                max: 4,
+                maxLines: 4,
               ),
               10.ph,
               Align(

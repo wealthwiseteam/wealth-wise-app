@@ -11,6 +11,7 @@ import 'package:wealth_wise/view/pages/settings/profile/profile_page.dart';
 import 'package:wealth_wise/view/pages/settings/security/security_page.dart';
 import 'package:wealth_wise/view/pages/tips/tip_article/tip_article_page.dart';
 
+
 class AppRoutes {
   AppRoutes._private();
 

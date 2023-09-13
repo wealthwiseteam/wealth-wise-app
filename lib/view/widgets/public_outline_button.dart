@@ -31,7 +31,7 @@ class PublicOutlineButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: width ?? 200.w,
+      width: width ?? 306.w,
       child: OutlinedButton(
         onPressed: onPressed,
         style: OutlinedButton.styleFrom(
