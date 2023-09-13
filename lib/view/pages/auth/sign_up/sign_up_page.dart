@@ -135,8 +135,8 @@ class _SignUpPageState extends State<SignUpPage> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) =>
-                                    const ForgetPasswordPage()),
+                              builder: (context) => const ForgetPasswordPage(),
+                            ),
                           );
                         },
                       ),
@@ -149,21 +149,22 @@ class _SignUpPageState extends State<SignUpPage> {
                             color: AppColors.grey,
                           ),
                           TextButton(
-                              onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => const SignInPage()),
-                                );
-                              },
-                              child: Text(
-                                S.of(context).signIn,
-                                style: TextStyle(
-                                    fontSize: 12.0.sp,
-                                    color: AppColors.mintGreen,
-                                    fontWeight: FontWeight.w600,
-                                    fontFamily: "Inter"),
-                              ))
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const SignInPage()),
+                              );
+                            },
+                            child: Text(
+                              S.of(context).signIn,
+                              style: TextStyle(
+                                  fontSize: 12.0.sp,
+                                  color: AppColors.mintGreen,
+                                  fontWeight: FontWeight.w600,
+                                  fontFamily: "Inter"),
+                            ),
+                          ),
                         ],
                       ),
                     ],

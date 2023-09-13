@@ -4,6 +4,11 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:wealth_wise/resources/styles/app_theme.dart';
 import 'package:wealth_wise/view/pages/auth/login/logIn_page.dart';
+import 'package:wealth_wise/view/pages/first_entering/entering_income/entering_income_page.dart';
+import 'package:wealth_wise/view/pages/first_entering/accounts/add_acounts_page.dart';
+import 'package:wealth_wise/view/pages/first_entering/add_card/add_card_page.dart';
+import 'package:wealth_wise/view/pages/first_entering/add_cash/add_cash_page.dart';
+import 'package:wealth_wise/view/pages/first_entering/budget/add_budget_page.dart';
 
 import 'resources/localization/generated/l10n.dart';
 import 'resources/router/app_router.dart';
@@ -46,7 +51,7 @@ class MyApp extends StatelessWidget {
             physics: const BouncingScrollPhysics(),
           ),
           onGenerateRoute: RouteGenerate.getRoute,
-          home:VerifyCodePage(),
+          home: const AddCardPage(),
         );
       },
     );

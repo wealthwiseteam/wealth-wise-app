@@ -19,6 +19,7 @@ class _AddCashPageState extends State<AddCashPage> {
   late final TextEditingController nameController;
   late final TextEditingController currentBalanceController;
 
+  @override
   void initState() {
     super.initState();
     nameController = TextEditingController();
