@@ -1,8 +1,6 @@
 class AppAssets {
   AppAssets._();
 
-  /// Images
-  static String imageProfile = "assets/images/profile.png";
 
   /// Icons
   static const String iconUser = "assets/icons/user.svg";
@@ -27,8 +25,13 @@ class AppAssets {
   static const String iconHome = "assets/icons/home.svg";
   static const String iconCharts = "assets/icons/charts.svg";
   static const String iconSettings = "assets/icons/settings.svg";
+  static const String iconCreditCard = "assets/icons/credit-card.svg";
+  static const String iconCash = "assets/icons/cash.svg";
+  static const String iconNotificationCircle =
+      "assets/icons/notification-circle.svg";
 
-  //images
+  /// Images
+  static String imageProfile = "assets/images/profile.png";
   static const String group = "assets/images/Group 75.png";
   static const String maskGroup = "assets/images/Mask Group.png";
   static const String transaction = "assets/images/pana.png";
@@ -36,4 +39,20 @@ class AppAssets {
   static const String bills = "assets/images/rafiki.png";
   static const String budgets = "assets/images/rafiki1.png";
   static const String goals = "assets/images/rafiki2.png";
+  static String welcome = "assets/images/welcomee.png";
+  static String signIn = "assets/images/signin.png";
+  static String signUp = "assets/images/signup.png";
+  static String forgetPassword = "assets/images/forgetpassword.png";
+  static String confirmed = "assets/images/confirmed.png";
+  static String google = "assets/images/google.png";
+  static String twitter = "assets/images/twitter.png";
+  static String facebok = "assets/images/facebook.png";
+  static String login = "assets/images/login.png";
+  static String resetPassword = "assets/images/resetpassword.png";
+  static String facescan = "assets/images/facescan.png";
+  static String enterIncome = "assets/images/enter income.png";
+  static const String creditCard = "assets/images/credit-card.png";
+  static const String eWallet = "assets/images/e-wallet.png";
+  static const String imageTips = "assets/images/tips.png";
+
 }

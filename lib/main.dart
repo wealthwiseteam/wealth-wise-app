@@ -8,7 +8,33 @@ import 'package:wealth_wise/resources/styles/app_theme.dart';
 import 'package:wealth_wise/view/pages/biils_screen.dart';
 import 'package:wealth_wise/view/pages/transaction/transaction_screen.dart';
 import 'package:wealth_wise/view/widgets/bills_transaction_card.dart';
-
+import 'resources/styles/app_theme.dart';
+import 'view/pages/auth/login/logIn_page.dart';
+import 'view/pages/first_entering/entering_income/entering_income_page.dart';
+import 'view/pages/first_entering/accounts/add_acounts_page.dart';
+import 'view/pages/first_entering/add_card/add_card_page.dart';
+import 'view/pages/first_entering/add_cash/add_cash_page.dart';
+import 'view/pages/first_entering/budget/add_budget_page.dart';
+import 'view/pages/statistics/statistics_page.dart';
+import 'view/pages/home/home_screen.dart';
+import 'view/pages/layouts/layouts_page.dart';
+import 'view/pages/notifications/notifications_page.dart';
+import 'view/pages/settings/notifications/notifications_settings_page.dart';
+import 'view/pages/tips/all_tips/all_tips_page.dart';
+import 'resources/localization/generated/l10n.dart';
+import 'resources/router/app_router.dart';
+import 'view/pages/accounts/accounts/accounts_page.dart';
+import 'view/pages/accounts/credit_card/my-card/my_card_page.dart';
+import 'view/pages/accounts/credit_card/my_cards/my_cards_page.dart';
+import 'view/pages/accounts/e-wallet/add_e_wallet/add_e_wallet_page.dart';
+import 'view/pages/accounts/e-wallet/e_wallet/e_wallet_page.dart';
+import 'view/pages/auth/congrats/congrats_page.dart';
+import 'view/pages/auth/create_new_password/create_new_password.dart';
+import 'view/pages/auth/face_id/face_id_page.dart';
+import 'view/pages/auth/forget_password/forget_password_page.dart';
+import 'view/pages/auth/sign_in/sign_in_page.dart';
+import 'view/pages/auth/sign_up/sign_up_page.dart';
+import 'view/pages/auth/verify_code/verify_code_page.dart';
 
 void main() {
   runApp(const MyApp());

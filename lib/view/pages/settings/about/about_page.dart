@@ -41,7 +41,7 @@ class AboutPage extends StatelessWidget {
                 32.ph,
                 PublicText(
                   txt: S.of(context).aboutSubtitle,
-                  max: 4,
+                  maxLines: 4,
                 ),
               ],
             ),

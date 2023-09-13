@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:percent_indicator/percent_indicator.dart';
+
 import 'package:wealth_wise/data/models/goals/goal_model.dart';
 import 'package:wealth_wise/resources/extensions/extensions.dart';
 import 'package:wealth_wise/resources/router/app_router.dart';
