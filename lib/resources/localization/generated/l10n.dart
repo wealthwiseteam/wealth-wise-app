@@ -60,6 +60,96 @@ class S {
     );
   }
 
+  /// `Forget Password?`
+  String get forgetPassword {
+    return Intl.message(
+      'Forget Password?',
+      name: 'forgetPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create`
+  String get create {
+    return Intl.message(
+      'Create',
+      name: 'create',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create new password`
+  String get CreateNewPassword {
+    return Intl.message(
+      'Create new password',
+      name: 'CreateNewPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create new password again`
+  String get enterNewPasswordAgain {
+    return Intl.message(
+      'Create new password again',
+      name: 'enterNewPasswordAgain',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your new password must be different \n from previously used passwords `
+  String get CreateNewPasswordSubtitle {
+    return Intl.message(
+      'Your new password must be different \n from previously used passwords ',
+      name: 'CreateNewPasswordSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter new password`
+  String get enterNewPassword {
+    return Intl.message(
+      'Enter new password',
+      name: 'enterNewPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Your Email`
+  String get enterYourEmail {
+    return Intl.message(
+      'Enter Your Email',
+      name: 'enterYourEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Your Password`
+  String get enterYourPassword {
+    return Intl.message(
+      'Enter Your Password',
+      name: 'enterYourPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Verify`
+  String get verfiy {
+    return Intl.message(
+      'Verify',
+      name: 'verfiy',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Sign in`
   String get signIn {
     return Intl.message(
@@ -70,10 +160,10 @@ class S {
     );
   }
 
-  /// `Sign up`
+  /// `Sign Up`
   String get signUp {
     return Intl.message(
-      'Sign up',
+      'Sign Up',
       name: 'signUp',
       desc: '',
       args: [],
@@ -190,76 +280,6 @@ class S {
     );
   }
 
-  /// `Forget Password?`
-  String get forgetPassword {
-    return Intl.message(
-      'Forget Password?',
-      name: 'forgetPassword',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Create`
-  String get create {
-    return Intl.message(
-      'Create',
-      name: 'create',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Create new password`
-  String get CreateNewPassword {
-    return Intl.message(
-      'Create new password',
-      name: 'CreateNewPassword',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Create new password again`
-  String get enterNewPasswordAgain {
-    return Intl.message(
-      'Create new password again',
-      name: 'enterNewPasswordAgain',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Your new password must be different \n from previously used passwords `
-  String get CreateNewPasswordSubtitle {
-    return Intl.message(
-      'Your new password must be different \n from previously used passwords ',
-      name: 'CreateNewPasswordSubtitle',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Enter new password`
-  String get enterNewPassword {
-    return Intl.message(
-      'Enter new password',
-      name: 'enterNewPassword',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Enter Your Email`
-  String get enterYourEmail {
-    return Intl.message(
-      'Enter Your Email',
-      name: 'enterYourEmail',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Email Verification`
   String get emailVerification {
     return Intl.message(
@@ -270,41 +290,21 @@ class S {
     );
   }
 
-  /// `Enter Your Password`
-  String get enterYourPassword {
-    return Intl.message(
-      'Enter Your Password',
-      name: 'enterYourPassword',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `You will receive a 4 digit code \n to verify next`
+  /// `You will receive a 4 digit code to verify next`
   String get emailVerificationSubtitle {
     return Intl.message(
-      'You will receive a 4 digit code \n to verify next',
+      'You will receive a 4 digit code to verify next',
       name: 'emailVerificationSubtitle',
       desc: '',
       args: [],
     );
   }
 
-  /// `Verify code`
+  /// `verfiy Code`
   String get verfiyCode {
     return Intl.message(
-      'Verify code',
+      'verfiy Code',
       name: 'verfiyCode',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Verify`
-  String get verfiy {
-    return Intl.message(
-      'Verify',
-      name: 'verfiy',
       desc: '',
       args: [],
     );
@@ -330,10 +330,10 @@ class S {
     );
   }
 
-  /// `Resend again`
+  /// `resendAgain`
   String get resendAgain {
     return Intl.message(
-      'Resend again',
+      'resendAgain',
       name: 'resendAgain',
       desc: '',
       args: [],
@@ -350,10 +350,10 @@ class S {
     );
   }
 
-  /// `Use face ID to sign in quickly  \n  and securely`
+  /// `Use face ID to sign in quickly and securely`
   String get faceIdSubtitle {
     return Intl.message(
-      'Use face ID to sign in quickly  \n  and securely',
+      'Use face ID to sign in quickly and securely',
       name: 'faceIdSubtitle',
       desc: '',
       args: [],
@@ -390,10 +390,10 @@ class S {
     );
   }
 
-  /// `Your account is successfully  \n created`
+  /// `Your account is successfully created`
   String get congratsSubtitle {
     return Intl.message(
-      'Your account is successfully  \n created',
+      'Your account is successfully created',
       name: 'congratsSubtitle',
       desc: '',
       args: [],
@@ -411,10 +411,10 @@ class S {
   }
 
   /// `------------------------------ Settings ----------------------------------`
-  String get _comment9_ {
+  String get _comment1_ {
     return Intl.message(
       '------------------------------ Settings ----------------------------------',
-      name: '_comment9_',
+      name: '_comment1_',
       desc: '',
       args: [],
     );
@@ -551,10 +551,10 @@ class S {
   }
 
   /// `--------------------- profile ------------------------`
-  String get _comment10_ {
+  String get _comment2_ {
     return Intl.message(
       '--------------------- profile ------------------------',
-      name: '_comment10_',
+      name: '_comment2_',
       desc: '',
       args: [],
     );
@@ -631,10 +631,10 @@ class S {
   }
 
   /// `--------------------- Notificaitons ------------------------`
-  String get _comment11_ {
+  String get _comment3_ {
     return Intl.message(
       '--------------------- Notificaitons ------------------------',
-      name: '_comment11_',
+      name: '_comment3_',
       desc: '',
       args: [],
     );
@@ -681,10 +681,10 @@ class S {
   }
 
   /// `--------------------- About ------------------------`
-  String get _comment12_ {
+  String get _comment4_ {
     return Intl.message(
       '--------------------- About ------------------------',
-      name: '_comment12_',
+      name: '_comment4_',
       desc: '',
       args: [],
     );
@@ -711,10 +711,10 @@ class S {
   }
 
   /// `--------------------- categories ------------------------`
-  String get _comment13_ {
+  String get _comment5_ {
     return Intl.message(
       '--------------------- categories ------------------------',
-      name: '_comment13_',
+      name: '_comment5_',
       desc: '',
       args: [],
     );
@@ -821,10 +821,10 @@ class S {
   }
 
   /// `--------------------- Goals ------------------------`
-  String get _comment14_ {
+  String get _comment6_ {
     return Intl.message(
       '--------------------- Goals ------------------------',
-      name: '_comment14_',
+      name: '_comment6_',
       desc: '',
       args: [],
     );
@@ -1081,10 +1081,10 @@ class S {
   }
 
   /// `--------------------- Colors ------------------------`
-  String get _comment15_ {
+  String get _comment7_ {
     return Intl.message(
       '--------------------- Colors ------------------------',
-      name: '_comment15_',
+      name: '_comment7_',
       desc: '',
       args: [],
     );
@@ -1171,10 +1171,10 @@ class S {
   }
 
   /// `--------------------- first inter ------------------------`
-  String get _comment16_ {
+  String get _comment8_ {
     return Intl.message(
       '--------------------- first inter ------------------------',
-      name: '_comment16_',
+      name: '_comment8_',
       desc: '',
       args: [],
     );
@@ -1331,10 +1331,10 @@ class S {
   }
 
   /// `--------------------- budget------------------------`
-  String get _comment17_ {
+  String get _comment9_ {
     return Intl.message(
       '--------------------- budget------------------------',
-      name: '_comment17_',
+      name: '_comment9_',
       desc: '',
       args: [],
     );
@@ -1425,6 +1425,186 @@ class S {
     return Intl.message(
       'Due Date',
       name: 'dueDate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `--------------------- Layouts ------------------------`
+  String get _comment10_ {
+    return Intl.message(
+      '--------------------- Layouts ------------------------',
+      name: '_comment10_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Home`
+  String get home {
+    return Intl.message(
+      'Home',
+      name: 'home',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Notificaitons`
+  String get notificaitons {
+    return Intl.message(
+      'Notificaitons',
+      name: 'notificaitons',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `--------------------- Tips ------------------------`
+  String get _comment11_ {
+    return Intl.message(
+      '--------------------- Tips ------------------------',
+      name: '_comment11_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Financial Tips`
+  String get financialTips {
+    return Intl.message(
+      'Financial Tips',
+      name: 'financialTips',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `When you have your finances under control, your financial health improves and you can increase the likelihood of achieving your dreams and goals. `
+  String get tipsTitle {
+    return Intl.message(
+      'When you have your finances under control, your financial health improves and you can increase the likelihood of achieving your dreams and goals. ',
+      name: 'tipsTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Here are some tips you can start with today.`
+  String get tipsSubtitle {
+    return Intl.message(
+      'Here are some tips you can start with today.',
+      name: 'tipsSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tip's Article`
+  String get tipArticle {
+    return Intl.message(
+      'Tip\'s Article',
+      name: 'tipArticle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Read More`
+  String get readMore {
+    return Intl.message(
+      'Read More',
+      name: 'readMore',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `--------------------- Statistics ------------------------`
+  String get _comment12_ {
+    return Intl.message(
+      '--------------------- Statistics ------------------------',
+      name: '_comment12_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Statistics`
+  String get statistics {
+    return Intl.message(
+      'Statistics',
+      name: 'statistics',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Show Chart in`
+  String get showChartIn {
+    return Intl.message(
+      'Show Chart in',
+      name: 'showChartIn',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Spent Category`
+  String get spentCategory {
+    return Intl.message(
+      'Spent Category',
+      name: 'spentCategory',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `All`
+  String get all {
+    return Intl.message(
+      'All',
+      name: 'all',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Today`
+  String get today {
+    return Intl.message(
+      'Today',
+      name: 'today',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This Week`
+  String get thisWeek {
+    return Intl.message(
+      'This Week',
+      name: 'thisWeek',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This Month`
+  String get thisMonth {
+    return Intl.message(
+      'This Month',
+      name: 'thisMonth',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This Year`
+  String get thisYear {
+    return Intl.message(
+      'This Year',
+      name: 'thisYear',
       desc: '',
       args: [],
     );

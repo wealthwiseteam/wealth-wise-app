@@ -30,23 +30,29 @@ class MessageLookup extends MessageLookupByLibrary {
         "ListOfAccounts":
             MessageLookupByLibrary.simpleMessage("List of accounts"),
         "_comment10_": MessageLookupByLibrary.simpleMessage(
-            "--------------------- profile ------------------------"),
+            "--------------------- Layouts ------------------------"),
         "_comment11_": MessageLookupByLibrary.simpleMessage(
-            "--------------------- Notificaitons ------------------------"),
+            "--------------------- Tips ------------------------"),
         "_comment12_": MessageLookupByLibrary.simpleMessage(
-            "--------------------- About ------------------------"),
-        "_comment13_": MessageLookupByLibrary.simpleMessage(
-            "--------------------- categories ------------------------"),
-        "_comment14_": MessageLookupByLibrary.simpleMessage(
-            "--------------------- Goals ------------------------"),
-        "_comment15_": MessageLookupByLibrary.simpleMessage(
-            "--------------------- Colors ------------------------"),
-        "_comment16_": MessageLookupByLibrary.simpleMessage(
-            "--------------------- first inter ------------------------"),
-        "_comment17_": MessageLookupByLibrary.simpleMessage(
-            "--------------------- budget------------------------"),
-        "_comment9_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- Statistics ------------------------"),
+        "_comment1_": MessageLookupByLibrary.simpleMessage(
             "------------------------------ Settings ----------------------------------"),
+        "_comment2_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- profile ------------------------"),
+        "_comment3_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- Notificaitons ------------------------"),
+        "_comment4_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- About ------------------------"),
+        "_comment5_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- categories ------------------------"),
+        "_comment6_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- Goals ------------------------"),
+        "_comment7_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- Colors ------------------------"),
+        "_comment8_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- first inter ------------------------"),
+        "_comment9_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- budget------------------------"),
         "_comment_": MessageLookupByLibrary.simpleMessage(
             "--------------------- Auth ---------------------"),
         "about": MessageLookupByLibrary.simpleMessage("About"),
@@ -60,6 +66,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "addCash": MessageLookupByLibrary.simpleMessage("Add Cash"),
         "addGoal": MessageLookupByLibrary.simpleMessage("Add Goal"),
         "addWallet": MessageLookupByLibrary.simpleMessage("Add Wallet"),
+        "all": MessageLookupByLibrary.simpleMessage("All"),
         "allCategories": MessageLookupByLibrary.simpleMessage("All Categories"),
         "appUpdates": MessageLookupByLibrary.simpleMessage("App Updates"),
         "blue": MessageLookupByLibrary.simpleMessage("Blue"),
@@ -77,7 +84,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "chooseIcon": MessageLookupByLibrary.simpleMessage("Choose icon"),
         "congrats": MessageLookupByLibrary.simpleMessage("Congrats!"),
         "congratsSubtitle": MessageLookupByLibrary.simpleMessage(
-            "Your account is successfully  \n created"),
+            "Your account is successfully created"),
         "continueWord": MessageLookupByLibrary.simpleMessage("Continue"),
         "create": MessageLookupByLibrary.simpleMessage("Create"),
         "createBudget": MessageLookupByLibrary.simpleMessage("Create Budget"),
@@ -100,7 +107,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "emailVerification":
             MessageLookupByLibrary.simpleMessage("Email Verification"),
         "emailVerificationSubtitle": MessageLookupByLibrary.simpleMessage(
-            "You will receive a 4 digit code \n to verify next"),
+            "You will receive a 4 digit code to verify next"),
         "enterAmount": MessageLookupByLibrary.simpleMessage("Enter amount"),
         "enterEmail": MessageLookupByLibrary.simpleMessage(
             "Please, enter your first name"),
@@ -126,7 +133,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Expiration date"),
         "faceId": MessageLookupByLibrary.simpleMessage("Face ID"),
         "faceIdSubtitle": MessageLookupByLibrary.simpleMessage(
-            "Use face ID to sign in quickly  \n  and securely"),
+            "Use face ID to sign in quickly and securely"),
+        "financialTips": MessageLookupByLibrary.simpleMessage("Financial Tips"),
         "firstName": MessageLookupByLibrary.simpleMessage("First Name"),
         "foodDrinks": MessageLookupByLibrary.simpleMessage("Food & Drinks"),
         "forgetPassword":
@@ -140,6 +148,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "haveAccount": MessageLookupByLibrary.simpleMessage("Have an account?"),
         "health": MessageLookupByLibrary.simpleMessage("Health"),
         "healthCare": MessageLookupByLibrary.simpleMessage("Health care"),
+        "home": MessageLookupByLibrary.simpleMessage("Home"),
         "housingRent": MessageLookupByLibrary.simpleMessage("Housing & Rent"),
         "howMuchSaved":
             MessageLookupByLibrary.simpleMessage("How much I already saved?"),
@@ -154,6 +163,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "newVehicle": MessageLookupByLibrary.simpleMessage("New vehicle"),
         "noteHint": MessageLookupByLibrary.simpleMessage("Note..."),
         "notes": MessageLookupByLibrary.simpleMessage("Notes"),
+        "notificaitons": MessageLookupByLibrary.simpleMessage("Notificaitons"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "orSignInWith": MessageLookupByLibrary.simpleMessage("Or Sign in with"),
         "orange": MessageLookupByLibrary.simpleMessage("Orange"),
@@ -167,9 +177,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "purple": MessageLookupByLibrary.simpleMessage("Purple"),
         "reachingGoals": MessageLookupByLibrary.simpleMessage("Reaching Goals"),
+        "readMore": MessageLookupByLibrary.simpleMessage("Read More"),
         "red": MessageLookupByLibrary.simpleMessage("Red"),
         "register": MessageLookupByLibrary.simpleMessage("Register"),
-        "resendAgain": MessageLookupByLibrary.simpleMessage("Resend again"),
+        "resendAgain": MessageLookupByLibrary.simpleMessage("resendAgain"),
         "save": MessageLookupByLibrary.simpleMessage("Save"),
         "saveHint": MessageLookupByLibrary.simpleMessage("Example: 50"),
         "savedAlready": MessageLookupByLibrary.simpleMessage("Saved already"),
@@ -180,23 +191,35 @@ class MessageLookup extends MessageLookupByLibrary {
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "shopping": MessageLookupByLibrary.simpleMessage("Shopping"),
         "show": MessageLookupByLibrary.simpleMessage("Show"),
+        "showChartIn": MessageLookupByLibrary.simpleMessage("Show Chart in"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign in"),
         "signInTitle": MessageLookupByLibrary.simpleMessage("Hi, Welcome Back"),
-        "signUp": MessageLookupByLibrary.simpleMessage("Sign up"),
+        "signUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
         "signUpTitle":
             MessageLookupByLibrary.simpleMessage("Create New Account"),
+        "spentCategory": MessageLookupByLibrary.simpleMessage("Spent Category"),
         "sports": MessageLookupByLibrary.simpleMessage("Sports"),
         "startDate": MessageLookupByLibrary.simpleMessage("Start Date"),
+        "statistics": MessageLookupByLibrary.simpleMessage("Statistics"),
         "targetAmount": MessageLookupByLibrary.simpleMessage("Target amount"),
         "targetHint": MessageLookupByLibrary.simpleMessage("Exampl3: 250"),
         "thingsSaveFor": MessageLookupByLibrary.simpleMessage(
             "Some things people save for:"),
+        "thisMonth": MessageLookupByLibrary.simpleMessage("This Month"),
+        "thisWeek": MessageLookupByLibrary.simpleMessage("This Week"),
+        "thisYear": MessageLookupByLibrary.simpleMessage("This Year"),
+        "tipArticle": MessageLookupByLibrary.simpleMessage("Tip\'s Article"),
+        "tipsSubtitle": MessageLookupByLibrary.simpleMessage(
+            "Here are some tips you can start with today."),
+        "tipsTitle": MessageLookupByLibrary.simpleMessage(
+            "When you have your finances under control, your financial health improves and you can increase the likelihood of achieving your dreams and goals. "),
+        "today": MessageLookupByLibrary.simpleMessage("Today"),
         "travelling": MessageLookupByLibrary.simpleMessage("Travelling"),
         "useFaceId": MessageLookupByLibrary.simpleMessage("Use Face ID"),
         "userName": MessageLookupByLibrary.simpleMessage("User Name"),
         "vehicle": MessageLookupByLibrary.simpleMessage("Vehicle"),
         "verfiy": MessageLookupByLibrary.simpleMessage("Verify"),
-        "verfiyCode": MessageLookupByLibrary.simpleMessage("Verify code"),
+        "verfiyCode": MessageLookupByLibrary.simpleMessage("verfiy Code"),
         "verfiyCodeSubtitle": MessageLookupByLibrary.simpleMessage(
             "Please enter the code we emailed you"),
         "walletNumber": MessageLookupByLibrary.simpleMessage("wallet number"),

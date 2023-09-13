@@ -42,6 +42,7 @@ class PublicText extends StatelessWidget {
         decoration:
             under == true ? TextDecoration.underline : TextDecoration.none,
         overflow: overflow ?? TextOverflow.ellipsis,
+        
       ),
     );
   }

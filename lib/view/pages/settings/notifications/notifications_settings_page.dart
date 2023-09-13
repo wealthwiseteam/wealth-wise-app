@@ -7,8 +7,8 @@ import '../../../../resources/localization/generated/l10n.dart';
 import '../../../../resources/styles/app_colors.dart';
 import '../../../widgets/public_text.dart';
 
-class NotificationsPage extends StatelessWidget {
-  const NotificationsPage({super.key});
+class NotificationsSettingsPage extends StatelessWidget {
+  const NotificationsSettingsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class NotificationsPage extends StatelessWidget {
           centerTitle: true,
           toolbarHeight: 80.h,
           title: PublicText(
-            txt: S.of(context).security,
+            txt: S.of(context).notificaitons,
             fw: FontWeight.bold,
             size: 22.sp,
           ),

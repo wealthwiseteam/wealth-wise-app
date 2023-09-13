@@ -5,10 +5,11 @@ import 'package:wealth_wise/view/pages/goals/create_goal/create_goal_page.dart';
 import 'package:wealth_wise/view/pages/settings/about/about_page.dart';
 import 'package:wealth_wise/view/pages/settings/categories/categories_page.dart';
 import 'package:wealth_wise/view/pages/settings/category_settings/category_settings_page.dart';
-import 'package:wealth_wise/view/pages/settings/notifications/notifications_apge.dart';
+import 'package:wealth_wise/view/pages/settings/notifications/notifications_settings_page.dart';
 import 'package:wealth_wise/view/pages/settings/privacy/privacy_page.dart';
 import 'package:wealth_wise/view/pages/settings/profile/profile_page.dart';
 import 'package:wealth_wise/view/pages/settings/security/security_page.dart';
+import 'package:wealth_wise/view/pages/tips/tip_article/tip_article_page.dart';
 
 
 class AppRoutes {
@@ -35,6 +36,10 @@ class AppRoutes {
   /// Goals
   static const String createGoal = "create goal";
   static const String addGoal = "add goal";
+
+  /// Tips 
+  static const String tipArticle = "tip article";
+  
   
 }
 
@@ -58,7 +63,7 @@ class RouteGenerate {
         );
       case AppRoutes.notifications:
         return MaterialPageRoute(
-          builder: (_) => const NotificationsPage(),
+          builder: (_) => const NotificationsSettingsPage(),
         );
       case AppRoutes.privacy:
         return MaterialPageRoute(
@@ -88,6 +93,13 @@ class RouteGenerate {
         return MaterialPageRoute(
           builder: (_) => const AddGoalPage(),
         );
+      
+      /// Tip Article
+      case AppRoutes.tipArticle:
+        return MaterialPageRoute(
+          builder: (_) => const TipArticlePage(),
+        );
+      
       
       default:
         return MaterialPageRoute(
