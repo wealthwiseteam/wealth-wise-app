@@ -34,6 +34,9 @@ class AppRoutes {
   /// Goals
   static const String createGoal = "create goal";
   static const String addGoal = "add goal";
+
+
+  
   
 }
 

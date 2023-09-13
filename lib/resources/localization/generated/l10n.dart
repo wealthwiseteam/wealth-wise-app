@@ -1090,16 +1090,6 @@ class S {
     );
   }
 
-  /// `Statistics`
-  String get statistics {
-    return Intl.message(
-      'Statistics',
-      name: 'statistics',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `--------------------- Layouts ------------------------`
   String get _comment17_ {
     return Intl.message(
@@ -1155,6 +1145,96 @@ class S {
     return Intl.message(
       'Here are some tips you can start with today.',
       name: 'tipsSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `--------------------- Statistics ------------------------`
+  String get _comment19_ {
+    return Intl.message(
+      '--------------------- Statistics ------------------------',
+      name: '_comment19_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Statistics`
+  String get statistics {
+    return Intl.message(
+      'Statistics',
+      name: 'statistics',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Show Chart in`
+  String get showChartIn {
+    return Intl.message(
+      'Show Chart in',
+      name: 'showChartIn',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Spent Category`
+  String get spentCategory {
+    return Intl.message(
+      'Spent Category',
+      name: 'spentCategory',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `All`
+  String get all {
+    return Intl.message(
+      'All',
+      name: 'all',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Today`
+  String get today {
+    return Intl.message(
+      'Today',
+      name: 'today',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This Week`
+  String get thisWeek {
+    return Intl.message(
+      'This Week',
+      name: 'thisWeek',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This Month`
+  String get thisMonth {
+    return Intl.message(
+      'This Month',
+      name: 'thisMonth',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This Year`
+  String get thisYear {
+    return Intl.message(
+      'This Year',
+      name: 'thisYear',
       desc: '',
       args: [],
     );

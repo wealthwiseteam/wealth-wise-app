@@ -1,4 +1,6 @@
 import 'package:wealth_wise/data/models/notifications/notification_model.dart';
+import 'package:wealth_wise/data/models/statistics/spent_category_model.dart';
+import 'package:wealth_wise/data/models/statistics/spent_date_model.dart';
 
 class DummayData {
   DummayData._();
@@ -47,5 +49,19 @@ class DummayData {
     "Saving for retirement is easier if you start earlier.",
     "You do not need to have a lot of money to start investing.",
     "Set savings goals and budget to achieve them.",
+  ];
+
+  static const List<SpentCategory> spentCategories = [
+    SpentCategory(name: "Housing", spent: 1000),
+    SpentCategory(name: "Food & Dirnk", spent: 5000),
+    SpentCategory(name: "Entertainment", spent: 2000),
+    SpentCategory(name: "Other", spent: 1000),
+  ];
+
+  static List<SpentDate> spentDate = [
+    SpentDate(date: DateTime(2023, 1), spent: 1000),
+    SpentDate(date: DateTime(2023, 2), spent: 5000),
+    SpentDate(date: DateTime(2023, 3), spent: 2000),
+    SpentDate(date: DateTime(2023, 4), spent: 3000),
   ];
 }
