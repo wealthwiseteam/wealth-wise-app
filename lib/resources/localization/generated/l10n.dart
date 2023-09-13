@@ -1090,6 +1090,96 @@ class S {
     );
   }
 
+  /// `--------------------- Layouts ------------------------`
+  String get _comment17_ {
+    return Intl.message(
+      '--------------------- Layouts ------------------------',
+      name: '_comment17_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Notificaitons`
+  String get notificaitons {
+    return Intl.message(
+      'Notificaitons',
+      name: 'notificaitons',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `--------------------- Tips ------------------------`
+  String get _comment18_ {
+    return Intl.message(
+      '--------------------- Tips ------------------------',
+      name: '_comment18_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Financial Tips`
+  String get financialTips {
+    return Intl.message(
+      'Financial Tips',
+      name: 'financialTips',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `When you have your finances under control, your financial health improves and you can increase the likelihood of achieving your dreams and goals. `
+  String get tipsTitle {
+    return Intl.message(
+      'When you have your finances under control, your financial health improves and you can increase the likelihood of achieving your dreams and goals. ',
+      name: 'tipsTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Here are some tips you can start with today.`
+  String get tipsSubtitle {
+    return Intl.message(
+      'Here are some tips you can start with today.',
+      name: 'tipsSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tip's Article`
+  String get tipArticle {
+    return Intl.message(
+      'Tip\'s Article',
+      name: 'tipArticle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Read More`
+  String get readMore {
+    return Intl.message(
+      'Read More',
+      name: 'readMore',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `--------------------- Statistics ------------------------`
+  String get _comment19_ {
+    return Intl.message(
+      '--------------------- Statistics ------------------------',
+      name: '_comment19_',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Statistics`
   String get statistics {
     return Intl.message(
@@ -1100,11 +1190,81 @@ class S {
     );
   }
 
+  /// `Show Chart in`
+  String get showChartIn {
+    return Intl.message(
+      'Show Chart in',
+      name: 'showChartIn',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Spent Category`
+  String get spentCategory {
+    return Intl.message(
+      'Spent Category',
+      name: 'spentCategory',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `All`
+  String get all {
+    return Intl.message(
+      'All',
+      name: 'all',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Today`
+  String get today {
+    return Intl.message(
+      'Today',
+      name: 'today',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This Week`
+  String get thisWeek {
+    return Intl.message(
+      'This Week',
+      name: 'thisWeek',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This Month`
+  String get thisMonth {
+    return Intl.message(
+      'This Month',
+      name: 'thisMonth',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This Year`
+  String get thisYear {
+    return Intl.message(
+      'This Year',
+      name: 'thisYear',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `--------------------- Budgets ------------------------`
-  String get _comment17_ {
+  String get _comment20_ {
     return Intl.message(
       '--------------------- Budgets ------------------------',
-      name: '_comment17_',
+      name: '_comment20_',
       desc: '',
       args: [],
     );

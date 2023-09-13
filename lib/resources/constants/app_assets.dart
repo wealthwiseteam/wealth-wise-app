@@ -11,6 +11,8 @@ class AppAssets {
   static const String iconLock = "assets/icons/lock.svg";
   static const String iconLogout = "assets/icons/logout.svg";
   static const String iconNotification = "assets/icons/notification.svg";
+  static const String iconNotificationCircle =
+      "assets/icons/notification-circle.svg";
   static const String iconShieldTick = "assets/icons/shield_tick.svg";
   static const String iconWallet = "assets/icons/wallet.svg";
   static const String iconFoodDrinks = "assets/icons/food-drinks.svg";
@@ -36,4 +38,5 @@ class AppAssets {
   static const String bills = "assets/images/rafiki.png";
   static const String budgets = "assets/images/rafiki1.png";
   static const String goals = "assets/images/rafiki2.png";
+  static const String imageTips = "assets/images/tips.png";
 }
