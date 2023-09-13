@@ -20,6 +20,7 @@ class PublicTextButton extends StatelessWidget {
     this.titleSize,
     this.title = "",
     this.width,
+
    
     this.titleColor = AppColors.mintGreen,
     this.backgroundColor = AppColors.white,

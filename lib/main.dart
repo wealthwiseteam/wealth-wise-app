@@ -17,6 +17,11 @@ import 'view/pages/settings/notifications/notifications_settings_page.dart';
 import 'view/pages/tips/all_tips/all_tips_page.dart';
 import 'resources/localization/generated/l10n.dart';
 import 'resources/router/app_router.dart';
+import 'view/pages/accounts/accounts/accounts_page.dart';
+import 'view/pages/accounts/credit_card/my-card/my_card_page.dart';
+import 'view/pages/accounts/credit_card/my_cards/my_cards_page.dart';
+import 'view/pages/accounts/e-wallet/add_e_wallet/add_e_wallet_page.dart';
+import 'view/pages/accounts/e-wallet/e_wallet/e_wallet_page.dart';
 import 'view/pages/auth/congrats/congrats_page.dart';
 import 'view/pages/auth/create_new_password/create_new_password.dart';
 import 'view/pages/auth/face_id/face_id_page.dart';
@@ -55,7 +60,7 @@ class MyApp extends StatelessWidget {
             physics: const BouncingScrollPhysics(),
           ),
           onGenerateRoute: RouteGenerate.getRoute,
-          home: const LayoutsPage(),
+          home: const EWalletPage(),
         );
       },
     );

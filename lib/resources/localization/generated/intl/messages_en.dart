@@ -35,6 +35,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "--------------------- Tips ------------------------"),
         "_comment12_": MessageLookupByLibrary.simpleMessage(
             "--------------------- Statistics ------------------------"),
+        "_comment18_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- accounts------------------------"),
         "_comment1_": MessageLookupByLibrary.simpleMessage(
             "------------------------------ Settings ----------------------------------"),
         "_comment2_": MessageLookupByLibrary.simpleMessage(
@@ -61,9 +63,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "aboutTitle":
             MessageLookupByLibrary.simpleMessage("Your finance in one place."),
         "accounts": MessageLookupByLibrary.simpleMessage("Accounts"),
+        "actions": MessageLookupByLibrary.simpleMessage("Actions"),
         "addAccount": MessageLookupByLibrary.simpleMessage("Add account"),
         "addCard": MessageLookupByLibrary.simpleMessage("Add card"),
         "addCash": MessageLookupByLibrary.simpleMessage("Add Cash"),
+        "addEwallet": MessageLookupByLibrary.simpleMessage("Add E- Wallet"),
         "addGoal": MessageLookupByLibrary.simpleMessage("Add Goal"),
         "addWallet": MessageLookupByLibrary.simpleMessage("Add Wallet"),
         "all": MessageLookupByLibrary.simpleMessage("All"),
@@ -95,6 +99,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("current balance"),
         "dateHint":
             MessageLookupByLibrary.simpleMessage("Example: Aug 12, 2024"),
+        "delete": MessageLookupByLibrary.simpleMessage("Delete"),
+        "deleteAccount": MessageLookupByLibrary.simpleMessage("Delete account"),
+        "deleteAccountCash": MessageLookupByLibrary.simpleMessage(
+            "Are you sure to delete this?"),
         "desiredDate": MessageLookupByLibrary.simpleMessage("Desired date"),
         "donations": MessageLookupByLibrary.simpleMessage("Donations"),
         "dontReceiveCode":
@@ -128,6 +136,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Enter Your Email"),
         "enterYourPassword":
             MessageLookupByLibrary.simpleMessage("Enter Your Password"),
+        "ewalletNumber":
+            MessageLookupByLibrary.simpleMessage("E-wallet number"),
         "expenses": MessageLookupByLibrary.simpleMessage(" Expenses"),
         "expirationDate":
             MessageLookupByLibrary.simpleMessage("Expiration date"),
@@ -141,6 +151,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Forget Password?"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("Forgot Password"),
+        "general": MessageLookupByLibrary.simpleMessage("General"),
         "goalColor": MessageLookupByLibrary.simpleMessage("Goal Color"),
         "goals": MessageLookupByLibrary.simpleMessage("Goals"),
         "green": MessageLookupByLibrary.simpleMessage("Grenn"),
@@ -157,6 +168,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "logoutWarning": MessageLookupByLibrary.simpleMessage(
             "Are you sure you want to logout?"),
         "maybeLater": MessageLookupByLibrary.simpleMessage("Maybe Later"),
+        "myCard": MessageLookupByLibrary.simpleMessage("My Card"),
+        "myCards": MessageLookupByLibrary.simpleMessage("My Cards"),
+        "myEwallet": MessageLookupByLibrary.simpleMessage("My E- wallet"),
         "myGoals": MessageLookupByLibrary.simpleMessage("My Goals"),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
         "newHome": MessageLookupByLibrary.simpleMessage("New home"),
@@ -165,10 +179,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "notes": MessageLookupByLibrary.simpleMessage("Notes"),
         "notificaitons": MessageLookupByLibrary.simpleMessage("Notificaitons"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
+        "numberCard":
+            MessageLookupByLibrary.simpleMessage("2298 1268 3398 9874 "),
         "orSignInWith": MessageLookupByLibrary.simpleMessage("Or Sign in with"),
         "orange": MessageLookupByLibrary.simpleMessage("Orange"),
         "others": MessageLookupByLibrary.simpleMessage("Others"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "paymentCard": MessageLookupByLibrary.simpleMessage("Payment Card"),
         "personalDataPrivacy":
             MessageLookupByLibrary.simpleMessage("Personal Data & Privacy"),
         "phoneNumber": MessageLookupByLibrary.simpleMessage("Phone Number"),
@@ -201,6 +218,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "sports": MessageLookupByLibrary.simpleMessage("Sports"),
         "startDate": MessageLookupByLibrary.simpleMessage("Start Date"),
         "statistics": MessageLookupByLibrary.simpleMessage("Statistics"),
+        "sureDeleteAccount": MessageLookupByLibrary.simpleMessage(
+            "Are you sure to delete this?"),
+        "sureDeleteAccountSubTitle": MessageLookupByLibrary.simpleMessage(
+            "Once deleted, you cannot recover it"),
         "targetAmount": MessageLookupByLibrary.simpleMessage("Target amount"),
         "targetHint": MessageLookupByLibrary.simpleMessage("Exampl3: 250"),
         "thingsSaveFor": MessageLookupByLibrary.simpleMessage(

@@ -1410,6 +1410,156 @@ class S {
     );
   }
 
+  /// `--------------------- accounts------------------------`
+  String get _comment18_ {
+    return Intl.message(
+      '--------------------- accounts------------------------',
+      name: '_comment18_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `My E- wallet`
+  String get myEwallet {
+    return Intl.message(
+      'My E- wallet',
+      name: 'myEwallet',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add E- Wallet`
+  String get addEwallet {
+    return Intl.message(
+      'Add E- Wallet',
+      name: 'addEwallet',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `General`
+  String get general {
+    return Intl.message(
+      'General',
+      name: 'general',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `E-wallet number`
+  String get ewalletNumber {
+    return Intl.message(
+      'E-wallet number',
+      name: 'ewalletNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Actions`
+  String get actions {
+    return Intl.message(
+      'Actions',
+      name: 'actions',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delete account`
+  String get deleteAccount {
+    return Intl.message(
+      'Delete account',
+      name: 'deleteAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Are you sure to delete this?`
+  String get sureDeleteAccount {
+    return Intl.message(
+      'Are you sure to delete this?',
+      name: 'sureDeleteAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Once deleted, you cannot recover it`
+  String get sureDeleteAccountSubTitle {
+    return Intl.message(
+      'Once deleted, you cannot recover it',
+      name: 'sureDeleteAccountSubTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delete`
+  String get delete {
+    return Intl.message(
+      'Delete',
+      name: 'delete',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `My Cards`
+  String get myCards {
+    return Intl.message(
+      'My Cards',
+      name: 'myCards',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `My Card`
+  String get myCard {
+    return Intl.message(
+      'My Card',
+      name: 'myCard',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Payment Card`
+  String get paymentCard {
+    return Intl.message(
+      'Payment Card',
+      name: 'paymentCard',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `2298 1268 3398 9874 `
+  String get numberCard {
+    return Intl.message(
+      '2298 1268 3398 9874 ',
+      name: 'numberCard',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Are you sure to delete this?`
+  String get deleteAccountCash {
+    return Intl.message(
+      'Are you sure to delete this?',
+      name: 'deleteAccountCash',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Start Date`
   String get startDate {
     return Intl.message(
