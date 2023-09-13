@@ -17,6 +17,7 @@ class AddCashPage extends StatefulWidget {
 
 class _AddCashPageState extends State<AddCashPage> {
   late final TextEditingController nameController;
+  late final TextEditingController numberController;
   late final TextEditingController currentBalanceController;
 
   @override
@@ -24,12 +25,14 @@ class _AddCashPageState extends State<AddCashPage> {
     super.initState();
     nameController = TextEditingController();
     currentBalanceController = TextEditingController();
+    numberController = TextEditingController();
   }
 
   @override
   void dispose() {
     nameController.dispose();
     currentBalanceController.dispose();
+    numberController.dispose();
 
     super.dispose();
   }
@@ -48,14 +51,15 @@ class _AddCashPageState extends State<AddCashPage> {
             size: 22.sp,
           ),
           leading: IconButton(
-              icon: const Icon(Icons.arrow_back_outlined),
-              onPressed: () async {
-                // for closing keyboard before pop the page to avoid errors
-                FocusScope.of(context).unfocus();
-                await Future.delayed(const Duration(milliseconds: 10));
-                if (!mounted) return;
-                Navigator.pop(context);
-              }),
+            icon: const Icon(Icons.arrow_back_outlined),
+            onPressed: () async {
+              // for closing keyboard before pop the page to avoid errors
+              FocusScope.of(context).unfocus();
+              await Future.delayed(const Duration(milliseconds: 10));
+              if (!mounted) return;
+              Navigator.pop(context);
+            },
+          ),
         ),
         body: Padding(
           padding: EdgeInsets.symmetric(horizontal: 32.w, vertical: 20.h),
@@ -79,11 +83,36 @@ class _AddCashPageState extends State<AddCashPage> {
                       return null;
                     },
                     border: OutlineInputBorder(
-                        borderSide: BorderSide(
+                      borderSide: BorderSide(
+                        color: AppColors.mintGreen,
+                        width: 2.0.w,
+                      ),
+                      borderRadius: BorderRadius.circular(5.0),
+                    ),
+                    hint: '',
+                  ),
+                  20.ph,
+
+                  /// Card number
+                  PublicText(
+                    txt: S.of(context).walletNumber,
+                    size: 16,
+                    ff: "Inter",
+                    fw: FontWeight.w400,
+                    color: AppColors.subtitleGrey,
+                  ),
+                  10.ph,
+                  PublicTextFormField(
+                    controller: numberController,
+                    validator: (cardNumberController) {
+                      return null;
+                    },
+                    border: OutlineInputBorder(
+                        borderSide: const BorderSide(
                           color: AppColors.mintGreen,
-                          width: 2.0.w,
+                          width: 2.0,
                         ),
-                        borderRadius: BorderRadius.circular(5.0)), hint: '',
+                        borderRadius: BorderRadius.circular(5.0)),
                   ),
                   20.ph,
 

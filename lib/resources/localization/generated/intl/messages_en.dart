@@ -59,6 +59,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "addCard": MessageLookupByLibrary.simpleMessage("Add card"),
         "addCash": MessageLookupByLibrary.simpleMessage("Add Cash"),
         "addGoal": MessageLookupByLibrary.simpleMessage("Add Goal"),
+        "addWallet": MessageLookupByLibrary.simpleMessage("Add Wallet"),
         "allCategories": MessageLookupByLibrary.simpleMessage("All Categories"),
         "appUpdates": MessageLookupByLibrary.simpleMessage("App Updates"),
         "blue": MessageLookupByLibrary.simpleMessage("Blue"),
@@ -91,6 +92,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "donations": MessageLookupByLibrary.simpleMessage("Donations"),
         "dontReceiveCode":
             MessageLookupByLibrary.simpleMessage("Don’t receive a code?"),
+        "dueDate": MessageLookupByLibrary.simpleMessage("Due Date"),
         "editCategory": MessageLookupByLibrary.simpleMessage("Edit Category"),
         "educaiton": MessageLookupByLibrary.simpleMessage("Education"),
         "egp": MessageLookupByLibrary.simpleMessage("EGP"),
@@ -184,6 +186,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "signUpTitle":
             MessageLookupByLibrary.simpleMessage("Create New Account"),
         "sports": MessageLookupByLibrary.simpleMessage("Sports"),
+        "startDate": MessageLookupByLibrary.simpleMessage("Start Date"),
         "targetAmount": MessageLookupByLibrary.simpleMessage("Target amount"),
         "targetHint": MessageLookupByLibrary.simpleMessage("Exampl3: 250"),
         "thingsSaveFor": MessageLookupByLibrary.simpleMessage(
@@ -196,6 +199,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "verfiyCode": MessageLookupByLibrary.simpleMessage("Verify code"),
         "verfiyCodeSubtitle": MessageLookupByLibrary.simpleMessage(
             "Please enter the code we emailed you"),
+        "walletNumber": MessageLookupByLibrary.simpleMessage("wallet number"),
         "whatSavingFor":
             MessageLookupByLibrary.simpleMessage("What are you saving for?"),
         "yellow": MessageLookupByLibrary.simpleMessage("yellow"),

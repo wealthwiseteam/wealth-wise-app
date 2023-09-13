@@ -1,5 +1,3 @@
-
-
 class CategoryPeriod {
   final String name;
 

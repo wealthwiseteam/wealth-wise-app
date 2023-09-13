@@ -113,8 +113,9 @@ class _AddBudgetPagestate extends State<AddBudgetPage> {
                       },
                     ),
                   ),
-                  20.ph,
-                  //Enter amount
+                  16.ph,
+
+                  /// Enter amount
                   PublicText(
                     txt: S.of(context).enterAmount,
                     color: AppColors.subtitleGrey,
@@ -137,7 +138,7 @@ class _AddBudgetPagestate extends State<AddBudgetPage> {
                       ),
                     ),
                   ),
-                  20.ph,
+                  16.ph,
 
                   /// Enter period
                   PublicText(
@@ -178,6 +179,114 @@ class _AddBudgetPagestate extends State<AddBudgetPage> {
                   ),
                   20.ph,
 
+                  /// Dates
+                  Row(
+                    children: [
+                      /// Start Date
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            PublicText(
+                              txt: S.of(context).startDate,
+                              color: AppColors.subtitleGrey,
+                            ),
+                            10.ph,
+                            InkWell(
+                              onTap: () {
+                                showDatePicker(
+                                  context: context,
+                                  initialDate: DateTime.now(),
+                                  firstDate: DateTime.now(),
+                                  lastDate: DateTime(2040),
+                                );
+                              },
+                              child: Container(
+                                padding: EdgeInsets.symmetric(
+                                    horizontal: 10.w, vertical: 15.h),
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: AppColors.mintGreen,
+                                    width: 2,
+                                  ),
+                                  borderRadius: BorderRadius.circular(6),
+                                ),
+                                child: const Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    PublicText(
+                                      txt: "",
+                                      color: AppColors.grey,
+                                    ),
+                                    Icon(
+                                      Icons.calendar_month_outlined,
+                                      color: AppColors.mintGreen,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            20.ph,
+                          ],
+                        ),
+                      ),
+                      16.pw,
+
+                      /// Due Date
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            PublicText(
+                              txt: S.of(context).dueDate,
+                              color: AppColors.subtitleGrey,
+                            ),
+                            10.ph,
+                            InkWell(
+                              onTap: () {
+                                showDatePicker(
+                                  context: context,
+                                  initialDate: DateTime.now(),
+                                  firstDate: DateTime.now(),
+                                  lastDate: DateTime(2040),
+                                );
+                              },
+                              child: Container(
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: 10.w,
+                                  vertical: 15.h,
+                                ),
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: AppColors.mintGreen,
+                                    width: 2,
+                                  ),
+                                  borderRadius: BorderRadius.circular(6),
+                                ),
+                                child: const Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    PublicText(
+                                      txt: "",
+                                      color: AppColors.grey,
+                                    ),
+                                    Icon(
+                                      Icons.calendar_month_outlined,
+                                      color: AppColors.mintGreen,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            20.ph,
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+
                   /// Choose account
                   PublicText(
                     txt: S.of(context).chooseAccount,
@@ -216,7 +325,7 @@ class _AddBudgetPagestate extends State<AddBudgetPage> {
                     ),
                   ),
 
-                  60.ph,
+                  40.ph,
 
                   Column(
                     children: [

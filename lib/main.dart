@@ -51,7 +51,7 @@ class MyApp extends StatelessWidget {
             physics: const BouncingScrollPhysics(),
           ),
           onGenerateRoute: RouteGenerate.getRoute,
-          home: const AddCardPage(),
+          home: const AddBudgetPage(),
         );
       },
     );

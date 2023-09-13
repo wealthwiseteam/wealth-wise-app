@@ -1250,6 +1250,16 @@ class S {
     );
   }
 
+  /// `wallet number`
+  String get walletNumber {
+    return Intl.message(
+      'wallet number',
+      name: 'walletNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Expiration date`
   String get expirationDate {
     return Intl.message(
@@ -1285,6 +1295,16 @@ class S {
     return Intl.message(
       'Add Cash',
       name: 'addCash',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Wallet`
+  String get addWallet {
+    return Intl.message(
+      'Add Wallet',
+      name: 'addWallet',
       desc: '',
       args: [],
     );
@@ -1385,6 +1405,26 @@ class S {
     return Intl.message(
       'Choose account',
       name: 'chooseAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Start Date`
+  String get startDate {
+    return Intl.message(
+      'Start Date',
+      name: 'startDate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Due Date`
+  String get dueDate {
+    return Intl.message(
+      'Due Date',
+      name: 'dueDate',
       desc: '',
       args: [],
     );
