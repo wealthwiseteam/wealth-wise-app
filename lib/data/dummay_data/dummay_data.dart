@@ -2,6 +2,8 @@ import 'package:wealth_wise/data/models/notifications/notification_model.dart';
 import 'package:wealth_wise/data/models/statistics/spent_category_model.dart';
 import 'package:wealth_wise/data/models/statistics/spent_date_model.dart';
 
+import '../models/tips/tip_model.dart';
+
 class DummayData {
   DummayData._();
 
@@ -64,4 +66,10 @@ class DummayData {
     SpentDate(date: DateTime(2023, 3), spent: 2000),
     SpentDate(date: DateTime(2023, 4), spent: 3000),
   ];
+
+  static const tip = Tip(
+    title: "Saving for retirement is easier if you start earlier.",
+    content:
+        "When you have your finances under control, your financial health improves and you can increase the likelihood of achieving your dreams and goals. When you have your finances under control, your financial health improves and you can increase the likelihood of achieving your dreams and goals. When you have your finances under control, your financial health improves and you can increase the likelihood of achieving your dreams and goals. When you have your finances under control, your financial health improves and you can increase the likelihood of achieving your dreams and goals. When you have your finances under control, your financial health improves and you can increase the likelihood of achieving your dreams and goals. When you have your finances under control, your financial health improves and you can increase the likelihood of achieving your dreams and goals.",
+  );
 }

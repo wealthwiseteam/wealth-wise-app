@@ -8,7 +8,7 @@ import 'package:wealth_wise/view/pages/home/home_screen.dart';
 import 'package:wealth_wise/view/pages/layouts/layouts_page.dart';
 import 'package:wealth_wise/view/pages/notifications/notifications_page.dart';
 import 'package:wealth_wise/view/pages/settings/notifications/notifications_settings_page.dart';
-import 'package:wealth_wise/view/pages/tips/tips_page.dart';
+import 'package:wealth_wise/view/pages/tips/all_tips/all_tips_page.dart';
 
 import 'resources/localization/generated/l10n.dart';
 import 'resources/router/app_router.dart';
@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
             physics: const BouncingScrollPhysics(),
           ),
           onGenerateRoute: RouteGenerate.getRoute,
-          home: const TipsPage()
+          home: const AllTipsPage()
         );
       },
     );

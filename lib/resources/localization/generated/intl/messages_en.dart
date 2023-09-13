@@ -131,6 +131,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "purple": MessageLookupByLibrary.simpleMessage("Purple"),
         "reachingGoals": MessageLookupByLibrary.simpleMessage("Reaching Goals"),
+        "readMore": MessageLookupByLibrary.simpleMessage("Read More"),
         "red": MessageLookupByLibrary.simpleMessage("Red"),
         "register": MessageLookupByLibrary.simpleMessage("Register"),
         "resendAgain": MessageLookupByLibrary.simpleMessage("resendAgain"),
@@ -159,6 +160,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "thisMonth": MessageLookupByLibrary.simpleMessage("This Month"),
         "thisWeek": MessageLookupByLibrary.simpleMessage("This Week"),
         "thisYear": MessageLookupByLibrary.simpleMessage("This Year"),
+        "tipArticle": MessageLookupByLibrary.simpleMessage("Tip\'s Article"),
         "tipsSubtitle": MessageLookupByLibrary.simpleMessage(
             "Here are some tips you can start with today."),
         "tipsTitle": MessageLookupByLibrary.simpleMessage(

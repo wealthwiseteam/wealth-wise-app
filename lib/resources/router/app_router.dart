@@ -9,6 +9,7 @@ import 'package:wealth_wise/view/pages/settings/notifications/notifications_sett
 import 'package:wealth_wise/view/pages/settings/privacy/privacy_page.dart';
 import 'package:wealth_wise/view/pages/settings/profile/profile_page.dart';
 import 'package:wealth_wise/view/pages/settings/security/security_page.dart';
+import 'package:wealth_wise/view/pages/tips/tip_article/tip_article_page.dart';
 
 class AppRoutes {
   AppRoutes._private();
@@ -35,7 +36,8 @@ class AppRoutes {
   static const String createGoal = "create goal";
   static const String addGoal = "add goal";
 
-
+  /// Tips 
+  static const String tipArticle = "tip article";
   
   
 }
@@ -90,6 +92,13 @@ class RouteGenerate {
         return MaterialPageRoute(
           builder: (_) => const AddGoalPage(),
         );
+      
+      /// Tip Article
+      case AppRoutes.tipArticle:
+        return MaterialPageRoute(
+          builder: (_) => const TipArticlePage(),
+        );
+      
       
       default:
         return MaterialPageRoute(

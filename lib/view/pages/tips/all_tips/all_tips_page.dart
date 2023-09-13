@@ -4,13 +4,16 @@ import 'package:flutter/material.dart';
 import 'package:wealth_wise/data/dummay_data/dummay_data.dart';
 import 'package:wealth_wise/resources/constants/app_assets.dart';
 import 'package:wealth_wise/resources/extensions/extensions.dart';
+import 'package:wealth_wise/resources/router/app_router.dart';
 
-import '../../../resources/localization/generated/l10n.dart';
-import '../../../resources/styles/app_colors.dart';
-import '../../widgets/public_text.dart';
+import '../../../../resources/localization/generated/l10n.dart';
+import '../../../../resources/styles/app_colors.dart';
+import '../../../widgets/public_text.dart';
 
-class TipsPage extends StatelessWidget {
-  const TipsPage({super.key});
+part 'components/tip_card.dart';
+
+class AllTipsPage extends StatelessWidget {
+  const AllTipsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -58,48 +61,6 @@ class TipsPage extends StatelessWidget {
                 },
                 separatorBuilder: (_, __) => 15.ph,
               ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class TipCard extends StatelessWidget {
-  final String title;
-  const TipCard({
-    super.key,
-    required this.title,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 4),
-      child: Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(12),
-          color: AppColors.white,
-          boxShadow: [
-            BoxShadow(
-                color: AppColors.grey.withOpacity(0.5),
-                spreadRadius: 0.6,
-                blurRadius: 4,
-                offset: const Offset(0, 2)),
-          ],
-        ),
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 15.w, vertical: 15.h),
-          child: Row(
-            children: [
-              Expanded(
-                child: PublicText(
-                  txt: title,
-                  max: 2,
-                ),
-              ),
-              Image.asset(AppAssets.goals),
             ],
           ),
         ),

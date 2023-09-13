@@ -1150,6 +1150,26 @@ class S {
     );
   }
 
+  /// `Tip's Article`
+  String get tipArticle {
+    return Intl.message(
+      'Tip\'s Article',
+      name: 'tipArticle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Read More`
+  String get readMore {
+    return Intl.message(
+      'Read More',
+      name: 'readMore',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `--------------------- Statistics ------------------------`
   String get _comment19_ {
     return Intl.message(
