@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wealth_wise/data/models/goals/goal_model.dart';
 import 'package:wealth_wise/data/models/settings/category_info_model.dart';
+import 'package:wealth_wise/view/pages/budgets/budget_details/budget_details_page.dart';
 import 'package:wealth_wise/view/pages/budgets/create_edit_budget/create_edit_budget.dart';
 import 'package:wealth_wise/view/pages/categories/all_categories/all_categories_page.dart';
 import 'package:wealth_wise/view/pages/categories/create_edit_category/create_edit_category_page.dart';
@@ -45,6 +46,7 @@ class AppRoutes {
 
   /// Budgets
   static const String createEditBudget = "create & edit budget";
+  static const String budgetDetials = "budget details";
 }
 
 class RouteGenerate {
@@ -117,6 +119,10 @@ class RouteGenerate {
           builder: (_) => CreateEditBudgetPage(
             isCreate: (routeSettings.arguments as bool?) ?? false,
           ),
+        );
+      case AppRoutes.budgetDetials:
+        return MaterialPageRoute(
+          builder: (_) => const BudgetDetailsPage(),
         );
 
       default:

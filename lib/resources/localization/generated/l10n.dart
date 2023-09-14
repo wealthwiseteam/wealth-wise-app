@@ -1390,6 +1390,16 @@ class S {
     );
   }
 
+  /// `Budget`
+  String get budget {
+    return Intl.message(
+      'Budget',
+      name: 'budget',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Create Budget`
   String get createBudget {
     return Intl.message(

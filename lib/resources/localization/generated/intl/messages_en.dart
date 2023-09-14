@@ -79,6 +79,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "allCategories": MessageLookupByLibrary.simpleMessage("All Categories"),
         "appUpdates": MessageLookupByLibrary.simpleMessage("App Updates"),
         "blue": MessageLookupByLibrary.simpleMessage("Blue"),
+        "budget": MessageLookupByLibrary.simpleMessage("Budget"),
         "budgets": MessageLookupByLibrary.simpleMessage("Budgets"),
         "cancel": MessageLookupByLibrary.simpleMessage("cancel"),
         "cardCCV":

@@ -133,6 +133,7 @@
     "createCash": "Create Cash",
     "currentBalance": "current balance",
     "_comment9_": "--------------------- budget------------------------",
+    "budget":"Budget",
     "createBudget": "Create Budget",
     "editBudget": "Edit Budget",
     "chooseCategory": "Choose Category",

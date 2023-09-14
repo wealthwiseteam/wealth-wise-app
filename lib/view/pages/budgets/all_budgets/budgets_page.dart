@@ -7,6 +7,7 @@ import 'package:wealth_wise/resources/extensions/extensions.dart';
 import 'package:wealth_wise/resources/localization/generated/l10n.dart';
 import 'package:wealth_wise/resources/router/app_router.dart';
 import 'package:wealth_wise/resources/styles/app_colors.dart';
+import 'package:wealth_wise/view/pages/budgets/budget_details/budget_details_page.dart';
 import 'package:wealth_wise/view/widgets/public_divider.dart';
 import 'package:wealth_wise/view/widgets/public_text.dart';
 

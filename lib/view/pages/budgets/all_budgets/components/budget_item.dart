@@ -19,12 +19,23 @@ class BudgetItem extends StatelessWidget {
         children: [
           Row(
             children: [
-              PublicText(
-                txt: name,
-              ),
-              const Spacer(),
-              PublicText(
-                txt: "${S.of(context).egp} ${amount.orAbout()}",
+              Expanded(
+                child: InkWell(
+                  onTap: () =>
+                      Navigator.pushNamed(context, AppRoutes.budgetDetials),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      PublicText(
+                        txt: name,
+                      ),
+                      const Spacer(),
+                      PublicText(
+                        txt: "${S.of(context).egp} ${amount.orAbout()}",
+                      ),
+                    ],
+                  ),
+                ),
               ),
               10.pw,
               IconButton(
