@@ -49,6 +49,7 @@ class PublicButton extends StatelessWidget {
             size: titleSize ?? 16.sp,
             color: titleColor,
             fw: FontWeight.bold,
+            softWrap: true,
           ),
         ),
       ),
