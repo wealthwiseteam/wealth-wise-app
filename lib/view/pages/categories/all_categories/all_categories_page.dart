@@ -10,8 +10,8 @@ import '../../../../resources/styles/app_colors.dart';
 import '../../../widgets/public_list_tile.dart';
 import '../../../widgets/public_text.dart';
 
-class CategoriesPage extends StatelessWidget {
-  const CategoriesPage({super.key});
+class AllCategoriesPage extends StatelessWidget {
+  const AllCategoriesPage({super.key});
 
   @override
   Widget build(BuildContext context) {

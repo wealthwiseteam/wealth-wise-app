@@ -10,15 +10,15 @@ import '../../../../resources/localization/generated/l10n.dart';
 import '../../../../resources/styles/app_colors.dart';
 import '../../../widgets/public_text.dart';
 
-class CategorySettingsPage extends StatefulWidget {
+class EditCategoryPage extends StatefulWidget {
   final CategoryInfo categoryInfo;
-  const CategorySettingsPage({super.key, required this.categoryInfo});
+  const EditCategoryPage({super.key, required this.categoryInfo});
 
   @override
-  State<CategorySettingsPage> createState() => _CategorySettingsPageState();
+  State<EditCategoryPage> createState() => _EditCategoryPageState();
 }
 
-class _CategorySettingsPageState extends State<CategorySettingsPage> {
+class _EditCategoryPageState extends State<EditCategoryPage> {
   late final TextEditingController nameController;
 
   @override

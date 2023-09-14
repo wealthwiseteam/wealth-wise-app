@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:wealth_wise/data/models/settings/category_info_model.dart';
+import 'package:wealth_wise/view/pages/categories/all_categories/all_categories_page.dart';
+import 'package:wealth_wise/view/pages/categories/edit_category/edit_category_page.dart';
 import 'package:wealth_wise/view/pages/goals/add_goal/add_goal_page.dart';
 import 'package:wealth_wise/view/pages/goals/create_goal/create_goal_page.dart';
 import 'package:wealth_wise/view/pages/settings/about/about_page.dart';
-import 'package:wealth_wise/view/pages/settings/categories/categories_page.dart';
-import 'package:wealth_wise/view/pages/settings/category_settings/category_settings_page.dart';
 import 'package:wealth_wise/view/pages/settings/notifications/notifications_settings_page.dart';
 import 'package:wealth_wise/view/pages/settings/privacy/privacy_page.dart';
 import 'package:wealth_wise/view/pages/settings/profile/profile_page.dart';
@@ -60,7 +60,7 @@ class RouteGenerate {
         );
       case AppRoutes.categories:
         return MaterialPageRoute(
-          builder: (_) => const CategoriesPage(),
+          builder: (_) => const AllCategoriesPage(),
         );
       case AppRoutes.notifications:
         return MaterialPageRoute(
@@ -80,7 +80,7 @@ class RouteGenerate {
         );
       case AppRoutes.categorySettings:
         return MaterialPageRoute(
-          builder: (_) => CategorySettingsPage(
+          builder: (_) => EditCategoryPage(
             categoryInfo: routeSettings.arguments as CategoryInfo,
           ),
         );
