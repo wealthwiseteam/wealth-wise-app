@@ -19,3 +19,21 @@ class PublicDivider extends StatelessWidget {
     );
   }
 }
+
+class PublicDividerInfinity extends StatelessWidget {
+  final double? width;
+  final Color? color;
+  const PublicDividerInfinity({
+    Key? key,
+    this.width,
+    this.color,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+        color: color ?? Colors.grey.withOpacity(0.3),
+        height: 0.8,
+        width: double.infinity);
+  }
+}

@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/resources/extensions/extensions.dart';
+import 'package:wealth_wise/resources/router/app_router.dart';
 
 import '../../../../resources/constants/app_assets.dart';
 import '../../../../resources/localization/generated/l10n.dart';
@@ -10,7 +11,6 @@ import '../../../../resources/styles/app_colors.dart';
 import '../../../widgets/public_button.dart';
 import '../../../widgets/public_text.dart';
 import '../../../widgets/public_text_form_field.dart';
-
 
 class CreateNewPasswordPage extends StatefulWidget {
   const CreateNewPasswordPage({super.key});
@@ -85,8 +85,7 @@ class _CreateNewPasswordPageState extends State<CreateNewPasswordPage> {
                           height: 24.h,
                         ),
                         PublicText(
-                          txt:
-                              S.of(context).CreateNewPasswordSubtitle,
+                          txt: S.of(context).CreateNewPasswordSubtitle,
                           color: Colors.black45,
                           align: TextAlign.center,
                           fw: FontWeight.w300,
@@ -95,7 +94,7 @@ class _CreateNewPasswordPageState extends State<CreateNewPasswordPage> {
                         ),
                         54.ph,
                         PublicTextFormField(
-                          hint:S.of(context).enterNewPassword,
+                          hint: S.of(context).enterNewPassword,
                           keyboardtype: TextInputType.text,
                           prefixIcon: Icons.lock,
                           showprefixIcon: true,
@@ -127,7 +126,13 @@ class _CreateNewPasswordPageState extends State<CreateNewPasswordPage> {
                         PublicButton(
                           title: S.of(context).create,
                           width: 300.w,
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamedAndRemoveUntil(
+                              context,
+                              AppRoutes.signIn,
+                              (_) => false,
+                            );
+                          },
                         ),
                       ],
                     ),

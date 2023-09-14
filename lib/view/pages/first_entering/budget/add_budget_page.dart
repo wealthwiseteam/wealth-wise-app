@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/resources/constants/app_constants.dart';
 import 'package:wealth_wise/resources/extensions/extensions.dart';
+import 'package:wealth_wise/resources/router/app_router.dart';
 import 'package:wealth_wise/view/pages/first_entering/budget/components/account_item.dart';
 import 'package:wealth_wise/view/pages/first_entering/budget/components/period_item.dart';
 import 'package:wealth_wise/view/widgets/public_button.dart';
@@ -330,14 +331,22 @@ class _AddBudgetPagestate extends State<AddBudgetPage> {
                   Column(
                     children: [
                       PublicButton(
-                        title: S.of(context).createGoal,
+                        title: S.of(context).create,
                         width: double.infinity,
-                        onPressed: () {},
+                        onPressed: () => Navigator.pushNamedAndRemoveUntil(
+                          context,
+                          AppRoutes.layouts,
+                          (_) => false,
+                        ),
                       ),
                       PublicTextButton(
                         title: S.of(context).maybeLater,
-                        onPressed: () {},
-                      )
+                        onPressed: () => Navigator.pushNamedAndRemoveUntil(
+                          context,
+                          AppRoutes.layouts,
+                          (_) => false,
+                        ),
+                      ),
                     ],
                   )
                 ],

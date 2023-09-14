@@ -53,7 +53,7 @@ class AllCategoriesPage extends StatelessWidget {
                 icon: AppAssets.iconFoodDrinks,
                 iconSize: 30.w,
               ),
-              PublicDivider(width: 300.w),
+              const PublicDividerInfinity(),
               PublicListTile(
                 onTap: () => Navigator.pushNamed(
                   context,
@@ -70,7 +70,7 @@ class AllCategoriesPage extends StatelessWidget {
                 icon: AppAssets.iconHealth,
                 iconSize: 30.w,
               ),
-              PublicDivider(width: 300.w),
+              const PublicDividerInfinity(),
               PublicListTile(
                 onTap: () => Navigator.pushNamed(
                   context,
@@ -87,7 +87,7 @@ class AllCategoriesPage extends StatelessWidget {
                 icon: AppAssets.iconHousing,
                 iconSize: 30.w,
               ),
-              PublicDivider(width: 300.w),
+              const PublicDividerInfinity(),
               PublicListTile(
                 onTap: () => Navigator.pushNamed(
                   context,
@@ -104,7 +104,7 @@ class AllCategoriesPage extends StatelessWidget {
                 icon: AppAssets.iconSports,
                 iconSize: 30.w,
               ),
-              PublicDivider(width: 300.w),
+              const PublicDividerInfinity(),
               PublicListTile(
                 onTap: () => Navigator.pushNamed(
                   context,
@@ -121,7 +121,7 @@ class AllCategoriesPage extends StatelessWidget {
                 icon: AppAssets.iconVehicle,
                 iconSize: 30.w,
               ),
-              PublicDivider(width: 300.w),
+              const PublicDividerInfinity(),
               PublicListTile(
                 onTap: () => Navigator.pushNamed(
                   context,
@@ -138,7 +138,7 @@ class AllCategoriesPage extends StatelessWidget {
                 icon: AppAssets.iconShopping,
                 iconSize: 30.w,
               ),
-              PublicDivider(width: 300.w),
+              const PublicDividerInfinity(),
               PublicListTile(
                 onTap: () => Navigator.pushNamed(
                   context,
@@ -155,7 +155,7 @@ class AllCategoriesPage extends StatelessWidget {
                 icon: AppAssets.iconOthers,
                 iconSize: 30.w,
               ),
-              PublicDivider(width: 300.w),
+              const PublicDividerInfinity(),
               16.ph,
               Align(
                 alignment: AlignmentDirectional.centerStart,

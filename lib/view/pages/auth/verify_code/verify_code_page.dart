@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/resources/constants/app_assets.dart';
 import 'package:wealth_wise/resources/extensions/extensions.dart';
+import 'package:wealth_wise/resources/router/app_router.dart';
 import 'package:wealth_wise/resources/styles/app_colors.dart';
 
 import '../../../../resources/localization/generated/l10n.dart';
@@ -103,7 +104,7 @@ class _VerifyCodePageState extends State<VerifyCodePage> {
                     PublicButton(
                       title: S.of(context).verfiy,
                       width: 300.w,
-                      onPressed: () {},
+                      onPressed: () => Navigator.pushNamed(context, AppRoutes.resetPassword),
                     ),
                     40.ph,
                     Column(

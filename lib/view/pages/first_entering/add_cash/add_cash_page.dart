@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/resources/extensions/extensions.dart';
+import 'package:wealth_wise/resources/router/app_router.dart';
 
 import '../../../../resources/localization/generated/l10n.dart';
 import '../../../../resources/styles/app_colors.dart';
@@ -146,7 +147,7 @@ class _AddCashPageState extends State<AddCashPage> {
                   PublicButton(
                     title: S.of(context).createCash,
                     width: double.infinity,
-                    onPressed: () {},
+                    onPressed: () =>Navigator.pushReplacementNamed(context, AppRoutes.enteringBudget),
                   )
                 ],
               ),
