@@ -94,6 +94,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "createBudget": MessageLookupByLibrary.simpleMessage("Create Budget"),
         "createCard": MessageLookupByLibrary.simpleMessage("Create Card"),
         "createCash": MessageLookupByLibrary.simpleMessage("Create Cash"),
+        "createCategory":
+            MessageLookupByLibrary.simpleMessage("Create Category"),
         "createGoal": MessageLookupByLibrary.simpleMessage("Create Goal"),
         "currentBalance":
             MessageLookupByLibrary.simpleMessage("current balance"),

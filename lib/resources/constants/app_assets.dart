@@ -14,8 +14,9 @@ class AppAssets {
   static const String iconFoodDrinks = "assets/icons/food-drinks.svg";
   static const String iconHealth = "assets/icons/Health.svg";
   static const String iconHousing = "assets/icons/Housing.svg";
+  static const String iconHousingCategory = "assets/icons/housing-category.svg";
   static const String iconOthers = "assets/icons/others.svg";
-  static const String iconShopping = "assets/icons/shopping.svg";
+  static const String iconShopping = "assets/icons/shopping-category.svg";
   static const String iconSports = "assets/icons/Sports.svg";
   static const String iconVehicle = "assets/icons/vehicle.svg";
   static const String iconDonation = "assets/icons/donation.svg";

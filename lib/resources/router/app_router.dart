@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wealth_wise/data/models/settings/category_info_model.dart';
 import 'package:wealth_wise/view/pages/categories/all_categories/all_categories_page.dart';
-import 'package:wealth_wise/view/pages/categories/edit_category/edit_category_page.dart';
+import 'package:wealth_wise/view/pages/categories/create_edit_category/create_edit_category_page.dart';
 import 'package:wealth_wise/view/pages/goals/add_goal/add_goal_page.dart';
 import 'package:wealth_wise/view/pages/goals/create_goal/create_goal_page.dart';
 import 'package:wealth_wise/view/pages/settings/about/about_page.dart';
@@ -10,7 +10,6 @@ import 'package:wealth_wise/view/pages/settings/privacy/privacy_page.dart';
 import 'package:wealth_wise/view/pages/settings/profile/profile_page.dart';
 import 'package:wealth_wise/view/pages/settings/security/security_page.dart';
 import 'package:wealth_wise/view/pages/tips/tip_article/tip_article_page.dart';
-
 
 class AppRoutes {
   AppRoutes._private();
@@ -31,17 +30,14 @@ class AppRoutes {
   static const String privacy = "privacy";
   static const String profile = "profile";
   static const String security = "security";
-  static const String categorySettings = "category settings";
+  static const String createEditCategory = "create & edit category";
 
   /// Goals
   static const String createGoal = "create goal";
   static const String addGoal = "add goal";
 
-
-  /// Tips 
+  /// Tips
   static const String tipArticle = "tip article";
-  
-  
 }
 
 class RouteGenerate {
@@ -78,10 +74,11 @@ class RouteGenerate {
         return MaterialPageRoute(
           builder: (_) => const SecurityPage(),
         );
-      case AppRoutes.categorySettings:
+      case AppRoutes.createEditCategory:
         return MaterialPageRoute(
-          builder: (_) => EditCategoryPage(
-            categoryInfo: routeSettings.arguments as CategoryInfo,
+          builder: (_) => CreateEditCategoryPage(
+            isCreate: (routeSettings.arguments as Map)['isCreate'],
+            categoryInfo: (routeSettings.arguments as Map)['categoryInfo'],
           ),
         );
 
@@ -94,14 +91,13 @@ class RouteGenerate {
         return MaterialPageRoute(
           builder: (_) => const AddGoalPage(),
         );
-      
+
       /// Tip Article
       case AppRoutes.tipArticle:
         return MaterialPageRoute(
           builder: (_) => const TipArticlePage(),
         );
-      
-      
+
       default:
         return MaterialPageRoute(
             builder: (_) => _undfinedPage(route: routeSettings.name));

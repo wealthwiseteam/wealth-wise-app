@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/data/models/settings/category_info_model.dart';
+import 'package:wealth_wise/resources/extensions/extensions.dart';
+import 'package:wealth_wise/view/widgets/public_Text_button.dart';
 import 'package:wealth_wise/view/widgets/public_divider.dart';
 
 import '../../../../resources/constants/app_assets.dart';
@@ -38,102 +40,141 @@ class AllCategoriesPage extends StatelessWidget {
               PublicListTile(
                 onTap: () => Navigator.pushNamed(
                   context,
-                  AppRoutes.categorySettings,
-                  arguments: CategoryInfo(
-                    icon: AppAssets.iconFoodDrinks,
-                    // TODO: "enhance"
-                    name: S.of(context).foodDrinks,
-                  ),
+                  AppRoutes.createEditCategory,
+                  arguments: {
+                    "isCreate": false,
+                    "categoryInfo": CategoryInfo(
+                      icon: AppAssets.iconFoodDrinks,
+                      name: S.of(context).foodDrinks,
+                    ),
+                  },
                 ),
                 title: S.of(context).foodDrinks,
                 icon: AppAssets.iconFoodDrinks,
                 iconSize: 30.w,
               ),
-              const PublicDivider(),
+              PublicDivider(width: 300.w),
               PublicListTile(
                 onTap: () => Navigator.pushNamed(
                   context,
-                  AppRoutes.categorySettings,
-                  arguments: CategoryInfo(
-                    icon: AppAssets.iconHealth,
-                    name: S.of(context).health,
-                  ),
+                  AppRoutes.createEditCategory,
+                  arguments: {
+                    "isCreate": false,
+                    "categoryInfo": CategoryInfo(
+                      icon: AppAssets.iconHealth,
+                      name: S.of(context).health,
+                    ),
+                  },
                 ),
                 title: S.of(context).health,
                 icon: AppAssets.iconHealth,
                 iconSize: 30.w,
               ),
-              const PublicDivider(),
+              PublicDivider(width: 300.w),
               PublicListTile(
                 onTap: () => Navigator.pushNamed(
                   context,
-                  AppRoutes.categorySettings,
-                  arguments: CategoryInfo(
-                    icon: AppAssets.iconHousing,
-                    name: S.of(context).housingRent,
-                  ),
+                  AppRoutes.createEditCategory,
+                  arguments: {
+                    "isCreate": false,
+                    "categoryInfo": CategoryInfo(
+                      icon: AppAssets.iconHousingCategory,
+                      name: S.of(context).housingRent,
+                    ),
+                  },
                 ),
                 title: S.of(context).housingRent,
                 icon: AppAssets.iconHousing,
                 iconSize: 30.w,
               ),
-              const PublicDivider(),
+              PublicDivider(width: 300.w),
               PublicListTile(
                 onTap: () => Navigator.pushNamed(
                   context,
-                  AppRoutes.categorySettings,
-                  arguments: CategoryInfo(
-                    icon: AppAssets.iconSports,
-                    name: S.of(context).sports,
-                  ),
+                  AppRoutes.createEditCategory,
+                  arguments: {
+                    "isCreate": false,
+                    "categoryInfo": CategoryInfo(
+                      icon: AppAssets.iconSports,
+                      name: S.of(context).sports,
+                    ),
+                  },
                 ),
                 title: S.of(context).sports,
                 icon: AppAssets.iconSports,
                 iconSize: 30.w,
               ),
-              const PublicDivider(),
+              PublicDivider(width: 300.w),
               PublicListTile(
                 onTap: () => Navigator.pushNamed(
                   context,
-                  AppRoutes.categorySettings,
-                  arguments: CategoryInfo(
-                    icon: AppAssets.iconVehicle,
-                    name: S.of(context).vehicle,
-                  ),
+                  AppRoutes.createEditCategory,
+                  arguments: {
+                    "isCreate": false,
+                    "categoryInfo": CategoryInfo(
+                      icon: AppAssets.iconVehicle,
+                      name: S.of(context).vehicle,
+                    ),
+                  },
                 ),
                 title: S.of(context).vehicle,
                 icon: AppAssets.iconVehicle,
                 iconSize: 30.w,
               ),
-              const PublicDivider(),
+              PublicDivider(width: 300.w),
               PublicListTile(
                 onTap: () => Navigator.pushNamed(
                   context,
-                  AppRoutes.categorySettings,
-                  arguments: CategoryInfo(
-                    icon: AppAssets.iconShopping,
-                    name: S.of(context).shopping,
-                  ),
+                  AppRoutes.createEditCategory,
+                  arguments: {
+                    "isCreate": false,
+                    "categoryInfo": CategoryInfo(
+                      icon: AppAssets.iconShopping,
+                      name: S.of(context).shopping,
+                    ),
+                  },
                 ),
                 title: S.of(context).shopping,
                 icon: AppAssets.iconShopping,
                 iconSize: 30.w,
               ),
-              const PublicDivider(),
+              PublicDivider(width: 300.w),
               PublicListTile(
                 onTap: () => Navigator.pushNamed(
                   context,
-                  AppRoutes.categorySettings,
-                  arguments: CategoryInfo(
-                    icon: AppAssets.iconOthers,
-                    name: S.of(context).others,
-                  ),
+                  AppRoutes.createEditCategory,
+                  arguments: {
+                    "isCreate": false,
+                    "categoryInfo": CategoryInfo(
+                      icon: AppAssets.iconOthers,
+                      name: S.of(context).others,
+                    ),
+                  },
                 ),
                 title: S.of(context).others,
                 icon: AppAssets.iconOthers,
                 iconSize: 30.w,
               ),
-              const PublicDivider(),
+              PublicDivider(width: 300.w),
+              16.ph,
+              Align(
+                alignment: AlignmentDirectional.centerStart,
+                child: PublicTextButton(
+                  title: S.of(context).createCategory,
+                  onPressed: () => Navigator.pushNamed(
+                    context,
+                    AppRoutes.createEditCategory,
+                    arguments: {
+                      "isCreate": true,
+                      // To avoid errors
+                      "categoryInfo": const CategoryInfo(
+                        icon: AppAssets.iconFoodDrinks,
+                        name: "default",
+                      ),
+                    },
+                  ),
+                ),
+              ),
             ],
           ),
         ),
