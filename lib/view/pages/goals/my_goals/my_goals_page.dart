@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:percent_indicator/percent_indicator.dart';
+
 import 'package:wealth_wise/data/models/goals/goal_model.dart';
 import 'package:wealth_wise/resources/extensions/extensions.dart';
 import 'package:wealth_wise/resources/router/app_router.dart';
@@ -47,14 +48,14 @@ class MyGoalsPage extends StatelessWidget {
                 40.ph,
                 GoalListTile(
                   goal: Goal(
-                    icon: AppAssets.iconTravelling,
-                    name: S.of(context).travelling,
-                    savedAmount: 50,
-                    targetAmount: 250,
-                  ),
+                      icon: AppAssets.iconTravelling,
+                      name: S.of(context).travelling,
+                      savedAmount: 50,
+                      targetAmount: 250,
+                      desiredDate: DateTime(2024)),
                 ),
                 32.ph,
-                const PublicDivider(),
+                PublicDivider(width: 310.w),
                 32.ph,
                 InkWell(
                   onTap: () =>

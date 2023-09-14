@@ -30,7 +30,7 @@ class TipCard extends StatelessWidget {
               Expanded(
                 child: PublicText(
                   txt: title,
-                  max: 2,
+                  maxLines: 2,
                 ),
               ),
               10.pw,

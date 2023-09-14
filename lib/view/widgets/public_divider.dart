@@ -15,7 +15,7 @@ class PublicDivider extends StatelessWidget {
     return Container(
       color: color ?? Colors.grey.withOpacity(0.3),
       height: 0.8,
-      width: width ?? 200.w,
+      width: width ?? 110.w,
     );
   }
 }
