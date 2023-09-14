@@ -4,7 +4,6 @@ import 'package:wealth_wise/data/dummay_data/dummay_data.dart';
 import 'package:wealth_wise/view/widgets/public_text_form_field.dart';
 import 'package:wealth_wise/resources/styles/app_colors.dart';
 
-
 import '../../../widgets/public_text.dart';
 
 class TranDetailsPage extends StatefulWidget {
@@ -39,7 +38,7 @@ class _TranDetailsPageState extends State<TranDetailsPage> {
       appBar: AppBar(
         centerTitle: true,
         toolbarHeight: 80.h,
-        title:  PublicText(
+        title: PublicText(
           txt: 'Transactions',
           fw: FontWeight.bold,
           size: 22.sp,
@@ -63,18 +62,18 @@ class _TranDetailsPageState extends State<TranDetailsPage> {
             SizedBox(
               height: 30.h,
             ),
-            ClipRRect(
-              borderRadius: BorderRadius.circular(8),
-              child: Container(
+            Container(
+              decoration: BoxDecoration(
                 color: AppColors.mintGreen,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: PublicText(
-                    txt: '0 EGP',
-                    color: Colors.white,
-                    fw: FontWeight.bold,
-                    size: 20.h,
-                  ),
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: PublicText(
+                  txt: '0 EGP',
+                  color: Colors.white,
+                  fw: FontWeight.bold,
+                  size: 20.h,
                 ),
               ),
             ),
@@ -152,22 +151,22 @@ class _TranDetailsPageState extends State<TranDetailsPage> {
                                 )),
                             const Spacer(),
                             OutlinedButton(
-                                onPressed: () {
-                                  Navigator.pop(context);
-                                },
-                                style: OutlinedButton.styleFrom(
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(25.h),
-                                    ),
-                                    backgroundColor: Colors.red),
-                                child: Padding(
-                                  padding:
-                                      EdgeInsets.symmetric(horizontal: 12.h),
-                                  child: const PublicText(
-                                    txt: 'Delete',
-                                    color: Colors.white,
+                              onPressed: () {
+                                Navigator.pop(context);
+                              },
+                              style: OutlinedButton.styleFrom(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(25.h),
                                   ),
-                                )),
+                                  backgroundColor: Colors.red),
+                              child: Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 12.h),
+                                child: const PublicText(
+                                  txt: 'Delete',
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
                             // const Spacer(),
                           ],
                         ),

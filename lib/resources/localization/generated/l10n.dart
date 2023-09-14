@@ -1390,6 +1390,16 @@ class S {
     );
   }
 
+  /// `Budget`
+  String get budget {
+    return Intl.message(
+      'Budget',
+      name: 'budget',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Create Budget`
   String get createBudget {
     return Intl.message(
@@ -1400,11 +1410,11 @@ class S {
     );
   }
 
-  /// ` Expenses`
-  String get expenses {
+  /// `Edit Budget`
+  String get editBudget {
     return Intl.message(
-      ' Expenses',
-      name: 'expenses',
+      'Edit Budget',
+      name: 'editBudget',
       desc: '',
       args: [],
     );
@@ -1805,6 +1815,36 @@ class S {
     return Intl.message(
       'This Year',
       name: 'thisYear',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `--------------------- Budgets ------------------------`
+  String get _comment20_ {
+    return Intl.message(
+      '--------------------- Budgets ------------------------',
+      name: '_comment20_',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Incomes`
+  String get incomes {
+    return Intl.message(
+      'Incomes',
+      name: 'incomes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Expenses`
+  String get expenses {
+    return Intl.message(
+      'Expenses',
+      name: 'expenses',
       desc: '',
       args: [],
     );

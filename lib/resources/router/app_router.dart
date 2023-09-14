@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:wealth_wise/data/models/goals/goal_model.dart';
 import 'package:wealth_wise/data/models/settings/category_info_model.dart';
+import 'package:wealth_wise/view/pages/budgets/budget_details/budget_details_page.dart';
+import 'package:wealth_wise/view/pages/budgets/create_edit_budget/create_edit_budget.dart';
 import 'package:wealth_wise/view/pages/categories/all_categories/all_categories_page.dart';
 import 'package:wealth_wise/view/pages/categories/create_edit_category/create_edit_category_page.dart';
 import 'package:wealth_wise/view/pages/goals/add_goal/add_goal_page.dart';
@@ -41,6 +43,10 @@ class AppRoutes {
 
   /// Tips
   static const String tipArticle = "tip article";
+
+  /// Budgets
+  static const String createEditBudget = "create & edit budget";
+  static const String budgetDetials = "budget details";
 }
 
 class RouteGenerate {
@@ -96,7 +102,7 @@ class RouteGenerate {
         );
       case AppRoutes.goalProgress:
         return MaterialPageRoute(
-          builder: (_) =>  GoalDetailsPage(
+          builder: (_) => GoalDetailsPage(
             goal: routeSettings.arguments as Goal,
           ),
         );
@@ -105,6 +111,18 @@ class RouteGenerate {
       case AppRoutes.tipArticle:
         return MaterialPageRoute(
           builder: (_) => const TipArticlePage(),
+        );
+
+      /// budgets
+      case AppRoutes.createEditBudget:
+        return MaterialPageRoute(
+          builder: (_) => CreateEditBudgetPage(
+            isCreate: (routeSettings.arguments as bool?) ?? false,
+          ),
+        );
+      case AppRoutes.budgetDetials:
+        return MaterialPageRoute(
+          builder: (_) => const BudgetDetailsPage(),
         );
 
       default:

@@ -39,6 +39,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "--------------------- accounts------------------------"),
         "_comment1_": MessageLookupByLibrary.simpleMessage(
             "------------------------------ Settings ----------------------------------"),
+        "_comment20_": MessageLookupByLibrary.simpleMessage(
+            "--------------------- Budgets ------------------------"),
         "_comment2_": MessageLookupByLibrary.simpleMessage(
             "--------------------- profile ------------------------"),
         "_comment3_": MessageLookupByLibrary.simpleMessage(
@@ -77,6 +79,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "allCategories": MessageLookupByLibrary.simpleMessage("All Categories"),
         "appUpdates": MessageLookupByLibrary.simpleMessage("App Updates"),
         "blue": MessageLookupByLibrary.simpleMessage("Blue"),
+        "budget": MessageLookupByLibrary.simpleMessage("Budget"),
         "budgets": MessageLookupByLibrary.simpleMessage("Budgets"),
         "cancel": MessageLookupByLibrary.simpleMessage("cancel"),
         "cardCCV":
@@ -113,6 +116,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "dontReceiveCode":
             MessageLookupByLibrary.simpleMessage("Don’t receive a code?"),
         "dueDate": MessageLookupByLibrary.simpleMessage("Due Date"),
+        "editBudget": MessageLookupByLibrary.simpleMessage("Edit Budget"),
         "editCategory": MessageLookupByLibrary.simpleMessage("Edit Category"),
         "educaiton": MessageLookupByLibrary.simpleMessage("Education"),
         "egp": MessageLookupByLibrary.simpleMessage("EGP"),
@@ -143,7 +147,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Enter Your Password"),
         "ewalletNumber":
             MessageLookupByLibrary.simpleMessage("E-wallet number"),
-        "expenses": MessageLookupByLibrary.simpleMessage(" Expenses"),
+        "expenses": MessageLookupByLibrary.simpleMessage("Expenses"),
         "expirationDate":
             MessageLookupByLibrary.simpleMessage("Expiration date"),
         "faceId": MessageLookupByLibrary.simpleMessage("Face ID"),
@@ -169,6 +173,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "housingRent": MessageLookupByLibrary.simpleMessage("Housing & Rent"),
         "howMuchSaved":
             MessageLookupByLibrary.simpleMessage("How much I already saved?"),
+        "incomes": MessageLookupByLibrary.simpleMessage("Incomes"),
         "lastName": MessageLookupByLibrary.simpleMessage("Last Name"),
         "logout": MessageLookupByLibrary.simpleMessage("Logout"),
         "logoutWarning": MessageLookupByLibrary.simpleMessage(
