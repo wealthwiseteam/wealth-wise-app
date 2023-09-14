@@ -11,6 +11,11 @@ class GoalListTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       contentPadding: EdgeInsets.zero,
+      onTap: () => Navigator.pushNamed(
+        context,
+        AppRoutes.goalProgress,
+        arguments: goal,
+      ),
       leading: SvgPicture.asset(
         goal.icon,
         width: 60.w,
@@ -44,7 +49,15 @@ class GoalListTile extends StatelessWidget {
             ],
           ),
           8.ph,
-        
+          LinearPercentIndicator(
+            padding: EdgeInsets.zero,
+            width: 200.w,
+            lineHeight: 3.h,
+            percent: 0.2,
+            backgroundColor: AppColors.lightGrey,
+            progressColor: AppColors.mintGreen,
+            barRadius: const Radius.circular(16),
+          ),
         ],
       ),
     );

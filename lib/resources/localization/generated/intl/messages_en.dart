@@ -64,11 +64,14 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Your finance in one place."),
         "accounts": MessageLookupByLibrary.simpleMessage("Accounts"),
         "actions": MessageLookupByLibrary.simpleMessage("Actions"),
+        "add": MessageLookupByLibrary.simpleMessage("Add"),
         "addAccount": MessageLookupByLibrary.simpleMessage("Add account"),
         "addCard": MessageLookupByLibrary.simpleMessage("Add card"),
         "addCash": MessageLookupByLibrary.simpleMessage("Add Cash"),
         "addEwallet": MessageLookupByLibrary.simpleMessage("Add E- Wallet"),
         "addGoal": MessageLookupByLibrary.simpleMessage("Add Goal"),
+        "addSavedAmount":
+            MessageLookupByLibrary.simpleMessage("Add Saved Amount"),
         "addWallet": MessageLookupByLibrary.simpleMessage("Add Wallet"),
         "all": MessageLookupByLibrary.simpleMessage("All"),
         "allCategories": MessageLookupByLibrary.simpleMessage("All Categories"),
@@ -155,6 +158,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Forgot Password"),
         "general": MessageLookupByLibrary.simpleMessage("General"),
         "goalColor": MessageLookupByLibrary.simpleMessage("Goal Color"),
+        "goalProgress": MessageLookupByLibrary.simpleMessage("Goal Progress"),
         "goals": MessageLookupByLibrary.simpleMessage("Goals"),
         "green": MessageLookupByLibrary.simpleMessage("Grenn"),
         "grey": MessageLookupByLibrary.simpleMessage("Grey"),
@@ -170,6 +174,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "logoutWarning": MessageLookupByLibrary.simpleMessage(
             "Are you sure you want to logout?"),
         "maybeLater": MessageLookupByLibrary.simpleMessage("Maybe Later"),
+        "minimumWeekGoal": MessageLookupByLibrary.simpleMessage(
+            "Minimum week amount reach goal"),
         "myCard": MessageLookupByLibrary.simpleMessage("My Card"),
         "myCards": MessageLookupByLibrary.simpleMessage("My Cards"),
         "myEwallet": MessageLookupByLibrary.simpleMessage("My E- wallet"),

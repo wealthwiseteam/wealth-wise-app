@@ -1090,6 +1090,46 @@ class S {
     );
   }
 
+  /// `Goal Progress`
+  String get goalProgress {
+    return Intl.message(
+      'Goal Progress',
+      name: 'goalProgress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Saved Amount`
+  String get addSavedAmount {
+    return Intl.message(
+      'Add Saved Amount',
+      name: 'addSavedAmount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add`
+  String get add {
+    return Intl.message(
+      'Add',
+      name: 'add',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Minimum week amount reach goal`
+  String get minimumWeekGoal {
+    return Intl.message(
+      'Minimum week amount reach goal',
+      name: 'minimumWeekGoal',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `--------------------- Colors ------------------------`
   String get _comment7_ {
     return Intl.message(

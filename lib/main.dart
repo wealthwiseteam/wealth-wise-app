@@ -6,6 +6,7 @@ import 'package:wealth_wise/resources/router/app_router.dart';
 import 'package:wealth_wise/resources/styles/app_colors.dart';
 import 'package:wealth_wise/resources/styles/app_theme.dart';
 import 'package:wealth_wise/view/pages/categories/all_categories/all_categories_page.dart';
+import 'package:wealth_wise/view/pages/goals/my_goals/my_goals_page.dart';
 import 'package:wealth_wise/view/pages/transactions/all_trans/all_trans_page.dart';
 import 'package:wealth_wise/view/widgets/bills_transaction_card.dart';
 import 'resources/styles/app_theme.dart';
@@ -66,7 +67,7 @@ class MyApp extends StatelessWidget {
             physics: const BouncingScrollPhysics(),
           ),
           onGenerateRoute: RouteGenerate.getRoute,
-          home: const AllCategoriesPage(),
+          home: const MyGoalsPage(),
         );
       },
     );
