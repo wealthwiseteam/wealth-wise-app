@@ -28,7 +28,11 @@ class BudgetItem extends StatelessWidget {
               ),
               10.pw,
               IconButton(
-                onPressed: () {},
+                onPressed: () => Navigator.pushNamed(
+                  context,
+                  AppRoutes.createEditBudget,
+                  arguments: false,
+                ),
                 icon: Icon(
                   Icons.edit_outlined,
                   color: AppColors.mintGreen,

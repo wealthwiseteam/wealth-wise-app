@@ -5,6 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/data/dummay_data/dummay_data.dart';
 import 'package:wealth_wise/resources/extensions/extensions.dart';
 import 'package:wealth_wise/resources/localization/generated/l10n.dart';
+import 'package:wealth_wise/resources/router/app_router.dart';
 import 'package:wealth_wise/resources/styles/app_colors.dart';
 import 'package:wealth_wise/view/widgets/public_divider.dart';
 import 'package:wealth_wise/view/widgets/public_text.dart';
@@ -38,7 +39,11 @@ class BudgetsPage extends StatelessWidget {
             IconButton(
               icon: const Icon(Icons.add),
               color: AppColors.mintGreen,
-              onPressed: () => Navigator.pop(context),
+              onPressed: () => Navigator.pushNamed(
+                context,
+                AppRoutes.createEditBudget,
+                arguments: true,
+              ),
             ),
           ],
         ),

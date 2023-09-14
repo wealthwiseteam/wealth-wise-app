@@ -1400,6 +1400,16 @@ class S {
     );
   }
 
+  /// `Edit Budget`
+  String get editBudget {
+    return Intl.message(
+      'Edit Budget',
+      name: 'editBudget',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Choose Category`
   String get chooseCategory {
     return Intl.message(

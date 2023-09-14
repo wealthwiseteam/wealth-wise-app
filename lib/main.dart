@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/resources/localization/generated/l10n.dart';
 import 'package:wealth_wise/resources/router/app_router.dart';
 import 'package:wealth_wise/resources/styles/app_theme.dart';
-import 'package:wealth_wise/view/pages/budgets/budgets_page.dart';
+import 'package:wealth_wise/view/pages/budgets/all_budgets/budgets_page.dart';
 
 void main() {
   runApp(const MyApp());

@@ -134,6 +134,7 @@
     "currentBalance": "current balance",
     "_comment9_": "--------------------- budget------------------------",
     "createBudget": "Create Budget",
+    "editBudget": "Edit Budget",
     "chooseCategory": "Choose Category",
     "enterAmount": "Enter amount",
     "allCategories": "All Categories",

@@ -115,6 +115,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "dontReceiveCode":
             MessageLookupByLibrary.simpleMessage("Don’t receive a code?"),
         "dueDate": MessageLookupByLibrary.simpleMessage("Due Date"),
+        "editBudget": MessageLookupByLibrary.simpleMessage("Edit Budget"),
         "editCategory": MessageLookupByLibrary.simpleMessage("Edit Category"),
         "educaiton": MessageLookupByLibrary.simpleMessage("Education"),
         "egp": MessageLookupByLibrary.simpleMessage("EGP"),
