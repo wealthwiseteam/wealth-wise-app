@@ -150,21 +150,21 @@ class S {
     );
   }
 
-  /// `Sign in`
-  String get signIn {
-    return Intl.message(
-      'Sign in',
-      name: 'signIn',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Sign Up`
   String get signUp {
     return Intl.message(
       'Sign Up',
       name: 'signUp',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign in`
+  String get signIn {
+    return Intl.message(
+      'Sign in',
+      name: 'signIn',
       desc: '',
       args: [],
     );

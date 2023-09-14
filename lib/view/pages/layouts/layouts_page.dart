@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:wealth_wise/view/pages/accounts/accounts/accounts_page.dart';
 
 import '../../../resources/constants/app_assets.dart';
 import '../../../resources/localization/generated/l10n.dart';
 import '../../../resources/styles/app_colors.dart';
+import '../accounts/accounts_page.dart';
 import '../home/home_screen.dart';
 import '../settings/settings/settings_page.dart';
 import '../statistics/statistics_page.dart';

@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+import 'package:wealth_wise/resources/localization/generated/l10n.dart';
+import 'package:wealth_wise/resources/router/app_router.dart';
+import 'package:wealth_wise/resources/styles/app_colors.dart';
+import 'package:wealth_wise/resources/styles/app_theme.dart';
+import 'package:wealth_wise/view/pages/transactions/all_trans/all_trans_page.dart';
+import 'package:wealth_wise/view/widgets/bills_transaction_card.dart';
 import 'resources/styles/app_theme.dart';
 import 'view/pages/auth/login/logIn_page.dart';
 import 'view/pages/first_entering/entering_income/entering_income_page.dart';
@@ -60,7 +65,7 @@ class MyApp extends StatelessWidget {
             physics: const BouncingScrollPhysics(),
           ),
           onGenerateRoute: RouteGenerate.getRoute,
-          home: const EWalletPage(),
+          home: const AllTransPage(),
         );
       },
     );

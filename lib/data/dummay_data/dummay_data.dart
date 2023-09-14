@@ -1,6 +1,10 @@
-import 'package:wealth_wise/data/models/notifications/notification_model.dart';
-import 'package:wealth_wise/data/models/statistics/spent_category_model.dart';
-import 'package:wealth_wise/data/models/statistics/spent_date_model.dart';
+import 'package:flutter/material.dart';
+
+import '../../view/pages/transactions/all_trans/components/category_details.dart';
+import '../../view/widgets/bills_transaction_card.dart';
+import '../models/statistics/spent_category_model.dart';
+import '../models/statistics/spent_date_model.dart';
+import '../models/notifications/notification_model.dart';
 
 import '../models/tips/tip_model.dart';
 
@@ -72,4 +76,50 @@ class DummayData {
     content:
         "When you have your finances under control, your financial health improves and you can increase the likelihood of achieving your dreams and goals. When you have your finances under control, your financial health improves and you can increase the likelihood of achieving your dreams and goals. When you have your finances under control, your financial health improves and you can increase the likelihood of achieving your dreams and goals. When you have your finances under control, your financial health improves and you can increase the likelihood of achieving your dreams and goals. When you have your finances under control, your financial health improves and you can increase the likelihood of achieving your dreams and goals. When you have your finances under control, your financial health improves and you can increase the likelihood of achieving your dreams and goals.",
   );
+
+  static const List<BillsCard> transCards = [
+    BillsCard(
+      title: 'Food & Drinks',
+      date: '15/2/2023',
+      money: '3500',
+      prefixIcon: Icons.fastfood,
+    ),
+    BillsCard(
+      title: 'Housing & Rent',
+      date: '22/2/2023',
+      money: '5000',
+      prefixIcon: Icons.home,
+    ),
+    BillsCard(
+      title: 'Medicine',
+      date: '6/4/2023',
+      money: '1000',
+      prefixIcon: Icons.medical_information_outlined,
+    ),
+    BillsCard(
+      title: 'Shopping',
+      date: '17/5/2023',
+      money: '3000',
+      prefixIcon: Icons.shopping_cart,
+    ),
+  ];
+
+  static const List<Widget> transDetails = [
+    CategoryDetails(
+      title: 'Type',
+      value: 'Expenses',
+    ),
+    CategoryDetails(
+      title: 'Category',
+      value: 'Housing & Rent',
+    ),
+    CategoryDetails(
+      title: 'Date',
+      icon: Icons.date_range_outlined,
+    ),
+    CategoryDetails(
+      title: 'Time',
+      icon: Icons.watch_later,
+    ),
+  ];
 }
