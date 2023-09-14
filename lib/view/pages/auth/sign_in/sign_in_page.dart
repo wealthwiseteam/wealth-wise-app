@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/resources/extensions/extensions.dart';
+import 'package:wealth_wise/resources/router/app_router.dart';
 
 import '../../../../resources/constants/app_assets.dart';
 import '../../../../resources/localization/generated/l10n.dart';
@@ -118,18 +119,24 @@ class _SignInPageState extends State<SignInPage> {
                           children: [
                             const Spacer(),
                             TextButton(
-                                onPressed: () {},
-                                child: PublicText(
-                                  txt: S.of(context).forgetPassword,
-                                  color: AppColors.mintGreen,
-                                )),
+                              onPressed: () => Navigator.pushNamed(
+                                  context, AppRoutes.forgotPassword),
+                              child: PublicText(
+                                txt: S.of(context).forgetPassword,
+                                color: AppColors.mintGreen,
+                              ),
+                            ),
                           ],
                         ),
                         10.ph,
                         PublicButton(
                           title: S.of(context).signIn,
                           width: 300.w,
-                          onPressed: () {},
+                          onPressed: () => Navigator.pushNamedAndRemoveUntil(
+                            context,
+                            AppRoutes.layouts,
+                            (_) => false,
+                          ),
                         ),
                         40.ph,
                         Row(

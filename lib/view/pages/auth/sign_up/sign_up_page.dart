@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/resources/extensions/extensions.dart';
+import 'package:wealth_wise/resources/router/app_router.dart';
 import 'package:wealth_wise/view/pages/auth/sign_in/sign_in_page.dart';
 
 import '../../../../resources/constants/app_assets.dart';
@@ -132,12 +133,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         title: S.of(context).signUp,
                         width: 300.w,
                         onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const ForgetPasswordPage(),
-                            ),
-                          );
+                          Navigator.pushReplacementNamed(context, AppRoutes.enteringIncome);
                         },
                       ),
                       10.ph,
@@ -150,19 +146,18 @@ class _SignUpPageState extends State<SignUpPage> {
                           ),
                           TextButton(
                             onPressed: () {
-                              Navigator.push(
+                              Navigator.pushReplacementNamed(
                                 context,
-                                MaterialPageRoute(
-                                    builder: (context) => const SignInPage()),
+                                AppRoutes.signIn,
                               );
                             },
                             child: Text(
                               S.of(context).signIn,
                               style: TextStyle(
-                                  fontSize: 12.0.sp,
-                                  color: AppColors.mintGreen,
-                                  fontWeight: FontWeight.w600,
-                                  fontFamily: "Inter"),
+                                fontSize: 12.0.sp,
+                                color: AppColors.mintGreen,
+                                fontWeight: FontWeight.w600,
+                              ),
                             ),
                           ),
                         ],

@@ -36,7 +36,7 @@ class SecurityPage extends StatelessWidget {
                 title: S.of(context).faceId,
                 swithcer: Switchers.faceId,
               ),
-              const PublicDivider()
+              const PublicDividerInfinity()
             ],
           ),
         ),

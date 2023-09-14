@@ -39,44 +39,44 @@ class SettingsPage extends StatelessWidget {
                 title: S.of(context).profile,
                 icon: AppAssets.iconUser,
               ),
-              const PublicDivider(),
+              const PublicDividerInfinity(),
               PublicListTile(
                 onTap: () {},
                 title: S.of(context).accounts,
                 icon: AppAssets.iconWallet,
               ),
-              const PublicDivider(),
+              const PublicDividerInfinity(),
               PublicListTile(
                 onTap: () => Navigator.pushNamed(context, AppRoutes.privacy),
                 title: S.of(context).personalDataPrivacy,
                 icon: AppAssets.iconShieldTick,
               ),
-              const PublicDivider(),
+              const PublicDividerInfinity(),
               PublicListTile(
                 onTap: () => Navigator.pushNamed(context, AppRoutes.security),
                 title: S.of(context).security,
                 icon: AppAssets.iconLock,
               ),
-              const PublicDivider(),
+              const PublicDividerInfinity(),
               PublicListTile(
                 onTap: () =>
                     Navigator.pushNamed(context, AppRoutes.notifications),
                 title: S.of(context).notifications,
                 icon: AppAssets.iconNotification,
               ),
-              const PublicDivider(),
+              const PublicDividerInfinity(),
               PublicListTile(
                 onTap: () => Navigator.pushNamed(context, AppRoutes.categories),
                 title: S.of(context).categories,
                 icon: AppAssets.iconBubble,
               ),
-              const PublicDivider(),
+              const PublicDividerInfinity(),
               PublicListTile(
                 onTap: () => Navigator.pushNamed(context, AppRoutes.about),
                 title: S.of(context).about,
                 icon: AppAssets.iconInfoCircle,
               ),
-              const PublicDivider(),
+              const PublicDividerInfinity(),
               PublicListTile(
                 onTap: () {
                   showModalBottomSheet(

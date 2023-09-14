@@ -1,13 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:wealth_wise/data/models/goals/goal_model.dart';
 import 'package:wealth_wise/data/models/settings/category_info_model.dart';
+import 'package:wealth_wise/view/pages/auth/congrats/congrats_page.dart';
+import 'package:wealth_wise/view/pages/auth/create_new_password/create_new_password.dart';
+import 'package:wealth_wise/view/pages/auth/face_id/face_id_page.dart';
+import 'package:wealth_wise/view/pages/auth/forget_password/forget_password_page.dart';
+import 'package:wealth_wise/view/pages/auth/sign_in/sign_in_page.dart';
+import 'package:wealth_wise/view/pages/auth/sign_up/sign_up_page.dart';
+import 'package:wealth_wise/view/pages/auth/verify_code/verify_code_page.dart';
 import 'package:wealth_wise/view/pages/budgets/budget_details/budget_details_page.dart';
 import 'package:wealth_wise/view/pages/budgets/create_edit_budget/create_edit_budget.dart';
 import 'package:wealth_wise/view/pages/categories/all_categories/all_categories_page.dart';
 import 'package:wealth_wise/view/pages/categories/create_edit_category/create_edit_category_page.dart';
+import 'package:wealth_wise/view/pages/first_entering/accounts/add_acounts_page.dart';
+import 'package:wealth_wise/view/pages/first_entering/add_card/add_card_page.dart';
+import 'package:wealth_wise/view/pages/first_entering/add_cash/add_cash_page.dart';
+import 'package:wealth_wise/view/pages/first_entering/budget/add_budget_page.dart';
+import 'package:wealth_wise/view/pages/first_entering/entering_income/entering_income_page.dart';
 import 'package:wealth_wise/view/pages/goals/add_goal/add_goal_page.dart';
 import 'package:wealth_wise/view/pages/goals/create_goal/create_goal_page.dart';
 import 'package:wealth_wise/view/pages/goals/goal_details/goal_details_page.dart';
+import 'package:wealth_wise/view/pages/layouts/layouts_page.dart';
 import 'package:wealth_wise/view/pages/settings/about/about_page.dart';
 import 'package:wealth_wise/view/pages/settings/notifications/notifications_settings_page.dart';
 import 'package:wealth_wise/view/pages/settings/privacy/privacy_page.dart';
@@ -23,9 +36,24 @@ class AppRoutes {
   static const String onBoarding = "onBoarding";
 
   /// Auth
-  static const String welcome = "welcome";
   static const String login = "login";
-  static const String signUp = "signUp";
+  static const String signIn = "sign in";
+  static const String signUp = "sign Up";
+  static const String forgotPassword = "forgot password";
+  static const String verifyCode = "verfiy code";
+  static const String resetPassword = "reset password";
+  static const String faceId = "face id";
+  static const String congrats = "congrats";
+
+  /// First Enter
+  static const String enteringIncome = "entering income";
+  static const String enteringAccounts = "entering accounts";
+  static const String enteringAddCard = "entering card";
+  static const String enteringAddWallet = "entering wallet";
+  static const String enteringBudget = "entering Budget";
+
+  /// Layouts
+  static const String layouts = "layouts";
 
   /// Settings
   static const String about = "about";
@@ -53,9 +81,62 @@ class RouteGenerate {
   static Route<dynamic> getRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
       ///Intro
-      case AppRoutes.splash:
+      ///Auth
+      case AppRoutes.signIn:
         return MaterialPageRoute(
-          builder: (_) => const Scaffold(),
+          builder: (context) => const SignInPage(),
+        );
+      case AppRoutes.signUp:
+        return MaterialPageRoute(
+          builder: (context) => const SignUpPage(),
+        );
+      case AppRoutes.forgotPassword:
+        return MaterialPageRoute(
+          builder: (context) => const ForgetPasswordPage(),
+        );
+      case AppRoutes.verifyCode:
+        return MaterialPageRoute(
+          builder: (context) => const VerifyCodePage(),
+        );
+      case AppRoutes.resetPassword:
+        return MaterialPageRoute(
+          builder: (context) => const CreateNewPasswordPage(),
+        );
+      case AppRoutes.faceId:
+        return MaterialPageRoute(
+          builder: (context) => const FaceIdPage(),
+        );
+      case AppRoutes.congrats:
+        return MaterialPageRoute(
+          builder: (context) => const CongratsPage(),
+        );
+
+      /// First Enter
+      case AppRoutes.enteringIncome:
+        return MaterialPageRoute(
+          builder: (context) => const EnteringIncomePage(),
+        );
+      case AppRoutes.enteringBudget:
+        return MaterialPageRoute(
+          builder: (context) => const AddBudgetPage(),
+        );
+      case AppRoutes.enteringAccounts:
+        return MaterialPageRoute(
+          builder: (context) => const AddAcountsPage(),
+        );
+      case AppRoutes.enteringAddCard:
+        return MaterialPageRoute(
+          builder: (context) => const AddCardPage(),
+        );
+      case AppRoutes.enteringAddWallet:
+        return MaterialPageRoute(
+          builder: (context) => const AddCashPage(),
+        );
+
+      /// Layouts
+      case AppRoutes.layouts:
+        return MaterialPageRoute(
+          builder: (context) => const LayoutsPage(),
         );
 
       /// Settings

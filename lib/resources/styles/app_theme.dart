@@ -13,9 +13,7 @@ class AppTheme {
     /// App Bar Theme
     appBarTheme: const AppBarTheme(backgroundColor: AppColors.white),
     colorScheme: const ColorScheme.light(
-      primary: AppColors.mintGreen,
-      
-    ),
+        primary: AppColors.mintGreen, onPrimaryContainer: Colors.white),
 
     /// Card Theme
     cardTheme: const CardTheme(color: AppColors.white),

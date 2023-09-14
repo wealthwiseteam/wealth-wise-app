@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/resources/extensions/extensions.dart';
+import 'package:wealth_wise/resources/router/app_router.dart';
 import 'package:wealth_wise/resources/styles/app_colors.dart';
 
 import '../../../../../resources/constants/app_assets.dart';
@@ -60,7 +61,9 @@ class _AccountsPageState extends State<AccountsPage> {
                   children: List.generate(
                     cards.length,
                     (index) => InkWell(
-                      onTap: () {},
+                      onTap: () {
+                       
+                      },
                       child: SizedBox(
                         width: MediaQuery.of(context).size.width / 3,
                         child: cards[index],

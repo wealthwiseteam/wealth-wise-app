@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:wealth_wise/resources/router/app_router.dart';
 
 import '../../../../resources/constants/app_assets.dart';
 import '../../../../resources/localization/generated/l10n.dart';
@@ -37,11 +38,7 @@ class _LoginPageState extends State<LoginPage> {
                       title: S.of(context).signIn,
                       width: 300.w,
                       onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const SignInPage()),
-                        );
+                        Navigator.pushNamed(context, AppRoutes.signIn);
                       },
                     ),
                     SizedBox(
@@ -51,11 +48,7 @@ class _LoginPageState extends State<LoginPage> {
                       title: S.of(context).register,
                       width: 300.w,
                       onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const SignInPage()),
-                        );
+                        Navigator.pushNamed(context, AppRoutes.signUp);
                       },
                     ),
                   ],

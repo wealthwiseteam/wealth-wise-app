@@ -134,4 +134,31 @@ class DummayData {
       icon: Icons.watch_later,
     ),
   ];
+
+  static const List<Widget> billsCards = [
+    BillsCard(
+      prefixIcon: Icons.wifi,
+      title: 'Internet',
+      date: '22/1/2025',
+      money: '5000',
+    ),
+    BillsCard(
+      prefixIcon: Icons.phone,
+      title: 'Telephone',
+      date: '22/1/2025',
+      money: '6000',
+    ),
+    BillsCard(
+      prefixIcon: Icons.water_drop_outlined,
+      title: 'Water',
+      date: '22/1/2025',
+      money: '9000',
+    ),
+    BillsCard(
+      prefixIcon: Icons.power,
+      title: 'Electricity',
+      date: '22/1/2025',
+      money: '2000',
+    ),
+  ];
 }

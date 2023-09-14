@@ -7,6 +7,7 @@ import '../../../../resources/constants/app_assets.dart';
 
 import '../../../../resources/localization/generated/l10n.dart';
 
+import '../../../../resources/router/app_router.dart';
 import '../../../widgets/public_card.dart';
 import '../../../widgets/public_text.dart';
 
@@ -48,7 +49,14 @@ class _AddAcountsPageState extends State<AddAcountsPage> {
                     children: List.generate(
                         cards.length,
                         (index) => InkWell(
-                              onTap: () {},
+                              onTap: () {
+                                Navigator.pushNamed(
+                                  context,
+                                  index == 0
+                                      ? AppRoutes.enteringAddCard
+                                      : AppRoutes.enteringAddWallet,
+                                );
+                              },
                               child: SizedBox(
                                 width: MediaQuery.of(context).size.width / 3,
                                 child: cards[index],
@@ -57,12 +65,16 @@ class _AddAcountsPageState extends State<AddAcountsPage> {
                   ),
                 ),
                 Center(
-                  child: PublicText(
-                    txt: S.of(context).maybeLater,
-                    size: 16.sp,
-                    color: AppColors.mintGreen,
-                    ff: "Inter",
-                    fw: FontWeight.w600,
+                  child: InkWell(
+                    onTap: () =>
+                        Navigator.pushNamed(context, AppRoutes.enteringBudget),
+                    child: PublicText(
+                      txt: S.of(context).maybeLater,
+                      size: 16.sp,
+                      color: AppColors.mintGreen,
+                      ff: "Inter",
+                      fw: FontWeight.w600,
+                    ),
                   ),
                 ),
                 40.ph,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/resources/extensions/extensions.dart';
+import 'package:wealth_wise/resources/router/app_router.dart';
 
 import '../../../../resources/constants/app_assets.dart';
 import '../../../../resources/localization/generated/l10n.dart';
@@ -93,7 +94,7 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
                       child: PublicButton(
                         title: S.of(context).send,
                         width: 300.w,
-                        onPressed: () {},
+                        onPressed: () => Navigator.pushNamed(context, AppRoutes.verifyCode),
                       ),
                     ),
                   ],
