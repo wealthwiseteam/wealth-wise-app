@@ -1,25 +1,22 @@
 import 'dart:developer';
 
-import 'package:bloc/bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:wealth_wise/view_model/states.dart';
 
-class BillsCubit extends Cubit<BillsStates>
-{
+class BillsCubit extends Cubit<BillsStates> {
   // BillsCubit(super.initialState);
   BillsCubit() : super(InitialState());
- static BillsCubit getInstance(context) => BlocProvider.of(context);
+  static BillsCubit getInstance(context) => BlocProvider.of(context);
 
-   bool isActive = true;
+  bool isActive = true;
 
-   void activeIsTrue()
-  {
+  void activeIsTrue() {
     isActive = true;
     log('$isActive');
     emit(ChangeActiveToTrue());
   }
-  void activeIsFalse()
-  {
+
+  void activeIsFalse() {
     isActive = false;
     log('$isActive');
     emit(ChangeActiveToFalse());

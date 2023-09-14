@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:wealth_wise/resources/styles/app_colors.dart';
 import 'package:wealth_wise/view/widgets/public_text.dart';
 
 class BillsCard extends StatelessWidget {
@@ -20,6 +21,7 @@ class BillsCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       color: Colors.white,
+      surfaceTintColor: Colors.transparent,
       elevation: 4,
       child: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -30,7 +32,7 @@ class BillsCard extends StatelessWidget {
                 Icon(
                   prefixIcon,
                   size: 30.h,
-                  color: Colors.teal,
+                  color: AppColors.mintGreen,
                 ),
                 const Spacer(),
               ],
@@ -41,16 +43,16 @@ class BillsCard extends StatelessWidget {
                 PublicText(
                   txt: title,
                   fw: FontWeight.w600,
-                  size: 22,
+                  size: 22.sp,
                 ),
                 PublicText(
                   txt: date,
                   color: Colors.grey,
-                  size: 20,
+                  size: 20.sp,
                 ),
                 PublicText(
                   txt: '$money EGP',
-                  size: 20,
+                  size: 20.sp,
                 ),
               ],
             ),

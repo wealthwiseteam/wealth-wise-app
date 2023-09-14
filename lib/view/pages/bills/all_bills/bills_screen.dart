@@ -2,39 +2,14 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:wealth_wise/view/widgets/bills_transaction_card.dart';
+import 'package:wealth_wise/data/dummay_data/dummay_data.dart';
+import 'package:wealth_wise/resources/styles/app_colors.dart';
 import 'package:wealth_wise/view/widgets/public_text.dart';
 import 'package:wealth_wise/view_model/states.dart';
 import 'package:wealth_wise/view_model/view_model.dart';
 
-class Bills extends StatelessWidget {
-  Bills({super.key});
-  List<Widget> billsCards = [
-    BillsCard(
-      prefixIcon: Icons.wifi,
-      title: 'Internet',
-      date: '22/1/2025',
-      money: '5000',
-    ),
-    BillsCard(
-      prefixIcon: Icons.phone,
-      title: 'Telephone',
-      date: '22/1/2025',
-      money: '6000',
-    ),
-    BillsCard(
-      prefixIcon: Icons.water_drop_outlined,
-      title: 'Water',
-      date: '22/1/2025',
-      money: '9000',
-    ),
-    BillsCard(
-      prefixIcon: Icons.power,
-      title: 'Electricity',
-      date: '22/1/2025',
-      money: '2000',
-    ),
-  ];
+class AllBillsPage extends StatelessWidget {
+  const AllBillsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -76,13 +51,17 @@ class Bills extends StatelessWidget {
                         },
                         child: Container(
                           decoration: BoxDecoration(
-                              color: bills.isActive == true ?
-                              Colors.teal : Colors.white,
-                              border: const Border(
-                              bottom: BorderSide(color: Colors.teal,width: 1.5),
-                              top: BorderSide(color: Colors.teal,width: 1.5),
-                              left: BorderSide(color: Colors.teal,width: 1.5),
-                            )
+                            color: bills.isActive == true
+                                ? AppColors.mintGreen
+                                : Colors.white,
+                            border: const Border(
+                              bottom: BorderSide(
+                                  color: AppColors.mintGreen, width: 1.5),
+                              top: BorderSide(
+                                  color: AppColors.mintGreen, width: 1.5),
+                              left: BorderSide(
+                                  color: AppColors.mintGreen, width: 1.5),
+                            ),
                           ),
                           child: Align(
                             alignment: Alignment.center,
@@ -96,7 +75,7 @@ class Bills extends StatelessWidget {
                                 size: 20.h,
                                 color: bills.isActive == true
                                     ? Colors.white
-                                    : Colors.teal,
+                                    : AppColors.mintGreen,
                               ),
                             ),
                           ),
@@ -111,13 +90,16 @@ class Bills extends StatelessWidget {
                         child: Container(
                           decoration: BoxDecoration(
                             border: const Border(
-                                bottom: BorderSide(color: Colors.teal,width: 1.5),
-                                top: BorderSide(color: Colors.teal,width: 1.5),
-                                right: BorderSide(color: Colors.teal,width: 1.5),
-                              ),
+                              bottom: BorderSide(
+                                  color: AppColors.mintGreen, width: 1.5),
+                              top: BorderSide(
+                                  color: AppColors.mintGreen, width: 1.5),
+                              right: BorderSide(
+                                  color: AppColors.mintGreen, width: 1.5),
+                            ),
                             color: bills.isActive == true
-                          ? Colors.white
-                            : Colors.teal,
+                                ? Colors.white
+                                : AppColors.mintGreen,
                           ),
                           child: Align(
                               alignment: Alignment.center,
@@ -130,7 +112,7 @@ class Bills extends StatelessWidget {
                                       : FontWeight.bold,
                                   size: 20.h,
                                   color: bills.isActive == true
-                                      ? Colors.teal
+                                      ? AppColors.mintGreen
                                       : Colors.white,
                                 ),
                               )),
@@ -143,47 +125,47 @@ class Bills extends StatelessWidget {
               SizedBox(
                 height: 25.h,
               ),
-              if(bills.isActive == true)
+              if (bills.isActive == true)
                 Expanded(
                   child: Column(
                     children: [
                       SizedBox(
                         width: double.infinity,
-                          height: 100.h,
-                          child: billsCards[0],
+                        height: 110.h,
+                        child: DummayData.billsCards[0],
                       ),
                       SizedBox(
                         height: 8.h,
                       ),
                       SizedBox(
                         width: double.infinity,
-                          height: 100.h,
-                          child: billsCards[1],
+                        height: 110.h,
+                        child: DummayData.billsCards[1],
                       ),
                     ],
                   ),
                 ),
-              if(bills.isActive == false)
+              if (bills.isActive == false)
                 Expanded(
                   child: Column(
                     children: [
                       SizedBox(
                         width: double.infinity,
-                          height: 100.h,
-                          child: billsCards[2],
+                        height: 110.h,
+                        child: DummayData.billsCards[2],
                       ),
                       SizedBox(
                         height: 8.h,
                       ),
                       SizedBox(
-                          width: double.infinity,
-                          height: 100.h,
-                          child: billsCards[3],
+                        width: double.infinity,
+                        height: 110.h,
+                        child: DummayData.billsCards[3],
                       ),
                     ],
                   ),
                 ),
-            ]
+            ],
           ),
         );
       },
