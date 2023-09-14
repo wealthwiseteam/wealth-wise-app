@@ -800,6 +800,16 @@ class S {
     );
   }
 
+  /// `Create Category`
+  String get createCategory {
+    return Intl.message(
+      'Create Category',
+      name: 'createCategory',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Name`
   String get name {
     return Intl.message(
