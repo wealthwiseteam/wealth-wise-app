@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:wealth_wise/data/models/goals/goal_model.dart';
 import 'package:wealth_wise/data/models/settings/category_info_model.dart';
 import 'package:wealth_wise/view/pages/categories/all_categories/all_categories_page.dart';
 import 'package:wealth_wise/view/pages/categories/create_edit_category/create_edit_category_page.dart';
 import 'package:wealth_wise/view/pages/goals/add_goal/add_goal_page.dart';
 import 'package:wealth_wise/view/pages/goals/create_goal/create_goal_page.dart';
+import 'package:wealth_wise/view/pages/goals/goal_details/goal_details_page.dart';
 import 'package:wealth_wise/view/pages/settings/about/about_page.dart';
 import 'package:wealth_wise/view/pages/settings/notifications/notifications_settings_page.dart';
 import 'package:wealth_wise/view/pages/settings/privacy/privacy_page.dart';
@@ -35,6 +37,7 @@ class AppRoutes {
   /// Goals
   static const String createGoal = "create goal";
   static const String addGoal = "add goal";
+  static const String goalProgress = "goal progress";
 
   /// Tips
   static const String tipArticle = "tip article";
@@ -82,7 +85,7 @@ class RouteGenerate {
           ),
         );
 
-      /// create Goals
+      /// Goals
       case AppRoutes.createGoal:
         return MaterialPageRoute(
           builder: (_) => const CreateGoalPage(),
@@ -90,6 +93,12 @@ class RouteGenerate {
       case AppRoutes.addGoal:
         return MaterialPageRoute(
           builder: (_) => const AddGoalPage(),
+        );
+      case AppRoutes.goalProgress:
+        return MaterialPageRoute(
+          builder: (_) =>  GoalDetailsPage(
+            goal: routeSettings.arguments as Goal,
+          ),
         );
 
       /// Tip Article
