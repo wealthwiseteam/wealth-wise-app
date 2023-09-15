@@ -38,11 +38,13 @@ class LogoutBottomSheet extends StatelessWidget {
             PublicButton(
               onPressed: () {},
               title: S.of(context).yesLogout,
+              width: 200.w,
             ),
             14.ph,
             PublicOutlineButton(
               onPressed: () => Navigator.pop(context),
               title: S.of(context).cancel,
+              width: 200.w,
             ),
           ],
         ),

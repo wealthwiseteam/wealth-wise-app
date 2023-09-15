@@ -1,16 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:wealth_wise/resources/styles/app_colors.dart';
+import 'package:wealth_wise/resources/localization/generated/l10n.dart';
+import 'package:wealth_wise/resources/router/app_router.dart';
 import 'package:wealth_wise/resources/styles/app_theme.dart';
-import 'package:wealth_wise/view/pages/statistics/statistics_page.dart';
-import 'package:wealth_wise/view/pages/home/home_screen.dart';
-import 'package:wealth_wise/view/pages/layouts/layouts_page.dart';
-
-import 'resources/localization/generated/l10n.dart';
-import 'resources/router/app_router.dart';
-import 'view/pages/goals/my_goals/my_goals_page.dart';
-import 'view/pages/settings/settings/settings_page.dart';
+import 'package:wealth_wise/view/pages/auth/login/logIn_page.dart';
+import 'package:wealth_wise/view/pages/bills/all_bills/bills_screen.dart';
+import 'package:wealth_wise/view_model/view_model.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,23 +23,30 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, _) {
-        return MaterialApp(
-          debugShowCheckedModeBanner: false,
-          title: 'Wealth Wise',
-          locale: const Locale("en", "US"),
-          localizationsDelegates: const [
-            S.delegate,
-            GlobalMaterialLocalizations.delegate,
-            GlobalWidgetsLocalizations.delegate,
-            GlobalCupertinoLocalizations.delegate,
+        return MultiBlocProvider(
+          providers: [
+            BlocProvider(
+              create: (context) => BillsCubit(),
+            ),
           ],
-          supportedLocales: S.delegate.supportedLocales,
-          theme: AppTheme.light,
-          scrollBehavior: ScrollConfiguration.of(context).copyWith(
-            physics: const BouncingScrollPhysics(),
+          child: MaterialApp(
+            debugShowCheckedModeBanner: false,
+            title: 'Wealth Wise',
+            locale: const Locale("en", "US"),
+            localizationsDelegates: const [
+              S.delegate,
+              GlobalMaterialLocalizations.delegate,
+              GlobalWidgetsLocalizations.delegate,
+              GlobalCupertinoLocalizations.delegate,
+            ],
+            supportedLocales: S.delegate.supportedLocales,
+            theme: AppTheme.light,
+            scrollBehavior: ScrollConfiguration.of(context).copyWith(
+              physics: const BouncingScrollPhysics(),
+            ),
+            onGenerateRoute: RouteGenerate.getRoute,
+            home: const LoginPage(),
           ),
-          onGenerateRoute: RouteGenerate.getRoute,
-          home: const LayoutsPage()
         );
       },
     );

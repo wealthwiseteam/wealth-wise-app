@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:wealth_wise/data/models/goals/goal_model.dart';
+
 import 'package:wealth_wise/resources/extensions/extensions.dart';
 import 'package:wealth_wise/resources/router/app_router.dart';
 import 'package:wealth_wise/view/widgets/public_button.dart';
 
 import '../../../../data/models/settings/category_info_model.dart';
-import '../../../../resources/constants/app_assets.dart';
+
 import '../../../../resources/constants/app_constants.dart';
 import '../../../../resources/localization/generated/l10n.dart';
 import '../../../../resources/styles/app_colors.dart';

@@ -38,7 +38,7 @@ extension ToPiecesString on String {
     // use -1 because we use i+1 in it
     for (int i = 0; i < length - 1; i++) {
       j++;
-      if (j > 200 && this[i] == "." && this[i + 1] == " ") {
+      if (j > 100 && this[i] == "." && this[i + 1] == " ") {
         result.write(substring(start, i));
         result.write(".\n\n");
         // +2 to skip the "." and " " (space)
