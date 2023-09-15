@@ -17,4 +17,5 @@ class ResponseStatus {
 
   static const int success = 201;
   static const int failure = 422;
+  static const int unathorized = 401;
 }
