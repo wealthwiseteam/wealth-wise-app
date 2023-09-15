@@ -67,9 +67,11 @@ class AuthCubit extends Cubit<AuthState> {
         emit(LogoutErrorState(failure.message));
       },
       (isLogout) {
-        appPrefs.removeToken();
-        appPrefs.logout();
-        emit(LoginSuccessState());
+        if (isLogout) {
+          appPrefs.removeToken();
+          appPrefs.logout();
+          emit(LogoutSuccessState());
+        }
       },
     );
   }

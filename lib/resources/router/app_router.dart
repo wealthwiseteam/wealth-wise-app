@@ -9,6 +9,7 @@ import 'package:wealth_wise/view/pages/auth/congrats/congrats_page.dart';
 import 'package:wealth_wise/view/pages/auth/create_new_password/create_new_password.dart';
 import 'package:wealth_wise/view/pages/auth/face_id/face_id_page.dart';
 import 'package:wealth_wise/view/pages/auth/forget_password/forget_password_page.dart';
+import 'package:wealth_wise/view/pages/auth/login/logIn_page.dart';
 import 'package:wealth_wise/view/pages/auth/sign_in/sign_in_page.dart';
 import 'package:wealth_wise/view/pages/auth/sign_up/sign_up_page.dart';
 import 'package:wealth_wise/view/pages/auth/verify_code/verify_code_page.dart';
@@ -107,6 +108,10 @@ class RouteGenerate {
   static Route<dynamic> getRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
       ///Auth
+      case AppRoutes.login:
+        return MaterialPageRoute(
+          builder: (context) => const LoginPage(),
+        );
       case AppRoutes.signIn:
         return MaterialPageRoute(
           builder: (context) => const SignInPage(),
