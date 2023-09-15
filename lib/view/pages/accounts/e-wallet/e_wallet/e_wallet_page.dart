@@ -2,6 +2,7 @@ import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/resources/extensions/extensions.dart';
+import 'package:wealth_wise/resources/router/app_router.dart';
 import 'package:wealth_wise/resources/styles/app_colors.dart';
 import 'package:wealth_wise/view/widgets/public_button.dart';
 
@@ -63,37 +64,38 @@ class _EWalletPageState extends State<EWalletPage> {
                 ),
               ),
               60.ph,
-              DottedBorder(
-                radius: const Radius.circular(10),
-                color: AppColors.mintGreen,
-                strokeWidth: 2,
-                dashPattern: const [
-                  5,
-                  5,
-                ],
-                child: Container(
-                  width: 320.w,
-                  height: 40.h,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      IconButton(
-                          onPressed: () {},
-                          icon: const Icon(
-                            Icons.add,
-                            color: AppColors.mintGreen,
-                          )),
-                      PublicText(
-                        txt: S.of(context).addEwallet,
-                        color: AppColors.mintGreen,
-                      )
-                    ],
+              InkWell(
+                onTap: () => Navigator.pushNamed(context, AppRoutes.addWallet),
+                child: DottedBorder(
+                  radius: const Radius.circular(10),
+                  color: AppColors.mintGreen,
+                  strokeWidth: 2,
+                  dashPattern: const [
+                    5,
+                    5,
+                  ],
+                  child: Container(
+                    width: 320.w,
+                    height: 40.h,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Icon(
+                          Icons.add,
+                          color: AppColors.mintGreen,
+                        ),
+                        PublicText(
+                          txt: S.of(context).addEwallet,
+                          color: AppColors.mintGreen,
+                        )
+                      ],
+                    ),
                   ),
                 ),
-              )
+              ),
             ],
           ),
         ),

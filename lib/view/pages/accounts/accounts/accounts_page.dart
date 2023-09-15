@@ -19,7 +19,7 @@ class AccountsPage extends StatefulWidget {
 }
 
 class _AccountsPageState extends State<AccountsPage> {
-  List<Widget> cards = [
+  List<Widget> cards = const [
     PublicCard(imageUrl: AppAssets.creditCard, text: 'Credit card'),
     PublicCard(imageUrl: AppAssets.eWallet, text: 'E- wallet'),
   ];
@@ -62,7 +62,12 @@ class _AccountsPageState extends State<AccountsPage> {
                     cards.length,
                     (index) => InkWell(
                       onTap: () {
-                       
+                        Navigator.pushNamed(
+                          context,
+                          index == 0
+                              ? AppRoutes.myCards
+                              : AppRoutes.myWallets,
+                        );
                       },
                       child: SizedBox(
                         width: MediaQuery.of(context).size.width / 3,

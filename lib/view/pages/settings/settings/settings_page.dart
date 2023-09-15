@@ -41,12 +41,6 @@ class SettingsPage extends StatelessWidget {
               ),
               const PublicDividerInfinity(),
               PublicListTile(
-                onTap: () {},
-                title: S.of(context).accounts,
-                icon: AppAssets.iconWallet,
-              ),
-              const PublicDividerInfinity(),
-              PublicListTile(
                 onTap: () => Navigator.pushNamed(context, AppRoutes.privacy),
                 title: S.of(context).personalDataPrivacy,
                 icon: AppAssets.iconShieldTick,
@@ -60,7 +54,7 @@ class SettingsPage extends StatelessWidget {
               const PublicDividerInfinity(),
               PublicListTile(
                 onTap: () =>
-                    Navigator.pushNamed(context, AppRoutes.notifications),
+                    Navigator.pushNamed(context, AppRoutes.notificationsSettings),
                 title: S.of(context).notifications,
                 icon: AppAssets.iconNotification,
               ),

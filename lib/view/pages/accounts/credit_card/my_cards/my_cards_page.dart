@@ -2,6 +2,7 @@ import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/resources/extensions/extensions.dart';
+import 'package:wealth_wise/resources/router/app_router.dart';
 
 import '../../../../../resources/constants/app_assets.dart';
 import '../../../../../resources/localization/generated/l10n.dart';
@@ -201,29 +202,30 @@ class _MyCardsPageState extends State<MyCardsPage> {
                     5.h,
                     5.h,
                   ],
-                  child: Container(
-                    width: 320.w,
-                    height: 40.h,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        IconButton(
-                            onPressed: () {},
-                            icon: const Icon(
-                              Icons.add,
-                              color: AppColors.mintGreen,
-                            )),
-                        PublicText(
-                          txt: S.of(context).addCard,
-                          size: 16.sp,
-                          fw: FontWeight.w600,
-                          ff: "Inter",
-                          color: AppColors.mintGreen,
-                        )
-                      ],
+                  child: InkWell(
+                    onTap: () => Navigator.pushNamed(context, AppRoutes.myCard),
+                    child: Container(
+                      width: 320.w,
+                      height: 40.h,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Icon(
+                            Icons.add,
+                            color: AppColors.mintGreen,
+                          ),
+                          PublicText(
+                            txt: S.of(context).addCard,
+                            size: 16.sp,
+                            fw: FontWeight.w600,
+                            ff: "Inter",
+                            color: AppColors.mintGreen,
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 )

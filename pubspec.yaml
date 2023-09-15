@@ -55,6 +55,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
 
 flutter:
   uses-material-design: true
@@ -80,3 +81,17 @@ flutter_intl:
   enabled: true
   output_dir: lib/resources/localization/generated
   arb_dir: lib/resources/localization/l10n
+
+flutter_native_splash:
+  image: assets/images/logo_500.png
+  color: "#105161"
+
+  android: true
+  ios: true
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo_foreground.png"
+  adaptive_icon_backgorund: "#105161"
+  adaptive_icon_foreground: "assets/images/logo_foreground.png"

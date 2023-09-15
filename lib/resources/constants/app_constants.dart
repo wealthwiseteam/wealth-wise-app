@@ -3,6 +3,7 @@ import 'package:wealth_wise/data/models/goals/category_color_model.dart';
 import 'package:wealth_wise/data/models/settings/category_info_model.dart';
 import 'package:wealth_wise/resources/constants/app_assets.dart';
 import 'package:wealth_wise/resources/localization/generated/l10n.dart';
+import 'package:wealth_wise/resources/router/app_router.dart';
 import '../../data/models/goals/category_icon_model.dart';
 import '../../data/models/budget/category_period.dart';
 import '../../view/pages/home/components/home_card.dart';
@@ -12,7 +13,7 @@ class AppConstants {
 
   static List<CategoryInfo> categories = [
     CategoryInfo(icon: AppAssets.iconVehicle, name: S.current.vehicle),
-    CategoryInfo(icon: AppAssets.iconHousing, name: S.current.housingRent),
+    CategoryInfo(icon: AppAssets.iconHousingCategory, name: S.current.housingRent),
     CategoryInfo(icon: AppAssets.iconEducation, name: S.current.educaiton),
     CategoryInfo(icon: AppAssets.iconHealthCare, name: S.current.healthCare),
     CategoryInfo(icon: AppAssets.iconTravelling, name: S.current.travelling),
@@ -46,11 +47,31 @@ class AppConstants {
     S.current.thisYear,
   ];
   static const List<Widget> cards = [
-    HomeCard(imageUrl: AppAssets.transaction, text: 'Transactions'),
-    HomeCard(imageUrl: AppAssets.goals, text: 'Goals'),
-    HomeCard(imageUrl: AppAssets.bills, text: 'Bills'),
-    HomeCard(imageUrl: AppAssets.budgets, text: 'Budgets'),
-    HomeCard(imageUrl: AppAssets.financialTips, text: 'Financial tips'),
+    HomeCard(
+      imageUrl: AppAssets.transaction,
+      text: 'Transactions',
+      onClickPageRoute: AppRoutes.allTransactions,
+    ),
+    HomeCard(
+      imageUrl: AppAssets.goals,
+      text: 'Goals',
+      onClickPageRoute: AppRoutes.myGoals,
+    ),
+    HomeCard(
+      imageUrl: AppAssets.bills,
+      text: 'Bills',
+      onClickPageRoute: AppRoutes.allBills,
+    ),
+    HomeCard(
+      imageUrl: AppAssets.budgets,
+      text: 'Budgets',
+      onClickPageRoute: AppRoutes.allBudgets,
+    ),
+    HomeCard(
+      imageUrl: AppAssets.financialTips,
+      text: 'Financial tips',
+      onClickPageRoute: AppRoutes.tips,
+    ),
   ];
 
   static List<Category> categoryCollection = [
