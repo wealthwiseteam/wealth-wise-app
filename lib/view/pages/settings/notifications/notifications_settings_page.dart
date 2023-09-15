@@ -36,22 +36,22 @@ class NotificationsSettingsPage extends StatelessWidget {
                 title: S.of(context).budgets,
                 swithcer: Switchers.budgets,
               ),
-              const PublicDivider(),
+              const PublicDividerInfinity(),
               PublicSwitchListTile(
                 title: S.of(context).reachingGoals,
                 swithcer: Switchers.goals,
               ),
-              const PublicDivider(),
+              const PublicDividerInfinity(),
               PublicSwitchListTile(
                 title: S.of(context).securityAlerts,
                 swithcer: Switchers.securityAlerts,
               ),
-              const PublicDivider(),
+              const PublicDividerInfinity(),
               PublicSwitchListTile(
                 title: S.of(context).appUpdates,
                 swithcer: Switchers.updates,
               ),
-              const PublicDivider()
+              const PublicDividerInfinity()
             ],
           ),
         ),

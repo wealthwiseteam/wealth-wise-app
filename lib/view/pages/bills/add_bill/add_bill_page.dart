@@ -39,7 +39,7 @@ class _AddBillsState extends State<AddBills> {
         centerTitle: true,
         toolbarHeight: 80.h,
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () => Navigator.pop(context),
           icon: const Icon(Icons.arrow_back),
         ),
         title: PublicText(

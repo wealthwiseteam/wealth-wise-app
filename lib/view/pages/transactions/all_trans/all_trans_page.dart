@@ -14,7 +14,7 @@ class AllTransPage extends StatelessWidget {
       appBar: AppBar(
         toolbarHeight: 80.h,
         leading: IconButton(
-          onPressed: () {},
+          onPressed: ()=> Navigator.pop(context),
           icon: const Icon(Icons.arrow_back),
         ),
         title: PublicText(

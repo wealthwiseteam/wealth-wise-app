@@ -84,7 +84,7 @@ class AllCategoriesPage extends StatelessWidget {
                   },
                 ),
                 title: S.of(context).housingRent,
-                icon: AppAssets.iconHousing,
+                icon: AppAssets.iconHousingCategory,
                 iconSize: 30.w,
               ),
               const PublicDividerInfinity(),

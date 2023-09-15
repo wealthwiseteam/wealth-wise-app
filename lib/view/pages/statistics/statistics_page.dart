@@ -77,7 +77,7 @@ class StatisticsPage extends StatelessWidget {
                 16.ph,
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 32.w),
-                  child: const PublicDivider(),
+                  child: const PublicDividerInfinity(),
                 ),
                 16.ph,
 
@@ -108,7 +108,7 @@ class StatisticsPage extends StatelessWidget {
                 ),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 32.w),
-                  child: const PublicDivider(),
+                  child: const PublicDividerInfinity(),
                 ),
                 16.ph,
 
@@ -120,7 +120,8 @@ class StatisticsPage extends StatelessWidget {
                     size: 20.sp,
                   ),
                 ),
-                Center(
+                Align(
+                  alignment: Alignment.topCenter,
                   child: SfCircularChart(
                     legend: const Legend(isVisible: true),
                     series: <DoughnutSeries<SpentCategory, String>>[

@@ -6,9 +6,9 @@ import 'package:wealth_wise/view/widgets/public_text.dart';
 
 // ignore: must_be_immutable
 class PublicCard extends StatelessWidget {
-  String imageUrl;
-  String text;
-  PublicCard({
+  final String imageUrl;
+  final String text;
+  const PublicCard({
     super.key,
     required this.imageUrl,
     required this.text,
@@ -21,6 +21,7 @@ class PublicCard extends StatelessWidget {
       child: Card(
         color: AppColors.white,
         elevation: 1,
+        surfaceTintColor: Colors.transparent,
         child: Padding(
           padding: EdgeInsets.symmetric(
             horizontal: 15.0.w,

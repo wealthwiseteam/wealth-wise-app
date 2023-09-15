@@ -1,7 +1,6 @@
 class AppAssets {
   AppAssets._();
 
-
   /// Icons
   static const String iconUser = "assets/icons/user.svg";
   static const String iconBubble = "assets/icons/bubble.svg";

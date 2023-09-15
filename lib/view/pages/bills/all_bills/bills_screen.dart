@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wealth_wise/data/dummay_data/dummay_data.dart';
+import 'package:wealth_wise/resources/router/app_router.dart';
 import 'package:wealth_wise/resources/styles/app_colors.dart';
 import 'package:wealth_wise/view/widgets/public_text.dart';
 import 'package:wealth_wise/view_model/states.dart';
@@ -26,7 +27,9 @@ class AllBillsPage extends StatelessWidget {
         return Scaffold(
           appBar: AppBar(
             leading: IconButton(
-                onPressed: () {}, icon: const Icon(Icons.arrow_back)),
+              onPressed: () => Navigator.pop(context),
+              icon: const Icon(Icons.arrow_back),
+            ),
             title: const PublicText(
               txt: 'Bills',
               fw: FontWeight.bold,
@@ -34,7 +37,10 @@ class AllBillsPage extends StatelessWidget {
             ),
             centerTitle: true,
             actions: [
-              IconButton(onPressed: () {}, icon: const Icon(Icons.add))
+              IconButton(
+                  onPressed: () =>
+                      Navigator.pushNamed(context, AppRoutes.addBill),
+                  icon: const Icon(Icons.add))
             ],
             toolbarHeight: 100.h,
           ),
