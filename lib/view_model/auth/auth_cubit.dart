@@ -25,7 +25,9 @@ class AuthCubit extends Cubit<AuthState> {
     _spinner = !_spinner;
   }
 
+  /// Auth
   final appPrefs = getIt<AppPrefs>();
+
   Future<void> register(RegisterRequest request) async {
     emit(RegisterLoadingState());
     final either = await repo.register(request);
@@ -38,6 +40,36 @@ class AuthCubit extends Cubit<AuthState> {
         appPrefs.setToken(response.token);
         appPrefs.setUserLoggedIn(true);
         emit(RegisterSuccessState());
+      },
+    );
+  }
+
+  Future<void> login(LoginRequest request) async {
+    emit(LoginLoadingState());
+    final either = await repo.login(request);
+    either.fold(
+      (failure) {
+        emit(LoginErrorState(failure.message));
+      },
+      (response) {
+        appPrefs.setToken(response.token);
+        appPrefs.setUserLoggedIn(true);
+        emit(LoginSuccessState());
+      },
+    );
+  }
+
+  Future logout() async {
+    emit(LogoutLoadingState());
+    final either = await repo.logout();
+    either.fold(
+      (failure) {
+        emit(LogoutErrorState(failure.message));
+      },
+      (isLogout) {
+        appPrefs.removeToken();
+        appPrefs.logout();
+        emit(LoginSuccessState());
       },
     );
   }

@@ -8,7 +8,6 @@ abstract class AuthState extends Equatable {
 
 class AuthInitial extends AuthState {}
 
-
 /// register
 abstract class RegisterState extends AuthState {}
 
@@ -30,6 +29,29 @@ abstract class LoginState extends AuthState {}
 class LoginLoadingState extends LoginState {}
 
 class LoginSuccessState extends LoginState {}
+
+class LoginErrorState extends LoginState {
+  final String error;
+  LoginErrorState(this.error);
+
+  @override
+  List<Object?> get props => [error];
+}
+
+/// Logout
+abstract class LogoutState extends AuthState {}
+
+class LogoutLoadingState extends LogoutState {}
+
+class LogoutSuccessState extends LogoutState {}
+
+class LogoutErrorState extends LogoutState {
+  final String error;
+  LogoutErrorState(this.error);
+
+  @override
+  List<Object?> get props => [error];
+}
 
 /// Forgot password
 abstract class ForgotPasswordState extends AuthState {}
