@@ -32,7 +32,7 @@ class AuthCubit extends Cubit<AuthState> {
 
     either.fold(
       (failure) {
-        emit(AuthnErrorState(failure.message));
+        emit(RegisterErrorState(failure.message));
       },
       (response) {
         appPrefs.setToken(response.token);
