@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:dartz/dartz.dart';
+import 'package:dio/dio.dart';
 
 import '../error_handler/custom_expection.dart';
 import '../models/auth/auth_request_model.dart';
@@ -40,20 +41,21 @@ class AuthRepositoryImpl extends AuthRepository {
             "password_confirmation": request.confirmPassword
           },
         );
-        if (response.statusCode == ResponseStatus.success) {
-          return Right(AuthResponse.fromJson(response.data));
-        } else {
+        return Right(AuthResponse.fromJson(response.data));
+      } catch (e) {
+        log(e.toString());
+        if (e is DioException &&
+            e.response!.statusCode == ResponseStatus.failure) {
           return Left(
             Failure(message: "The email has already been taken."),
           );
+        } else {
+          return Left(
+            Failure(
+              message: "There is Something wrong try again later",
+            ),
+          );
         }
-      } catch (e) {
-        log(e.toString());
-        return Left(
-          Failure(
-            message: "There is Something wrong try again later",
-          ),
-        );
       }
     } else {
       return Left(

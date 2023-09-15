@@ -6,6 +6,7 @@ import 'package:wealth_wise/resources/localization/generated/l10n.dart';
 import 'package:wealth_wise/resources/router/app_router.dart';
 import 'package:wealth_wise/resources/styles/app_theme.dart';
 import 'package:wealth_wise/view/pages/auth/login/logIn_page.dart';
+import 'package:wealth_wise/view_model/auth/auth_cubit.dart';
 import 'package:wealth_wise/view_model/bills/view_model.dart';
 
 import 'resources/service_locator/service_locator.dart';
@@ -30,6 +31,9 @@ class MyApp extends StatelessWidget {
         return MultiBlocProvider(
           providers: [
             BlocProvider(
+              create: (_) => AuthCubit(getIt()),
+            ),
+            BlocProvider(
               create: (context) => BillsCubit(),
             ),
           ],
@@ -49,7 +53,14 @@ class MyApp extends StatelessWidget {
               physics: const BouncingScrollPhysics(),
             ),
             onGenerateRoute: RouteGenerate.getRoute,
-            home: const LoginPage(),
+            home: MultiBlocProvider(
+              providers: [
+                BlocProvider(
+                  create: (_) => AuthCubit(getIt()),
+                ),
+              ],
+              child: const LoginPage(),
+            ),
           ),
         );
       },

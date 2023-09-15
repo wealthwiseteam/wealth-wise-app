@@ -25,7 +25,6 @@ class PublicTextFormField extends StatefulWidget {
   final void Function(String)? onChanged;
   final void Function(String)? onSubmitted;
   final InputBorder? border;
- 
 
   const PublicTextFormField(
       {Key? key,
@@ -48,7 +47,6 @@ class PublicTextFormField extends StatefulWidget {
       this.onChanged,
       this.onSubmitted,
       this.border,
-   
       this.suffixIconColor})
       : super(key: key);
 
@@ -129,8 +127,14 @@ class _PublicTextFormFieldState extends State<PublicTextFormField> {
           });
         }),
         child: !showPassword
-            ? const Icon(Icons.visibility)
-            : const Icon(Icons.visibility_off),
+            ? const Icon(
+                Icons.visibility,
+                color: AppColors.mintGreen,
+              )
+            : const Icon(
+                Icons.visibility_off,
+                color: AppColors.mintGreen,
+              ),
       );
     }
     return null;

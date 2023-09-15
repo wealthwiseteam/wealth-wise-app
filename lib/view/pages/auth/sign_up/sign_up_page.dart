@@ -69,8 +69,12 @@ class _SignUpPageState extends State<SignUpPage> {
               color: Colors.red,
               context: context,
             );
-          } else if (state is LoginSuccessState) {
-            Navigator.pushReplacementNamed(context, AppRoutes.enteringIncome);
+          } else if (state is RegisterSuccessState) {
+            Navigator.pushNamedAndRemoveUntil(
+              context,
+              AppRoutes.enteringIncome,
+              (_) => false,
+            );
           }
         }
       },
@@ -171,6 +175,8 @@ class _SignUpPageState extends State<SignUpPage> {
                                     prefixIcon: Icons.lock,
                                     showprefixIcon: true,
                                     controller: passwordController,
+                                    showSuffixIcon: true,
+                                    isPassword: true,
                                     validator: (password) {
                                       if (password!.isEmpty) {
                                         return 'Please enter your password';
@@ -190,6 +196,8 @@ class _SignUpPageState extends State<SignUpPage> {
                                     prefixIcon: Icons.lock,
                                     showprefixIcon: true,
                                     controller: confirmPasswordController,
+                                    showSuffixIcon: true,
+                                    isPassword: true,
                                     validator: (password) {
                                       if (password!.isEmpty) {
                                         return 'Please enter your password again';

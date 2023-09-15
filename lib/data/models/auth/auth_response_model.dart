@@ -7,10 +7,10 @@ class AuthResponse {
     required this.user,
   });
 
-  factory AuthResponse.fromJson(Map<String, dynamic> json){
+  factory AuthResponse.fromJson(Map<String, dynamic> json) {
     return AuthResponse(
       token: json['token'],
-      user: json['user'],
+      user: User.fromJson(json['user']),
     );
   }
 }
@@ -29,7 +29,7 @@ class User {
   factory User.fromJson(Map<String, dynamic> json) {
     return User(
       id: json['id'],
-      username: json['username'],
+      username: json['name'],
       email: json['email'],
     );
   }
