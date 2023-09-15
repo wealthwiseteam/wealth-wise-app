@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
-const String baseUrl = "http://127.0.0.1:8000/api";
+const String baseUrl = "https://wealthwise.puiux.org/api";
 
 class EndPoints {
   EndPoints._();

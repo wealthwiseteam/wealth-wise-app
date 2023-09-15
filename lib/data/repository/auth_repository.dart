@@ -1,3 +1,6 @@
+import 'dart:developer';
+
+import 'package:dartz/dartz.dart';
 
 import '../error_handler/custom_expection.dart';
 import '../models/auth/auth_request_model.dart';
@@ -7,7 +10,7 @@ import '../source/remote/api_service.dart';
 
 abstract class AuthRepository {
   Future<bool> login(LoginRequest request);
-  Future<bool> register(RegisterRequest request);
+  Future<Either<Failure, User>> register(RegisterRequest request);
   Future<bool> forgotPassword(String email);
   Future<bool> verifyEmail(VerifyEmailRequest request);
   Future<bool> resetPassword(ResetPasswordRequest request);
@@ -20,6 +23,44 @@ class AuthRepositoryImpl extends AuthRepository {
 
   AuthRepositoryImpl(this._networkInfo, this._apiService);
 
+  
+  @override
+  Future<Either<Failure, User>> register(RegisterRequest request) async {
+    if (await _networkInfo.isConnected) {
+      try {
+        final response = await _apiService.postData(
+          endPoint: EndPoints.register,
+          body: {
+            "name": request.name,
+            "email": request.email,
+            "password": request.password,
+            "password_confirmation": request.confirmPassword
+          },
+        );
+        if (response.statusCode == ResponseStatus.success) {
+          return Right(User.fromJson(response.data['user']));
+        } else {
+          return Left(
+            Failure(message: "The email has already been taken."),
+          );
+        }
+      } catch (e) {
+        log(e.toString());
+        return Left(
+          Failure(
+            message: "There is Something wrong try again later",
+          ),
+        );
+      }
+    } else {
+      return Left(
+        Failure(
+          message: "Check your network connection",
+        ),
+      );
+    }
+  }
+
   @override
   Future<bool> login(LoginRequest request) async {
     if (await _networkInfo.isConnected) {
@@ -31,8 +72,7 @@ class AuthRepositoryImpl extends AuthRepository {
             "password": request.password,
           },
         );
-        var responseModel = AuthResponse.fromJson(response.data);
-        return responseModel.success;
+        return true;
       } catch (e) {
         throw CustomException(e.toString());
       }
@@ -41,28 +81,6 @@ class AuthRepositoryImpl extends AuthRepository {
     }
   }
 
-  @override
-  Future<bool> register(RegisterRequest request) async {
-    if (await _networkInfo.isConnected) {
-      try {
-        var response = await _apiService.postData(
-          endPoint: EndPoints.login,
-          body: {
-            "username": request.name,
-            "email": request.email,
-            "password": request.password,
-            "password_confirmation": request.confirmPassword
-          },
-        );
-        var responseModel = AuthResponse.fromJson(response.data);
-        return responseModel.success;
-      } catch (e) {
-        throw CustomException(e.toString());
-      }
-    } else {
-      throw CustomException("Check your network connection");
-    }
-  }
 
   @override
   Future<bool> forgotPassword(String email) async {
@@ -74,8 +92,7 @@ class AuthRepositoryImpl extends AuthRepository {
             "email": email,
           },
         );
-        var responseModel = AuthResponse.fromJson(response.data);
-        return responseModel.success;
+        return true;
       } catch (e) {
         throw CustomException(e.toString());
       }
@@ -95,8 +112,7 @@ class AuthRepositoryImpl extends AuthRepository {
             "otp": request.otp,
           },
         );
-        var responseModel = AuthResponse.fromJson(response.data);
-        return responseModel.success;
+        return true;
       } catch (e) {
         throw CustomException(e.toString());
       }
@@ -117,8 +133,7 @@ class AuthRepositoryImpl extends AuthRepository {
             "token": request.token,
           },
         );
-        var responseModel = AuthResponse.fromJson(response.data);
-        return responseModel.success;
+        return true;
       } catch (e) {
         throw CustomException(e.toString());
       }
@@ -126,9 +141,9 @@ class AuthRepositoryImpl extends AuthRepository {
       throw CustomException("Check your network connection");
     }
   }
-  
+
   @override
-  Future<bool> logout() async{
+  Future<bool> logout() async {
     if (await _networkInfo.isConnected) {
       try {
         var response = await _apiService.postData(
@@ -137,8 +152,7 @@ class AuthRepositoryImpl extends AuthRepository {
           // it will be taken form shared prefs
           token: "",
         );
-        var responseModel = AuthResponse.fromJson(response.data);
-        return responseModel.success;
+        return true;
       } catch (e) {
         throw CustomException(e.toString());
       }
