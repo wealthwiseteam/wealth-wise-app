@@ -6,8 +6,8 @@ import 'package:wealth_wise/data/dummay_data/dummay_data.dart';
 import 'package:wealth_wise/resources/router/app_router.dart';
 import 'package:wealth_wise/resources/styles/app_colors.dart';
 import 'package:wealth_wise/view/widgets/public_text.dart';
-import 'package:wealth_wise/view_model/states.dart';
-import 'package:wealth_wise/view_model/view_model.dart';
+import 'package:wealth_wise/view_model/bills/states.dart';
+import 'package:wealth_wise/view_model/bills/view_model.dart';
 
 class AllBillsPage extends StatelessWidget {
   const AllBillsPage({super.key});

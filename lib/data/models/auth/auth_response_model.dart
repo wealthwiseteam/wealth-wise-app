@@ -1,19 +1,16 @@
 class AuthResponse {
-  final bool success;
-  final String message;
-  final User data;
+  final String token;
+  final User user;
 
   AuthResponse({
-    required this.success,
-    required this.message,
-    required this.data,
+    required this.token,
+    required this.user,
   });
 
   factory AuthResponse.fromJson(Map<String, dynamic> json) {
     return AuthResponse(
-      success: json['success'],
-      message: json['message'],
-      data: User.fromJson(json['data']),
+      token: json['token'],
+      user: User.fromJson(json['user']),
     );
   }
 }
@@ -22,21 +19,18 @@ class User {
   final int id;
   final String username;
   final String email;
-  final String token;
 
   User({
     required this.id,
     required this.username,
     required this.email,
-    required this.token,
   });
 
   factory User.fromJson(Map<String, dynamic> json) {
     return User(
       id: json['id'],
-      username: json['username'],
+      username: json['name'],
       email: json['email'],
-      token: json['token'],
     );
   }
 }
