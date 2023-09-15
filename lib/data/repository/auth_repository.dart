@@ -10,7 +10,7 @@ import '../source/remote/api_service.dart';
 
 abstract class AuthRepository {
   Future<bool> login(LoginRequest request);
-  Future<Either<Failure, User>> register(RegisterRequest request);
+  Future<Either<Failure, AuthResponse>> register(RegisterRequest request);
   Future<bool> forgotPassword(String email);
   Future<bool> verifyEmail(VerifyEmailRequest request);
   Future<bool> resetPassword(ResetPasswordRequest request);
@@ -18,17 +18,20 @@ abstract class AuthRepository {
 }
 
 class AuthRepositoryImpl extends AuthRepository {
-  final NetworkInfo _networkInfo;
-  final ApiService _apiService;
+  final NetworkInfo networkInfo;
+  final ApiService apiService;
 
-  AuthRepositoryImpl(this._networkInfo, this._apiService);
+  AuthRepositoryImpl({
+    required this.networkInfo,
+    required this.apiService,
+  });
 
-  
   @override
-  Future<Either<Failure, User>> register(RegisterRequest request) async {
-    if (await _networkInfo.isConnected) {
+  Future<Either<Failure, AuthResponse>> register(
+      RegisterRequest request) async {
+    if (await networkInfo.isConnected) {
       try {
-        final response = await _apiService.postData(
+        final response = await apiService.postData(
           endPoint: EndPoints.register,
           body: {
             "name": request.name,
@@ -38,7 +41,7 @@ class AuthRepositoryImpl extends AuthRepository {
           },
         );
         if (response.statusCode == ResponseStatus.success) {
-          return Right(User.fromJson(response.data['user']));
+          return Right(AuthResponse.fromJson(response.data));
         } else {
           return Left(
             Failure(message: "The email has already been taken."),
@@ -63,9 +66,9 @@ class AuthRepositoryImpl extends AuthRepository {
 
   @override
   Future<bool> login(LoginRequest request) async {
-    if (await _networkInfo.isConnected) {
+    if (await networkInfo.isConnected) {
       try {
-        var response = await _apiService.postData(
+        var response = await apiService.postData(
           endPoint: EndPoints.login,
           body: {
             "email": request.email,
@@ -81,12 +84,11 @@ class AuthRepositoryImpl extends AuthRepository {
     }
   }
 
-
   @override
   Future<bool> forgotPassword(String email) async {
-    if (await _networkInfo.isConnected) {
+    if (await networkInfo.isConnected) {
       try {
-        var response = await _apiService.postData(
+        var response = await apiService.postData(
           endPoint: EndPoints.login,
           body: {
             "email": email,
@@ -103,9 +105,9 @@ class AuthRepositoryImpl extends AuthRepository {
 
   @override
   Future<bool> verifyEmail(VerifyEmailRequest request) async {
-    if (await _networkInfo.isConnected) {
+    if (await networkInfo.isConnected) {
       try {
-        var response = await _apiService.postData(
+        var response = await apiService.postData(
           endPoint: EndPoints.login,
           body: {
             "email": request.email,
@@ -123,9 +125,9 @@ class AuthRepositoryImpl extends AuthRepository {
 
   @override
   Future<bool> resetPassword(ResetPasswordRequest request) async {
-    if (await _networkInfo.isConnected) {
+    if (await networkInfo.isConnected) {
       try {
-        var response = await _apiService.postData(
+        var response = await apiService.postData(
           endPoint: EndPoints.login,
           body: {
             "email": request.email,
@@ -144,9 +146,9 @@ class AuthRepositoryImpl extends AuthRepository {
 
   @override
   Future<bool> logout() async {
-    if (await _networkInfo.isConnected) {
+    if (await networkInfo.isConnected) {
       try {
-        var response = await _apiService.postData(
+        var response = await apiService.postData(
           endPoint: EndPoints.login,
           body: {},
           // it will be taken form shared prefs

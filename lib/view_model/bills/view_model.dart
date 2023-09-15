@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:wealth_wise/view_model/states.dart';
+import 'package:wealth_wise/view_model/bills/states.dart';
 
 class BillsCubit extends Cubit<BillsStates> {
   // BillsCubit(super.initialState);
