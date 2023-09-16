@@ -23,7 +23,9 @@ class GoalsCubit extends Cubit<GoalsState> {
     _spinner = !_spinner;
   }
 
-  Future<List<Goal>> getMyGoals() async {
+  final myGoals = List<Goal>.empty(growable: true);
+  Future<void> getMyGoals() async {
+    myGoals.clear();
     emit(MyGoalsLoadingState());
     final either = await repo.getAllGoals();
     either.fold(
@@ -33,13 +35,16 @@ class GoalsCubit extends Cubit<GoalsState> {
       },
       (response) {
         emit(MyGoalsSuccessState());
-        return response.goals;
+        myGoals.addAll(response.goals);
       },
     );
-    return List.empty();
   }
 
-  Future<Goal?> getGoal(int id) async {
+  Goal getGoal(int id) {
+    return myGoals.firstWhere((element) => element.id == id);
+  }
+
+  Future<Goal?> fetchGoal(int id) async {
     emit(ShowGoalLoadingState());
     final either = await repo.getGoal(id);
     either.fold(
@@ -68,14 +73,16 @@ class GoalsCubit extends Cubit<GoalsState> {
     );
   }
 
-  Future<void> updateGoal({required int id, required Goal goal}) async {
+  Future<void> updateGoal(
+      {required int index, required int id, required Goal goal}) async {
     emit(GoalLoadingState());
     final either = await repo.updateGoal(id: id, goal: goal);
     either.fold(
       (failure) {
         emit(GoalErrorState(failure.message));
       },
-      (response) {
+      (_) {
+        myGoals[index] = goal;
         emit(GoalSuccessState());
       },
     );

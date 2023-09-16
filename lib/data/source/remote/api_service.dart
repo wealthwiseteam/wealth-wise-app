@@ -42,8 +42,8 @@ class ApiService {
             baseUrl: baseUrl,
             headers: headers,
             receiveDataWhenStatusError: true,
-            connectTimeout: const Duration(milliseconds: 3600),
-            receiveTimeout: const Duration(milliseconds: 3600),
+            // connectTimeout: const Duration(milliseconds: 3600),
+            // receiveTimeout: const Duration(milliseconds: 3600),
           ),
         ) {
     if (!kReleaseMode) {

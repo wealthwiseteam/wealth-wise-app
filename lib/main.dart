@@ -2,12 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:wealth_wise/data/repository/auth_repository.dart';
+import 'package:wealth_wise/data/repository/goal_repository.dart';
 import 'package:wealth_wise/resources/localization/generated/l10n.dart';
 import 'package:wealth_wise/resources/router/app_router.dart';
 import 'package:wealth_wise/resources/styles/app_theme.dart';
 import 'package:wealth_wise/view/pages/auth/login/logIn_page.dart';
 import 'package:wealth_wise/view_model/auth/auth_cubit.dart';
 import 'package:wealth_wise/view_model/bills/view_model.dart';
+import 'package:wealth_wise/view_model/goals/goals_cubit.dart';
 
 import 'resources/service_locator/service_locator.dart';
 
@@ -31,10 +34,13 @@ class MyApp extends StatelessWidget {
         return MultiBlocProvider(
           providers: [
             BlocProvider(
-              create: (_) => AuthCubit(getIt()),
+              create: (_) => AuthCubit(getIt<AuthRepository>()),
             ),
             BlocProvider(
               create: (context) => BillsCubit(),
+            ),
+            BlocProvider(
+              create: (context) => GoalsCubit(getIt<GoalRepository>()),
             ),
           ],
           child: MaterialApp(

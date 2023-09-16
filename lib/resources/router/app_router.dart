@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:wealth_wise/data/models/goals/goal_model.dart';
-import 'package:wealth_wise/data/models/settings/category_info_model.dart';
 import 'package:wealth_wise/view/pages/accounts/credit_card/my-card/my_card_page.dart';
 import 'package:wealth_wise/view/pages/accounts/credit_card/my_cards/my_cards_page.dart';
 import 'package:wealth_wise/view/pages/accounts/e-wallet/add_e_wallet/add_e_wallet_page.dart';
@@ -218,7 +216,7 @@ class RouteGenerate {
       case AppRoutes.goalProgress:
         return MaterialPageRoute(
           builder: (_) => GoalDetailsPage(
-            goal: routeSettings.arguments as Goal,
+            index: routeSettings.arguments as int,
           ),
         );
 

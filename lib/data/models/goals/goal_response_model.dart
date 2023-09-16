@@ -12,7 +12,7 @@ class AllGoalsResponse {
   factory AllGoalsResponse.fromJson(Map<String, dynamic> json) {
     return AllGoalsResponse(
       success: json['success'],
-      goals: (json['plan'] as List<Map<String, dynamic>>).map(
+      goals: (json['plan'] as List<dynamic>).map(
         (element) {
           return Goal.formJson(element);
         },

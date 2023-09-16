@@ -1,12 +1,11 @@
-import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class PrefsKeys {
   PrefsKeys._();
 
   static const String login = "login";
-  static const String token = "token";
   static const String userInfo = "user info";
+  static const String token = "token";
 }
 
 class AppPrefs {
@@ -27,12 +26,13 @@ class AppPrefs {
   }
 
   /// token
+
   Future<void> setToken(String token) async {
     await _sharedPrefs.setString(PrefsKeys.token, token);
   }
 
-  String? getToken() {
-    return _sharedPrefs.getString(PrefsKeys.token);
+  String getToken() {
+    return _sharedPrefs.getString(PrefsKeys.token) ?? "Unknown";
   }
 
   Future<void> removeToken() async {
@@ -45,11 +45,14 @@ class AppPrefs {
     required String name,
     required String email,
   }) async {
-    await _sharedPrefs.setStringList(PrefsKeys.token, [
-      id.toString(),
-      name,
-      email,
-    ]);
+    await _sharedPrefs.setStringList(
+      PrefsKeys.token,
+      [
+        id.toString(),
+        name,
+        email,
+      ],
+    );
   }
 
   ({int id, String email, String name}) getUserInfo() {
@@ -63,5 +66,9 @@ class AppPrefs {
 
   void removeUserInfo() {
     _sharedPrefs.remove(PrefsKeys.userInfo);
+  }
+
+  void clear() {
+    _sharedPrefs.clear();
   }
 }
