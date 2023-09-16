@@ -12,7 +12,7 @@ extension DoubleExtension on num {
     if ((this * 10) % 10 == 0) {
       return toInt();
     }
-    return this;
+    return double.parse(toStringAsFixed(2));
   }
 }
 
@@ -73,6 +73,26 @@ extension ValidString on String {
 extension DateFormant on DateTime {
   /// Ex: "Mon, 19, Apr"
   String get format1 {
-    return DateFormat("EEE, d, MMM").format(this);
+    return DateFormat("EEE d, MMM").format(this);
+  }
+
+  /// Ex: Apr 19, 2023
+  String get format2 {
+    return DateFormat("MMM d, yyyy").format(this);
+  }
+}
+
+extension IconAssets on String {
+  IconData getIconData() {
+    switch (this) {
+      case "education_i":
+        return Icons.cast_for_education;
+      case "housing_i":
+        return Icons.house;
+      case "vehicle_i":
+        return Icons.car_rental_outlined;
+      default:
+        return Icons.menu;
+    }
   }
 }

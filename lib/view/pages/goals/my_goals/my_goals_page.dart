@@ -1,20 +1,34 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
-import 'package:wealth_wise/data/models/goals/goal_model.dart';
-import 'package:wealth_wise/resources/extensions/extensions.dart';
-import 'package:wealth_wise/resources/router/app_router.dart';
-import '../../../../resources/constants/app_assets.dart';
+import '../../../../data/models/goals/goal_model.dart';
+import '../../../../resources/extensions/extensions.dart';
+import '../../../../resources/router/app_router.dart';
+import '../../../../view_model/goals/goals_cubit.dart';
 import '../../../../resources/localization/generated/l10n.dart';
 import '../../../../resources/styles/app_colors.dart';
 import '../../../widgets/public_divider.dart';
 import '../../../widgets/public_text.dart';
 part 'components/goal_list_tile.dart';
 
-class MyGoalsPage extends StatelessWidget {
+class MyGoalsPage extends StatefulWidget {
   const MyGoalsPage({super.key});
+
+  @override
+  State<MyGoalsPage> createState() => _MyGoalsPageState();
+}
+
+class _MyGoalsPageState extends State<MyGoalsPage> {
+  late final GoalsCubit cubit;
+
+  @override
+  void initState() {
+    super.initState();
+    cubit = GoalsCubit.getInstance(context);
+    cubit.getMyGoals();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -36,39 +50,57 @@ class MyGoalsPage extends StatelessWidget {
         ),
         body: Padding(
           padding: EdgeInsets.symmetric(horizontal: 32.w, vertical: 40.h),
-          child: SingleChildScrollView(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                PublicText(
+          child: ListView(
+            children: [
+              Align(
+                alignment: Alignment.centerLeft,
+                child: PublicText(
                   txt: S.of(context).howMuchSaved,
                   color: AppColors.subtitleGrey,
                   size: 20.sp,
                 ),
-                40.ph,
-                GoalListTile(
-                  goal: Goal(
-                      icon: AppAssets.iconTravelling,
-                      name: S.of(context).travelling,
-                      savedAmount: 50,
-                      targetAmount: 250,
-                      desiredDate: DateTime(2024)),
+              ),
+              40.ph,
+              BlocBuilder<GoalsCubit, GoalsState>(
+                buildWhen: (_, current) => current is MyGoalsState,
+                builder: (context, state) {
+                  if (state is MyGoalsLoadingState) {
+                    return const Center(child: CircularProgressIndicator());
+                  } else if (state is MyGoalsSuccessState &&
+                      cubit.myGoals.isEmpty) {
+                    return const PublicText(
+                        txt: "You don't have goals yet, Create your own goals");
+                  } else if (state is MyGoalsErrorState) {
+                    return const PublicText(txt: "There is something Wrong");
+                  } else {
+                    return ListView.separated(
+                      shrinkWrap: true,
+                      physics: const ClampingScrollPhysics(),
+                      itemCount: cubit.myGoals.length,
+                      itemBuilder: (_, index) {
+                        return GoalListTile(index: index);
+                      },
+                      separatorBuilder: (_, __) {
+                        return Padding(
+                          padding: EdgeInsets.symmetric(vertical: 16.h),
+                          child: const PublicDividerInfinity(),
+                        );
+                      },
+                    );
+                  }
+                },
+              ),
+              32.ph,
+              InkWell(
+                onTap: () => Navigator.pushNamed(context, AppRoutes.createGoal),
+                child: PublicText(
+                  txt: S.of(context).createGoal,
+                  color: AppColors.mintGreen,
+                  fw: FontWeight.w600,
+                  size: 20.sp,
                 ),
-                32.ph,
-                PublicDivider(width: 310.w),
-                32.ph,
-                InkWell(
-                  onTap: () =>
-                      Navigator.pushNamed(context, AppRoutes.createGoal),
-                  child: PublicText(
-                    txt: S.of(context).createGoal,
-                    color: AppColors.mintGreen,
-                    fw: FontWeight.w600,
-                    size: 20.sp,
-                  ),
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),

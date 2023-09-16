@@ -7,9 +7,17 @@ const String baseUrl = "https://wealthwise.puiux.org/api";
 class EndPoints {
   EndPoints._();
 
+  /// Auth
   static const String login = "/login";
   static const String register = "/register";
   static const String logout = "/logout";
+
+  /// Goals
+  static const String allGoals = "/plan/all";
+  static const String showGoal = "/plan/show";
+  static const String addGoal = "/plan/add";
+  static const String updateGoal = "/plan/update";
+  static const String deleteGoal = "/plan/delete";
 }
 
 class Headers {
@@ -34,8 +42,8 @@ class ApiService {
             baseUrl: baseUrl,
             headers: headers,
             receiveDataWhenStatusError: true,
-            connectTimeout: const Duration(milliseconds: 3600),
-            receiveTimeout: const Duration(milliseconds: 3600),
+            // connectTimeout: const Duration(milliseconds: 3600),
+            // receiveTimeout: const Duration(milliseconds: 3600),
           ),
         ) {
     if (!kReleaseMode) {
@@ -50,10 +58,11 @@ class ApiService {
     }
   }
 
-  Future<Response> getData(
-      {required String endPoint,
-      Map<String, dynamic>? query,
-      String? token}) async {
+  Future<Response> getData({
+    required String endPoint,
+    Map<String, dynamic>? query,
+    String? token,
+  }) async {
     return await _dio.get(
       endPoint,
       queryParameters: query,
@@ -72,6 +81,20 @@ class ApiService {
     return await _dio.post(
       endPoint,
       data: body,
+      queryParameters: query,
+      options: Options(
+        headers: {"Authorization": "Bearer $token"},
+      ),
+    );
+  }
+
+  Future<Response> deleteData({
+    required String endPoint,
+    Map<String, dynamic>? query,
+    String? token,
+  }) async {
+    return await _dio.delete(
+      endPoint,
       queryParameters: query,
       options: Options(
         headers: {"Authorization": "Bearer $token"},

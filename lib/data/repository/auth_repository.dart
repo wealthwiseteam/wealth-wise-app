@@ -5,7 +5,7 @@ import 'package:dio/dio.dart';
 import 'package:wealth_wise/data/source/local/app_prefs.dart';
 import 'package:wealth_wise/resources/service_locator/service_locator.dart';
 
-import '../error_handler/custom_expection.dart';
+import '../error_handler/error_handler.dart';
 import '../models/auth/auth_request_model.dart';
 import '../models/auth/auth_response_model.dart';
 import '../network/network_info.dart';
@@ -173,7 +173,8 @@ class AuthRepositoryImpl extends AuthRepository {
         await apiService.postData(
           endPoint: EndPoints.logout,
           body: {},
-          token: appPrefs.getToken(),
+          // TODO-Bug-Shared Prefs: 
+          token: "62|1zlWEzmR4zxiGjP6irEYdoi1FasAJ0bI138jesQ4302bbf47",
         );
         return const Right(true);
       } catch (e) {

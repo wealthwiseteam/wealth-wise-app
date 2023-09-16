@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -39,6 +41,11 @@ class AuthCubit extends Cubit<AuthState> {
       (response) {
         appPrefs.setToken(response.token);
         appPrefs.setUserLoggedIn(true);
+        appPrefs.setUserInfo(
+          id: response.user.id,
+          name: response.user.username,
+          email: response.user.email,
+        );
         emit(RegisterSuccessState());
       },
     );
@@ -51,9 +58,14 @@ class AuthCubit extends Cubit<AuthState> {
       (failure) {
         emit(LoginErrorState(failure.message));
       },
-      (response) {
-        appPrefs.setToken(response.token);
+      (response) async {
+        await appPrefs.setToken(response.token);
         appPrefs.setUserLoggedIn(true);
+        appPrefs.setUserInfo(
+          id: response.user.id,
+          name: response.user.username,
+          email: response.user.email,
+        );
         emit(LoginSuccessState());
       },
     );
@@ -68,8 +80,7 @@ class AuthCubit extends Cubit<AuthState> {
       },
       (isLogout) {
         if (isLogout) {
-          appPrefs.removeToken();
-          appPrefs.logout();
+          appPrefs.clear();
           emit(LogoutSuccessState());
         }
       },

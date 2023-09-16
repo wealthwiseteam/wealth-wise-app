@@ -2,6 +2,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:wealth_wise/data/repository/goal_repository.dart';
 import 'package:wealth_wise/data/source/local/app_prefs.dart';
 import 'package:wealth_wise/data/source/remote/api_service.dart';
 import 'package:wealth_wise/view_model/bloc_observer.dart';
@@ -35,6 +36,14 @@ Future<void> initModule() async {
   /// Auth repository
   getIt.registerLazySingleton<AuthRepository>(
     () => AuthRepositoryImpl(
+      networkInfo: getIt(),
+      apiService: getIt(),
+    ),
+  );
+
+  /// Goal repository
+  getIt.registerLazySingleton(
+    () => GoalRepository(
       networkInfo: getIt(),
       apiService: getIt(),
     ),
