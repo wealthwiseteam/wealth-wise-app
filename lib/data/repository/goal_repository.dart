@@ -115,7 +115,7 @@ class GoalRepository {
     }
   }
 
-  Future<Either<Failure, AllGoalsResponse>> editGoal({
+  Future<Either<Failure, AllGoalsResponse>> updateGoal({
     required int id,
     required Goal goal,
   }) async {

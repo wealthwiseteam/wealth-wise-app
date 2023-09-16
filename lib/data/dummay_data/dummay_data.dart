@@ -1,4 +1,5 @@
 import 'package:wealth_wise/data/models/budgets/budget_model.dart';
+import 'package:wealth_wise/data/models/goals/goal_model.dart';
 import 'package:wealth_wise/data/models/notifications/notification_model.dart';
 import 'package:wealth_wise/data/models/statistics/spent_category_model.dart';
 import 'package:wealth_wise/data/models/statistics/spent_date_model.dart';
