@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class PrefsKeys {
@@ -5,6 +6,7 @@ class PrefsKeys {
 
   static const String login = "login";
   static const String token = "token";
+  static const String userInfo = "user info";
 }
 
 class AppPrefs {
@@ -35,5 +37,31 @@ class AppPrefs {
 
   Future<void> removeToken() async {
     await _sharedPrefs.remove(PrefsKeys.token);
+  }
+
+  /// userInfo
+  Future<void> setUserInfo({
+    required int id,
+    required String name,
+    required String email,
+  }) async {
+    await _sharedPrefs.setStringList(PrefsKeys.token, [
+      id.toString(),
+      name,
+      email,
+    ]);
+  }
+
+  ({int id, String email, String name}) getUserInfo() {
+    final userInfo = _sharedPrefs.getStringList(PrefsKeys.userInfo);
+    return (
+      id: int.parse(userInfo?[0] ?? "0"),
+      name: userInfo?[1] ?? "Unknown",
+      email: userInfo?[2] ?? "Unknown",
+    );
+  }
+
+  void removeUserInfo() {
+    _sharedPrefs.remove(PrefsKeys.userInfo);
   }
 }

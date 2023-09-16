@@ -39,6 +39,11 @@ class AuthCubit extends Cubit<AuthState> {
       (response) {
         appPrefs.setToken(response.token);
         appPrefs.setUserLoggedIn(true);
+        appPrefs.setUserInfo(
+          id: response.user.id,
+          name: response.user.username,
+          email: response.user.email,
+        );
         emit(RegisterSuccessState());
       },
     );
@@ -54,6 +59,11 @@ class AuthCubit extends Cubit<AuthState> {
       (response) {
         appPrefs.setToken(response.token);
         appPrefs.setUserLoggedIn(true);
+        appPrefs.setUserInfo(
+          id: response.user.id,
+          name: response.user.username,
+          email: response.user.email,
+        );
         emit(LoginSuccessState());
       },
     );
@@ -69,6 +79,7 @@ class AuthCubit extends Cubit<AuthState> {
       (isLogout) {
         if (isLogout) {
           appPrefs.removeToken();
+          appPrefs.removeUserInfo();
           appPrefs.logout();
           emit(LogoutSuccessState());
         }

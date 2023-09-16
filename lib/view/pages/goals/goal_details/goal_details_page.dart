@@ -60,7 +60,7 @@ class GoalDetailsPage extends StatelessWidget {
                         ),
                         4.ph,
                         PublicText(
-                          txt: goal.desiredDate.format1,
+                          txt: goal.dueDate.format1,
                           color: AppColors.grey,
                         ),
                       ],
@@ -81,14 +81,14 @@ class GoalDetailsPage extends StatelessWidget {
                       children: [
                         PublicText(
                           txt:
-                              "${(goal.savedAmount / goal.targetAmount * 100).round()} %",
+                              "${(goal.currentAmount / goal.targetAmount * 100).round()} %",
                           color: AppColors.mintGreen,
                           size: 22.sp,
                         ),
                         8.ph,
                         PublicText(
                           txt:
-                              "${goal.savedAmount.orAbout()} / ${goal.targetAmount.orAbout()}",
+                              "${goal.currentAmount.orAbout()} / ${goal.targetAmount.orAbout()}",
                           color: AppColors.grey,
                         ),
                         8.ph,

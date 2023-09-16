@@ -38,12 +38,12 @@ class GoalListTile extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               PublicText(
-                txt: "${S.of(context).egp} ${goal.savedAmount}",
+                txt: "${S.of(context).egp} ${goal.currentAmount}",
                 color: AppColors.subtitleGrey,
               ),
               PublicText(
                 txt:
-                    "${(goal.savedAmount / goal.targetAmount * 100).round()} %",
+                    "${(goal.currentAmount / goal.targetAmount * 100).round()} %",
                 color: AppColors.subtitleGrey,
               ),
             ],

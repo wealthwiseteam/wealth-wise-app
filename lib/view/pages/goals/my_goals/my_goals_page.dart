@@ -48,11 +48,18 @@ class MyGoalsPage extends StatelessWidget {
                 40.ph,
                 GoalListTile(
                   goal: Goal(
-                      icon: AppAssets.iconTravelling,
-                      name: S.of(context).travelling,
-                      savedAmount: 50,
-                      targetAmount: 250,
-                      desiredDate: DateTime(2024)),
+                    id: 0,
+                    icon: AppAssets.iconTravelling,
+                    name: S.of(context).travelling,
+                    currentAmount: 50,
+                    targetAmount: 250,
+                    dueDate: DateTime(2024),
+                    categoryId: 0,
+                    note: "",
+                    startDate: DateTime.now(),
+                    createAt: DateTime.now(),
+                    color: "#ffffffff"
+                  ),
                 ),
                 32.ph,
                 PublicDivider(width: 310.w),
