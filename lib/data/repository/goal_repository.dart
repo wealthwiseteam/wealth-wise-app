@@ -26,7 +26,7 @@ class GoalRepository {
         final response = await apiService.getData(
           endPoint: EndPoints.allGoals,
           // TODO-Bug-SharedPrefs: the getString in shared Prefs gets List<String> instead of String
-          token: "58|EzAIaYJlg8IYEq0oa2dSnjrO2oSJ8K1G9T6sFOpo41d57eed",
+          token: "61|E53hhNPJPkjvvenoe9iUMPjRqXvB0ZfKhnYI4geec6df199d",
         );
         return Right(AllGoalsResponse.fromJson(response.data));
       } catch (e) {
@@ -52,7 +52,7 @@ class GoalRepository {
         final response = await apiService.getData(
           endPoint: "${EndPoints.showGoal}/$id",
           // TODO-Bug-SharedPrefs: the getString in shared Prefs gets List<String> instead of String
-          token: "58|EzAIaYJlg8IYEq0oa2dSnjrO2oSJ8K1G9T6sFOpo41d57eed",
+          token: "61|E53hhNPJPkjvvenoe9iUMPjRqXvB0ZfKhnYI4geec6df199d",
         );
         return Right(GoalResponse.fromJson(response.data));
       } catch (e) {
@@ -77,7 +77,7 @@ class GoalRepository {
         await apiService.deleteData(
           endPoint: "${EndPoints.deleteGoal}/$id",
           // TODO-Bug-SharedPrefs: the getString in shared Prefs gets List<String> instead of String
-          token: "58|EzAIaYJlg8IYEq0oa2dSnjrO2oSJ8K1G9T6sFOpo41d57eed",
+          token: "61|E53hhNPJPkjvvenoe9iUMPjRqXvB0ZfKhnYI4geec6df199d",
         );
         return const Right(true);
       } catch (e) {
@@ -102,7 +102,7 @@ class GoalRepository {
         final response = await apiService.postData(
           endPoint: EndPoints.addGoal,
           // TODO-Bug-SharedPrefs: the getString in shared Prefs gets List<String> instead of String
-          token: "58|EzAIaYJlg8IYEq0oa2dSnjrO2oSJ8K1G9T6sFOpo41d57eed",
+          token: "61|E53hhNPJPkjvvenoe9iUMPjRqXvB0ZfKhnYI4geec6df199d",
           body: goal.toJson(),
         );
         return Right(AllGoalsResponse.fromJson(response.data));
@@ -131,7 +131,7 @@ class GoalRepository {
         final response = await apiService.postData(
           endPoint: "${EndPoints.updateGoal}/$id",
           // TODO-Bug-SharedPrefs: the getString in shared Prefs gets List<String> instead of String
-          token: "58|EzAIaYJlg8IYEq0oa2dSnjrO2oSJ8K1G9T6sFOpo41d57eed",
+          token: "61|E53hhNPJPkjvvenoe9iUMPjRqXvB0ZfKhnYI4geec6df199d",
           body: goal.toJson(),
         );
         return Right(response.data['success']);

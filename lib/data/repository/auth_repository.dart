@@ -174,7 +174,7 @@ class AuthRepositoryImpl extends AuthRepository {
           endPoint: EndPoints.logout,
           body: {},
           // TODO-Bug-Shared Prefs: 
-          token: "58|EzAIaYJlg8IYEq0oa2dSnjrO2oSJ8K1G9T6sFOpo41d57eed",
+          token: "62|1zlWEzmR4zxiGjP6irEYdoi1FasAJ0bI138jesQ4302bbf47",
         );
         return const Right(true);
       } catch (e) {
